@@ -6,7 +6,7 @@ Felles repository for team SPD sine Archetype Designer prosjekter.
 
 <a href="../../branches"><img width="472" height="263" alt="image" src="https://github.com/user-attachments/assets/003ef373-a708-4f5f-84e7-54185128266a" /></a>
 
-3. **I Archetype Designer**: Trykk på <a href="https://tools.openehr.org/designer/"><img width="150" align="center" alt="new repo" src="https://github.com/user-attachments/assets/c8db98bf-10d3-4dbb-8636-53a181dfd23c" /></a>
+2. **I Archetype Designer**: Trykk på <a href="https://tools.openehr.org/designer/"><img width="150" align="center" alt="new repo" src="https://github.com/user-attachments/assets/c8db98bf-10d3-4dbb-8636-53a181dfd23c" /></a>
  og velg (i denne rekkefølgen):
     1. Repository type: GitHub.
     2. Repository: `aleksanderfurnes/SPD-ArchetypeDesigner`
