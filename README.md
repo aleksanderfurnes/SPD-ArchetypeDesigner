@@ -4,7 +4,7 @@ Felles repository for team SPD sine Archetype Designer prosjekter.
 ## Oppsett av nytt prosjekt
 1. **På GitHub**: <a href="../../branches"><img alt="Lag en ny branch" src="https://img.shields.io/badge/Lag%20ny%20branch-3b8640?style=flat" align="center"></a> i repoet, for eksempel "instillasjonsbehandling-blaerekreft" eller "vurderingsskjema-slag". I dette eksempelet heter den `mitt-prosjekt`. 
 
-   <img width="472" height="263" alt="image" src="https://github.com/user-attachments/assets/003ef373-a708-4f5f-84e7-54185128266a" />
+   <a href="../../branches"><img width="472" height="263" alt="image" src="https://github.com/user-attachments/assets/003ef373-a708-4f5f-84e7-54185128266a" /></a>
 
 3. **I Archetype Designer**: Trykk på "+ New Repository" og velg (i denne rekkefølgen):
     1. Repository type: GitHub.
