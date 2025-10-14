@@ -1,0 +1,3224 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "f76b4bc4-c90e-4adc-9379-0023a8ad245c",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2025-04-22",
+      "name" : "Liv Laugen",
+      "organisation" : "Felles kreftjournal"
+    },
+    "otherContributors" : [ "Bjørn Næss <bna@dips.no>" ],
+    "lifecycleState" : {
+      "codeString" : "release_candidate"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "d2bdd99395b2c7601aa771159ef7ad76",
+      "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
+      "sem_ver" : "1.0.0",
+      "build_uid" : ""
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ru" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ru"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "For å kartlegge og registrere bivirkninger i form av Common Terminology Criteria for Adverse Events (CTCAE) samt subjektiv hørselstap i forbindelse med prosjektet Strukturert Kreftjournal.",
+        "keywords" : [ "bivirkninger, CTCAE, hearing impairment, problemer" ],
+        "use" : "For å kartlegge og registrere bivirkninger i form av Common Terminology Criteria for Adverse Events (CTCAE) samt subjektiv hørselstap i forbindelse med prosjektet Strukturert Kreftjournal.\nDet brukes kartleggings av problem/diagnose for å se om det finnes noen bivirkninger/problemer - enten som basline eller under behandling. Hvis det finnes bivirkninger/problemer registreres dette i problem/diagnose arketypen i form av CTCAE og symptom arketypen for subjektiv hørselstap.\n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om bivirkninger vha. CTCAE.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-SECTION.bivirkningsregistrering.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "SECTION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.5",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-problem_screening-003.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.9",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "ctcae_problem_10",
+        "referenceType" : "templateId"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+        }
+      },
+      "ru" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "Образец заголовка раздела"
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+        }
+      },
+      "sl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "Naslov sekcije"
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "Bivirkningsregistrering i form av fritekst og CTCAE."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte."
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "Un'intestazione di sezione generica che dovrebbe essere rinominata in un template per adattarsi ad uno specifico contesto clinico."
+        }
+      },
+      "fr" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Bivirkningsregistrering",
+          "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
+        }
+      },
+      "ca" : { },
+      "es" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "f16b106b-ba79-3848-83ae-409ff08ed5bc",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "bivirkning_kartlegging_ctcae_10",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "709cf60b-1eb6-409f-91d9-e76115971e02",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : {
+        "date" : "2024-10-31"
+      },
+      "otherContributors" : [ ],
+      "lifecycleState" : {
+        "codeString" : "unmanaged"
+      },
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+        "custodian_organisation" : "openEHR Foundation",
+        "original_namespace" : "org.openehr",
+        "original_publisher" : "openEHR Foundation",
+        "custodian_namespace" : "org.openehr",
+        "MD5-CAM-1.0.1" : "167c27586cc84b7bee780f2c2a8a6fa5",
+        "PARENT:MD5-CAM-1.0.1" : "9F1B95B53D81FF86EF3DF128A51108E9",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Créer un cadre pour l'enregistrement des réponses à des questions de dépistage prédéfinies concernant des questions, des problèmes ou des diagnostics.",
+          "keywords" : [ "Condition", "état", "maladie", "syndrome", "questionnaire", "dépistage", "problème" ],
+          "use" : "À utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur les enjeux, les problèmes ou les diagnostics. \r\nCet archétype a été délibérément modélisé de manière souple afin d'englober le plus large éventail possible de questions et de problèmes, ainsi que de diagnostics.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- L'interrogation systématique lors d'une consultation, par exemple :\r\n--- Diagnostic de cancer ? Oui, Non, Inconnu.\r\n--- Diagnostic de COVID 19 ou de grippe au cours des douze derniers mois ? Oui, Non, Inconnu.\r\n--- Avez-vous des inquiétudes ou des préoccupations ? Oui, Non, Inconnu.\r\n- Questions spécifiques liées à la surveillance des maladies.\r\n\r\nLa sémantique de cet archétype est volontairement floue, et l'interrogation de cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur une procédure effectuée à tout moment dans le passé et des informations sur une procédure effectuée dans un intervalle de temps spécifié - par exemple la différence entre \"Avez-vous la grippe ?\" et \"Avez-vous eu la grippe au cours des 4 dernières semaines ?\"\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le questionnaire de dépistage identifie la présence d'un problème ou d'un diagnostic, il est recommandé que le système clinique enregistre et conserve les détails spécifiques du problème ou du diagnostic (tels que la date de reconnaissance clinique) en utilisant l'archétype EVALUATION.problem_diagnosis.",
+          "misuse" : "Ne doit pas être utilisé pour créer un cadre permettant d'enregistrer des réponses à des questions de dépistage prédéfinies concernant des procédures qui ont été effectuées dans le passé. Utilisez OBSERVATION.procedure_screening à cette fin.\r\n\r\nNe pas utiliser pour créer un cadre permettant d'enregistrer des réponses à des questions de sélection prédéfinies sur les effets indésirables, utiliser un archétype approprié à cet effet.\r\n\r\nNe pas utiliser pour enregistrer les détails d'une simple liste de sélection où une question peut être enregistrée comme \"présente\" ou \"indéterminée\". Utilisez OBSERVATION.selection_list à cette fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre qüestions, problemes o diagnòstics.",
+          "keywords" : [ "Condició", "estat", "malaltia", "síndrome", "sondeig", "detecció", "qüestió" ],
+          "use" : "Utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre qüestions, problemes o diagnòstics. \r\n\r\nAquest arquetip s'ha modelat deliberadament amb poca exactitud perquè incloure un rang el més ampli possible de qüestions i preguntes, així com de diagnòstics. \r\n\r\nEls casos d’ús més freqüents, però no limitats a: \r\n\r\n-Preguntar sistemàticament en qualsevol consulta. Per exemple: \r\n\r\n---Diagnosticat amb càncer? Sí, No, Desconegut. \r\n\r\n---Diagnosticat amb COVID 19o grip en els últims dotze mesos? Sí, No, Desconegut. \r\n\r\n---Té alguna preocupació? Sí, No, Desconegut. \r\n\r\n-Sondeig específic relacionat amb la vigilància de malalties. \r\n\r\nLa semàntica d’aquest arquetip és intencionalment laxa, i consultar aquest arquetip només serà útil o segur dins del context de cada plantilla específica. En una plantilla, cada element de dades normalment es tornarà a nomenar en una pregunta específica. Quan s’hagi proposat els conjunts de valors per casos d’ús comú, aquests poden adaptar-se per al seu ús local utilitzant DV_TEXT o DV_BOOLEAN per ajustar-se a cada cas d’ús específic. \r\n\r\nL'estructura EVENT del model de referència es pot utilitzar per especificar si les preguntes estan relacionades a un moment donat o a un període de temps. Utilitzar una instància separada d’aquest arquetip per a distingir entre un sondeig que registra informació sobre un procediment que s’ha realitzat en qualsevol moment del passat i la informació sobre un procediment dins d’un interval de temps específic. Per exemple, la diferència entre “Vostè té grip?” comparat amb “Vostè ha tingut grip en les últimes 4 setmanes?” \r\n\r\nLa font d’informació en una resposta al sondeig pot variar en diferents contexts, però es pot identificar utilitzant l’element “Proveïdor d’informació” del Model de Referència. \r\n\r\nAquest arquetip s’ha dissenyat per a utilitzar-lo com ferramenta de detecció o per a registrar dades senzilles en format de sondeig per al seu ús en situacions com un registre de malalties. Si el sondeig de detecció identifica la presència d’un problema o diagnòstic, es recomana que es registri el sistema clínic i continuï els detalls específics sobre el problema o diagnòstic (com la data de reconeixement clínic), utilitzant l’arquetip EVALUATION.problem_diagnosis.",
+          "misuse" : "No utilitzar per a registrar detalls sobre la presència o absència d'un problema o diagnòstic fora del context de l'objectiu de detecció. Utilitzar EVALUATION.problem_diagnosis o EVALUATION.exclusion_specific per aquest propòsit. \r\n\r\nNo utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre els procediments que s'han realitzat en el passat. Utilitzar OBSERVATION.procedure_screening per aquest propòsit. \r\n\r\nNo utilitzar per a crear una infraestructura per a registrar respostes a les preguntes de detecció predefinides sobre reaccions adverses. Utilitzar un arquetip apropiat per aquest propòsit. \r\n\r\nNo utilitzar per a registrar dades sobre una llista de selecció simple on una pregunta es pot enregistrar tant com \"\"present\"\" o \"\"indeterminada\"\". Utilitzar OBSERVATION.selection_list per aquest propòsit.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Crear una infraestructura para registrar respuestas a las preguntas de detección predefinidas sobre cuestiones, problemas o diagnósticos.",
+          "keywords" : [ "Condición, estado, enfermedad, síndrome, cuestionario, cribaje, detección, cuestión" ],
+          "use" : "Utilizar para crear una infraestructura para registrar respuestas en las preguntas de detección predefinidas sobre cuestiones, problemas o diagnósticos. Este arquetipo se ha moldeado deliberadamente de forma flexible para poder incluir un rango lo más amplio posible de cuestiones y preguntas, así como de diagnósticos.\r\n\r\nLos casos de uso más frecuentes, pero no limitados, a:\r\n\r\n-Preguntar sistemáticamente en cualquier consulta. Por ejemplo:\r\n\r\n---¿Diagnosticado con cáncer? Sí, No, Desconocido.\r\n\r\n---¿Diagnosticado con COVID-19 o gripe en los últimos doce meses? Sí, No, Desconocido.\r\n\r\n---¿Tiene alguna preocupación? Sí, No, Desconocido.\r\n\r\n-Cuestionario específico relacionado con la vigilancia de enfermedades.\r\n\r\nLa semántica de este arquetipo es intencionalmente laxa, y consultar este arquetipo solo será útil o seguro dentro del contexto de cada plantilla específica. En una plantilla, cada elemento de datos normalmente se volverá a nombrar con una pregunta específica. Cuando se haya propuesto los conjuntos de valores por casos de uso común, estos pueden adaptarse para su uso local utilizando DV_TEXT o DV_BOOLEAN para ajustarse a cada caso de uso específico.\r\n\r\nLa estructura EVENT del modelo de referencia se puede utilizar para especificar si las preguntas están relacionadas con un momento dado o a un período de tiempo. Utilizar una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre un procedimiento realizado en cualquier momento del pasado y la información sobre un procedimiento dentro de un intervalo de tiempo específico. Por ejemplo, la diferencia entre “¿Usted tiene gripe?”, comparado con “¿Usted ha tenido gripe en las últimas 4 semanas?”\r\n\r\nLa fuente de información en una respuesta del cuestionario puede variar en diferentes contextos, pero puede identificarse utilizando el elemento 'Information provider' (Proveedor de información) del Modelo de Referencia.\r\n\r\nEste arquetipo se ha diseñado para utilizarlo como herramienta de detección o para registrar datos sencillos en formato de cuestionario para su uso en situaciones como un registro de enfermedades. Si el cuestionario de detección identifica la presencia de un problema o diagnóstico, se recomienda que se registre el sistema clínico y continúe los detalles específicos sobre el problema o diagnóstico (como la fecha de reconocimiento clínico), utilizando el arquetipo EVALUATION.problem_diagnosis.",
+          "misuse" : "No utilizar para registrar detalles sobre la presencia o ausencia de un problema o diagnóstico, fuera de un contexto de cribado. Para estos fines, utilizar EVALUATION.problem_diagnosis o EVALUATION.exclusion_specific.\r\n\r\nNo utilizar para crear un marco para registrar respuestas a preguntas de cribado predefinidas sobre procedimientos realizados en el pasado. Para este propósito, utilizar OBSERVATION.procedure_screening.\r\n\r\nNo utilizar para crear un marco para registrar respuestas a preguntas de cribado predefinidas sobre reacciones adversas; utilizar un arquetipo apropiado para este propósito.\r\n\r\nNo utilizar para registrar detalles sobre una lista de selección simple en la que una pregunta pueda registrarse como \"presente\" o \"indeterminada\". Para ello, utilice OBSERVATION.selection_list.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.problem_screening.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-problem_screening-003.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0034.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "no.onk.kart.tidligere_komplikasjoner_kreftbehandling"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "no.onk.kart.tidligere_komplikasjoner_kreftbehandling" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "no.onk.kart.tidligere_komplikasjoner_kreftbehandling",
+                                "code" : "1",
+                                "value" : "Baseline"
+                              }, {
+                                "terminologyId" : "no.onk.kart.tidligere_komplikasjoner_kreftbehandling",
+                                "code" : "2",
+                                "value" : "Under behandling"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0028.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0043.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0022.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "SNOMED-CT"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "116224001",
+                                    "value" : "Complication of procedure"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.12" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0040.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0025.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0022.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "SNOMED-CT"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "15188001",
+                                    "value" : "hørselstap"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.400" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0040.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0025.2",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bivirkninger av behandling",
+            "description" : "Series of questions and associated answers used to screen for issues, problems or diagnoses.",
+            "comment" : "The answers may be self-reported."
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Tumorhendelser siden forrige kontakt?",
+            "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Har det oppstått bivirkninger som følge av behandling siden siste kontakt?",
+            "description" : "Is there a history of the specific issue, problem or diagnosis?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specific problem or diagnosis (2)",
+            "description" : "Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose."
+          },
+          "at0005.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Har det oppstått bivirkninger som følge av behandling siden siste kontakt?",
+            "description" : "Is there a history of the specific issue, problem or diagnosis?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.400" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.400",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bivirkninger av behandling",
+            "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge bekymringer, plager, problemer eller diagnoser.",
+            "comment" : "Svarene kan være selvrapporterte."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Har det oppstått bivirkninger som følge av behandling siden siste kontakt?",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.2",
+            "text" : "Hørsel",
+            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
+          },
+          "at0005.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.2",
+            "text" : "Subjektiv svekket hørsel?",
+            "description" : "Har pasienten fått subjektivt svekket hørsel som følge av behandlingen ",
+            "comment" : "Kartleggingsspørsmål som styrer visningen i CTCAE arketypen. Det kan vurderes om dette kan arves teknisk ned til feltet i problem/diagnose arketypen. "
+          },
+          "at0004.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.2",
+            "text" : "Subjektiv hørselstap",
+            "description" : "Kodet verdi som definerer problemet til å være hørselstap ",
+            "comment" : "Teknisk felt skjult for bruker. "
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Problem/diagnosenavn",
+            "description" : "Fast verdi som angir komplikasjon etter prosedyre/intervensjon. ",
+            "comment" : "Teknisk felt skjult for bruker. "
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Kartleggingsformål",
+            "description" : "Angir kontekst for kartlegging av bivirkninger. For løpende registreringer av komplikasjoner og bivirkninger som har kommet til under aktuelt pasientforløp. \n\nVelg baseline for å registrere listen med tilstander pasienten har før behandling og intervensjoner starter. ",
+            "comment" : "Det er definert et eget kodeverk for å kunne angi enten løpende registreringer under pasientforløpet eller som en baseline registeringer før behandling eller intervensjoner starter. "
+          },
+          "ac0.400" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.400",
+            "description" : ""
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Komplikasjon/bivirkning",
+            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bivirkninger av behandling",
+            "description" : "Eine Reihe von Fragen und zugehörigen Antworten, die zum Screening auf Vorhandensein von Beschwerden, Problemen oder Diagnosen verwendet werden.",
+            "comment" : "Die Antworten können selbst berichtet werden."
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Tumorhendelser siden forrige kontakt?",
+            "description" : "Gibt es eine Vorgeschichte an Beschwerden, Problemen oder Diagnosen im Zusammenhang mit dem Screening-Zweck?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Har det oppstått bivirkninger som følge av behandling siden siste kontakt?",
+            "description" : "*Is there a history of the specific issue, problem or diagnosis? (en)",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Bestimmter Zustand (2)",
+            "description" : "Details zu einer spezifischen Beschwerde, Diagnose oder zu einem bestimmten Problem oder einer Gruppe an Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind."
+          },
+          "at0005.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Har det oppstått bivirkninger som følge av behandling siden siste kontakt?",
+            "description" : "*Is there a history of the specific issue, problem or diagnosis? (en)",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.400" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.400",
+            "description" : ""
+          }
+        },
+        "nl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bivirkninger av behandling",
+            "description" : "*Series of questions and associated answers used to screen for issues, problems or diagnoses. (en)",
+            "comment" : "*The answers may be self-reported.(en)"
+          },
+          "at0028.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Tumorhendelser siden forrige kontakt?",
+            "description" : "*Is there a history of any issues, problems or diagnoses relevant for the screening purpose? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the 'text' choice to match each specific use case. (en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Har det oppstått bivirkninger som følge av behandling siden siste kontakt?",
+            "description" : "*Is there a history of the specific issue, problem or diagnosis? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "*Specifieke aandoening (2)",
+            "description" : "*Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose. (en)"
+          },
+          "at0005.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Har det oppstått bivirkninger som følge av behandling siden siste kontakt?",
+            "description" : "*Is there a history of the specific issue, problem or diagnosis? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.400" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.400",
+            "description" : ""
+          }
+        },
+        "ca" : {
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.400" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.400",
+            "description" : ""
+          }
+        },
+        "fr" : {
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.400" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.400",
+            "description" : ""
+          }
+        },
+        "es" : {
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.12",
+            "description" : ""
+          },
+          "ac0.400" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.400",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0023", "at0024", "at0027", "at0045" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0023", "at0024", "at0045" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0023", "at0024", "at0027", "at0045" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0023", "at0024", "at0045" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.70" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.70",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.73" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.73",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.74" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.74",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.75" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.75",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.76" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.76",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.77" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.77",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.78" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.78",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.79" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.79",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.80" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.80",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.81" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.81",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.82" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.82",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.83" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.83",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.84" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.84",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.85" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.85",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.86" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.86",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.87" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.87",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.88" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.88",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.89" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.89",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.90" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.90",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.91" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.91",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.92" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.92",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.93" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.93",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.94" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.94",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.95" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.95",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.96" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.96",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.97" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.97",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.98" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.98",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.99" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.99",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.100" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.100",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.101" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.101",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.102" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.102",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.103" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.103",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.104" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.104",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.105" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.105",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.106" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.106",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.107" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.107",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.108" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.108",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.109" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.109",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.110" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.110",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.111" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.111",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.112" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.112",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.113" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.113",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.114" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.114",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.115" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.115",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.116" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.116",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.117" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.117",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.118" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.118",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.119" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.119",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.120" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.120",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.121" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.121",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.122" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.122",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.123" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.123",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.124" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.124",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.125" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.125",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.126" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.126",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.127" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.127",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.128" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.128",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.129" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.129",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.130" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.130",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.131" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.131",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.132" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.132",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.133" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.133",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.134" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.134",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.135" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.135",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.136" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.136",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.137" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.137",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.138" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.138",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.139" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.139",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.140" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.140",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.141" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.141",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.142" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.142",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.143" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.143",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.144" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.144",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.145" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.145",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.146" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.146",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.147" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.147",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.148" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.148",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.149" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.149",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.150" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.150",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.151" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.151",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.152" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.152",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.153" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.153",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.154" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.154",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.155" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.155",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.156" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.156",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.157" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.157",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.158" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.158",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.159" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.159",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.160" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.160",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.161" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.161",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.162" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.162",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.163" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.163",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.164" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.164",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.165" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.165",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.166" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.166",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.167" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.167",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.168" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.168",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.169" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.169",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.170" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.170",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.171" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.171",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.172" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.172",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.173" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.173",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.174" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.174",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.175" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.175",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.176" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.176",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.177" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.177",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.178" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.178",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.179" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.179",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.180" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.180",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.181" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.181",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.182" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.182",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.183" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.183",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.184" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.184",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.185" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.185",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.186" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.186",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.187" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.187",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.188" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.188",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.189" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.189",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.190" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.190",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.191" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.191",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.192" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.192",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.193" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.193",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.194" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.194",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.195" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.195",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.196" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.196",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.197" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.197",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.198" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.198",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.199" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.199",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.200" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.200",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.201" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.201",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.202" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.202",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.203" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.203",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.204" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.204",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.205" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.205",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.206" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.206",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.207" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.207",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.208" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.208",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.209" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.209",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.210" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.210",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.211" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.211",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.212" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.212",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.213" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.213",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.214" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.214",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.215" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.215",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.216" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.216",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.217" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.217",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.218" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.218",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.219" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.219",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.220" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.220",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.221" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.221",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.222" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.222",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.223" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.223",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.224" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.224",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.225" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.225",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.226" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.226",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.227" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.227",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.228" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.228",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.229" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.229",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.230" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.230",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.231" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.231",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.232" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.232",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.233" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.233",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.234" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.234",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.235" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.235",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.236" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.236",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.237" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.237",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.238" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.238",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.239" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.239",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.240" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.240",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.241" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.241",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.242" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.242",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.243" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.243",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.244" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.244",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.245" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.245",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.246" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.246",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.247" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.247",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.248" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.248",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.249" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.249",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.250" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.250",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.251" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.251",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.252" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.252",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.253" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.253",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.254" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.254",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.255" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.255",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.256" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.256",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.257" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.257",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.258" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.258",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.259" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.259",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.260" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.260",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.261" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.261",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.262" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.262",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.263" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.263",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.264" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.264",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.265" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.265",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.266" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.266",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.267" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.267",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.268" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.268",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.269" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.269",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.270" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.270",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.271" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.271",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.272" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.272",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.273" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.273",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.274" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.274",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.275" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.275",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.276" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.276",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.277" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.277",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.278" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.278",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.279" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.279",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.280" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.280",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.281" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.281",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.282" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.282",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.283" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.283",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.284" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.284",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.285" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.285",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.286" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.286",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.287" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.287",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.288" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.288",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.289" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.289",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.290" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.290",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.291" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.291",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.292" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.292",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.293" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.293",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.294" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.294",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.295" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.295",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.296" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.296",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.297" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.297",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.298" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.298",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.299" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.299",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.300" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.300",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.301" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.301",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.302" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.302",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.303" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.303",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.304" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.304",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.305" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.305",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.306" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.306",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.307" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.307",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.308" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.308",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.309" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.309",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.310" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.310",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.311" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.311",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.312" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.312",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.313" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.313",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.314" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.314",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.315" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.315",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.316" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.316",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.317" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.317",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.318" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.318",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.319" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.319",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.320" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.320",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.321" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.321",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.322" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.322",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.323" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.323",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.324" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.324",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.325" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.325",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.326" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.326",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.327" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.327",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.328" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.328",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.329" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.329",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.330" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.330",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.331" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.331",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.332" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.332",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.333" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.333",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.334" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.334",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.335" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.335",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.336" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.336",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.337" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.337",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.338" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.338",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.339" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.339",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.340" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.340",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.341" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.341",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.342" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.342",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.343" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.343",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.344" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.344",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.345" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.345",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.346" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.346",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.347" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.347",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.348" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.348",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.349" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.349",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.350" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.350",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.351" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.351",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.352" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.352",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.353" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.353",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.354" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.354",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.355" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.355",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.356" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.356",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.357" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.357",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.358" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.358",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.359" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.359",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.360" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.360",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.361" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.361",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.362" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.362",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.363" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.363",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.364" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.364",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.365" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.365",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.366" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.366",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.367" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.367",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.368" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.368",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.369" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.369",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.370" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.370",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.371" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.371",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.372" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.372",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.373" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.373",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.374" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.374",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.375" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.375",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.376" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.376",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.377" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.377",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.378" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.378",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.379" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.379",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.380" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.380",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.381" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.381",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.382" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.382",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.383" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.383",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.384" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.384",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.385" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.385",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.386" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.386",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.387" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.387",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.388" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.388",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.389" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.389",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.390" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.390",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.391" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.391",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.392" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.392",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.393" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.393",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.394" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.394",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.395" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.395",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.396" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.396",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.397" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.397",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.398" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.398",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.399" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.399",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.400" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.400",
+          "members" : [ "at0023", "at0024" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3312cbbf-fa73-35c4-b507-71c4bc93c6f0",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Luxembourg Institute of Health (LIH)",
+        "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lauramoral@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Tradcrea"
+      }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ru"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
+    },
+    "otherDetails" : { }
+  } ]
+}
