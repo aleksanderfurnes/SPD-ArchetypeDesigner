@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "52d03251cad9889d679b55fe44088125",
+      "MD5-CAM-1.0.1" : "9d9c6312ac40e609703e865c6db59110",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
       "sem_ver" : "0.2.0",
       "build_uid" : ""
@@ -144,6 +144,36 @@
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -225,7 +255,9 @@
       "sv" : { },
       "de" : { },
       "it" : { },
-      "fr" : { }
+      "fr" : { },
+      "ca" : { },
+      "es" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -1057,6 +1089,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -1181,7 +1243,9 @@
             "text" : "Hovedbehandling",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1320,6 +1384,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -1490,6 +1582,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -1596,7 +1718,9 @@
             "text" : "Kirurgi",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1735,6 +1859,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -2190,7 +2342,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "430B520EC4563F96465173ED840F7A4A",
+        "PARENT:MD5-CAM-1.0.1" : "235D9CDE069C2AEF58B46A00190C05F8",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -2330,6 +2482,36 @@
           "misuse" : "Niet gebruiken om meerdere unilaterale/bilaterale structuren vast te leggen.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Identificar i registrar detalls estructurats sobre una sola part del cos humà utilitzant termes anatòmics macroscòpics.",
+          "keywords" : [ "ubicació", "lloc", "anatòmica", "regió anatòmica", "anatomia topogràfica", "macroscòpica", "anatòmica" ],
+          "use" : "*Use to record structured details about a single identified physical site on or within the human body.\r\n\r\nIn many situations, a simple data element such as ‘Location of measurement’ or ‘Body site’ will be sufficient and practical when the value set is straightforward. This archetype is intended for cases where a more detailed or structured representation of an anatomical site is required, including precise or compound descriptions. It can be nested within relevant ENTRY or CLUSTER archetypes such as those for symptoms, findings, or interventions to support multiaxial or postcoordinated anatomical expressions. Examples include documenting pain in the lower limb, tenderness at McBurney’s point, or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nThe ‘Laterality' data element may be used to qualify whether a paired structure or region is affected on the left, right, or both sides. When involvement is symmetrical and equivalent on both sides, for example the same cancer in both lungs or similar pain in both legs, record 'Left and right’. However, when the clinical characteristics differ between sides, two separate instances should be used:\r\n\r\n- Two parallel instances of this archetype within the same SLOT, each with its own laterality and specific details. For example, documenting equal tumours in the lower left lung lobe and the upper right lung lobe.\r\n- Two parallel instances of the parent archetype, each containing an instance of this archetype, when there are clinically significant differences such as tumour type, size, or severity in each lung.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In situations where this archetype is used to name a large or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location, for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below the right costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in utero, then the anatomical location will be identifying a body site on or within the fetus. (en)",
+          "misuse" : "*Not to be used to describe involvement of both sides of a paired structure when the clinical findings differ significantly between sides. In such cases, each side should be documented using a separate instance of this archetype with side-specific detail. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Identificar y registrar detalles estructurados sobre una única zona corporal del cuerpo humano, o dentro de él, utilizando términos anatómicos macroscópicos.",
+          "keywords" : [ "localización", "lugar", "anatómico", "región", "anatómica", "anatomía", "topográfica", "macroscópica", "anatómica", "anatomía" ],
+          "use" : "*Use to record structured details about a single identified physical site on or within the human body.\r\n\r\nIn many situations, a simple data element such as ‘Location of measurement’ or ‘Body site’ will be sufficient and practical when the value set is straightforward. This archetype is intended for cases where a more detailed or structured representation of an anatomical site is required, including precise or compound descriptions. It can be nested within relevant ENTRY or CLUSTER archetypes such as those for symptoms, findings, or interventions to support multiaxial or postcoordinated anatomical expressions. Examples include documenting pain in the lower limb, tenderness at McBurney’s point, or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nThe ‘Laterality' data element may be used to qualify whether a paired structure or region is affected on the left, right, or both sides. When involvement is symmetrical and equivalent on both sides, for example the same cancer in both lungs or similar pain in both legs, record 'Left and right’. However, when the clinical characteristics differ between sides, two separate instances should be used:\r\n\r\n- Two parallel instances of this archetype within the same SLOT, each with its own laterality and specific details. For example, documenting equal tumours in the lower left lung lobe and the upper right lung lobe.\r\n- Two parallel instances of the parent archetype, each containing an instance of this archetype, when there are clinically significant differences such as tumour type, size, or severity in each lung.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In situations where this archetype is used to name a large or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location, for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below the right costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in utero, then the anatomical location will be identifying a body site on or within the fetus. (en)",
+          "misuse" : "*Not to be used to describe involvement of both sides of a paired structure when the clinical findings differ significantly between sides. In such cases, each side should be documented using a separate instance of this archetype with side-specific detail. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -2435,7 +2617,9 @@
         "de" : { },
         "nl" : { },
         "sv" : { },
-        "fr" : { }
+        "fr" : { },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2560,6 +2744,36 @@
         "name" : "Michiel Klitsie",
         "organisation" : "Nedap Healthcare",
         "email" : "michiel.klitsie@nedap.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "TRADCREA"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -2730,6 +2944,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -2843,7 +3087,9 @@
             "text" : "Medikament (gjentagende)",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2982,6 +3228,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -3152,6 +3426,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -3210,7 +3514,9 @@
         "sv" : { },
         "de" : { },
         "it" : { },
-        "fr" : { }
+        "fr" : { },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3349,6 +3655,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -4394,6 +4728,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -4507,7 +4871,9 @@
             "text" : "Stråle",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4646,6 +5012,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -5288,6 +5682,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -5419,7 +5843,9 @@
             "text" : "Hovedbehandling (3)",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5558,6 +5984,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -5728,6 +6182,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -5834,7 +6318,9 @@
             "text" : "Kirurgi",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5973,6 +6459,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -6450,7 +6964,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "430B520EC4563F96465173ED840F7A4A",
+        "PARENT:MD5-CAM-1.0.1" : "235D9CDE069C2AEF58B46A00190C05F8",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -6590,6 +7104,36 @@
           "misuse" : "Niet gebruiken om meerdere unilaterale/bilaterale structuren vast te leggen.",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Identificar i registrar detalls estructurats sobre una sola part del cos humà utilitzant termes anatòmics macroscòpics.",
+          "keywords" : [ "ubicació", "lloc", "anatòmica", "regió anatòmica", "anatomia topogràfica", "macroscòpica", "anatòmica" ],
+          "use" : "*Use to record structured details about a single identified physical site on or within the human body.\r\n\r\nIn many situations, a simple data element such as ‘Location of measurement’ or ‘Body site’ will be sufficient and practical when the value set is straightforward. This archetype is intended for cases where a more detailed or structured representation of an anatomical site is required, including precise or compound descriptions. It can be nested within relevant ENTRY or CLUSTER archetypes such as those for symptoms, findings, or interventions to support multiaxial or postcoordinated anatomical expressions. Examples include documenting pain in the lower limb, tenderness at McBurney’s point, or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nThe ‘Laterality' data element may be used to qualify whether a paired structure or region is affected on the left, right, or both sides. When involvement is symmetrical and equivalent on both sides, for example the same cancer in both lungs or similar pain in both legs, record 'Left and right’. However, when the clinical characteristics differ between sides, two separate instances should be used:\r\n\r\n- Two parallel instances of this archetype within the same SLOT, each with its own laterality and specific details. For example, documenting equal tumours in the lower left lung lobe and the upper right lung lobe.\r\n- Two parallel instances of the parent archetype, each containing an instance of this archetype, when there are clinically significant differences such as tumour type, size, or severity in each lung.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In situations where this archetype is used to name a large or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location, for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below the right costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in utero, then the anatomical location will be identifying a body site on or within the fetus. (en)",
+          "misuse" : "*Not to be used to describe involvement of both sides of a paired structure when the clinical findings differ significantly between sides. In such cases, each side should be documented using a separate instance of this archetype with side-specific detail. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Identificar y registrar detalles estructurados sobre una única zona corporal del cuerpo humano, o dentro de él, utilizando términos anatómicos macroscópicos.",
+          "keywords" : [ "localización", "lugar", "anatómico", "región", "anatómica", "anatomía", "topográfica", "macroscópica", "anatómica", "anatomía" ],
+          "use" : "*Use to record structured details about a single identified physical site on or within the human body.\r\n\r\nIn many situations, a simple data element such as ‘Location of measurement’ or ‘Body site’ will be sufficient and practical when the value set is straightforward. This archetype is intended for cases where a more detailed or structured representation of an anatomical site is required, including precise or compound descriptions. It can be nested within relevant ENTRY or CLUSTER archetypes such as those for symptoms, findings, or interventions to support multiaxial or postcoordinated anatomical expressions. Examples include documenting pain in the lower limb, tenderness at McBurney’s point, or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nThe ‘Laterality' data element may be used to qualify whether a paired structure or region is affected on the left, right, or both sides. When involvement is symmetrical and equivalent on both sides, for example the same cancer in both lungs or similar pain in both legs, record 'Left and right’. However, when the clinical characteristics differ between sides, two separate instances should be used:\r\n\r\n- Two parallel instances of this archetype within the same SLOT, each with its own laterality and specific details. For example, documenting equal tumours in the lower left lung lobe and the upper right lung lobe.\r\n- Two parallel instances of the parent archetype, each containing an instance of this archetype, when there are clinically significant differences such as tumour type, size, or severity in each lung.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In situations where this archetype is used to name a large or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location, for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below the right costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in utero, then the anatomical location will be identifying a body site on or within the fetus. (en)",
+          "misuse" : "*Not to be used to describe involvement of both sides of a paired structure when the clinical findings differ significantly between sides. In such cases, each side should be documented using a separate instance of this archetype with side-specific detail. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -6695,7 +7239,9 @@
         "de" : { },
         "nl" : { },
         "sv" : { },
-        "fr" : { }
+        "fr" : { },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6820,6 +7366,36 @@
         "name" : "Michiel Klitsie",
         "organisation" : "Nedap Healthcare",
         "email" : "michiel.klitsie@nedap.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "TRADCREA"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -6990,6 +7566,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -7103,7 +7709,9 @@
             "text" : "Medikament (gjentagende)",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7242,6 +7850,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -7412,6 +8048,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -7478,7 +8144,9 @@
         "sv" : { },
         "de" : { },
         "it" : { },
-        "fr" : { }
+        "fr" : { },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7617,6 +8285,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -8678,6 +9374,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -8791,7 +9517,9 @@
             "text" : "Stråle",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8930,6 +9658,34 @@
         "name" : "Vanessa Pereira",
         "organisation" : "Better - Pathfinder",
         "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
       },
       "otherDetails" : { }
     } ]
@@ -9509,6 +10265,34 @@
       "codeString" : "fr"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
+    },
     "otherDetails" : { }
   } ]
 }
