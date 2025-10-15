@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "48a63eb3bbc5de44134a20aae8e51130",
-      "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73",
+      "MD5-CAM-1.0.1" : "bda76ba96d0d45d89f5951b2a322402c",
+      "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
       "sem_ver" : "0.1.0",
       "build_uid" : ""
     },
@@ -142,6 +142,36 @@
           "codeString" : "fr"
         },
         "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -302,7 +332,9 @@
           "text" : "Sosialanamnese_generell",
           "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
         }
-      }
+      },
+      "ca" : { },
+      "es" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -754,7 +786,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+        "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960"
       },
       "details" : {
         "de" : {
@@ -910,6 +942,36 @@
           "misuse" : "*Not to be left unchanged in a template.(en)",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -1023,7 +1085,9 @@
             "text" : "Samlivsform",
             "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
           }
-        }
+        },
+        "ca" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1164,6 +1228,34 @@
         "email" : "vanessapereira@protonmail.com"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1176,7 +1268,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F860292F286ADCAE2E776F553F9D4397"
+        "PARENT:MD5-CAM-1.0.1" : "4C480DDF0FB01319D297CBAFCDE50415"
       },
       "details" : {
         "fi" : {
@@ -1270,6 +1362,36 @@
           "keywords" : [ "Sin hogar", "Vivienda", "Juego", "Empleo", "Seguridad", "Violencia doméstica", "Dependiente", "Tutor", "Situación", "Circunstancias", "Abuso", "Educación", "Inseguridad", "Inclusión", "Exclusión", "Transporte", "Equidad", "Dificultades", "Desempleo", "Estrés", "Conexión", "Alfabetización", "Bienestar", "Social", "Sociológico", "Socioeconómico", "Pobreza", "Hambre", "Refugiado", "Inmigrante", "Minoría" ],
           "use" : "Usar para crear un marco para registrar las respuestas a preguntas de cribado predefinidas sobre el contexto social.\r\n\r\nLos casos de uso comunes incluyen, entre otros:\r\n- Investigación sistemática en cualquier consulta, por ejemplo:\r\n--- ¿Es usted una persona sin hogar? Sí, No, Desconocido\r\n--- ¿Se siente socialmente aislado?\r\n--- ¿Se siente seguro en casa, en la escuela o en el trabajo?\r\n--- ¿Cree que tiene problemas con el juego?\r\n--- ¿Hay alguna persona que dependa de usted?\r\n--- ¿Necesita un intérprete cuando visita la clínica?\r\n\r\nLa semántica de este arquetipo es intencionadamente flexible, y consultarlo normalmente solo sería útil o seguro dentro del contexto de cada plantilla específica. En una plantilla, cada elemento de datos se renombraría generalmente según la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos pueden adaptarse para uso local utilizando los tipos de datos DV_TEXT o DV_BOOLEAN para que coincidan con cada caso de uso específico.\r\n\r\nLa estructura EVENT del modelo de referencia permite especificar si las preguntas se refieren a un momento específico o a un período determinado. Utilice una instancia independiente de este arquetipo para distinguir entre un cuestionario que registra información sobre un problema de contexto social presente en algún momento del pasado y la información sobre un problema de contexto social dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Se encuentra seguro en casa ahora?\" y \"¿Ha sufrido violencia doméstica en las últimas 4 semanas?\".\r\n\r\nLa fuente de información de una respuesta al cuestionario puede variar según el contexto, pero se puede identificar específicamente mediante el elemento \"Information provider\" (\"Proveedor de información\") del Modelo de Referencia.\r\n\r\nEste arquetipo se ha diseñado para utilizarse como herramienta de cribado o para registrar datos sencillos en formato de cuestionario para su uso en situaciones como un registro de enfermedades. Si el proceso de cribado identifica una circunstancia, problema o inquietud de contexto social y se pretende que los detalles se registren y conserven como parte de un historial clínico continuo, cualquier otro detalle específico sobre el contexto social debe registrarse utilizando arquetipos específicos para el propósito clínico.",
           "misuse" : "No debe utilizarse para registrar detalles persistentes sobre conceptos relacionados con el contexto social. Para ello, utilice los arquetipos existentes, por ejemplo, EVALUACIÓN.housing, EVALUACIÓN.education, EVALUACIÓN.occupation, EVALUACIÓN.social_network y otros arquetipos del proyecto Contexto social: https://ckm.openehr.org/ckm/projects/1013.30.39.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen zum sozialen Kontext.",
+          "keywords" : [ "Obdachlosigkeit", "obdachlos", "Wohnraum", "wohnen", "Glücksspiel", "spielsüchtig", "Beschäftigung", "Arbeit", "Ausbildung", "Schule", "Bildung", "Sicherheit", "Häusliche Gewalt", "Gewalt", "Abhängigkeit", "Sucht", "Vormundschaft", "Missbrauch", "Unsicherheit", "Inklusion", "Ausgrenzung", "Transport", "Mobilität", "Gerechtigkeit", "Notlage", "Arbeitslosigkeit", "Stress", "Alphabetisierung", "Wohlbefinden", "Sozial", "Soziologisch", "Sozioökonomisch", "Armut", "Hunger", "Flüchtling", "Migration", "Migrant", "Einwanderer", "Minderheit" ],
+          "use" : "Verwendung als Rahmenbedingung für die Erfassung von Antworten auf vordefinierte Screening-Fragen zum sozialen Kontext.\r\n\r\nHäufige Anwendungsfälle sind unter anderem:\r\n- Systematische Befragung während Konsultationen, zum Beispiel:\r\n--- Sind Sie obdachlos? Ja, Nein, Unbekannt\r\n--- Fühlen Sie sich sozial isoliert?\r\n--- Fühlen Sie sich zu Hause/in der Schule/bei der Arbeit sicher?\r\n--- Glauben Sie, dass Sie spielsüchtig zu sein?\r\n--- Sind Personen von Ihnen abhängig?\r\n--- Benötigen Sie einen Dolmetscher, wenn Sie die Klinik besuchen?\r\n\r\nDie Semantik dieses Archetyps ist absichtlich locker gehalten, und eine Abfrage dieses Archetyps wäre normalerweise nur im Kontext des jeweiligen Templates sinnvoll oder sicher. In einen Template wird jedes Datenelement in der Regel in die spezifische Frage umbenannt, die gestellt wird. Wenn Wertemengen für allgemeine Anwendungsfälle vorgeschlagen wurden, können diese für die lokale Verwendung angepasst werden, indem die Datentypen DV_TEXT oder DV_BOOLEAN verwendet werden, um spezifische Anwendungsfälle abzubilden.\r\n\r\nDie EVENT-Struktur aus dem Referenzmodell kann verwendet werden, um anzugeben, ob sich die Fragen auf einen bestimmten Zeitpunkt oder einen bestimmten Zeitraum beziehen. Es soll eine separate Instanz dieses Archetyps verwendet werden, um klar zwischen einem Fragebogen zu unterscheiden, der Informationen zum sozialen Kontext zu einem beliebigen Zeitpunkt in der Vergangenheit erfasst, und einem Fragebogen, der Informationen zum sozialen Kontext innerhalb eines festgelegten Zeitintervalls erhebt – zum Beispiel: \"Sind Sie derzeit zu Hause sicher?\" und \"Haben Sie in den letzten 4 Wochen häusliche Gewalt erlebt?\".\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann je nach Kontext variieren, lässt sich jedoch mithilfe des Elements „Information provider“ im Referenzmodell eindeutig identifizieren.\r\n\r\nDieser Archetyp wurde als Screening-Instrument oder zur Erfassung einfacher Daten im Fragebogenformat für Situationen wie beispielsweise ein Krankheitsregister entwickelt. Wenn im Rahmen des Screening-Prozesses ein sozialer Kontext, ein Problem identifiziert wird und die Details als Teil einer laufenden Gesundheitsakte erfasst und gespeichert werden sollen, sollten alle weiteren spezifischen Details zum sozialen Kontext unter Verwendung von für den klinischen Zweck vorgesehenen Archetypen aufgezeichnet werden.",
+          "misuse" : "Nicht zur Erfassung des sozialen Kontexts ausserhalb eines Screenings verwenden. Verwenden Sie zu diesem Zweck vorhandene Archetypen – beispielsweise EVALUATION.housing, EVALUATION.education, EVALUATION.occupation, EVALUATION.social_network und andere Archetypen innerhalb des Projekts „Sozialer Kontext“ – https://ckm.openehr.org/ckm/projects/1013.30.39.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Créer un cadre pour l'enregistrement des réponses à des questions prédéfinies sur le contexte sociale.\r\n",
+          "keywords" : [ "sans-abri", "sans-abrisme", "logement", "jeu pathologique", "jeu compulsif", "jeu compulsif", "ludomanie", "emploi", "travail", "sécurité", "domestique", "familial", "violence", "personne à charge", "personne dépendante", "tuteur", "tutelle", "situation", "circonstances", "abus", "éducation", "formation", "insécurité", "inclusion", "exclusion", "transport", "mobilité", "équité", "difficultés", "chômage", "stress", "connexion", "alphabétisation", "bien-être", "social", "sociologique", "socioéconomique", "pauvreté", "faim", "réfugié", "immigrant", "minorité" ],
+          "use" : "À utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur le contexte social.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- L'interrogation systématique lors d'une consultation, par exemple :\r\n--- Êtes-vous sans domicile ? Oui, Non, Inconnu\r\n--- Vous sentez-vous socialement isolé(e) ?\r\n--- Vous sentez-vous en sécurité à la maison / à l’école / au travail ?\r\n--- Avez-vous des problèmes de jeu d’argent ?\r\n--- Des personnes sont-elles dépendantes de vous ?\r\n--- Avez-vous besoin d’un interprète lors de votre visite à la clinique ?\r\n\r\n\r\nLa sémantique de cet archétype est intentionnellement floue, et requêter cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur un problème lié au contexte social ayant pu survenir à tout moment dans le passé, et un questionnaire portant sur un problème lié au contexte social survenu dans un intervalle de temps donné - par exemple la différence entre \"Vous sentez-vous en sécurité à la maison actuellement ?\" et \"Avez-vous été victime de violences domestiques au cours des 4 dernières semaines ?\"\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le processus de dépistage identifie une circonstance, un problème ou une inquiétude liée au contexte social et il est prévu de d’enregistrer les détails dans le dossier de santé, tout renseignement supplémentaire sur le contexte social doit être enregistré à l’aide d’archétypes dédiés à des fins cliniques.\r\n",
+          "misuse" : "Ne pas utiliser pour enregistrer des détails persistants sur des concepts liés au contexte social. Utilisez les archétypes existants à cette fin, par exemple EVALUATION.housing, EVALUATION.education, EVALUATION.occupation, EVALUATION.social_network et d'autres archétypes du projet \"Social context\" - https://ckm.openehr.org/ckm/projects/1013.30.39.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1522,7 +1644,9 @@
           }
         },
         "ca" : { },
-        "es" : { }
+        "es" : { },
+        "fr" : { },
+        "de" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1628,6 +1752,34 @@
         "email" : "lauramoral@catsalut.cat"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Johann Keller",
+        "organisation" : "x-tention",
+        "email" : "johann.keller@x-tention.ch"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Johann Keller",
+        "organisation" : "x-tention",
+        "email" : "johann.keller@x-tention.ch"
+      },
+      "otherDetails" : { }
     } ]
   } ],
   "originalLanguage" : {
@@ -1725,6 +1877,34 @@
       "codeString" : "fr"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
+    },
     "otherDetails" : { }
   } ]
 }
