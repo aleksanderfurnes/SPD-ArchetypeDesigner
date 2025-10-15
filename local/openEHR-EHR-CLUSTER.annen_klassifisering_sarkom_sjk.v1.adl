@@ -1,0 +1,95 @@
+archetype (adl_version=1.4; uid=b1c445f5-e1da-48d4-bb1c-7ecf362fd9aa)
+	openEHR-EHR-CLUSTER.annen_klassifisering_sarkom_sjk.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2024-11-26">
+		["name"] = <"Kanika Kuwelker">
+		["organisation"] = <"Helse Vest IKT">
+		["email"] = <"kanika.kuwelker@helse-vest-ikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å gradere sarkom i tilfeller der det ikke er mulig å benytte etablerte graderinger/klassifikasjon.">
+			use = <"Brukes for å gradere sarkom i tilfeller der det ikke er mulig å benytte etablerte graderinger/klassifikasjon.">
+			misuse = <"Brukes ikke utenfor konteksten av prosjektet Strukturert kreftjournal.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"678e7e4b341b3705721f39f748b2228c">
+		["build_uid"] = <"349c31e8-ebe0-3de2-a8e0-533da027c5a5">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Annen klassifisering sarkom
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Klassifisering
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Entiteten graderes ikke
+							at0003,    -- Kan ikke graderes
+							at0004,    -- Ukjent
+							at0005,    -- Benign
+							at0006,    -- Lavgradig
+							at0007]    -- Høygradig
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Annen klassifisering sarkom">
+					description = <"Gradering av sarkom for bruk i prosjektet Strukturert kreftjournal i henhold til Kreftregisterets spesifikasjon.">
+				>
+				["at0001"] = <
+					text = <"Klassifisering">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Entiteten graderes ikke">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Kan ikke graderes">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Ukjent">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Benign">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Lavgradig">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Høygradig">
+					description = <"">
+				>
+			>
+		>
+	>
