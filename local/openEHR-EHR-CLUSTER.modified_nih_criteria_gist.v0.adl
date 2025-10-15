@@ -1,0 +1,256 @@
+archetype (adl_version=1.4; uid=203f74ef-239b-4f92-a3ec-ab4710562e29)
+	openEHR-EHR-CLUSTER.modified_nih_criteria_gist.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Kanika Kuwelker">
+				["organisation"] = <"Helse Vest IKT">
+				["email"] = <"kanika.kuwelker@helse-vest-ikt.no">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2024-03-19">
+		["name"] = <"Kanika Kuwelker">
+		["organisation"] = <"Helse Vest IKT">
+		["email"] = <"kanika.kuwelker@helse-vest-ikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere risiko for tilbakefall etter kirurgi for GIST ved å bruke modifiserte NIH-kriterier.">
+			keywords = <"gastrointestinal stromal tumor, GIST, sarkom, kreft, neoplasme, onkologi, malignitet", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"For å registrere risiko for tilbakefall etter kirurgi for GIST ved å bruke modifiserte NIH-kriterier.
+
+Arketypen er laget for å benyttes i en ENTRY arketype som vil gi den kliniske eller patologiske konteksten. For eksempel: I SLOTet \"Spesifikke detaljer\" i arketypen EVALUATION.problem_diagnose (Problem/diagnose), i en relevant patologirelatert CLUSTER-arketype som igjen nøstes i laboratoriesvar-arketypen. (OBSERVATION.laboratory_test_result) eller innen andre ENTRY- eller CLUSTER-arketyper der det er klinisk passende.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the risk of recurrence after surgery for GIST using the Modified NIH Criteria.">
+			keywords = <"gastrointestinal stromal tumour, GIST, sarcoma, cancer, neoplasm, oncology, malignancy", ...>
+			use = <"Use to record the risk of recurrence after surgery for GIST using the Modified NIH Criteria.
+
+This archetype has been designed to be nested inside an ENTRY or appropriate CLUSTER archetype which will provide a clinical or pathological context - for example: the 'Specific details' SLOT within the EVALUATION.problem_diagnosis archetype; an appropriate histopathology-related CLUSTER archetype within the OBSERVATION.laboratory_test_result context; or within other ENTRY or CLUSTER archetypes, where clinically appropriate.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Joensuu H, Hohenberger P, Corless CL. Gastrointestinal stromal tumour. Lancet. 2013 Sep 14;382(9896):973-83. doi: 10.1016/S0140-6736(13)60106-3. Epub 2013 Apr 24. Review. PubMed PMID: 23623056
+
+Joensuu H. Risk stratification of patients diagnosed with gastrointestinal stromal tumor. Hum Pathol. 2008 Oct;39(10):1411-9. doi: 10.1016/j.humpath.2008.06.025. PubMed PMID: 18774375.
+
+Cree IA, Tan PH, Travis WD, Wesseling P, Yagi Y, White VA, Lokuhetty D, Scolyer RA. Counting mitoses: SI(ze) matters!. Mod Pathol. 2021 Sep;34(9):1651-1657. doi: 10.1038/s41379-021-00825-7. Epub 2021 Jun 2. Review. PubMed PMID: 34079071; PubMed Central PMCID: PMC8376633.
+
+Norwegian translation: Helsedirektoratet. Nasjonalt handlingsprogram med retningslinjer for diagnostikk, behandling og oppfølging av sarkom. [revised 2022 February]. [Internet]. 2022 February. Available from: https://www.helsedirektoratet.no/retningslinjer/sarkomer-handlingsprogram">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"aa660d28b942850755780952576b1c60">
+		["build_uid"] = <"a28d0d52-ed28-3277-aad0-bad0187422fb">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Modified NIH criteria for GIST
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Diameter
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+								magnitude = <|>=0.0|>
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Mitotic count
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"{mitoses}/5.mm2">
+								magnitude = <|>=0.0|>
+								precision = <|0|>
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Primary tumour site
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0017,    -- Gastric
+							at0018]    -- Non-gastric
+						}
+					}
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Tumour rupture
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0031,    -- Yes
+							at0032]    -- No
+						}
+					}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Risk category
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0021,    -- Very low risk
+							at0022,    -- Low risk
+							at0023,    -- Intermediate risk
+							at0024]    -- High risk
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Modified NIH criteria for GIST">
+					description = <"A framework for estimating the risk of recurrence after surgery using the Modified NIH Criteria for GIST (gastrointestinal stromal tumour).">
+					comment = <"NIH - National Institutes of Health.">
+				>
+				["at0001"] = <
+					text = <"Diameter">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Mitotic count">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Primary tumour site">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Risk category">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Gastric">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Non-gastric">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Very low risk">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Low risk">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Intermediate risk">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"High risk">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Tumour rupture">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"No">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Modifisert NIH-kriterier for GIST">
+					description = <"Et rammeverk for å estimere risikoen for tilbakefall etter kirurgi i henhold til modifiserte NIH-kriterier for GIST (gastrointestinal stromal tumor).">
+					comment = <"NIH - National Institutes of Health.">
+				>
+				["at0001"] = <
+					text = <"Tumormål">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Mitosetall">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Primært utgangspunkt">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Risikokategori">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Ventrikkel">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Alle untatt ventrikkel">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Meget lav">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Lav">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Intermediær">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Høy risiko">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Tumorruptur">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Nei">
+					description = <"">
+				>
+			>
+		>
+	>
