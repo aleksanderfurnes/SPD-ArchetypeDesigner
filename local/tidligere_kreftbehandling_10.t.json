@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "520b56afa8e86af0f112bbc5b0c3034c",
+      "MD5-CAM-1.0.1" : "449b3bd3ca683ee1c648c5b6f673bb1a",
       "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
       "original_language" : "ISO_639-1::nb",
       "sem_ver" : "10.0.0",
@@ -180,6 +180,36 @@
         "misuse" : "*Not to be left unchanged in a template.(en)",
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -293,7 +323,9 @@
           "text" : "Tidligere kreftbehandling",
           "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
         }
-      }
+      },
+      "ca" : { },
+      "es" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -317,7 +349,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6D1C8A1512EE8EB75EA0FB461D27516C"
+        "PARENT:MD5-CAM-1.0.1" : "5860FF5470219DF112E9B113832703C7"
       },
       "details" : {
         "de" : {
@@ -393,6 +425,36 @@
           "keywords" : [ "Procédure, chirurgie, opération, évaluation, enquête, questionnaire, dépistage" ],
           "use" : "A utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur la gestion clinique liée à des procédures chirurgicales/opératoires qui ont été effectuées dans le passé.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- des questions spécifiques sur les interventions antérieures avant l'admission à l'hôpital\r\n- Interrogation systématique lors d'une consultation, par exemple : --- Avez-vous déjà eu une appendicite ?\r\n--- Avez-vous déjà subi une appendicectomie ? Oui, Non, Inconnu.\r\n--- Avez-vous subi une arthroplastie de la hanche ou du genou au cours des douze derniers mois ? Oui, Non, Inconnu.\r\n\r\nLa sémantique de cet archétype est intentionnellement floue, et l'interrogation de cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur une procédure effectuée à tout moment dans le passé et des informations sur une procédure effectuée dans un intervalle de temps donné - par exemple la différence entre \"Avez-vous déjà subi une opération de la hanche ou du genou ?\" et \"Avez-vous subi une opération de la hanche ou du genou au cours des 12 derniers mois ?\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le processus de dépistage identifie une procédure terminée, il est recommandé que le système clinique enregistre et conserve les détails spécifiques de la procédure (tels que la durée de la procédure) à l'aide de l'archétype ACTION.procedure.",
           "misuse" : "Ne pas utiliser pour enregistrer des détails sur la présence ou l'absence d'une procédure, en dehors d'un contexte de dépistage. Utiliser ACTION.procedure ou EVALUATION.exclusion_specific à cette fin.\r\n\r\nNe doit pas être utilisé pour enregistrer une prise en charge clinique non chirurgicale ou non invasive. Utilisez OBSERVATION.management_screening à cette fin.\r\n\r\nNe pas utiliser pour enregistrer les détails d'une simple liste de sélection où une question peut être enregistrée comme \"présente\" ou \"indéterminée\". Utiliser OBSERVATION.selection_list à cette fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Crear un marco para registrar respuestas a preguntas de detección predefinidas sobre el manejo clínico relacionado con procedimientos quirúrgicos/operatorios que se han llevado a cabo en el pasado.",
+          "keywords" : [ "Procedimiento", "cirugía", "operación", "evaluación", "investigación", "cuestionario", "cribado" ],
+          "use" : "Se utiliza para crear un marco para registrar las respuestas a preguntas de cribado predefinidas sobre la gestión clínica relacionada con procedimientos quirúrgicos/operatorios realizados en el pasado.\r\n\r\nLos casos de uso comunes incluyen, entre otros:\r\n- Preguntas específicas sobre procedimientos previos al ingreso hospitalario.\r\n- Preguntas sistemáticas en cualquier consulta, por ejemplo:\r\n--- ¿Se ha sometido alguna vez a una apendicectomía? Sí, No, Desconocido.\r\n--- ¿Se ha sometido a un reemplazo de cadera o rodilla en los últimos doce meses? Sí, No, Desconocido.\r\n\r\nLa semántica de este arquetipo es intencionadamente imprecisa, y consultarlo normalmente solo sería útil o seguro en el contexto de cada plantilla específica. En una plantilla, cada elemento de datos se renombraría generalmente según la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para uso local utilizando los tipos de datos DV_TEXT o DV_BOOLEAN para que coincidan con cada caso de uso específico.\r\n\r\nLa estructura EVENT del modelo de referencia se puede utilizar para especificar si las preguntas se relacionan con un punto en Tiempo o durante un período de tiempo. Utilice una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre un procedimiento realizado en cualquier momento del pasado y la información sobre un procedimiento realizado dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Se ha sometido alguna vez a una cirugía de cadera o rodilla?\" y \"¿Se ha sometido a alguna cirugía de cadera o rodilla en los últimos 12 meses?\".\r\n\r\nLa fuente de información en una respuesta al cuestionario puede variar según el contexto, pero se puede identificar específicamente mediante el elemento \"Proveedor de información\" del Modelo de Referencia.\r\n\r\nEste arquetipo se ha diseñado para utilizarse como herramienta de cribado o para registrar datos sencillos en formato de cuestionario para su uso en situaciones como un registro de enfermedades. Si el proceso de cribado identifica un procedimiento completado, se recomienda que el sistema clínico registre y conserve los detalles específicos del procedimiento (como su duración) utilizando el arquetipo ACTION.procedure.",
+          "misuse" : "No debe utilizarse para registrar detalles sobre la presencia o ausencia de un procedimiento fuera del contexto de un cribado. Utilice ACTION.procedure o EVALUATION.exclusion_specific para estos fines.\r\n\r\nNo debe utilizarse para registrar el manejo clínico no quirúrgico o no invasivo. Utilice OBSERVATION.management_screening para estos fines.\r\n\r\nNo debe utilizarse para registrar detalles sobre una lista de selección simple donde una pregunta pueda registrarse como \"presente\" o \"indeterminada\". Utilice OBSERVATION.selection_list para este fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear un marc per a l'enregistrament de respostes a preguntes predefinides de cribratge sobre la gestió clínica relacionada amb els procediments quirúrgics/operatius que s'han dut a terme en el passat.",
+          "keywords" : [ "Procediment", "cirurgia", "operació", "avaluació", "investigació", "qüestionari", "cribratge" ],
+          "use" : "Creació d'un marc per a l'enregistrament de respostes a preguntes predefinides de cribratge sobre la gestió clínica relacionada amb els procediments quirúrgics/operatius que s'han dut a terme en el passat.\r\n\r\nEls casos d'ús comuns inclouen, però no es limiten a:\r\n- Qüestionari específic sobre els procediments previs abans de l'ingrés a un hospital.\r\n- Qüestionari sistemàtic en qualsevol consulta, per exemple:\r\n--- Alguna vegada has tingut una apendectomia? Sí, no, desconegut.\r\n--- Has tingut un reemplaçament de maluc o genoll en els últims dotze mesos? Sí, no, desconegut.\r\n\r\nLa semàntica d'aquest arquetip és intencionadament laxa, i la consulta d'aquest arquetip normalment només seria útil o segur dins del context de cada plantilla específica. En una plantilla, cada element de dades normalment es reanomena segons la pregunta específica formulada. Quan s'han proposat conjunts de valors per a casos d'ús comuns, aquests es poden adaptar per a ús local utilitzant el DV_TEXT o els tipus de dades DV_BOOLEAN per a coincidir amb cada cas d'ús específic.\r\n\r\nL'estructura de l'EVENT a partir del model de referència es pot utilitzar per especificar si les preguntes es relacionen amb un punt en el temps o durant un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que registra informació sobre un procediment que s'ha realitzat en qualsevol moment del passat i informació sobre un procediment realitzat en un interval de temps especificat - per exemple la diferència entre \"Has tingut alguna cirurgia de maluc o genoll?\" en comparació amb \"Has tingut alguna cirurgia de maluc o genoll en els últims 12 mesos?\".\r\n\r\nLa font de la informació en una resposta de qüestionari pot variar en diferents contextos, però es pot identificar específicament utilitzant l'element 'Proveïdor d'informació' del Model de Referència.\r\n\r\nAquest arquetip ha estat dissenyat per ser utilitzat com a eina de cribratge o per registrar dades simples en format qüestionari per al seu ús en situacions com un registre de malalties. Si el procés de cribratge identifica un procediment completat, es recomana que el sistema clínic registri i persisteixi els detalls específics sobre el procediment (com la durada del procediment) utilitzant l'arquetip ACTION.procedure.",
+          "misuse" : "No s'ha d'utilitzar per registrar detalls sobre la presència o absència d'un procediment, fora d'un context de cribratge. Utilitzar ACTION.procedure o EVALUATION.exclusion_specific per a aquestes finalitats.\r\n\r\nNo s'ha d'utilitzar per registrar una gestió clínica no quirúrgica o no invasiva. Utilitzar OBSERVATION.management_screening per a aquestes finalitats.\r\n\r\nNo s'ha d'utilitzar per a enregistrar detalls sobre una llista de selecció senzilla on una pregunta es pot enregistrar com a «present» o «indeterminada». Utilitzeu OBSERVATION.selection_list per a aquesta finalitat",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -924,6 +986,34 @@
           "ac0.366" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
+            "code" : "ac0.366",
+            "description" : ""
+          }
+        },
+        "ca" : {
+          "ac0.204" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.204",
+            "description" : ""
+          },
+          "ac0.366" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.366",
+            "description" : ""
+          }
+        },
+        "es" : {
+          "ac0.204" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.204",
+            "description" : ""
+          },
+          "ac0.366" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
             "code" : "ac0.366",
             "description" : ""
           }
@@ -2828,6 +2918,34 @@
         "email" : "vanessapereira@protonmail.com"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "TRADCREA - Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
     } ]
   } ],
   "originalLanguage" : {
@@ -2957,6 +3075,34 @@
       "name" : "Vanessa Pereira",
       "organisation" : "Better - Pathfinder",
       "email" : "vanessapereira@protonmail.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
     },
     "otherDetails" : { }
   } ]
