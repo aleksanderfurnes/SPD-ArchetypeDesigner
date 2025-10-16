@@ -1,0 +1,48 @@
+archetype (adl_version=1.4; uid=56031931-e16f-4f90-bd15-791d823d58b3)
+	openEHR-EHR-SECTION.imaging_exam_oncology_no.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-05-02">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Brukes for å gruppere data om bildediagnostikk i kreftjournal. ">
+			use = <"Brukes for å gruppere data om bildediagnostikk i kreftjournal. ">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"dd9eb4bbddba032d835d00b77665b264">
+		["build_uid"] = <"4142e7db-24f7-3163-801b-628a764fa8a8">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- Bildediagnostikk
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Bildediagnostikk">
+					description = <"En gruppering av data knyttet til bildediagnostikk i forbindelse med pasientforløp for kreft. ">
+				>
+			>
+		>
+	>
