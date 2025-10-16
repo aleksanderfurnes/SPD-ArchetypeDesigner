@@ -1,0 +1,101 @@
+archetype (adl_version=1.4; uid=85005f6d-1ce8-3783-a6e4-7d3493c4361b)
+	openEHR-EHR-CLUSTER.tumor_hendelse_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2024-01-01">
+		["name"] = <"Morten Hørthe">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"mho@dips.no">
+	>
+	lifecycle_state = <"0">
+	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Brukes for å definere en tumor hendelse">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"8cfdd7a3ed97c8116d098843016dfe55">
+		["build_uid"] = <"ec45d768-4807-3348-a83a-a601ffca4ccf">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Tumorhendelse
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Hendelsestype
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..*} matches {    -- Metode for påvisning
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Beskrivelse av metode for påvisning
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Spesifisert hendelsestype
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Dato for forrige kontroll
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Videre plan/behandling
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tumorhendelse">
+					description = <"Brukes for å beskrive detaljer om en tumorhendelse. Tumorhendelse er funn eller observasjoner av sykdomsutvikling relatert til kreftsykdommen. ">
+				>
+				["at0001"] = <
+					text = <"Hendelsestype">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Metode for påvisning">
+					description = <"Metode brukt for å påvise hendelsen">
+				>
+				["at0005"] = <
+					text = <"Beskrivelse av metode for påvisning">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Spesifisert hendelsestype">
+					description = <"Felt for å definere koder for spesifikke hendelsestyper. ">
+					comment = <"Kodeverk legges til i templaten. ">
+				>
+				["at0008"] = <
+					text = <"Dato for forrige kontroll">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Videre plan/behandling">
+					description = <"Beskriv plan/behandling for oppfølging av komplikasjonen. ">
+				>
+			>
+		>
+	>
