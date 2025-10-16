@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "1b260748bf2445420565a923eae5f99e",
+      "MD5-CAM-1.0.1" : "39639978b3e14558f09423105609f4ac",
       "PARENT:MD5-CAM-1.0.1" : "7992b64110455bb88760d5f0dd3a9006",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -92,109 +92,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.49",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "sosialanamnese_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.53",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "komorbiditet_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.77",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "stimulantia_20",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.55",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "bivirkning_kartlegging_ctcae_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.57",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "skaaringer_vitale_tegn_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.59",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "tidligere_kreftbehandling_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.81",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "problem_oncology_sjk_01",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.67",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "bildediagnostikk_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
         "nodeId" : "at0.75",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "tumorhendelse_01",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.69",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "studie_samtykke_10",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.71",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "biomarkorer_01",
-        "referenceType" : "templateId"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "SECTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.73",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "behandlingsoppsummering_01",
         "referenceType" : "templateId"
       } ]
     } ],
