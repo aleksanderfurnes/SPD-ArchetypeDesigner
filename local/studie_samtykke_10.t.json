@@ -1,0 +1,2708 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "83b4ab95-c149-4652-a027-5c2c98415b80",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2025-04-29",
+      "name" : "Morten Hørthe",
+      "organisation" : "DIPS AS",
+      "email" : "mho@dips.no"
+    },
+    "otherContributors" : [ "Bjørn Næss <bna@dips.no>" ],
+    "lifecycleState" : {
+      "codeString" : "deprecated"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "d69461ddce848b869110505820d6cc6d",
+      "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960",
+      "sem_ver" : "0.2.0",
+      "build_uid" : ""
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ru" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ru"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "Brukes til å angi pasientens status om samtykker og reservasjonsrett, og deltakelse i studier. ",
+        "keywords" : [ ],
+        "use" : "Brukes i strukturert journal for kreft. ",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+        "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+        "keywords" : [ ],
+        "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+        "misuse" : "No es deixarà sense canvis en una plantilla.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-SECTION.adhoc_heading.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "SECTION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ACTION",
+        "occurrences" : "1..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-informed_consent_dips-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ACTION",
+        "occurrences" : "0..0",
+        "nodeId" : "at0.7",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-informed_consent_dips-002.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-001.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Studier og samtykke",
+          "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+        }
+      },
+      "ru" : { },
+      "es-ar" : { },
+      "sl" : { },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Samtykke informasjon gitt og studier",
+          "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+        }
+      },
+      "pt-br" : { },
+      "sv" : { },
+      "de" : { },
+      "it" : { },
+      "fr" : { },
+      "ca" : { },
+      "es" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "f0663168-9679-34ac-88e0-cad33cb94f40",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "studie_samtykke_10",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "beef4f64-732a-49e8-9dcf-491d6992bb16",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "73A316AAF86DE9E0EBD54BC524035108"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Statusdarstellung einer Anforderung oder Aufzeichnung der Einwilligungserklärung vor der Durchführung einer Prozedur, einer klinischen Studie/Prüfung oder einer Aktivität im Zusammenhang mit dem Gesundheitswesen.",
+          "keywords" : [ "Einwilligung", "Einverständnis", "Einverständniserklärung", "Aufklärung", "Zustimmung", "informiert", "Vorbehalt" ],
+          "use" : "Zur Statusdarstellung einer Anforderung, um eine Einverständniserklärung zu erhalten, einschließlich was geplant, angefordert, bereitgestellt oder zurückgezogen wurde.\r\n\r\nDieser Archetyp wurde als Framework entwickelt, das zum Anfordern und Aufzeichnen einer einfachen Einwilligung geeignet ist, es jedoch zulässt, dass zusätzliche Details optional im SLOT \"Details\" hinzugefügt werden, um die spezifischen Anforderungen eines komplexeren klinischen Szenarios zu erfüllen. Beispielsweise können zusätzliche Zustimmungsdetails unter Verwendung des Archetyps CLUSTER.consent_details eingefügt werden. Andere Archetypen können entwickelt und optional im selben SLOT enthalten sein, um spezifische Details über das Verfahren, den Versuch oder die Aktivität aufzuzeichnen.\r\n\r\nDer Status der Einwilligungserklärung spiegelt sich in den einzelnen Schritten wider - angefordert, abgelehnt, bereitgestellt, zurückgezogen usw.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Записать необходимость или наличие информированного согласия на выполнение процедуры, клинического теста или другой связанной со сдоровьем активности",
+          "keywords" : [ "согласие", "информированное", "отказ" ],
+          "use" : "Используется для записи статуса информированного согласия, включая планируемое, назначенное, запрошенное, предложенное, полученное. \r\nЭтот архетип разработан как рабочая зона, достаточная для того, чтобы  запросить и записать простое согласие, но, в то же время, позволяющая добавить специфические детали в слоте \"Детали\" при  необходимости более сложного клинического сценария. Например, такие детали могут содержать архетип КЛАСТЕР.детали_согласия. В этот же слот могут быть добавлены другие архетипы для описания процедуры, исследования или активности.\r\nСтатус информированного согласия отражает этапы его получения: необходимость, запрос, отказ, подписание и т.д.       ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere informert samtykke eller status på en forespørsel om informert samtykke før en prosedyre, klinisk utprøving eller helserelatert aktivitet utføres.",
+          "keywords" : [ "samtykke", "informert", "cave" ],
+          "use" : "Brukes for å registrere status på forespørsel om informert samtykke, inkludert hva som er planlagt, forespurt, avgitt eller tilbaketrukket.\r\n\r\nDenne arketypen er utformet for å være et rammeverk som vil være tilstrekkelig for å be om og registrere et enkelt samtykke, men tillater også registrering av ytterligere detaljer i \"Detaljer\"-SLOTet for å møte de spesifikke kravene til et mer komplekst klinisk scenario. For eksempel kan ytterligere detaljer inkluderes ved å bruke arketypen CLUSTER.consent_details. Andre arketyper kan utvikles og eventuelt inkluderes i det samme SLOTet med formålet om å registrere spesifikke detaljer om prosedyren, utprøvingen eller aktiviteten.\r\n\r\nStatus til det informerte samtykket reflekteres av prosesstrinnene - forespurt, avslått, avgitt, tilbaketrukket.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the status of a request for, or record of, informed consent prior to performing a procedure, clinical trial or healthcare-related activity.",
+          "keywords" : [ "consent", "informed", "caveat" ],
+          "use" : "Use to record the status of an order to obtain informed consent, including what is planned, scheduled, requested, provided, or withdrawn.\r\n\r\nThis archetype has been designed to be a framework that will be adequate for requesting and recording a simple consent, but allow for additional details to be optionally added within the 'Details' SLOT to meet the specific requirements of a more complex clinical scenario.  For example, additional consent details can be included using the CLUSTER.consent_details archetype. Other archetypes can be developed and optionally included in the same SLOT for the purpose of recording specific details about the procedure, trial or activity. \r\n\r\nThe status of the informed consent is reflected by the pathway steps - requested, refused, provided, withdrawn etc.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ACTION.informed_consent_dips.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ACTION.ovl-informed_consent_dips-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ACTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "ism_transition",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0013.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "526" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0013" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0019.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "527" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0019" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0018.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "528" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0018" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0027.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "529" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0027" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0015.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0015" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0021.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0021" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0016.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "531" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0016" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0017.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "531" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0017" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0022.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "532" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0022" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "description",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "OncologyConsents"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "OncologyConsents" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "OncologyConsents",
+                        "code" : "01",
+                        "value" : "Informert pasienten om reservasjonsrett til Norsk proton- og stråleterapiregister (medisinsk kvalitetsregister)"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0031.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0011.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0007.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0008.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0010.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0036.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0024",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0025.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0026.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0033.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "ru" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Reservasjon til Norsk proton og stråleterapiregister",
+            "description" : "For å registrere status og detaljer av informert samtykke fra en person (ellers personens verge) for en foreslått prosedyre, klinisk utprøving eller annen helserelatert aktivitet (inkludert behandlinger eller undersøkelser), basert på en tilstrekkelig forståelse av fakta, implikasjoner og mulige fremtidige konsekvenser fra samtykkende part."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0005", "at0006" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3be1588a-c4f0-4ef3-8bd3-0a3e7a0c7585",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp; Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех"
+      },
+      "accreditation" : "hmm",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Kanika Kuwelker",
+        "organisation" : "Helse Vest IKT",
+        "email" : "kanika.kuwelker@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "74ece301-03bf-449a-ad65-ae36bc704c2e",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "73A316AAF86DE9E0EBD54BC524035108"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Statusdarstellung einer Anforderung oder Aufzeichnung der Einwilligungserklärung vor der Durchführung einer Prozedur, einer klinischen Studie/Prüfung oder einer Aktivität im Zusammenhang mit dem Gesundheitswesen.",
+          "keywords" : [ "Einwilligung", "Einverständnis", "Einverständniserklärung", "Aufklärung", "Zustimmung", "informiert", "Vorbehalt" ],
+          "use" : "Zur Statusdarstellung einer Anforderung, um eine Einverständniserklärung zu erhalten, einschließlich was geplant, angefordert, bereitgestellt oder zurückgezogen wurde.\r\n\r\nDieser Archetyp wurde als Framework entwickelt, das zum Anfordern und Aufzeichnen einer einfachen Einwilligung geeignet ist, es jedoch zulässt, dass zusätzliche Details optional im SLOT \"Details\" hinzugefügt werden, um die spezifischen Anforderungen eines komplexeren klinischen Szenarios zu erfüllen. Beispielsweise können zusätzliche Zustimmungsdetails unter Verwendung des Archetyps CLUSTER.consent_details eingefügt werden. Andere Archetypen können entwickelt und optional im selben SLOT enthalten sein, um spezifische Details über das Verfahren, den Versuch oder die Aktivität aufzuzeichnen.\r\n\r\nDer Status der Einwilligungserklärung spiegelt sich in den einzelnen Schritten wider - angefordert, abgelehnt, bereitgestellt, zurückgezogen usw.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Записать необходимость или наличие информированного согласия на выполнение процедуры, клинического теста или другой связанной со сдоровьем активности",
+          "keywords" : [ "согласие", "информированное", "отказ" ],
+          "use" : "Используется для записи статуса информированного согласия, включая планируемое, назначенное, запрошенное, предложенное, полученное. \r\nЭтот архетип разработан как рабочая зона, достаточная для того, чтобы  запросить и записать простое согласие, но, в то же время, позволяющая добавить специфические детали в слоте \"Детали\" при  необходимости более сложного клинического сценария. Например, такие детали могут содержать архетип КЛАСТЕР.детали_согласия. В этот же слот могут быть добавлены другие архетипы для описания процедуры, исследования или активности.\r\nСтатус информированного согласия отражает этапы его получения: необходимость, запрос, отказ, подписание и т.д.       ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere informert samtykke eller status på en forespørsel om informert samtykke før en prosedyre, klinisk utprøving eller helserelatert aktivitet utføres.",
+          "keywords" : [ "samtykke", "informert", "cave" ],
+          "use" : "Brukes for å registrere status på forespørsel om informert samtykke, inkludert hva som er planlagt, forespurt, avgitt eller tilbaketrukket.\r\n\r\nDenne arketypen er utformet for å være et rammeverk som vil være tilstrekkelig for å be om og registrere et enkelt samtykke, men tillater også registrering av ytterligere detaljer i \"Detaljer\"-SLOTet for å møte de spesifikke kravene til et mer komplekst klinisk scenario. For eksempel kan ytterligere detaljer inkluderes ved å bruke arketypen CLUSTER.consent_details. Andre arketyper kan utvikles og eventuelt inkluderes i det samme SLOTet med formålet om å registrere spesifikke detaljer om prosedyren, utprøvingen eller aktiviteten.\r\n\r\nStatus til det informerte samtykket reflekteres av prosesstrinnene - forespurt, avslått, avgitt, tilbaketrukket.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the status of a request for, or record of, informed consent prior to performing a procedure, clinical trial or healthcare-related activity.",
+          "keywords" : [ "consent", "informed", "caveat" ],
+          "use" : "Use to record the status of an order to obtain informed consent, including what is planned, scheduled, requested, provided, or withdrawn.\r\n\r\nThis archetype has been designed to be a framework that will be adequate for requesting and recording a simple consent, but allow for additional details to be optionally added within the 'Details' SLOT to meet the specific requirements of a more complex clinical scenario.  For example, additional consent details can be included using the CLUSTER.consent_details archetype. Other archetypes can be developed and optionally included in the same SLOT for the purpose of recording specific details about the procedure, trial or activity. \r\n\r\nThe status of the informed consent is reflected by the pathway steps - requested, refused, provided, withdrawn etc.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ACTION.informed_consent_dips.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ACTION.ovl-informed_consent_dips-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ACTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "ism_transition",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0013.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "526" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0013" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0019.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "527" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0019" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0018.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "528" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0018" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0027.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "529" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0027" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0015.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0015" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0021.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0021" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0016.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "531" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0016" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0017.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "531" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0017" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0022.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "532" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0022" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "description",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "OncologyConsents"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "OncologyConsents" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "OncologyConsents",
+                        "code" : "02",
+                        "value" : "Informert pasienten om bredt informert samtykke til kreftforskning"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0031.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0011.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0007.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0008.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0010.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0036.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0024",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0025.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0026.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0033.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Informed consent (2)",
+            "description" : "Record of status and details of informed consent from an individual (or the individual's agent/proxy) for a proposed procedure, trial or other healthcare-related activity (including treatments and investigations), based upon a clear appreciation and understanding of the facts, implications, and possible future consequences by the consenting party."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "ru" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Информированное согласие (2)",
+            "description" : "Запись о состоянии и  деталях информированного согласия пациента (доверенного лица) на предлагаемую процедуру, исследование или другую активность (включая лечение или обследование), основанного на полном понимании и принятии фактов, осложнений и возможных последствий. "
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Einwilligungserklärung (2)",
+            "description" : "Aufzeichnungen über den Status und Einzelheiten der Einwilligungserklärung eines Patienten (oder seines Vertreters) zur einen vorgeschlagenen Prozedur, Studie oder einen anderen gesundheitsbezogenen Aktivität (einschließlich Behandlungen und Untersuchungen) auf der Grundlage einer klaren Einschätzung und eines klaren Verständnisses der Fakten, Auswirkungen und möglichen zukünftigen Konsequenzen durch den Patienten oder dessen Vertreter."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bredt informert samtykke til kreftforskning",
+            "description" : "For å registrere status og detaljer av informert samtykke fra en person (ellers personens verge) for en foreslått prosedyre, klinisk utprøving eller annen helserelatert aktivitet (inkludert behandlinger eller undersøkelser), basert på en tilstrekkelig forståelse av fakta, implikasjoner og mulige fremtidige konsekvenser fra samtykkende part."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0005", "at0006" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3be1588a-c4f0-4ef3-8bd3-0a3e7a0c7585",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aurelie Tomczak, Natalia Strauch",
+        "organisation" : "Institute of Pathology, University Hospital Heidelberg, Germany, Medizinische Hochschule Hannover",
+        "email" : "au.tomczak@yahoo.com, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp; Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех"
+      },
+      "accreditation" : "hmm",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Kanika Kuwelker",
+        "organisation" : "Helse Vest IKT",
+        "email" : "kanika.kuwelker@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "c6c50ca8-d1c8-4096-9ddc-369cea4114b6",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "1F847D0C7A85E138BBBDEA568702B601"
+      },
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Används för att dokumentera ett tillstånd eller status hos en individ som är kliniskt signifikant och unik eller idiosynkratisk för den här individen, och anses vara vital information i samband med beslut om behandling.",
+          "keywords" : [ "Försiktighet", "Förhindra", "Avvikande händelse", "Förebygga", "Försiktighet", "Uppmärksamhet", "Varning" ],
+          "use" : "Används för att dokumentera ett tillstånd eller status hos en individ som är kliniskt signifikant och unik eller idiosynkratisk för den här individen, och anses vara vital information i samband med beslut om behandling.\r\n\r\nDen här arketypen bör betraktas som en kritisk arketyp för kliniska beslutsstödssystem när det ska testa relevanta terapeutiska försiktighetsåtgärder i samband med att en kliniker inleder en ny klinisk intervention för en individ.\r\n\r\nExempel på tillstånd som berättigar skapandet av en försiktighetsåtgärder kan vara:\r\n- Immunosupprimerad eller genomgår immunosupprimerande behandling - kopplad till en läkemedelsordination för cytostatika eller steroider, eller diagnosen leukemi\r\n- Njursvikt - kopplad till njurfunktionstest eller formell diagnos av njursvikt eller båda\r\n- Väntar på organtransplantation\r\n- Genomgår behandling som strålbehandling eller dialys\r\n- Organtransplanterad eller metallimplantat in situ\r\n- Pågående utredning eller uppföljning av misstänkt eller verifierad malign sjukdom\r\n- Deltagande i läkemedelsprövning; eller\r\n- Använder blodförtunnande läkemedel\r\n",
+          "misuse" : "*Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record decisions about limitations on the individuals care or future interventions or the individuals preferences of future medical treatment and care. Use EVALUATION.advance_intervention_decisions and EVALUATION.advance_care_directive respectively for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "*Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record decisions about limitations on the individuals care or future interventions or the individuals preferences of future medical treatment and care. Use EVALUATION.advance_intervention_decisions and EVALUATION.advance_care_directive respectively for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "*Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record decisions about limitations on the individuals care or future interventions or the individuals preferences of future medical treatment and care. Use EVALUATION.advance_intervention_decisions and EVALUATION.advance_care_directive respectively for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-precaution-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "ONCOLOGY-CLINICAL-STUDIES"
+                      },
+                      "constraint" : [ "ac0.4" ],
+                      "selectedTerminologies" : [ "ONCOLOGY-CLINICAL-STUDIES" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0014.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.3" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0022.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0024.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0004.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0020.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-person-001.v1",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Navn på studie",
+            "description" : "Navnet på tilstanden eller statusen.",
+            "comment" : "Koding av tilstanden med en terminologi er ønskelig, dersom mulig."
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "es-ar" : {
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "pt-br" : {
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        },
+        "sv" : {
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : {
+        "ONCOLOGY-CLINICAL-STUDIES" : {
+          "ac0.4" : "terminology:ONCOLOGY-CLINICAL-STUDIES"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0015", "at0018", "at0019" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0015", "at0018" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0015" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "63ba097a-829e-4cff-9668-9548291aef3f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke og John Tore Valand",
+        "organisation" : "Nasjonal IKT HF, Helse Bergen HF",
+        "email" : "silje.ljosland.bakke@nasjonalikt.no, john.tore.valand@helse-bergen.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Daniel Hall",
+        "organisation" : "Region Östergötland",
+        "email" : "daniel.hall@regionostergotland.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral",
+        "email" : "amarch@cas.austral.edu.ar"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Débora Farage, Fernanda Maia, Laíse Figueiredo",
+        "organisation" : "Core Consulting",
+        "email" : "contato@coreconsulting.com.br"
+      },
+      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "e7f98da8-cde9-4710-b4a9-931a025069ad",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "2901736D16044A54B371671EB223D67D"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Informationen zu einer Person, wie sie bekannt sind oder im Rahmen der klinischen Dokumentation verstanden werden.",
+          "keywords" : [ "Anbieter, Dienstleister, Betreuer, Personal, medizinisches Fachpersonal, Verwandter, Angehöriger, Hausarzt, Zeuge, Freund, Nachbar, Kind, Familie, Geschwister, Elternteil, Einzelperson" ],
+          "use" : "Der Archetyp wird verwendet, um Informationen zur einer Person darzustellen, wie sie bekannt sind oder im Rahmen der klinischen Dokumentation verstanden werden, oft ad hoc oder wenn die Verwendung von einem formellen demografischen Register oder einem Index nicht angemessen oder nicht möglich ist.\r\nBeispiele beinhalten:\r\n- der Inhaber einer Patientenverfügung unter Verwendung des SLOT „Inhaber der Kopie“ innerhalb des Archetyps EVALUATION.advance_care_directive;\r\n- die Rolle und Kontaktdaten eines benannten Ansprechpartners in einer Organisation, unter Verwendung des SLOT „Kontaktperson“ innerhalb des Archetyps CLUSTER.organisation;\r\n- Angaben zu einem Verwandten in einer Familienanamnese unter Verwendung des SLOT „Angaben zum Familienmitglied“ innerhalb des Archetyps openEHR-EHR-EVALUATION.family_history;\r\n- der Name der Person, die eine Laborprobe von einem Patienten entnommen hat, unter Verwendung der „Angaben zum Probennehmer“ innerhalb des Archetyps CLUSTER.specimen oder\r\n- ein Zeuge eines Sturzes oder Unfalls, unter Verwendung des SLOT \"Zeuge\" innerhalb des Archetyps CLUSTER.health_event.\r\n\r\nIn den meisten einfachen Anwendungsfällen reicht das unstrukturierte Element „Name“ innerhalb des Archetyps CLUSTER.person aus, um den Namen einer Person als Teil einer Gesundheitsakte darzustellen. In Fällen, in denen ein strukturierter Name für klinische Aufzeichnungszwecke erforderlich oder wünschenswert ist, verschachteln Sie diesen Archetyp jedoch im SLOT „Name strukturiert“ im Archetyp CLUSTER.person. Wenn der Archetyp CLUSTER.structured_name in den SLOT „Name strukturiert“ eingebettet ist, können beliebige oder alle Datenelemente als Textzeichenfolge kombiniert und im Element „Name“ dargestellt werden, solange sie konsistent sind.\r\n\r\nDieser Archetyp könnte auch stellvertretend für formale demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise eine Bewertung, bei der Prüfer erwarten würden, dass die Details einer Person oben im Bewertungsformular angezeigt werden.",
+          "misuse" : "Der Archetyp darf nicht verwendet werden, um das formelle Identifikationsmanagement darzustellen oder zu ersetzen oder um ein offizielles demografisches Register oder einen Index zu führen. Verwenden Sie zu diesem Zweck einen formellen Master Patient Index oder Health Provider Index oder Archetypen, die auf dem demografischen Informationsmodell von openEHR basieren.\r\n\r\nDarf nicht verwendet werden, um den Patienten, die Teilnehmer oder den Verfasser der Akte und ähnliche Datenelemente darzustellen, die formal in der Patientenakte unter Verwendung der Referenzmodellattribute dargestellt werden sollten.\r\n\r\nDarf nicht verwendet werden, um das Geburtsdatum einer Person darzustellen – verwenden Sie zu diesem Zweck das Datenelement „Geburtsdatum“ im Archetyp EVALUATION.birth_summary.\r\n\r\nDarf nicht verwendet werden, um biometrische Details oder Biomarker über eine Person darzustellen – verwenden Sie zu diesem Zweck einen speziellen ENTRY-Archetyp.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Används för att registrera information om en person som behöver representeras i patientjournalen.",
+          "keywords" : [ "Leverantör, vårdare, vårdgivare, personal, vårdpersonal, släkting, anhöriga, läkare, vittne, vän, granne, barn, familj, syskon, förälder, individ" ],
+          "use" : "Används för att registrera uppgifter om en person i den elektroniska journalen, när det inte är lämpligt eller möjligt att använda ett formellt demografiskt register eller index. Exempelvis:\r\n- Namn och kontaktuppgifter för en person som innehar en fysisk kopia av ett dokument om framtida behandlingsval eller behandlingsreservationer; exempelvis 'Copyholder'-attributet i arketypen EVALUATION.advance_care_directive;\r\n- Namn och kontaktuppgifter för en vårdgivare i en remiss;\r\n- Namn, roll och kontaktuppgifter för en medlem av ett vårdgivarteam;\r\n- Rollen och kontaktuppgifterna för en namngiven kontaktperson inom en organisation;\r\n- uppgifter om en släkting i en släkthistoria; eller\r\n- ett vittne till ett epileptisk anfall.\r\n\r\nI de flesta vanliga användningsfallen där ett namn måste inkluderas i en journal räcker det med fritextinmatning inom elementet 'Ostrukturerat namn'. I situationer när det krävs mer detaljerade detaljer om en eller flera namnkomponenter, använd de ytterligare strukturerade dataelementen i arketypen CLUSTER.structured_name. I denna arketyp finns en SLOT kapslade i \"Structured name\" . Om arketypen CLUSTER.structured name är kapslad i 'Structured name' SLOT, kan något eller alla av de strukturerade namnelementen sammanfogas och representeras i elementet 'Ostrukturerat namn'.\r\n\r\nDenna arketyp kan också användas som en proxy för formella demografiska data när man granskar en mall med domänexperter – till exempel en bedömning där granskare förväntar sig att se patientens uppgifter högst upp i bedömningsformuläret.",
+          "misuse" : "Får inte användas för att representera eller ersätta formell identifieringshantering eller i syfte att upprätthålla ett officiellt demografiskt register eller index. Använd ett formellt Master Patient Index eller Vårdgivare Index för detta ändamål, eller arketyper baserade på openEHR Demographic Information Model.\r\n\r\nFår inte användas för att representera patienten, deltagare eller författare till journalen och liknande dataelement som bör representeras formellt i journalen med hjälp av Referensmodellens attribut.\r\n\r\nFår inte användas för att registrera en individs födelsedatum - använd istället dataelementet \"Födelsedatum\" i EVALUATION.birth_summary för detta ändamål\r\n\r\nFår inte användas för att registrera biometriska detaljer eller biomarkörer om en individ - använd en specifik ENTRY-arketyp för detta ändamål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om en person i en pasientjournal.",
+          "keywords" : [ "tjenesteyter, omsorgsperson, helsepersonell, slektning, pårørende, vitne, venn, nabo, barn, familie, søsken, forelder, arbeidsgiver, rekvirent, henviser, ektefelle, verge, samboer, kjæreste" ],
+          "use" : "Brukes for å registrere detaljer om en person i en pasientjournal, når det ikke er ønskelig eller mulig å bruke et formelt demografisk register eller indeks.\r\n\r\nFor eksempel:\r\n- navn og kontaktdetaljer til en person som har en kopi av et fremtidig behandlingsvalg, i SLOTet \"Kopiholder\" i arketypen EVALUATION.advance_care_directive (Fremtidig behandlingsvalg).\r\n- navn og kontaktdetaljer til en omsorgsperson eller helsepersonell i en organisasjon, i SLOTet \"Kontaktperson\" i arketypen CLUSTER.organisation (Organisasjon).\r\n- detaljer om en slektning i en familieanamnese, I SLOTet \"Detaljer om familiemedlem\" i arketypen EVALUATION.family_history (Familieanamnese).\r\n- navnet på en person som gjennomførte prøvetakning på en pasient, i SLOTet \"Detaljer om prøvetaker\" i arketypen CLUSTER.specimen (Prøvemateriale).\r\n- et vitne til et fall eller en ulykke, i SLOTet \"Witness\" i arketypen CLUSTER.health_event.\r\n\r\nI de mest vanlige brukscasene der navn skal registreres i pasientjournalen, vil dataelementet \"Navn\" i denne arketypen være tilstrekkelig. I tilfeller der det er nødvendig eller ønskelig med detaljer om en eller flere navnekomponenter, bruk arketypen CLUSTER.structured_name i SLOTet \"Strukturert navn\" i denne arketypen. \r\nOm det er gjort, kan noen eller alle de strukturerte navnelementene slås sammen av programvaren man benytter, og lagres i dataelementet \"Navn\".\r\n\r\nDenne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om en person på toppen av vurderingsskjema.",
+          "misuse" : "Brukes ikke til å representere eller erstatte de formelle demografiske opplysninger for formell identitetsforvaltning eller for å opprettholde et demografisk register eller en indeks. Bruk et formelt pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.\r\n\r\nBrukes ikke for å representere pasient, deltakere eller forfatter av skjema eller lignende, som skal representeres formelt i pasientjournalen. Bruk attributter fra Referansemodellen for dette formålet.\r\n\r\nBrukes ikke for å registrere fødselsdato for individet - bruk dataelementet \"Fødselsdato\" i arketypen EVALUATION.birth_summary for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om biometri eller biomarkører for personen - bruk en spesifikk ENTRY-arketype for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a person as they are known or understood in the course of clinical documentation.",
+          "keywords" : [ "provider, carer, staff, healthcare professional, relative, next-of-kin, practitioner, witness, friend, neighbour, child, family, sibling, parent, individual" ],
+          "use" : "Use to record details of a person as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the copyholder of an advanced care record, using the 'Copyholder' SLOT within the EVALUATION.advance_care_directive archetype;\r\n- the role and contact details of a named contact person within an organisation, using the 'Contact person' SLOT within the CLUSTER.organisation archetype;\r\n- details about a relative in a family history record, using the 'Family member details' SLOT within the openEHR-EHR-EVALUATION.family_history archetype; \r\n- the name of the person who collected a laboratory specimen from a patient, using the 'Specimen collector details' within the CLUSTER.specimen archetype; or\r\n- a witness to a fall or accident, using the 'Witness' SLOT within the CLUSTER.health_event archetype.\r\n\r\nIn most simple clinical recording use cases, the unstructured 'Name' element within the CLUSTER.person archetype will be sufficient to record the name of a person as part of a health record. However, in circumstances where a structured name is necessary or desirable for clinical recording purposes, nest this archetype within the 'Structured name' SLOT in CLUSTER.person archetype. If the CLUSTER.structured_name archetype is nested within the 'Structured name' SLOT, any or all of the data elements can be combined together as a text string and represented in the 'Name' element, as long as they are consistent.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see a person's details at the top of the assessment form.",
+          "misuse" : "Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes.\r\n\r\nNot to be used to record the date of birth of an individual - use the 'Date of birth' data element within the EVALUATION.birth_summary for this purpose\r\n\r\nNot to be used to record biometric detail or biomarkers about an individual - use a specific ENTRY archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh"
+          },
+          "purpose" : "*To record details about a person as they are known or understood in the course of clinical documentation. (en)",
+          "keywords" : [ "*provider, carer, staff, healthcare professional, relative, next-of-kin, practitioner, witness, friend, neighbour, child, family, sibling, parent, individual (en)" ],
+          "use" : "*Use to record details of a person as they are known or understood in the course of clinical documentation, often ad hoc or when it is not appropriate or possible to use a formal demographic register or index. Examples include:\r\n- the copyholder of an advanced care record, using the 'Copyholder' SLOT within the EVALUATION.advance_care_directive archetype;\r\n- the role and contact details of a named contact person within an organisation, using the 'Contact person' SLOT within the CLUSTER.organisation archetype;\r\n- details about a relative in a family history record, using the 'Family member details' SLOT within the openEHR-EHR-EVALUATION.family_history archetype; \r\n- the name of the person who collected a laboratory specimen from a patient, using the 'Specimen collector details' within the CLUSTER.specimen archetype; or\r\n- a witness to a fall or accident, using the 'Witness' SLOT within the CLUSTER.health_event archetype.\r\n\r\nIn most simple clinical recording use cases, the unstructured 'Name' element within the CLUSTER.person archetype will be sufficient to record the name of a person as part of a health record. However, in circumstances where a structured name is necessary or desirable for clinical recording purposes, nest this archetype within the 'Structured name' SLOT in CLUSTER.person archetype. If the CLUSTER.structured_name archetype is nested within the 'Structured name' SLOT, any or all of the data elements can be combined together as a text string and represented in the 'Name' element, as long as they are consistent.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see a person's details at the top of the assessment form. (en)",
+          "misuse" : "*Not to be used to represent or replace formal identification management or for the purposes of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.\r\n\r\nNot to be used to represent the subject of care, participants or author of the record and similar data elements that should be represented formally in the health record using the Reference Model attributes.\r\n\r\nNot to be used to record the date of birth of an individual - use the 'Date of birth' data element within the EVALUATION.birth_summary for this purpose\r\n\r\nNot to be used to record biometric detail or biomarkers about an individual - use a specific ENTRY archetype for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para registrar detalles sobre una persona tal y como se conocen o entienden en el curso de la documentación clínica.",
+          "keywords" : [ "proveedor, cuidador, personal, profesional sanitario, familiar, pariente cercano, profesional, testigo, amigo, vecino, niño, familia, hermano, padre, individuo" ],
+          "use" : "Utilizar para registrar los detalles de una persona tal y como se conocen o entienden en el curso de la documentación clínica, a menudo ad hoc o cuando no es apropiado o posible utilizar un registro o índice demográfico formal. Algunos ejemplos son:\r\n- El nombre y los datos de contacto de una persona que posee una copia física de un documento de voluntades anticipadas, usando el slot 'Encargado de la copia' en el arquetipo EVALUATION.advance_care_directive;\r\n- La función y los datos de una persona de contacto nombrada dentro de una organización, utilizando el SLOT \"Persona de contacto\" dentro del arquetipo CLUSTER.organisation;\r\n- Los datos de un pariente en un registro de historia familiar, utilizando el SLOT 'Family member details' dentro del arquetipo openEHR-EHR-EVALUATION.family_history;\r\n- El nombre de la persona que recogió una muestra de laboratorio de un paciente, utilizando los \"detalles del recolector de muestras\" dentro del arquetipo CLUSTER.specimen; o\r\n- Un testigo de una caída o accidente, utilizando el SLOT \"Testigo\" dentro del arquetipo CLUSTER.health_event.\r\n\r\nEn la mayoría de los casos de uso de registros clínicos sencillos, el elemento no estructurado \"Nombre\" dentro del arquetipo CLUSTER.person será suficiente para registrar el nombre de una persona como parte de un registro sanitario. Sin embargo, en circunstancias en las que sea necesario o deseable un nombre estructurado para fines de registro clínico, incluya este arquetipo dentro del SLOT 'Nombre estructurado' en el arquetipo CLUSTER.person. Si el arquetipo CLUSTER.structured_name se incluye dentro del SLOT 'Structured name', cualquiera de los elementos de datos, o todos ellos, pueden combinarse juntos como una cadena de texto y representarse en el elemento 'Nombre' siempre que sean coherentes.\r\n\r\nEste arquetipo también puede utilizarse como sustituto de los datos demográficos formales cuando se revise una plantilla con expertos del dominio - por ejemplo, una evaluación en la que los revisores esperarían ver los datos del paciente en la parte superior del formulario.",
+          "misuse" : "No debe utilizarse para representar o sustituir la gestión de la identificación formal ni para mantener un registro o índice demográfico oficial. Utilice para ello un Índice Maestro de Pacientes o un Índice de Proveedores de Salud formales o arquetipos basados en el Modelo de Información Demográfico de openEHR.\r\n\r\nNo debe utilizarse para representar el sujeto de la atención, los participantes o el autor del registro y elementos de datos similares que deberían representarse formalmente en el registro sanitario utilizando los atributos del Modelo de Referencia.\r\n\r\nNo debe utilizarse para registrar la fecha de nacimiento de un individuo: utilice el elemento de datos \"Fecha de nacimiento\" dentro de EVALUATION.birth_summary para este fin\r\n\r\nNo debe utilizarse para registrar detalles biométricos o biomarcadores sobre un individuo - utilice un arquetipo de ENTRY específico para este fin.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.person.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-person-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0011.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { },
+        "zh" : { },
+        "sv" : { },
+        "es" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "890fd67a-bed8-4517-ba0f-cae203098616",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Alina Rehberg",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Elham Gholami, Erik Sundvall",
+        "organisation" : "Region Stockholm",
+        "email" : "erik.sundvall@regionstockholm.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen, John Tore Valand, Vebjørn Arntzen, Kanika Kuwelker",
+        "organisation" : "​Oslo University Hospital, Norway, Helse Bergen, Helse Vest IKT",
+        "email" : "liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no, kanika.kuwelker@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh"
+      },
+      "author" : {
+        "name" : "Yexuan Cheng",
+        "organisation" : "浙江大学",
+        "email" : "3160100913@zju.edu.cn"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Diego Bosca",
+        "organisation" : "VeraTech for Health",
+        "email" : "yampeku@veratech.es"
+      },
+      "accreditation" : "Native speaker. First Certificate in English",
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ru"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lmorallopez@gmail.com"
+    },
+    "otherDetails" : { }
+  } ]
+}

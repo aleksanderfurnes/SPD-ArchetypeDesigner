@@ -1,0 +1,46 @@
+archetype (adl_version=1.4; uid=dd9911ae-9a97-4160-94c4-b5d5800058a9)
+	openEHR-EHR-SECTION.problem_oncology_metastasis_sjk.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-05-14">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"9a41eee1848e690df0c323292062ebd4">
+		["build_uid"] = <"d53b0240-9cd5-3551-8d1c-7654ec28b010">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- problem_oncology_metastasis_sjk
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"problem_oncology_metastasis_sjk">
+					description = <"Fjernmetastase_no">
+				>
+			>
+		>
+	>
