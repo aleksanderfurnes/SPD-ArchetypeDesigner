@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"21f1b80d2830c9dcb7982ac25ab708be">
+		["MD5-CAM-1.0.1"] = <"db6df0fc2abc07ce7f7cb3aad6f5df0d">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -48,72 +48,100 @@ definition
 									}
 									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Been able to enjoy food
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Feeling rested
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Have a good sleep
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Able to look after personal toilet and hygiene unaided
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Able to communicate with family or friends
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Getting support from hospital doctors and nurses
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Able to return to work or usual home activities
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Feeling comfortable and in control
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Having a feeling of general well-being
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Moderate pain
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Severe pain
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Nausea or vomiting
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Feeling worried or anxious
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Feeling sad or depressed
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 								}
