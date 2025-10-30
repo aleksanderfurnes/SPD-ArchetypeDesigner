@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"db6df0fc2abc07ce7f7cb3aad6f5df0d">
+		["MD5-CAM-1.0.1"] = <"21f1b80d2830c9dcb7982ac25ab708be">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -41,7 +41,9 @@ definition
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Able to breathe easily
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..10|}
+											}
 										}
 									}
 									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Been able to enjoy food
