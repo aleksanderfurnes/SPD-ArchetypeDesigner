@@ -1,0 +1,75 @@
+archetype (adl_version=1.4; uid=f274f863-1243-4e04-ae1f-2c258df0122c)
+	openEHR-EHR-OBSERVATION.postoperative_quality_of_recovery_score.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-10-30">
+		["name"] = <"Aleksander Spikkerud Furnes">
+		["organisation"] = <"Helse Nord IKT">
+		["email"] = <"aleksander.spikkerud.furnes@hnikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
+		["MD5-CAM-1.0.1"] = <"9d41aa92f0678d606d8043b6e0ea508c">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- postoperative_quality_of_recovery_score_15
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					INTERVAL_EVENT[at0002] matches {    -- Last 24 hours
+						data matches {
+							ITEM_TREE[at0003] matches {*}    -- Tree
+						}
+						width matches {
+							DV_DURATION matches {
+								value matches {PT24H}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"postoperative_quality_of_recovery_score_15">
+					description = <"postoperative_quality_of_recovery_score_15">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Last 24 hours">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
