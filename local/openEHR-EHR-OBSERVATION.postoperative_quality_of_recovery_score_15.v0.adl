@@ -26,8 +26,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"db6df0fc2abc07ce7f7cb3aad6f5df0d">
+		["MD5-CAM-1.0.1"] = <"fb72c2eecf224c0ccd7b31841afd9ceb">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
+		["references"] = <"Stark PA, Myles PS, Burke JA. Development and psychometric evaluation of a postoperative quality of recovery score: the QoR-15. Anesthesiology. 2013 Jun;118(6):1332-40. doi: 10.1097/ALN.0b013e318289b84b. PMID: 23411725.">
 	>
 
 definition
