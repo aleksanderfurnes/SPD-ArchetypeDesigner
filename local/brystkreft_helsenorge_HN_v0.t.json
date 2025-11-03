@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "062faddb6868a0ae09e79e75382b7206",
+      "MD5-CAM-1.0.1" : "dcd641baedb2ee80831b34fe1c2d2b96",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -975,8 +975,8 @@
           },
           "at0005.4" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.3",
-            "text" : "Har du gjennomført IVF-behandling?",
+            "code" : "at0005.4",
+            "text" : "Bruker du, eller har du brukt, hormonsubstitusjon (HRT)?",
             "description" : "Har den identifiserte prosedyren vært utført?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
@@ -2827,10 +2827,19 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "local"
+                            "value" : "SNOMED-CT"
                           },
-                          "constraint" : [ "ac0.19" ],
-                          "selectedTerminologies" : [ ]
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED-CT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SNOMED-CT",
+                            "code" : "449038007",
+                            "value" : "Ja"
+                          }, {
+                            "terminologyId" : "SNOMED-CT",
+                            "code" : "373067005",
+                            "value" : "Nei"
+                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -3010,12 +3019,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.19",
-            "description" : ""
-          },
           "ac0.20" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -3029,12 +3032,6 @@
             "code" : "at0144.1",
             "text" : "Bruker du hormonspiral?",
             "description" : "Utsagn om nåværende bruk for den spesifiserte antikonsepsjonen."
-          },
-          "ac0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.19",
-            "description" : ""
           },
           "ac0.20" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3146,6 +3143,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.20",
           "members" : [ "at0159" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0145", "at0146", "at0147" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ ]
         }
       }
     },
