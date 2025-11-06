@@ -1,0 +1,656 @@
+archetype (adl_version=1.4; uid=2e04fe3b-7292-4859-8b01-f956911304b6)
+	openEHR-EHR-OBSERVATION.digicore_dips.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2023-10-03">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"8dd17197-3596-37af-a919-c133598d2efa">
+		["MD5-CAM-1.0.1"] = <"1132c32fa2793f4bd3c6212924dae552">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- DIGICORE_DIPS
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0067] occurrences matches {0..1} matches {    -- HF, stråleterapisenter
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Henvisende instans
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0069] occurrences matches {0..1} matches {    -- Registreringsdato/dato for signert samtykke
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0070] occurrences matches {0..1} matches {    -- Behandlende lege
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0071] occurrences matches {0..1} matches {    -- År
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+									ELEMENT[at0072] occurrences matches {0..1} matches {    -- Alder ved stråleterapioppstart
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Kjønn
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0074] occurrences matches {0..1} matches {    -- Vekt
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::124]>
+												list = <
+													["1"] = <
+														units = <"kg">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0075] occurrences matches {0..1} matches {    -- Høyde
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::122]>
+												list = <
+													["1"] = <
+														units = <"cm">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0076] occurrences matches {0..1} matches {    -- Pasient-ID
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0077] occurrences matches {0..1} matches {    -- Samtykke (se over: dato for registrering)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0078] occurrences matches {0..1} matches {    -- Utdanning
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0079] occurrences matches {0..1} matches {    -- Sosialstatus
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0080] occurrences matches {0..1} matches {    -- Røykestatus
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0081] occurrences matches {0..1} matches {    -- Hvis ja, antall pakkår
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0082] occurrences matches {0..1} matches {    -- Hvis tidligere røyker, antall måneder siden du sluttet
+										value matches {
+											DV_DURATION matches {*}
+										}
+									}
+									ELEMENT[at0083] occurrences matches {0..1} matches {    -- Alkoholbruk
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0084] occurrences matches {0..1} matches {    -- Primær diagnose (f.eks. ICD10)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0085] occurrences matches {0..1} matches {    -- Dato for primær diagnose
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0086] occurrences matches {0..1} matches {    -- Metode for primær diagnose
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0087] occurrences matches {0..1} matches {    -- Performance status (f.eks. ECOG, Karnofsky) / datoer
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0088] occurrences matches {0..1} matches {    -- Komorbiditeter
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0089] occurrences matches {0..1} matches {    -- Sykdomsstadie (f.eks. TNM, stadium) - dato hvis fra annet HF?
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0090] occurrences matches {0..1} matches {    -- Histologisk celletype (f.eks. ICD 3)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0091] occurrences matches {0..1} matches {    -- Rutinemessige biokjemiske blodprøver (f.eks. erytrocytt-, leukocytttellinger, kreatinin, bilirubin, etc.)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0092] occurrences matches {0..1} matches {    -- Tilstedeværelse av metastaser
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Plassering av metastaser
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0094] occurrences matches {0..1} matches {    -- Navn på biomarkør*, type
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0095] occurrences matches {0..1} matches {    -- Måling av biomarkør og enhet
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0096] occurrences matches {0..1} matches {    -- Aminosyreendring (P:L858R)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0097] occurrences matches {0..1} matches {    -- Identifikator for biologisk prøve, dato for biologisk prøve
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0098] occurrences matches {0..1} matches {    -- ICD-kode for tumorsted ICD-0-3
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0099] occurrences matches {0..1} matches {    -- Hvilket år?
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0100] occurrences matches {0..1} matches {    -- Hvis JA, stråleterapi? Ja/nei
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0101] occurrences matches {0..1} matches {    -- Hvis JA, tidligere stråleterapi, re-irradiasjon? Ja/nei
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0102] occurrences matches {0..1} matches {    -- Behandlingslinje/terapilinje
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0103] occurrences matches {0..1} matches {    -- Startdato for behandlingslinje
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0104] occurrences matches {0..1} matches {    -- Sluttdato for behandlingslinje
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0105] occurrences matches {0..1} matches {    -- Anti-kreftbehandling (legemiddelnavn)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0106] occurrences matches {0..1} matches {    -- Generisk navn på molekyl
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0107] occurrences matches {0..1} matches {    -- Startdato for legemiddelbasert behandling
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0108] occurrences matches {0..1} matches {    -- Dose for behandling
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::124]>
+												list = <
+													["1"] = <
+														units = <"kg">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0109] occurrences matches {0..1} matches {    -- Sluttdato for legemiddelbasert behandling
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0110] occurrences matches {0..1} matches {    -- Startdato for stråleterapi
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0111] occurrences matches {0..1} matches {    -- Type stråleterapi (f.eks. prosedyrekode for behandling)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0112] occurrences matches {0..1} matches {    -- Sluttdato for stråleterapi
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0113] occurrences matches {0..1} matches {    -- Doser stråleterapi
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0114] occurrences matches {0..1} matches {    -- Modalitet for RT (stråleterapi)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0115] occurrences matches {0..1} matches {    -- Målrettet terapi ja/nei og ... Hvis det er relatert til strålebehandling
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0116] occurrences matches {0..1} matches {    -- Immunoterapi ja/nei og ... Hvis det er relatert til strålebehandling
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0117] occurrences matches {0..1} matches {    -- Hormonell terapi ja/nei og ... Hvis det er relatert til strålebehandling
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0118] occurrences matches {0..1} matches {    -- Type kirurgi (f.eks. prosedyrekode)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0119] occurrences matches {0..1} matches {    -- Kirurgisk dato
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0120] occurrences matches {0..1} matches {    -- Dato for progresjon
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0121] occurrences matches {0..1} matches {    -- Metode for påvisning av progresjon (biokjemisk, klinisk, radiologisk, etc.)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0122] occurrences matches {0..1} matches {    -- Dato for siste besøk/følge opp
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0123] occurrences matches {0..1} matches {    -- Dato for død (hvorsomhelst, på sykehus eller fra nasjonale dødsfall)
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0124] occurrences matches {0..1} matches {    -- Vitalstatus (avledet)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0125] occurrences matches {0..1} matches {    -- Pasientdeltakelse i klinisk studiestatus
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0126] occurrences matches {0..1} matches {    -- Lokal tilbakefall
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0127] occurrences matches {0..1} matches {    -- Regional tilbakefall
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0128] occurrences matches {0..1} matches {    -- Fjernmetastaser
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"DIGICORE_DIPS">
+					description = <"DIGICORE_DIPS">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0067"] = <
+					text = <"HF, stråleterapisenter">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Henvisende instans">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Registreringsdato/dato for signert samtykke">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Behandlende lege">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"År">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Alder ved stråleterapioppstart">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Kjønn">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Vekt">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Høyde">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Pasient-ID">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Samtykke (se over: dato for registrering)">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Utdanning">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Sosialstatus">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Røykestatus">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Hvis ja, antall pakkår">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Hvis tidligere røyker, antall måneder siden du sluttet">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Alkoholbruk">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"Primær diagnose (f.eks. ICD10)">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"Dato for primær diagnose">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"Metode for primær diagnose">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"Performance status (f.eks. ECOG, Karnofsky) / datoer">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"Komorbiditeter">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Sykdomsstadie (f.eks. TNM, stadium) - dato hvis fra annet HF?">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Histologisk celletype (f.eks. ICD 3)">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Rutinemessige biokjemiske blodprøver (f.eks. erytrocytt-, leukocytttellinger, kreatinin, bilirubin, etc.)">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Tilstedeværelse av metastaser">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Plassering av metastaser">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"Navn på biomarkør*, type">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"Måling av biomarkør og enhet">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Aminosyreendring (P:L858R)">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Identifikator for biologisk prøve, dato for biologisk prøve">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"ICD-kode for tumorsted ICD-0-3">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"Hvilket år?">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"Hvis JA, stråleterapi? Ja/nei">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"Hvis JA, tidligere stråleterapi, re-irradiasjon? Ja/nei">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"Behandlingslinje/terapilinje">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"Startdato for behandlingslinje">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"Sluttdato for behandlingslinje">
+					description = <"">
+				>
+				["at0105"] = <
+					text = <"Anti-kreftbehandling (legemiddelnavn)">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"Generisk navn på molekyl">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"Startdato for legemiddelbasert behandling">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"Dose for behandling">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"Sluttdato for legemiddelbasert behandling">
+					description = <"">
+				>
+				["at0110"] = <
+					text = <"Startdato for stråleterapi">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"Type stråleterapi (f.eks. prosedyrekode for behandling)">
+					description = <"">
+				>
+				["at0112"] = <
+					text = <"Sluttdato for stråleterapi">
+					description = <"">
+				>
+				["at0113"] = <
+					text = <"Doser stråleterapi">
+					description = <"">
+				>
+				["at0114"] = <
+					text = <"Modalitet for RT (stråleterapi)">
+					description = <"">
+				>
+				["at0115"] = <
+					text = <"Målrettet terapi ja/nei og ... Hvis det er relatert til strålebehandling">
+					description = <"">
+				>
+				["at0116"] = <
+					text = <"Immunoterapi ja/nei og ... Hvis det er relatert til strålebehandling">
+					description = <"">
+				>
+				["at0117"] = <
+					text = <"Hormonell terapi ja/nei og ... Hvis det er relatert til strålebehandling">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"Type kirurgi (f.eks. prosedyrekode)">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"Kirurgisk dato">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"Dato for progresjon">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"Metode for påvisning av progresjon (biokjemisk, klinisk, radiologisk, etc.)">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"Dato for siste besøk/følge opp">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Dato for død (hvorsomhelst, på sykehus eller fra nasjonale dødsfall)">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"Vitalstatus (avledet)">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"Pasientdeltakelse i klinisk studiestatus">
+					description = <"">
+				>
+				["at0126"] = <
+					text = <"Lokal tilbakefall">
+					description = <"">
+				>
+				["at0127"] = <
+					text = <"Regional tilbakefall">
+					description = <"">
+				>
+				["at0128"] = <
+					text = <"Fjernmetastaser">
+					description = <"">
+				>
+			>
+		>
+	>
