@@ -1,0 +1,114 @@
+archetype (adl_version=1.4; uid=4f30ac20-98f1-3be4-8e69-5dbdbe5f13da)
+	openEHR-EHR-CLUSTER.fritekst_kodeverk_dips.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"07291BC5D1D021B26CCFC7952AA39200">
+		["build_uid"] = <"34201f5e-5b57-3b0e-8ed3-ad7ebc577ab0">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Fritekst kodeverk dips
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Type fritekst
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- 1 Kommunikasjon/sanser
+							at0003,    -- 2 Kunnskap/utvikling/psykisk
+							at0004,    -- 3 Åndedrett/sirkulasjon
+							at0005,    -- 4 Ernæring/væske/elektrolyttbalanse
+							at0006,    -- 5 Eliminasjon
+							at0007,    -- 6 Hud/vev/sår
+							at0008,    -- 7 Aktivitet/funksjons-status
+							at0009,    -- 8 Smerte/søvn/hvile/velvære
+							at0010,    -- 9 Seksualitet/reproduksjon
+							at0011,    -- 10 Sosialt/planlegging av utskrivelse
+							at0012,    -- 11 Åndelig/kulturelt/livsstil
+							at0013]    -- 12 Annet/legedelegerte aktiviteter og observasjoner
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Fritekst kodeverk dips">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Type fritekst">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"1 Kommunikasjon/sanser">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"2 Kunnskap/utvikling/psykisk">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"3 Åndedrett/sirkulasjon">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"4 Ernæring/væske/elektrolyttbalanse">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"5 Eliminasjon">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"6 Hud/vev/sår">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"7 Aktivitet/funksjons-status">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"8 Smerte/søvn/hvile/velvære">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"9 Seksualitet/reproduksjon">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"10 Sosialt/planlegging av utskrivelse">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"11 Åndelig/kulturelt/livsstil">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"12 Annet/legedelegerte aktiviteter og observasjoner">
+					description = <"*">
+				>
+			>
+		>
+	>
