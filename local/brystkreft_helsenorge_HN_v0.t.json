@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "86829e02345c80cbaca0d3ca5116efb4",
+      "MD5-CAM-1.0.1" : "ca99bfbbdc371830c36f000900b777c0",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -837,8 +837,8 @@
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "83152002",
-                                    "value" : "fjerning av eggstokk"
+                                    "code" : "52637005",
+                                    "value" : "in vitro-fertilisering"
                                   } ]
                                 } ]
                               } ],
@@ -864,10 +864,23 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
-                                    "value" : "local"
+                                    "value" : "SNOMED-CT"
                                   },
-                                  "constraint" : [ "ac0.18" ],
-                                  "selectedTerminologies" : [ ]
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "52637005",
+                                    "value" : "Ja"
+                                  }, {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "0",
+                                    "value" : "Nei"
+                                  }, {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "99",
+                                    "value" : "Ukjent"
+                                  } ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -877,7 +890,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..1",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0037.3",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -962,12 +975,16 @@
                                     "value" : "Ja"
                                   }, {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "373067005",
+                                    "code" : "0",
                                     "value" : "Nei"
                                   }, {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "161652003",
                                     "value" : "Har brukt tidligere"
+                                  }, {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "99",
+                                    "value" : "Ukjent"
                                   } ]
                                 } ]
                               } ],
@@ -1035,12 +1052,6 @@
             "code" : "at0022.1",
             "text" : "Specific procedure (4)",
             "description" : "Details about a specific procedure or grouping of procedures relevant for the screening purpose."
-          },
-          "ac0.18" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.18",
-            "description" : ""
           }
         },
         "nb" : {
@@ -1129,12 +1140,6 @@
             "text" : "Årstall for behandling",
             "description" : "Tidsangivelse for prosedyren.",
             "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for prosedyrer i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Prosedyrens faktiske dato og/eller klokkeslett, start- og slutttid for prosedyren, et tidsintervall for når prosedyren ble gjort, varigheten av prosedyren, individets alder på tidspunktet for prosedyren, eller hvor lenge det siden den ble gjort. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
-          },
-          "ac0.18" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
-            "description" : ""
           }
         },
         "de" : {
@@ -1161,12 +1166,6 @@
             "code" : "at0022.1",
             "text" : "Spezifische Prozedur (4)",
             "description" : "Details zu einer bestimmten Prozedur oder zu einer bestimmten Gruppe von Prozeduren, die für das Screening relevant sind."
-          },
-          "ac0.18" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
-            "description" : ""
           }
         },
         "it" : {
@@ -1193,12 +1192,6 @@
             "code" : "at0022.1",
             "text" : "Procedura specifica (4)",
             "description" : "*Details about a specific procedure or grouping of procedures relevant for the screening purpose. (en)"
-          },
-          "ac0.18" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
-            "description" : ""
           }
         },
         "fr" : {
@@ -1225,12 +1218,6 @@
             "code" : "at0022.1",
             "text" : "Procédure spécifique (4)",
             "description" : "Détails d'une procédure spécifique ou d'un groupe de procédures en rapport avec l'objectif de la sélection."
-          },
-          "ac0.18" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
-            "description" : ""
           }
         }
       },
@@ -1350,6 +1337,21 @@
         "ac0.26" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.26",
+          "members" : [ ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
           "members" : [ ]
         }
       }
