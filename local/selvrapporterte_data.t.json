@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2556cbe1a9f92bdd497732c6478d1923",
+      "MD5-CAM-1.0.1" : "dc6a75d592817006c36328efda365ca8",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -443,25 +443,7 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "0..1",
-                                  "terminologyId" : {
-                                    "value" : "kremt_verdier"
-                                  },
-                                  "constraint" : [ ],
-                                  "selectedTerminologies" : [ "kremt_verdier" ],
-                                  "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "kremt_verdier",
-                                    "code" : "99",
-                                    "value" : "År ukjent"
-                                  } ]
-                                } ]
-                              } ],
+                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
