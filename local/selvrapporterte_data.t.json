@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "8e232e453c7572ccbba6f7fc90d26d68",
+      "MD5-CAM-1.0.1" : "c7c9750c6f044c955c13e87910a252d3",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -2604,11 +2604,6 @@
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_TEXT",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -2620,7 +2615,7 @@
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "ac0.1" ],
+                          "constraint" : [ "ac0.5" ],
                           "selectedTerminologies" : [ ]
                         } ]
                       } ],
@@ -2817,10 +2812,10 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.1" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.1",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -2831,10 +2826,10 @@
             "text" : "Bruker du hormonspiral?",
             "description" : "Utsagn om nåværende bruk for den spesifiserte antikonsepsjonen."
           },
-          "ac0.1" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
@@ -2856,6 +2851,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ "at0145", "at0146", "at0147" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
         }
       }
     },
