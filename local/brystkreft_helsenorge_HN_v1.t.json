@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "5f5f78621b89253d51ec725531045ff9",
+      "MD5-CAM-1.0.1" : "9bd82baa59de9c68a88827efd661ba2c",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -640,20 +640,20 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
-                                    "value" : "SNOMED-CT"
+                                    "value" : "SNOMED-CT_bp"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "selectedTerminologies" : [ "SNOMED-CT_bp" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_bp",
                                     "code" : "302343007",
                                     "value" : "Ja"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_bp",
                                     "code" : "0",
                                     "value" : "Nei"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_bp",
                                     "code" : "99",
                                     "value" : "Ukjent"
                                   } ]
@@ -748,20 +748,20 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
-                                    "value" : "SNOMED-CT"
+                                    "value" : "SNOMED-CT_es"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "selectedTerminologies" : [ "SNOMED-CT_es" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_es",
                                     "code" : "83152002",
                                     "value" : "Ja"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_es",
                                     "code" : "0",
                                     "value" : "Nei"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_es",
                                     "code" : "99",
                                     "value" : "Ukjent"
                                   } ]
@@ -868,20 +868,20 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
-                                    "value" : "SNOMED-CT"
+                                    "value" : "SNOMED-CT_ivf"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "selectedTerminologies" : [ "SNOMED-CT_ivf" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_ivf",
                                     "code" : "52637005",
                                     "value" : "Ja"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_ivf",
                                     "code" : "0",
                                     "value" : "Nei"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_ivf",
                                     "code" : "99",
                                     "value" : "Ukjent"
                                   } ]
@@ -970,24 +970,24 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
-                                    "value" : "SNOMED-CT"
+                                    "value" : "SNOMED-CT_hrt"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "selectedTerminologies" : [ "SNOMED-CT_hrt" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "170955009",
                                     "value" : "Ja"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "0",
                                     "value" : "Nei"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "161652003",
                                     "value" : "Har brukt tidligere"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "99",
                                     "value" : "Ukjent"
                                   } ]
@@ -2266,24 +2266,24 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
-                                    "value" : "SNOMED-CT"
+                                    "value" : "SNOMED-CT_mens"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "selectedTerminologies" : [ "SNOMED-CT_mens" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "302757007",
                                     "value" : "Regelmessig"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "80182007",
                                     "value" : "Uregelmessig"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "289903006",
                                     "value" : "Menopause"
                                   }, {
-                                    "terminologyId" : "SNOMED-CT",
+                                    "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "99",
                                     "value" : "Ukjent"
                                   } ]
