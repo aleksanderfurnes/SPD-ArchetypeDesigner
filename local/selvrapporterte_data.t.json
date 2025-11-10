@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "04f3567a2f2c85eb8ad712ea647ef7d5",
+      "MD5-CAM-1.0.1" : "8e232e453c7572ccbba6f7fc90d26d68",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -538,7 +538,24 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
-                              "attributes" : [ ],
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "terminologyId" : {
+                                    "value" : "local_terms"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms",
+                                    "code" : "99",
+                                    "value" : "Ukjent"
+                                  } ]
+                                } ]
+                              } ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -610,7 +627,25 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
-                              "attributes" : [ ],
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms",
+                                    "code" : "99",
+                                    "value" : "Ukjent"
+                                  } ]
+                                } ]
+                              } ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -2374,6 +2409,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
           "members" : [ "at0023", "at0024", "at0027", "at0045" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
         }
       }
     },
