@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "dc6a75d592817006c36328efda365ca8",
+      "MD5-CAM-1.0.1" : "f6879d91d39bd1a09d95efd43532c1e9",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -290,7 +290,84 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "72B3FFF2A9CC7B57BE58854C62F894CB"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über das klinische Management im Zusammenhang mit chirurgischen/operativen Prozeduren, die in der Vergangenheit durchgeführt wurden.",
+          "keywords" : [ "Prozedur, Verfahren, Eingriff, Operation, Beurteilung, Untersuchung, Fragebogen, Screening" ],
+          "use" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über das klinische Management im Zusammenhang mit chirurgischen/operativen Prozeduren, die in der Vergangenheit durchgeführt wurden.\r\n\r\nHäufige Anwendungsfälle umfassen, sind aber nicht beschränkt auf:\r\n- Gezielte Befragung zu bisherigen Eingriffen vor Aufnahme in ein Krankenhaus.\r\n- Systematische Befragung in jedem Beratungsgespräch, zum Beispiel:\r\n--- Hatten Sie jemals eine Appendektomie? Ja, Nein, Unbekannt.\r\n--- Hatten Sie in den letzten zwölf Monaten einen Hüft- oder Kniegelenkersatz? Ja, Nein, Unbekannt.\r\n\r\nDie Semantik dieses Archetyps ist mit Absicht etwas locker definiert und diesen Archetyp zu verwenden ist nur sinnvoll im Kontext eines spezifischen Templates. In einem Template würde jedes Datenelement in eine der spezifischen Fragen umbenannt werden. Wenn für bestimmte Anwendungsfälle Gruppen an Werten vorgesehen sind, können diese für den lokalen Gebrauch auf den jeweiligen Anwendungsfall mit den Datentypen DV_TEXT oder DV_BOOLEAN angepasst werden.\r\n\r\nDie EVENT-Struktur vom Referenzmodell kann verwendet werden, um weiter zu spezifizieren, ob die Fragen sich auf einen bestimmten Zeitpunkt oder eher eine Zeitspanne beziehen. Eine seperate Instanz dieses Archetyps wird verwendet, um zwischen einer Befragung zur Prozedur zu irgendeinem bestimmten Zeitpunkt in der Vergangenheit und Informationen zu Prozeduren, die in einer bestimmten Zeitspanne durchgeführt wurden - zum Beispiel den Unterschied zwischen \"Haben Sie jemals eine Hüft- oder Knieoperation gehabt?\" im Vergleich zu „Haben Sie in den letzten 12 Monaten eine Hüft- oder Knieoperation gehabt?\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann jedoch mithilfe des Elements „Information provider“ im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Tool oder zur Darstellung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister verwendet zu werden. Wenn der Screening-Fragebogen die abgeschlossene Prozedur identifiziert, wird empfohlen, dass das klinische System die spezifischen Details über die Prozedur (z. B. die Dauer der Prozedur) unter Verwendung des Archetyps ACTION.procedure aufzeichnet und beibehält.",
+          "misuse" : "Der Archetyp darf nicht verwendet werden, um Details über das Vorhandensein oder Nichtvorhandensein einer Prozedur außerhalb eines Screening-Kontexts darzustellen. Verwenden Sie für diese Zwecke ACTION.procedure oder EVALUATION.exclusion_specific.\r\n\r\nNicht zur Darstellung von nicht-chirurgischem oder nicht-invasivem klinischen Managementaktivitäten verwenden. Verwenden Sie zu diesem Zweck OBSERVATION.management_screening.\r\n\r\nDarf nicht verwendet werden, um Details zu einer einfachen Auswahlliste darzustellen, in der eine Frage entweder als \"vorhanden\" oder \"unbestimmt\" aufgezeichnet werden kann. Verwenden Sie dazu OBSERVATION.selection_list.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om kirurgiske/operative prosedyrer som er utført tidligere.",
+          "keywords" : [ "prosedyre, operasjon, kirurgi, spørreskjema, kartlegging" ],
+          "use" : "Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om kirurgiske/operative prosedyrer som er utført tidligere.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Spesifikke spørsmål før innleggelse ved sykehuset.\r\n- Systematiske spørsmål ved konsultasjoner, for eksempel:\r\n--- Har du gjennomgått en appendektomi? Ja, Nei, Ukjent.\r\n--- Har du fått gjennomført en hofte eller kneoperasjon de siste tolv månedene? Ja, Nei, Ukjent.\r\n\r\nSemantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.\r\nBruk egne instanser av denne arketypen for å skille mellom spørsmål om prosedyrer som er gjennomførte på et hvilket som helst tidspunkt og spørsmål om prosedyrer som er gjennomført i et tidsintervall. For eksempel; \"Har du noen sinne fått utført en hofte eller kneoperasjon?\" sammenlignet med \"Har du fått gjennomført en hofte- eller kneoperasjon i løpet av de siste 12 månedene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i kartleggingen identifiseres at en prosedyre er gjennomført, anbefales det at spesifikke detaljer om prosedyren (som for eksempel når og/eller hvor prosedyren ble gjort) registreres og lagres i pasientjournalen i arketypen Prosedyre (ACTION.procedure).",
+          "misuse" : "Brukes ikke for å registrere detaljer om tilstedeværelse eller fravær av en prosedyre utenfor konteksten av kartleggingen. Bruk arketypen ACTION.procedure (Prosedyre) eller EVALUATION.exclusion_specific (Eksklusjonsutsagn - spesifikt) for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om ikke kirugisk eller noninvasiv sykdomshåndtering. Bruk arketypen OBSERVATION.management_screening (Kartleggingsspørsmål om sykdomshåndtering) for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmål kan registreres som enten \"Tilstede\" eller \"Ubestemt\". Bruk arketypen OBSERVATION.selection_list for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about clinical management related to surgical/operative procedures that have been carried out in the past.",
+          "keywords" : [ "Procedure, surgery, operation, assessment, investigation, questionnaire, screening" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about clinical management related to surgical/operative procedures that have been carried out in the past.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Specific questioning about previous procedures before admission to a hospital.\r\n- Systematic questioning in any consultation, for example:\r\n--- Have you ever had an appendectomy? Yes, No, Unknown.\r\n--- Have you had a hip or knee replacement in the past twelve months? Yes, No, Unknown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Have you ever had any hip or knee surgery?\" compared to \"Have you had any hip or knee surgery in the last 12 months?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening process identifies a completed procedure, it is recommended that clinical system record and persist the specific details about the procedure (such as the duration of the procedure) using the ACTION.procedure archetype.",
+          "misuse" : "Not to be used to record details about the presence or absence of a procedure, outside of a screening context. Use ACTION.procedure or EVALUATION.exclusion_specific for these purposes.\r\n\r\nNot to be used to record non-surgical or non-invasive clinical management. Use OBSERVATION.management_screening for this purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "*To create a framework for recording answers to pre-defined screening questions about clinical management related to specific invasive interventions or surgical/operative procedures that have been carried out in the past. (en)",
+          "keywords" : [ "*Procedure, surgery, operation, assessment, investigation, questionnaire, screening (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about clinical management related to specific invasive interventions or surgical/operative procedures that have been carried out in the past.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Specific questioning about previous procedures before admission to a hospital.\r\n- Systematic questioning in any consultation, for example:\r\n--- Have you ever had an appendectomy? Yes, No, Unknown.\r\n--- Have you had a hip or knee replacement in the past twelve months? Yes, No, Unknown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Have you ever had any hip or knee surgery?\" compared to \"Have you had any hip or knee surgery in the last 12 months?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening process identifies a completed procedure, it is recommended that clinical system record and persist the specific details about the procedure (such as the duration of the procedure) using the ACTION.procedure archetype. (en)",
+          "misuse" : "*Not to be used to record details about the presence or absence of a procedure, outside of a screening context. Use ACTION.procedure or EVALUATION.exclusion_specific for these purposes.\r\n\r\nNot to be used to record non-surgical or non-invasive clinical management. Use OBSERVATION.management_screening for this purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Créer un cadre pour l'enregistrement des réponses à des questions de sélection prédéfinies sur la gestion clinique liée aux procédures chirurgicales/opératoires qui ont été effectuées dans le passé.",
+          "keywords" : [ "Procédure, chirurgie, opération, évaluation, enquête, questionnaire, dépistage" ],
+          "use" : "A utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur la gestion clinique liée à des procédures chirurgicales/opératoires qui ont été effectuées dans le passé.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- des questions spécifiques sur les interventions antérieures avant l'admission à l'hôpital\r\n- Interrogation systématique lors d'une consultation, par exemple : --- Avez-vous déjà eu une appendicite ?\r\n--- Avez-vous déjà subi une appendicectomie ? Oui, Non, Inconnu.\r\n--- Avez-vous subi une arthroplastie de la hanche ou du genou au cours des douze derniers mois ? Oui, Non, Inconnu.\r\n\r\nLa sémantique de cet archétype est intentionnellement floue, et l'interrogation de cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur une procédure effectuée à tout moment dans le passé et des informations sur une procédure effectuée dans un intervalle de temps donné - par exemple la différence entre \"Avez-vous déjà subi une opération de la hanche ou du genou ?\" et \"Avez-vous subi une opération de la hanche ou du genou au cours des 12 derniers mois ?\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le processus de dépistage identifie une procédure terminée, il est recommandé que le système clinique enregistre et conserve les détails spécifiques de la procédure (tels que la durée de la procédure) à l'aide de l'archétype ACTION.procedure.",
+          "misuse" : "Ne pas utiliser pour enregistrer des détails sur la présence ou l'absence d'une procédure, en dehors d'un contexte de dépistage. Utiliser ACTION.procedure ou EVALUATION.exclusion_specific à cette fin.\r\n\r\nNe doit pas être utilisé pour enregistrer une prise en charge clinique non chirurgicale ou non invasive. Utilisez OBSERVATION.management_screening à cette fin.\r\n\r\nNe pas utiliser pour enregistrer les détails d'une simple liste de sélection où une question peut être enregistrée comme \"présente\" ou \"indéterminée\". Utiliser OBSERVATION.selection_list à cette fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.procedure_screening.v1",
     "differential" : true,
@@ -568,6 +645,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.11",
           "members" : [ ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0023", "at0024", "at0039", "at0043" ]
         }
       }
     },
