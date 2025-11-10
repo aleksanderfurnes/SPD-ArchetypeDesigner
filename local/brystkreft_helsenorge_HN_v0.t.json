@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "ca99bfbbdc371830c36f000900b777c0",
+      "MD5-CAM-1.0.1" : "b174f6ac4a39dde0571864e360fafa9e",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -2231,10 +2231,18 @@
                                   }, {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "289903006",
-                                    "value" : "Menopause"
+                                    "value" : "Opphørt"
                                   }, {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "261665006",
+                                    "code" : "449038007",
+                                    "value" : "Hormonspiral"
+                                  }, {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "77386006",
+                                    "value" : "Gravid"
+                                  }, {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "99",
                                     "value" : "Ukjent"
                                   } ]
                                 } ]
@@ -2918,7 +2926,8 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "CLUSTER",
-                  "nodeId" : "at0064",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0064.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
