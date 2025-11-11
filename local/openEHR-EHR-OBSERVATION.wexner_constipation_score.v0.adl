@@ -1,0 +1,327 @@
+archetype (adl_version=1.4; uid=015a32cb-5d75-4d0a-a909-d26507f64def)
+	openEHR-EHR-OBSERVATION.wexner_constipation_score.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-11-11">
+		["name"] = <"Aleksander Spikkerud Furnes">
+		["organisation"] = <"Helse Nord IKT">
+		["email"] = <"aleksander.spikkerud.furnes@hnikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3b6add34e23ddd27a1f7c853329680a8">
+		["build_uid"] = <"77e8620b-1418-3cff-a386-4a76fb8f8fc7">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- wexner_constipation_score
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Frequency of bowel movements
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008],
+											4|[local::at0009]
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Difficulty: painful evacuation effort
+										value matches {
+											0|[local::at0011],
+											1|[local::at0012],
+											2|[local::at0013],
+											3|[local::at0014],
+											4|[local::at0015]
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Completeness: feeling incomplete evacuation
+										value matches {
+											0|[local::at0017],
+											1|[local::at0018],
+											2|[local::at0019],
+											3|[local::at0020],
+											4|[local::at0021]
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Pain: abdominal pain
+										value matches {
+											0|[local::at0023],
+											1|[local::at0024],
+											2|[local::at0025],
+											3|[local::at0026],
+											4|[local::at0027]
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Time: minutes in lavatory per attempt
+										value matches {
+											0|[local::at0029],
+											1|[local::at0030],
+											2|[local::at0031],
+											3|[local::at0032],
+											4|[local::at0033]
+										}
+									}
+									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Assistance: type of assistance
+										value matches {
+											0|[local::at0035],
+											1|[local::at0036],
+											2|[local::at0037]
+										}
+									}
+									ELEMENT[at0038] occurrences matches {0..1} matches {    -- Failure: unsuccessful attempts for evacuation per 24 hours
+										value matches {
+											0|[local::at0039],
+											1|[local::at0040],
+											2|[local::at0041],
+											3|[local::at0042],
+											4|[local::at0043]
+										}
+									}
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- History: duration of constipation (yr)
+										value matches {
+											0|[local::at0045],
+											1|[local::at0046],
+											2|[local::at0047],
+											3|[local::at0048],
+											4|[local::at0049]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"wexner_constipation_score">
+					description = <"wexner_constipation_score">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Frequency of bowel movements">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"1-2 times per 1-2 days">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"2 times per week">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Once per week">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Less than once per week">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Less than once per month">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Difficulty: painful evacuation effort">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Rarely">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Sometimes">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Usually">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Completeness: feeling incomplete evacuation">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Rarely">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Sometimes">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Usually">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Pain: abdominal pain">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Rarely">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Sometimes">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Usually">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Time: minutes in lavatory per attempt">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Less than 5">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"5-10">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"10-20">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"20-30">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"More than 30">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Assistance: type of assistance">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Without assistance">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Stimulative laxatives">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Digital assistance or enema">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Failure: unsuccessful attempts for evacuation per 24 hours">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"1-3">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"3-6">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"6-9">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"More than 9">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"History: duration of constipation (yr)">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"1-5">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"5-10">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"10-20">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"More than 20">
+					description = <"">
+				>
+			>
+		>
+	>
