@@ -1,0 +1,247 @@
+archetype (adl_version=1.4; uid=4683fba4-ac57-41a3-9b55-5b99830f7d2d)
+	openEHR-EHR-OBSERVATION.five_item_ods.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-11-11">
+		["name"] = <"Aleksander Spikkerud Furnes">
+		["organisation"] = <"Helse Nord IKT">
+		["email"] = <"aleksander.spikkerud.furnes@hnikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"8190d053c6c14b9e8f47395311cb2c86">
+		["build_uid"] = <"f5ca06ec-baef-3bb1-b47a-55cc6721634a">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- five_item_ods
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Excessive straining
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008],
+											4|[local::at0009]
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Incomplete rectal evacuation
+										value matches {
+											0|[local::at0011],
+											1|[local::at0012],
+											2|[local::at0013],
+											3|[local::at0014],
+											4|[local::at0015]
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Use of enemas/laxative
+										value matches {
+											0|[local::at0017],
+											1|[local::at0018],
+											2|[local::at0019],
+											3|[local::at0020],
+											4|[local::at0021]
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Vaginal/perineal digital pressure
+										value matches {
+											0|[local::at0023],
+											1|[local::at0024],
+											2|[local::at0025],
+											3|[local::at0026],
+											4|[local::at0027]
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Abdominal discomfort/pain
+										value matches {
+											0|[local::at0029],
+											1|[local::at0030],
+											2|[local::at0031],
+											3|[local::at0032],
+											4|[local::at0033]
+										}
+									}
+									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Total score
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"five_item_ods">
+					description = <"five_item_ods">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Excessive straining">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Rarely">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Sometimes">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Usually">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Incomplete rectal evacuation">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Rarely">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Sometimes">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Usually">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Use of enemas/laxative">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Rarely">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Sometimes">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Usually">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Vaginal/perineal digital pressure">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Rarely">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Sometimes">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Usually">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Abdominal discomfort/pain">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Rarely">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Sometimes">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Usually">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Total score">
+					description = <"">
+				>
+			>
+		>
+	>
