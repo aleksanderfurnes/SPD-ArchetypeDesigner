@@ -37,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"c9ba19e2315cae445fd6476db5cda36e">
 		["build_uid"] = <"f5ca06ec-baef-3bb1-b47a-55cc6721634a">
-		["MD5-CAM-1.0.1"] = <"67f536523a9c75965cd1816701ae4a17">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- five_item_ods
+	OBSERVATION[at0000] matches {    -- Five item Obstructed Defecation Syndrome Score
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -114,7 +114,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"five_item_ods">
+					text = <"Five item Obstructed Defecation Syndrome Score">
 					description = <"five_item_ods">
 				>
 				["at0001"] = <
@@ -258,8 +258,8 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*five_item_ods (en)">
-					description = <"*five_item_ods (en)">
+					text = <"*Five item Obstructed Defecation Syndrome Score(en)">
+					description = <"*five_item_ods">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -278,123 +278,123 @@ ontology
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"Aldri">
+					text = <"*Never (en)">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"Sjelden">
+					text = <"*Rarely (en)">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"Av og til">
+					text = <"*Sometimes (en)">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"Vanligvis">
+					text = <"*Usually (en)">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"Alltid">
+					text = <"*Always (en)">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"Ufullstendig tømming av endetarm">
+					text = <"*Incomplete rectal evacuation (en)">
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"Aldri">
+					text = <"*Never (en)">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"Sjelden">
+					text = <"*Rarely (en)">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"Av og til">
+					text = <"*Sometimes (en)">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"Vanligvis">
+					text = <"*Usually (en)">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"Alltid">
+					text = <"*Always (en)">
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"Bruk av avføringsmidler/klyster">
+					text = <"*Use of enemas/laxative (en)">
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"Aldri">
+					text = <"*Never (en)">
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"Sjelden">
+					text = <"*Rarely (en)">
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"Av og til">
+					text = <"*Sometimes (en)">
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"Vanligvis">
+					text = <"*Usually (en)">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"Alltid">
+					text = <"*Always (en)">
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"Finger mot skjeden/perineum for å oppnå tømming">
+					text = <"*Vaginal/perineal digital pressure (en)">
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"Aldri">
+					text = <"*Never (en)">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"Sjelden">
+					text = <"*Rarely (en)">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"Av og til">
+					text = <"*Sometimes (en)">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"Vanligvis">
+					text = <"*Usually (en)">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"Alltid">
+					text = <"*Always (en)">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"Forstoppelse">
+					text = <"*Abdominal discomfort/pain (en)">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"Aldri">
+					text = <"*Never (en)">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"Sjelden">
+					text = <"*Rarely (en)">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"Av og til">
+					text = <"*Sometimes (en)">
 					description = <"">
 				>
 				["at0032"] = <
-					text = <"Vanligvis">
+					text = <"*Usually (en)">
 					description = <"">
 				>
 				["at0033"] = <
-					text = <"Alltid">
+					text = <"*Always (en)">
 					description = <"">
 				>
 				["at0034"] = <
-					text = <"Totalskår">
+					text = <"*Total score (en)">
 					description = <"">
 				>
 			>
