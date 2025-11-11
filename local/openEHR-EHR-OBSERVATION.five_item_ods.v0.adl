@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8190d053c6c14b9e8f47395311cb2c86">
+		["MD5-CAM-1.0.1"] = <"3298800e1e5604fb0afa783becaebe73">
 		["build_uid"] = <"f5ca06ec-baef-3bb1-b47a-55cc6721634a">
 	>
 
@@ -240,6 +251,150 @@ ontology
 				>
 				["at0034"] = <
 					text = <"Total score">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"*five_item_ods (en)">
+					description = <"*five_item_ods (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Overdreven pressing">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Rarely (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Sometimes (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Usually (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*Always (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*Incomplete rectal evacuation (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Rarely (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Sometimes (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*Usually (en)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"*Always (en)">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"*Use of enemas/laxative (en)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"*Rarely (en)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"*Sometimes (en)">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"*Usually (en)">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"*Always (en)">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"*Vaginal/perineal digital pressure (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Rarely (en)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"*Sometimes (en)">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"*Usually (en)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*Always (en)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"*Abdominal discomfort/pain (en)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Rarely (en)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"*Sometimes (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Usually (en)">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"*Always (en)">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"*Total score (en)">
 					description = <"">
 				>
 			>
