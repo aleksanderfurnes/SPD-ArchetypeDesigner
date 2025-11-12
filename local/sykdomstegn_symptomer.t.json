@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "9db6ae34de164ad7b9a285a4df305baf",
+      "MD5-CAM-1.0.1" : "9e9842eea00a2c66942e8932aa99ed90",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -488,7 +488,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.2",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -573,7 +573,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.3",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -658,7 +658,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.4",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -761,7 +761,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.5",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -864,7 +864,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.6",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -967,7 +967,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.7",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -1070,7 +1070,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.8",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -1173,7 +1173,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.9",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
