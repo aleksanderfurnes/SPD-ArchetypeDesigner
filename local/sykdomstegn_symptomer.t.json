@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "f65a14d654eea5eb1417c323be818176",
+      "MD5-CAM-1.0.1" : "b6a1715b6cfcbc76126f55d4630380a3",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -967,7 +967,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
+                      "occurrences" : "1..1",
                       "nodeId" : "at0022.7",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -1070,7 +1070,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
+                      "occurrences" : "1..1",
                       "nodeId" : "at0022.8",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -1173,7 +1173,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
+                      "occurrences" : "1..1",
                       "nodeId" : "at0022.9",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
