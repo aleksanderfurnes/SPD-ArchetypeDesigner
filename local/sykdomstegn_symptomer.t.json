@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "40df30e8681575f6ba9b0762ce127853",
+      "MD5-CAM-1.0.1" : "f65a14d654eea5eb1417c323be818176",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -1454,7 +1454,7 @@
           "at0005.6" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.6",
-            "text" : "Peau d'Orange",
+            "text" : "Peau dOrange",
             "description" : "Har det spesifikke symptomet eller sykdomstegnet noen gang vært til stede?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
