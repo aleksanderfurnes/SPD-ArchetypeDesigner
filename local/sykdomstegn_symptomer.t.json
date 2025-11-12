@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e475430e61db41cddeb50026e0f20517",
+      "MD5-CAM-1.0.1" : "9db6ae34de164ad7b9a285a4df305baf",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -315,7 +315,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "POINT_EVENT",
-              "occurrences" : "1..1",
+              "occurrences" : "0..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
