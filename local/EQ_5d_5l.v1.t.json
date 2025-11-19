@@ -22,8 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "470bd558bff431ebbce29760e9072024",
-      "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
+      "MD5-CAM-1.0.1" : "a864fbeb40fd0411b3c7bbf531f010c4",
+      "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
+      "sem_ver" : "1.0.0",
+      "build_uid" : ""
     },
     "details" : {
       "nn" : {
@@ -145,10 +147,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.2",
+        "nodeId" : "at0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-eq_5d_5l-001.v0",
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-eq_5d_5l_hn-001.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -228,7 +230,7 @@
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "c204848b-264c-484c-b008-8e661cc604d2",
+    "uid" : "5f322756-5e5e-434f-9669-0c043f49bd77",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -237,15 +239,15 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3c16b964862c100893639157eca469aa"
+        "PARENT:MD5-CAM-1.0.1" : "34f099bb1abb5c0a6d02b04973e23514"
       },
       "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.eq_5d_5l.v0",
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.eq_5d_5l_hn.v0",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-eq_5d_5l-001.v0"
+      "value" : "openEHR-EHR-OBSERVATION.ovl-eq_5d_5l_hn-001.v0"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
