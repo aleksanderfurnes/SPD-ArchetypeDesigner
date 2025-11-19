@@ -1,0 +1,398 @@
+archetype (adl_version=1.4; uid=540984d1-17c4-42fe-aedd-c713e8080dc1)
+	openEHR-EHR-OBSERVATION.modified_harris_hip_score.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-03-14">
+		["name"] = <"Jonas Lyshaug">
+		["organisation"] = <"HN IKT">
+		["email"] = <"Jonas.nils.erik.lyshaug@hnikt.no">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the results from the Harris Hip Score.">
+			keywords = <"arthroplasty","fractures","osteoarthritis","hip">
+			use = <"Use to record the results for each component parameter, total score for the modified Harris hip score survey.
+
+The Harris Hip Score is used to record the result of a structured clinical assessment of hip function. It evaluates domains such as pain, function, absence of deformity, and range of motion. This score is commonly applied in orthopaedic settings to assess outcomes following hip surgery or to monitor hip-related conditions over time.
+
+It is intended for use by clinicians in both inpatient and outpatient environments, particularly in rehabilitation and surgical follow-up. The score provides a standardized way to quantify hip function and compare results across time or between patients.
+
+While openEHR archetypes are all freely available under an open license, the specific content of this Harris hip Score archetype is copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Harris, WH. \"Traumatic arthritis of the hip after dislocation and acetabular fractures: treatment by mold arthroplasty: an end-result study using a new method of result evaluation.\" J Bone Joint Surg Am, 1969. 737-55.
+
+Söderman, Peter, and Henrik Malchau. \"Is the Harris hip score system useful to study the outcome of total hip replacement?.\" Clinical orthopaedics and related research 384 (2001): 189-197.
+
+Wamper, Kim E., et al. \"The Harris hip score: do ceiling effects limit its usefulness in orthopedics? A systematic review.\" Acta orthopaedica 81.6 (2010): 703-707.">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d5bef36f1a498e49ebad9c068df4a24b">
+		["build_uid"] = <"df121879-2838-4d08-a2c8-070209bb5e16">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Modified Harris Hip Score (mHHS)
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- 1. Pain
+										value matches {
+											1|[local::at0005],
+											2|[local::at0006],
+											3|[local::at0007],
+											4|[local::at0008],
+											5|[local::at0009],
+											6|[local::at0010]
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- 2. Support devices
+										value matches {
+											1|[local::at0012],
+											2|[local::at0013],
+											3|[local::at0014],
+											4|[local::at0015],
+											5|[local::at0016],
+											6|[local::at0017]
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- 3. Distance walked
+										value matches {
+											1|[local::at0019],
+											2|[local::at0020],
+											3|[local::at0021],
+											4|[local::at0022],
+											5|[local::at0023]
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {    -- 4. Limp
+										value matches {
+											1|[local::at0025],
+											2|[local::at0026],
+											3|[local::at0027],
+											4|[local::at0028]
+										}
+									}
+									ELEMENT[at0029] occurrences matches {0..1} matches {    -- 5. Activities - shoes, socks
+										value matches {
+											1|[local::at0030],
+											2|[local::at0031],
+											3|[local::at0032]
+										}
+									}
+									ELEMENT[at0033] occurrences matches {0..1} matches {    -- 6. Stairs
+										value matches {
+											1|[local::at0034],
+											2|[local::at0035],
+											3|[local::at0036],
+											4|[local::at0037]
+										}
+									}
+									ELEMENT[at0038] occurrences matches {0..1} matches {    -- 7. Public transportation
+										value matches {
+											1|[local::at0039],
+											2|[local::at0040]
+										}
+									}
+									ELEMENT[at0041] occurrences matches {0..1} matches {    -- 8. Sitting
+										value matches {
+											1|[local::at0042],
+											2|[local::at0043],
+											3|[local::at0044]
+										}
+									}
+									ELEMENT[at0085] occurrences matches {0..1} matches {    -- Total score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..91|}
+											}
+										}
+									}
+									ELEMENT[at0091] occurrences matches {0..1} matches {    -- Adjusted score
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::380]>
+												list = <
+													["1"] = <
+														units = <"1">
+														magnitude = <|0.0..100.0|>
+														precision = <|1|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0086] occurrences matches {0..1} matches {    -- Grading
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0087,    -- Poor
+													at0088,    -- Fair
+													at0089,    -- Good
+													at0090]    -- Excellent
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0047] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0084] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Modified Harris Hip Score (mHHS)">
+					description = <"An assessment score used to assess the functional capacity of the individual after hip surgery, including the domain of pain and gait and functional activities.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"1. Pain">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"None, or ignores it">
+					description = <"44">
+				>
+				["at0006"] = <
+					text = <"Slight, occasional, no compromise in activity">
+					description = <"40">
+				>
+				["at0007"] = <
+					text = <"Mild pain, no effect on average activities, rarely moderate pain with unusual activity, may take aspirin">
+					description = <"30">
+				>
+				["at0008"] = <
+					text = <"Moderate pain, tolerable but makes concessions to pain. Some limitations of ordinary activity or work. May require occasional pain medication stronger than aspirin">
+					description = <"20">
+				>
+				["at0009"] = <
+					text = <"Marked pain, serious limitation of activities">
+					description = <"10">
+				>
+				["at0010"] = <
+					text = <"Totally disabled, crippled, pain in bed, bedridden">
+					description = <"0">
+				>
+				["at0011"] = <
+					text = <"2. Support devices">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"None">
+					description = <"11">
+				>
+				["at0013"] = <
+					text = <"Cane/walking stick for long walks">
+					description = <"7">
+				>
+				["at0014"] = <
+					text = <"Cane/Walking stick most of the time">
+					description = <"5">
+				>
+				["at0015"] = <
+					text = <"One crutch">
+					description = <"3">
+				>
+				["at0016"] = <
+					text = <"Two Canes/Walking sticks">
+					description = <"2">
+				>
+				["at0017"] = <
+					text = <"Two crutches or not able to walk">
+					description = <"0">
+				>
+				["at0018"] = <
+					text = <"3. Distance walked">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Unlimited">
+					description = <"11">
+				>
+				["at0020"] = <
+					text = <"Six blocks (30 minutes)">
+					description = <"8">
+				>
+				["at0021"] = <
+					text = <"Two or three blocks (10 - 15 minutes)">
+					description = <"5">
+				>
+				["at0022"] = <
+					text = <"Indoors only">
+					description = <"2">
+				>
+				["at0023"] = <
+					text = <"Bed and chair only">
+					description = <"0">
+				>
+				["at0024"] = <
+					text = <"4. Limp">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"None">
+					description = <"11">
+				>
+				["at0026"] = <
+					text = <"Slight">
+					description = <"8">
+				>
+				["at0027"] = <
+					text = <"Moderate">
+					description = <"5">
+				>
+				["at0028"] = <
+					text = <"Severe or unable to walk">
+					description = <"0">
+				>
+				["at0029"] = <
+					text = <"5. Activities - shoes, socks">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"With ease">
+					description = <"4">
+				>
+				["at0031"] = <
+					text = <"With difficulty">
+					description = <"2">
+				>
+				["at0032"] = <
+					text = <"Unable to fit or tie">
+					description = <"0">
+				>
+				["at0033"] = <
+					text = <"6. Stairs">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Normally without using a railing">
+					description = <"4">
+				>
+				["at0035"] = <
+					text = <"Normally using a railing">
+					description = <"2">
+				>
+				["at0036"] = <
+					text = <"In any manner">
+					description = <"1">
+				>
+				["at0037"] = <
+					text = <"Unabel to do stairs">
+					description = <"0">
+				>
+				["at0038"] = <
+					text = <"7. Public transportation">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Able to use transportation (bus)">
+					description = <"1">
+				>
+				["at0040"] = <
+					text = <"Unable to use public transportation (bus)">
+					description = <"0">
+				>
+				["at0041"] = <
+					text = <"8. Sitting">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Comfortably, ordinary chair for one hour">
+					description = <"5">
+				>
+				["at0043"] = <
+					text = <"On a high chair for 30 minutes">
+					description = <"3">
+				>
+				["at0044"] = <
+					text = <"Unable to sit comfortably on any chair">
+					description = <"0">
+				>
+				["at0047"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0084"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0085"] = <
+					text = <"Total score">
+					description = <"The total sum of each component parameter for the Harris hip score.">
+				>
+				["at0086"] = <
+					text = <"Grading">
+					description = <"Grading derived from Harris hip score.">
+				>
+				["at0087"] = <
+					text = <"Poor">
+					description = <"Less than 70.">
+				>
+				["at0088"] = <
+					text = <"Fair">
+					description = <"70 to 79.">
+				>
+				["at0089"] = <
+					text = <"Good">
+					description = <"80 to 89.">
+				>
+				["at0090"] = <
+					text = <"Excellent">
+					description = <"90 to 100.">
+				>
+				["at0091"] = <
+					text = <"Adjusted score">
+					description = <"">
+				>
+			>
+		>
+	>

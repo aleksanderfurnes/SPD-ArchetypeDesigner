@@ -1,0 +1,889 @@
+archetype (adl_version=1.4; uid=41103658-a10e-4610-a56a-f8ce8ec01377)
+	openEHR-EHR-OBSERVATION.hip_disability_and_osteoarthritis_outcome_score_12.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-03-05">
+		["name"] = <"Jonas Lyshaug">
+		["organisation"] = <"HN IKT">
+		["email"] = <"Jonas.nils.erik.lyshaug@hnikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			keywords = <"*Hip, HOOS-12 (en)", ...>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			keywords = <"Hip, HOOS-12", ...>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"367e46d3ad073e160c5fe0f7309b2686">
+		["build_uid"] = <"826cf29f-5019-3cdf-9ef1-47ec3939b524">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- hip_disability_and_osteoarthritis_outcome_score_12
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0004] occurrences matches {0..1} matches {    -- Pain
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0007] occurrences matches {0..1} matches {    -- 1. How often do you experience hip pain?
+												value matches {
+													0|[local::at0013],
+													1|[local::at0014],
+													2|[local::at0015],
+													3|[local::at0016],
+													4|[local::at0017]
+												}
+											}
+											ELEMENT[at0025] occurrences matches {0..1} matches {    -- 2. Walking on a flat surface
+												value matches {
+													0|[local::at0026],
+													1|[local::at0027],
+													2|[local::at0028],
+													3|[local::at0029],
+													4|[local::at0030]
+												}
+											}
+											ELEMENT[at0031] occurrences matches {0..1} matches {    -- 3. Going up or down stairs
+												value matches {
+													0|[local::at0032],
+													1|[local::at0033],
+													2|[local::at0034],
+													3|[local::at0035],
+													4|[local::at0036]
+												}
+											}
+											ELEMENT[at0018] occurrences matches {0..1} matches {    -- 4. Sitting or lying
+												value matches {
+													0|[local::at0019],
+													1|[local::at0020],
+													2|[local::at0021],
+													3|[local::at0022],
+													4|[local::at0023]
+												}
+											}
+											ELEMENT[at0096] occurrences matches {0..1} matches {    -- Pain score
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0005] occurrences matches {0..1} matches {    -- Function, daily living
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0044] occurrences matches {0..1} matches {    -- 5. Rising from sitting
+												value matches {
+													0|[local::at0045],
+													1|[local::at0046],
+													2|[local::at0047],
+													3|[local::at0048],
+													4|[local::at0049]
+												}
+											}
+											ELEMENT[at0038] occurrences matches {0..1} matches {    -- 6. Standing
+												value matches {
+													0|[local::at0039],
+													1|[local::at0040],
+													2|[local::at0041],
+													3|[local::at0042],
+													4|[local::at0043]
+												}
+											}
+											ELEMENT[at0050] occurrences matches {0..1} matches {    -- 7. Getting in/out of car
+												value matches {
+													0|[local::at0051],
+													1|[local::at0052],
+													2|[local::at0053],
+													3|[local::at0054],
+													4|[local::at0055]
+												}
+											}
+											ELEMENT[at0056] occurrences matches {0..1} matches {    -- 8. Walking on an uneven surface
+												value matches {
+													0|[local::at0057],
+													1|[local::at0058],
+													2|[local::at0059],
+													3|[local::at0060],
+													4|[local::at0061]
+												}
+											}
+											ELEMENT[at0097] occurrences matches {0..1} matches {    -- Function Score
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] occurrences matches {0..1} matches {    -- Quality of Life
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0068] occurrences matches {0..1} matches {    -- 9. How often are you aware of your hip problem
+												value matches {
+													0|[local::at0069],
+													1|[local::at0070],
+													2|[local::at0071],
+													3|[local::at0072],
+													4|[local::at0073]
+												}
+											}
+											ELEMENT[at0074] occurrences matches {0..1} matches {    -- 10. Have you modified your life style to avoid activities potentially damaging to your hip?
+												value matches {
+													0|[local::at0075],
+													1|[local::at0076],
+													2|[local::at0077],
+													3|[local::at0078],
+													4|[local::at0079]
+												}
+											}
+											ELEMENT[at0081] occurrences matches {0..1} matches {    -- 11. How much are you troubled with lack of confidence in your hip?
+												value matches {
+													0|[local::at0082],
+													1|[local::at0083],
+													2|[local::at0084],
+													3|[local::at0085],
+													4|[local::at0086]
+												}
+											}
+											ELEMENT[at0087] occurrences matches {0..1} matches {    -- 12. In general, how much difficulty do you have with your hip?
+												value matches {
+													0|[local::at0088],
+													1|[local::at0089],
+													2|[local::at0090],
+													3|[local::at0091],
+													4|[local::at0092]
+												}
+											}
+											ELEMENT[at0098] occurrences matches {0..1} matches {    -- Quality of Life Score
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+										}
+									}
+									ELEMENT[at0094] occurrences matches {0..1} matches {    -- Total score
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0080] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"hip_disability_and_osteoarthritis_outcome_score_12">
+					description = <"Instructions: This questionnaire asks for your views about your hip. Answer every question by marking the appropriate box, only one box for each question. If you are unsure about how to answer a question, please give the best answer you can.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Pain">
+					description = <"What amount of hip pain have you experienced the last week during the following activities?">
+				>
+				["at0005"] = <
+					text = <"Function, daily living">
+					description = <"The following questions concern your physical function. By this we mean your ability to move around and to look after yourself. For each of the following activities please indicate the degree of difficulty you have experienced in the last week due to your hip.">
+				>
+				["at0006"] = <
+					text = <"Quality of Life">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"1. How often do you experience hip pain?">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Monthly">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Weekly">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Daily">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Always">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"4. Sitting or lying">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Severe">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Extreme">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"2. Walking on a flat surface">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Severe">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Extreme">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"3. Going up or down stairs">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Severe">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Extreme">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"6. Standing">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Severe">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Extreme">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"5. Rising from sitting">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Severe">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Extreme">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"7. Getting in/out of car">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Severe">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Extreme">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"8. Walking on an uneven surface">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Severe">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Extreme">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"9. How often are you aware of your hip problem">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Never">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Monthly">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Weekly">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Daily">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Constantly">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"10. Have you modified your life style to avoid activities potentially damaging to your hip?">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Mildly">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Moderately">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Severely">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Totally">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0081"] = <
+					text = <"11. How much are you troubled with lack of confidence in your hip?">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Mildly">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"Moderately">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"Severely">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"Extremely">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"12. In general, how much difficulty do you have with your hip?">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Mild">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Moderate">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Severe">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Extreme">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"Total score">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Pain score">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Function Score">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Quality of Life Score">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"*hip_disability_and_osteoarthritis_outcome_score_12 (en)">
+					description = <"*Instructions: This questionnaire asks for your views about your hip. Answer every question by marking the appropriate box, only one box for each question. If you are unsure about how to answer a question, please give the best answer you can. (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*Pain (en)">
+					description = <"*What amount of hip pain have you experienced the last week during the following activities? (en)">
+				>
+				["at0005"] = <
+					text = <"*Function, daily living (en)">
+					description = <"*The following questions concern your physical function. By this we mean your ability to move around and to look after yourself. For each of the following activities please indicate the degree of difficulty you have experienced in the last week due to your hip. (en)">
+				>
+				["at0006"] = <
+					text = <"*Quality of Life (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*1. How often do you experience hip pain? (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*Monthly (en)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"*Weekly (en)">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"*Daily (en)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"*Always (en)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"*4. Sitting or lying (en)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"*Mild (en)">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"*Moderate (en)">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"*Severe (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*Extreme (en)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"*2. Walking on a flat surface (en)">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*Mild (en)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"*Moderate (en)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"*Severe (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Extreme (en)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"*3. Going up or down stairs (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"*Mild (en)">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"*Moderate (en)">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"*Severe (en)">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"*Extreme (en)">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"*6. Standing (en)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"*Mild (en)">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"*Moderate (en)">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"*Severe (en)">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"*Extreme (en)">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"*5. Rising from sitting (en)">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"*Mild (en)">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"*Moderate (en)">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"*Severe (en)">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"*Extreme (en)">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"*7. Getting in/out of car (en)">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Mild (en)">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"*Moderate (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Severe (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Extreme (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*8. Walking on an uneven surface (en)">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Mild (en)">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"*Moderate (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Severe (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Extreme (en)">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"*9. How often are you aware of your hip problem (en)">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"*Monthly (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*Weekly (en)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*Daily (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Constantly (en)">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"*10. Have you modified your life style to avoid activities potentially damaging to your hip? (en)">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"*Not at all (en)">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"*Mildly (en)">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"*Moderately (en)">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"*Severely (en)">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"*Totally (en)">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0081"] = <
+					text = <"*11. How much are you troubled with lack of confidence in your hip? (en)">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"*Not at all (en)">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"*Mildly (en)">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"*Moderately (en)">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"*Severely (en)">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"*Extremely (en)">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"*12. In general, how much difficulty do you have with your hip? (en)">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"*Mild (en)">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"*Moderate (en)">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"*Severe (en)">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"*Extreme (en)">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"*Total score (en)">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"*Pain score (en)">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"*Function Score (en)">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"*Quality of Life Score (en)">
+					description = <"">
+				>
+			>
+		>
+	>
