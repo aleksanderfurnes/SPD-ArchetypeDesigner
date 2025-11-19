@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "642e29ca4e0d2b6071b9da57f847749e",
+      "MD5-CAM-1.0.1" : "7cc1e67da672eaf0c819ef2923c97ac9",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.0.1",
       "build_uid" : ""
     },
     "details" : {
@@ -172,7 +172,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "EQ_5d_5l.v1",
+          "text" : "EQ_5d_5l.v2",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
