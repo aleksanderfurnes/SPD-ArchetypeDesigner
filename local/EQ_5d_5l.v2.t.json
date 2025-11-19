@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7cc1e67da672eaf0c819ef2923c97ac9",
+      "MD5-CAM-1.0.1" : "d80508580623fa41c7fec4b56f2a20f1",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
-      "sem_ver" : "1.0.1",
+      "sem_ver" : "1.1.0",
       "build_uid" : ""
     },
     "details" : {
@@ -164,7 +164,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "EQ_5d_5l.v1",
+          "text" : "EQ_5d_5l.v2",
           "description" : "Generic container for information provided by an individual."
         }
       },
