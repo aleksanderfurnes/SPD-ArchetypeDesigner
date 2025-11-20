@@ -43,7 +43,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"d8658450698bae42f6187f31da58e7e9">
+		["MD5-CAM-1.0.1"] = <"c2549e2011e1f39eae9d5cf028e3d950">
 		["build_uid"] = <"1f811f48-1849-4ff3-9943-b8ef1a9a1b4f">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -276,7 +276,7 @@ How much urine do you usually leak (whether you wear protection or not)?">
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*ICIQ-UI Short Form (en)">
+					text = <"ICIQ-UI Short Form">
 					description = <"*International Consultation on Incontinence (ICIQ) Urinary Incontinence (UI) Short Form. (en)">
 				>
 				["at0001"] = <
@@ -285,126 +285,124 @@ How much urine do you usually leak (whether you wear protection or not)?">
 				>
 				["at0002"] = <
 					text = <"Uspesifisert tidspunkthendelse">
-					description = <"*A specific date and/or time which may be explicitly defined in a template or at run-time. (en)">
+					description = <"Uspesifisert tidspunkt som kan defineres mer eksplisitt i en templat eller i en applikasjon.">
 				>
 				["at0003"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"Frekvens">
-					description = <"Frekvens av urinlekkasje de siste 4 ukene.">
-					comment = <"Prompt: I gjennomsnitt de siste 4 ukene, hvor ofte lekker du urin?">
+					text = <"Hyppighet">
+					description = <"Hyppighet av urinlekkasje de siste 4 ukene.">
+					comment = <"Spørsmål: I gjennomsnitt de siste 4 ukene, hvor ofte lekker du urin?">
 				>
 				["at0005"] = <
-					text = <"*Never (en)">
-					description = <"*Over the past 4 weeks I have never leaked urine. (en)">
+					text = <"Aldri">
+					description = <"De siste fire ukene har jeg aldri lekket urin.">
 				>
 				["at0006"] = <
-					text = <"*About once a week or less often (en)">
-					description = <"*Over the past 4 weeks I have leaked urine about once a week or less often on average. (en)">
+					text = <"Omtrent én gang i uken eller sjeldnere">
+					description = <"løpet av de siste fire ukene har jeg lekket urin omtrent én gang i uken eller sjeldnere i gjennomsnitt.">
 				>
 				["at0007"] = <
-					text = <"*Two or three times a week (en)">
-					description = <"*Over the past 4 weeks I have leaked urine two or three times a week on average. (en)">
+					text = <"2-3 ganger i uken">
+					description = <"I løpet av de siste fire ukene har jeg lekket urin to eller tre ganger i uken i gjennomsnitt.">
 				>
 				["at0008"] = <
-					text = <"*About once a day (en)">
-					description = <"*Over the past 4 weeks I have leaked urine about once a day on average. (en)">
+					text = <"Ca. 1 gang per dag">
+					description = <"De siste fire ukene har jeg lekket urin omtrent én gang om dagen i gjennomsnitt.">
 				>
 				["at0009"] = <
-					text = <"*Several times a day (en)">
-					description = <"*Over the past 4 weeks I have leaked urine several times a day on average. (en)">
+					text = <"Flere ganger per dag">
+					description = <"I løpet av de siste fire ukene har jeg lekket urin flere ganger om dagen i gjennomsnitt.">
 				>
 				["at0010"] = <
-					text = <"*All the time (en)">
-					description = <"*Over the past 4 weeks I have leaked urine all the time. (en)">
+					text = <"Hele tiden">
+					description = <"De siste fire ukene har jeg lekket urin hele tiden.">
 				>
 				["at0011"] = <
-					text = <"*Quantity (en)">
-					description = <"*Perceived quantity of urine leakage. (en)">
-					comment = <"*Prompt: We would like to know how much urine you think leaks. 
-How much urine do you usually leak (whether you wear protection or not)? (en)">
+					text = <"Mengde">
+					description = <"Opplevd mengde urinlekkasje.">
+					comment = <"Spørsmål: Vi vil gjerne vite hvor mye urin du tror lekker. Hvor mye urin lekker du vanligvis (enten du bruker beskyttelse eller ikke)?">
 				>
 				["at0012"] = <
-					text = <"*None (en)">
-					description = <"*Over the past 4 weeks I have not leaked any urine. (en)">
+					text = <"Ikke noe">
+					description = <"De siste fire ukene har jeg ikke lekket urin.">
 				>
 				["at0013"] = <
-					text = <"*A small amount (en)">
-					description = <"*Over the past 4 weeks I have leaked a small amount of urine on average. (en)">
+					text = <"En liten mengde">
+					description = <"I løpet av de siste fire ukene har jeg lekket en liten mengde urin i gjennomsnitt.">
 				>
 				["at0014"] = <
-					text = <"*A moderate amount (en)">
-					description = <"*Over the past 4 weeks I have leaked a moderate amount of urine on average. (en)">
+					text = <"En moderat mengde">
+					description = <"løpet av de siste fire ukene har jeg lekket en moderat mengde urin i gjennomsnitt.">
 				>
 				["at0015"] = <
-					text = <"*A large amount (en)">
-					description = <"*Over the past 4 weeks I have leaked a large amount of urine on average. (en)">
+					text = <"En stor mengde">
+					description = <"I løpet av de siste fire ukene har jeg lekket en gjennomsnittlig mengde urin.">
 				>
 				["at0016"] = <
-					text = <"*Interference with daily life (en)">
-					description = <"*Perceived interference of urine leakage with daily life on a scale of 0 - 10. (en)">
-					comment = <"*Prompt: Overall, how much does leaking urine interfere with your everyday life?
- Please record a number between 0 (not at all) and 10 (a great deal) (en)">
+					text = <"Forstyrrelse i dagliglivet">
+					description = <"Opplevd forstyrrelse av urinlekkasje i dagliglivet på en skala fra 0–10.">
+					comment = <"Spørsmål: Hvor mye påvirker urinlekkasje ditt hverdagsliv? Vær vennlig, sett en ring rundt et tall mellom 0 (ikke i det hele tatt) og 10 (mye)">
 				>
 				["at0017"] = <
-					text = <"*ICIQ Score (en)">
-					description = <"*Sum of scores for frequency, quantity and interference. (en)">
+					text = <"ICIQ-skår">
+					description = <"Sum av poengsummer for frekvens, mengde og interferens.">
 				>
 				["at0018"] = <
-					text = <"*When does urine leak? (en)">
-					description = <"*Occasions when urine leakage occurs. (en)">
-					comment = <"*Prompt: When does urine leak? (Please tick all that apply to you). (en)">
+					text = <"Når lekker du urin?">
+					description = <"Anledninger når det oppstår urinlekkasje.">
+					comment = <"Spørsmål: Når lekker urin? (Kryss av for alt som gjelder for deg).">
 				>
 				["at0019"] = <
-					text = <"*Never (en)">
-					description = <"*Urine never leaks. (en)">
+					text = <"Aldri, jeg lekker ikke urin">
+					description = <"Urin lekker aldri.">
 				>
 				["at0020"] = <
-					text = <"*Before getting to toilet (en)">
-					description = <"*Urine leaks before you can get to the toilet. (en)">
+					text = <"Lekker før jeg når toalettet">
+					description = <"Urin lekker før du rekker å komme på toalettet.">
 				>
 				["at0021"] = <
-					text = <"*Cough or sneeze (en)">
-					description = <"*Urine leaks when you cough or sneeze. (en)">
+					text = <"Lekker når jeg hoster eller nyser">
+					description = <"Urin lekker når du hoster eller nyser.">
 				>
 				["at0022"] = <
-					text = <"*Asleep (en)">
-					description = <"*Urine leaks when you are asleep. (en)">
+					text = <"Lekker når jeg sover">
+					description = <"Urin lekker når du sover.">
 				>
 				["at0023"] = <
-					text = <"*Physically active/exercising (en)">
-					description = <"*Urine leaks when you are physically active or exercising. (en)">
+					text = <"Lekker når jeg er fysisk aktiv/trimmer">
+					description = <"Urin lekker når du er fysisk aktiv eller trener.">
 				>
 				["at0024"] = <
-					text = <"*Finished urinating and are dressed (en)">
-					description = <"*Urine leaks when you have finished urinating and are dressed. (en)">
+					text = <"Lekker når jeg er ferdig med å late vannet og har tatt på meg klærne">
+					description = <"Urin lekker når du er ferdig med å urinere og er påkledd.">
 				>
 				["at0025"] = <
-					text = <"*No obvious reason (en)">
-					description = <"*Urine leaks for no obvious reason. (en)">
+					text = <"Ingen åpenbar grunn">
+					description = <"Urin lekker uten noen åpenbar grunn.">
 				>
 				["at0026"] = <
-					text = <"*All the time (en)">
-					description = <"*Urine leaks all the time. (en)">
+					text = <"Lekker hele tiden">
+					description = <"Urin lekker hele tiden.">
 				>
 				["at0027"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
 				["at0028"] = <
-					text = <"*Confounding factors (en)">
-					description = <"*Description of any incidental factors that may have contributed to the score. (en)">
+					text = <"Konfunderende faktorer">
+					description = <"Ytterligere problemstillinger eller faktorer som kan påvirke skåringen.">
 				>
 				["at0029"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
 				["at0030"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to capture local content or to align with other reference models/formalisms. (en)">
-					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)">
+					text = <"Utvidelse">
+					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
+					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
 				>
 			>
 		>
