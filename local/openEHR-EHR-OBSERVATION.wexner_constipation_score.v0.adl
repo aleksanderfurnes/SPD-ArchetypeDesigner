@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"00c772a196287969dbe73474f19fe121">
+		["MD5-CAM-1.0.1"] = <"28d1675fc6a3e5906fd91cf0296910d7">
 		["build_uid"] = <"77e8620b-1418-3cff-a386-4a76fb8f8fc7">
 	>
 
@@ -46,7 +46,7 @@ definition
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+					POINT_EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
@@ -347,7 +347,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*wexner_constipation_score (en)">
+					text = <"Wexner score for obstipasjon">
 					description = <"*wexner_constipation_score (en)">
 				>
 				["at0001"] = <
@@ -355,7 +355,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Any event">
+					text = <"Uspesifisert tidspunkthendelse">
 					description = <"@ internal @">
 				>
 				["at0003"] = <
@@ -363,191 +363,191 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*Frequency of bowel movements (en)">
+					text = <"Frekvens av tarmtømming">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*1-2 times per 1-2 days (en)">
+					text = <"1–2 ganger per 1–2 dager">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*2 times per week (en)">
+					text = <"2 ganger per uke">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*Once per week (en)">
+					text = <"En gang per uke">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*Less than once per week (en)">
+					text = <"Mindre enn én gang per uke">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*Less than once per month (en)">
+					text = <"Mindre enn én gang per måned">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*Difficulty: painful evacuation effort (en)">
+					text = <"Smerter under defekasjon">
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*Never (en)">
+					text = <"Aldri">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"*Rarely (en)">
+					text = <"Sjelden">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*Sometimes (en)">
+					text = <"Av og til">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*Usually (en)">
+					text = <"Ofte">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"*Always (en)">
+					text = <"Alltid">
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"*Completeness: feeling incomplete evacuation (en)">
+					text = <"Følelse av inkomplett tømming">
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"*Never (en)">
+					text = <"Aldri">
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"*Rarely (en)">
+					text = <"Sjelden">
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*Sometimes (en)">
+					text = <"Av og til">
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"*Usually (en)">
+					text = <"Ofte">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*Always (en)">
+					text = <"Alltid">
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"*Pain: abdominal pain (en)">
+					text = <"Magesmerter">
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"*Never (en)">
+					text = <"Aldri">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*Rarely (en)">
+					text = <"Sjelden">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"*Sometimes (en)">
+					text = <"Av og til">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"*Usually (en)">
+					text = <"Ofte">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"*Always (en)">
+					text = <"Alltid">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"*Time: minutes in lavatory per attempt (en)">
+					text = <"Tid på toalett per avføringsforsøk">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*Less than 5 (en)">
+					text = <"< 5 min">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"*5-10 (en)">
+					text = <"5-10 min">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"*10-20 (en)">
+					text = <"10-20 min">
 					description = <"">
 				>
 				["at0032"] = <
-					text = <"*20-30 (en)">
+					text = <"20-30 min">
 					description = <"">
 				>
 				["at0033"] = <
-					text = <"*More than 30 (en)">
+					text = <"> 30 min">
 					description = <"">
 				>
 				["at0034"] = <
-					text = <"*Assistance: type of assistance (en)">
+					text = <"Avføringshjelp">
 					description = <"">
 				>
 				["at0035"] = <
-					text = <"*Without assistance (en)">
+					text = <"Ingen">
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"*Stimulative laxatives (en)">
+					text = <"Laxantia">
 					description = <"">
 				>
 				["at0037"] = <
-					text = <"*Digital assistance or enema (en)">
+					text = <"Digitalt/klyster">
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"*Failure: unsuccessful attempts for evacuation per 24 hours (en)">
+					text = <"Episoder uten tømming ved defekasjonsforsøk siste 24 timer">
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"*Never (en)">
+					text = <"Aldri">
 					description = <"">
 				>
 				["at0040"] = <
-					text = <"*1-3 (en)">
+					text = <"1–3">
 					description = <"">
 				>
 				["at0041"] = <
-					text = <"*3-6 (en)">
+					text = <"3–6">
 					description = <"">
 				>
 				["at0042"] = <
-					text = <"*6-9 (en)">
+					text = <"6–9">
 					description = <"">
 				>
 				["at0043"] = <
-					text = <"*More than 9 (en)">
+					text = <"Mer enn 9">
 					description = <"">
 				>
 				["at0044"] = <
-					text = <"*History: duration of constipation (yr) (en)">
+					text = <"Varighet av forstoppelsesplagene">
 					description = <"">
 				>
 				["at0045"] = <
-					text = <"*0 (en)">
+					text = <"< 1 år">
 					description = <"">
 				>
 				["at0046"] = <
-					text = <"*1-5 (en)">
+					text = <"1-5 år">
 					description = <"">
 				>
 				["at0047"] = <
-					text = <"*5-10 (en)">
+					text = <"5-10 år">
 					description = <"">
 				>
 				["at0048"] = <
-					text = <"*10-20 (en)">
+					text = <"10-20 år">
 					description = <"">
 				>
 				["at0049"] = <
-					text = <"*More than 20 (en)">
+					text = <"> 20 år">
 					description = <"">
 				>
 				["at0050"] = <
-					text = <"*Total score (en)">
+					text = <"Totalskår">
 					description = <"">
 				>
 			>
