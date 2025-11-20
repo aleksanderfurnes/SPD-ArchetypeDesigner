@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"df45a7a8ec1044758b9ce69840be4bb5">
+		["MD5-CAM-1.0.1"] = <"4285c8f6d142d10b0c919ce0715efbef">
 		["build_uid"] = <"753c10da-9874-3a9c-a9eb-1a1d2d91db5a">
 	>
 
@@ -264,7 +264,7 @@ ontology
 					description = <"ICIQ-OAB">
 				>
 				["at0001"] = <
-					text = <"History">
+					text = <"Historie">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
@@ -276,7 +276,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"Hvor mange ganger i løpet av dagen har du vanligvis vannlating?">
+					text = <"Hvor ofte urinerer du i løpet av dagen?">
 					description = <"">
 				>
 				["at0005"] = <
@@ -284,108 +284,108 @@ ontology
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*7 to 8 times (en)">
+					text = <"7 til 8 ganger">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*9 to 10 times (en)">
+					text = <"9 til 10 ganger">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*11 to 12 times (en)">
+					text = <"11 til 12 ganger">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*13 or more times (en)">
+					text = <"13 eller flere ganger">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*How much does this bother you? (en)">
-					description = <"*Please select a number between 0 (not at all) and 10 (a great deal) (en)">
+					text = <"Hvor stort problem er dette for deg?">
+					description = <"Vær vennlig, velg et tall mellom 0 (ikke noe problem) og 10 (et alvorlig problem).">
 				>
 				["at0011"] = <
-					text = <"*During the night, how many times do you have to get up to urinate, on average? (en)">
+					text = <"Hvor ofte står du vanligvis opp om natten for å late vannet?">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"*None (en)">
+					text = <"Aldri">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*One (en)">
+					text = <"En">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*Two (en)">
+					text = <"To">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"*Three (en)">
+					text = <"Tre">
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"*Four or more (en)">
+					text = <"Fire eller mer">
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"*How much does this bother you? (en)">
-					description = <"*Please select a number between 0 (not at all) and 10 (a great deal) (en)">
+					text = <"Hvor stort problem er det for deg?">
+					description = <"Vær vennlig, velg et tall mellom 0 (ikke noe problem) og 10 (et alvorlig problem).">
 				>
 				["at0018"] = <
-					text = <"*Do you have to rush to the toilet to urinate? (en)">
+					text = <"Er du nødt for å skynde deg på toalettet for å late vannet?">
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*Never (en)">
+					text = <"Aldri">
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"*Occasionally (en)">
+					text = <"Sjelden">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*Sometimes (en)">
+					text = <"Av og til">
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"*Most of the time (en)">
+					text = <"Som oftest">
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"*All of the time (en)">
+					text = <"Alltid">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*How much does this bother you? (en)">
-					description = <"*Please select a number between 0 (not at all) and 10 (a great deal) (en)">
+					text = <"Hvor stort problem er det for deg?">
+					description = <"Vær vennlig, velg et tall mellom 0 (ikke noe problem) og 10 (et alvorlig problem).">
 				>
 				["at0026"] = <
-					text = <"*Does urine leak before you can get to the toilet? (en)">
+					text = <"Lekker det urin før du når frem til toalettet?">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"*Never (en)">
+					text = <"Aldri">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"*Occasionally (en)">
+					text = <"Sjelden">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*Sometimes (en)">
+					text = <"Av og til">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"*Most of the time (en)">
+					text = <"Som oftest">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"*All of the time (en)">
+					text = <"Alltid">
 					description = <"">
 				>
 				["at0032"] = <
-					text = <"*How much does this bother you? (en)">
-					description = <"*Please select a number between 0 (not at all) and 10 (a great deal) (en)">
+					text = <"Hvor stort problem er det for deg?">
+					description = <"Vær vennlig, velg et tall mellom 0 (ikke noe problem) og 10 (et alvorlig problem).">
 				>
 			>
 		>
