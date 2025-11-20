@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d92b47c74ff9f31fc20bccf1dd7a2ab9">
+		["MD5-CAM-1.0.1"] = <"df45a7a8ec1044758b9ce69840be4bb5">
 		["build_uid"] = <"753c10da-9874-3a9c-a9eb-1a1d2d91db5a">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- iciq_oab
+	OBSERVATION[at0000] matches {    -- Overactive Bladder questionnaire
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -117,8 +128,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"iciq_oab">
-					description = <"iciq_oab">
+					text = <"Overactive Bladder questionnaire">
+					description = <"ICIQ-OAB">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -243,6 +254,138 @@ ontology
 				["at0032"] = <
 					text = <"How much does this bother you?">
 					description = <"Please select a number between 0 (not at all) and 10 (a great deal)">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Spørreskjema om overaktiv blære">
+					description = <"ICIQ-OAB">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Hvor mange ganger i løpet av dagen har du vanligvis vannlating?">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"1 til 6 ganger">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*7 to 8 times (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*9 to 10 times (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*11 to 12 times (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*13 or more times (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*How much does this bother you? (en)">
+					description = <"*Please select a number between 0 (not at all) and 10 (a great deal) (en)">
+				>
+				["at0011"] = <
+					text = <"*During the night, how many times do you have to get up to urinate, on average? (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*None (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*One (en)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"*Two (en)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"*Three (en)">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"*Four or more (en)">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"*How much does this bother you? (en)">
+					description = <"*Please select a number between 0 (not at all) and 10 (a great deal) (en)">
+				>
+				["at0018"] = <
+					text = <"*Do you have to rush to the toilet to urinate? (en)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"*Occasionally (en)">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"*Sometimes (en)">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"*Most of the time (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*All of the time (en)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*How much does this bother you? (en)">
+					description = <"*Please select a number between 0 (not at all) and 10 (a great deal) (en)">
+				>
+				["at0026"] = <
+					text = <"*Does urine leak before you can get to the toilet? (en)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*Never (en)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"*Occasionally (en)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"*Sometimes (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Most of the time (en)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"*All of the time (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*How much does this bother you? (en)">
+					description = <"*Please select a number between 0 (not at all) and 10 (a great deal) (en)">
 				>
 			>
 		>
