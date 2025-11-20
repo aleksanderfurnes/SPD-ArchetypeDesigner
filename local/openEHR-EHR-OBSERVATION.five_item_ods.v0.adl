@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"336843bbc2e4074919645497f35c9a18">
+		["MD5-CAM-1.0.1"] = <"1c5e39cfa520135546bb2401819d2aa7">
 		["build_uid"] = <"f5ca06ec-baef-3bb1-b47a-55cc6721634a">
 	>
 
@@ -268,7 +268,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"Any event">
+					text = <"Uspesifisert hendelse">
 					description = <"@ internal @">
 				>
 				["at0003"] = <
