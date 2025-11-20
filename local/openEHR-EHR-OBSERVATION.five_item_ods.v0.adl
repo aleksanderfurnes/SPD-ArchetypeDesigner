@@ -37,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6152cb5e9b20054dcdf03e907b33b329">
+		["MD5-CAM-1.0.1"] = <"336843bbc2e4074919645497f35c9a18">
 		["build_uid"] = <"f5ca06ec-baef-3bb1-b47a-55cc6721634a">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- five_item_ods
+	OBSERVATION[at0000] matches {    -- Five item Obstructed Defecation Syndrome score
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -116,7 +116,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"five_item_ods">
+					text = <"Five item Obstructed Defecation Syndrome score">
 					description = <"five_item_ods">
 				>
 				["at0001"] = <
@@ -260,7 +260,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*five_item_ods (en)">
+					text = <"Obstructed Defecation Syndrome score">
 					description = <"*five_item_ods (en)">
 				>
 				["at0001"] = <
