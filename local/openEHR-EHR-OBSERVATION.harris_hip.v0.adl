@@ -42,7 +42,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"31C8A107F1FB7A9B31D6B8D1A4C78800">
+		["MD5-CAM-1.0.1"] = <"39f712b770a1181a0e060604867eea69">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -121,7 +121,7 @@ definition
 											0|[local::at0044]
 										}
 									}
-									ELEMENT[at0048] occurrences matches {0..4} matches {    -- 9. Absence of deformity
+									ELEMENT[at0048] occurrences matches {0..1} matches {    -- 9. Absence of deformity
 										value matches {
 											0|[local::at0176],
 											4|[local::at0177]
@@ -435,10 +435,7 @@ ontology
 				>
 				["at0048"] = <
 					text = <"9. Absence of deformity">
-					description = <"Less than 30degrees of fixed flexion.
-Less than 10 degrees of fixed internal rotation in extension.
-Less than 10 degrees of fixed adduction.
-Limb length discrepancy less than 3.2 cm (1.5 inches).">
+					description = <"Criteria: Less than 30 degrees of fixed flexion; Less than 10 degrees of fixed internal rotation in extension; Less than 10 degrees of fixed adduction; Limb length discrepancy less than 3.2 cm (1.5 inches).">
 				>
 				["at0052"] = <
 					text = <"10. Total degrees of flexion">
