@@ -79,7 +79,7 @@ Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-s
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3c16b964862c100893639157eca469aa">
+		["MD5-CAM-1.0.1"] = <"c30bc71757f210dbbc0543133d138a5f">
 		["build_uid"] = <"86f191d7-6048-4808-b7a8-c34d44d693bb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -195,7 +195,7 @@ ontology
 				>
 				["at0005"] = <
 					text = <"I have no problems in walking about">
-					description = <"*">
+					description = <"">
 				>
 				["at0006"] = <
 					text = <"Self-care">
@@ -231,99 +231,99 @@ code.">
 				>
 				["at0012"] = <
 					text = <"I have slight problems in walking about">
-					description = <"*">
+					description = <"">
 				>
 				["at0013"] = <
 					text = <"I have moderate problems in walking about">
-					description = <"*">
+					description = <"">
 				>
 				["at0014"] = <
 					text = <"I have severe problems in walking about">
-					description = <"*">
+					description = <"">
 				>
 				["at0015"] = <
 					text = <"I am unable to walk about">
-					description = <"*">
+					description = <"">
 				>
 				["at0016"] = <
 					text = <"I have no problems washing or dressing myself">
-					description = <"*">
+					description = <"">
 				>
 				["at0017"] = <
 					text = <"I have slight problems washing or dressing myself">
-					description = <"*">
+					description = <"">
 				>
 				["at0018"] = <
 					text = <"I have moderate problems washing or dressing myself">
-					description = <"*">
+					description = <"">
 				>
 				["at0019"] = <
 					text = <"I have severe problems washing or dressing myself">
-					description = <"*">
+					description = <"">
 				>
 				["at0020"] = <
 					text = <"I am unable to wash or dress myself">
-					description = <"*">
+					description = <"">
 				>
 				["at0021"] = <
 					text = <"I have no problems doing my usual activities">
-					description = <"*">
+					description = <"">
 				>
 				["at0022"] = <
 					text = <"I have slight problems doing my usual activities">
-					description = <"*">
+					description = <"">
 				>
 				["at0023"] = <
 					text = <"I have moderate problems doing my usual activities">
-					description = <"*">
+					description = <"">
 				>
 				["at0024"] = <
 					text = <"I have severe problems doing my usual activities">
-					description = <"*">
+					description = <"">
 				>
 				["at0025"] = <
 					text = <"I am unable to do my usual activities">
-					description = <"*">
+					description = <"">
 				>
 				["at0026"] = <
 					text = <"I have no pain or discomfort">
-					description = <"*">
+					description = <"">
 				>
 				["at0027"] = <
 					text = <"I have slight pain or discomfort">
-					description = <"*">
+					description = <"">
 				>
 				["at0028"] = <
 					text = <"I have moderate pain or discomfort">
-					description = <"*">
+					description = <"">
 				>
 				["at0029"] = <
 					text = <"I have severe pain or discomfort">
-					description = <"*">
+					description = <"">
 				>
 				["at0030"] = <
 					text = <"I have extreme pain or discomfort">
-					description = <"*">
+					description = <"">
 				>
 				["at0031"] = <
 					text = <"I am not anxious or depressed">
-					description = <"*">
+					description = <"">
 				>
 				["at0032"] = <
 					text = <"I am slightly anxious or depressed">
-					description = <"*">
+					description = <"">
 				>
 				["at0033"] = <
 					text = <"I am moderately anxious or depressed">
-					description = <"*">
+					description = <"">
 				>
 				["at0034"] = <
 					text = <"I am severely anxious or depressed">
-					description = <"*">
+					description = <"">
 				>
 				["at0035"] = <
 					text = <"I am extremely anxious or depressed">
-					description = <"*">
+					description = <"">
 				>
 				["at0036"] = <
 					text = <"Item tree">
