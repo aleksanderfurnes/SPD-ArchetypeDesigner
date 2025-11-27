@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=0b3c1c52-b958-452c-aa36-a7ab17d309a2)
+archetype (adl_version=1.4; uid=709cf60b-1eb6-409f-91d9-e76115971e02)
 	openEHR-EHR-OBSERVATION.problem_screening.v1
 
 concept
@@ -247,10 +247,10 @@ No utilitzar per a registrar dades sobre una llista de selecció simple on una p
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"D208D25865EF6A8590CAC3E4299A25F4">
-		["build_uid"] = <"693fe4dd-eb77-416f-a3ed-6b4b0d6ac4de">
+		["MD5-CAM-1.0.1"] = <"942CF0FB3C54F2949348CF29B1DD1E2D">
+		["build_uid"] = <"97762319-39bc-4d88-bb02-ebc13a4d9b55">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
-		["revision"] = <"1.0.7">
+		["revision"] = <"1.0.3">
 	>
 
 definition
