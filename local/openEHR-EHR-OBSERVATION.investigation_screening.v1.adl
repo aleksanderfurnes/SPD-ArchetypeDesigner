@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=8bf00e22-21a9-4441-9c5d-62ccbbdb6b8c)
+archetype (adl_version=1.4; uid=69d2930f-2a17-4c69-b472-785d142d9744)
 	openEHR-EHR-OBSERVATION.investigation_screening.v1
 
 concept
@@ -225,10 +225,10 @@ No s'ha de fer servir per registrar resultats de proves de diagnòstic formals; 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4303915A919C8B6D98E44B6105250000">
-		["build_uid"] = <"b77e0cf6-fb2d-4e9b-adb0-4a332280c0ea">
+		["MD5-CAM-1.0.1"] = <"12BB458F5811CD246819C78F394256F2">
+		["build_uid"] = <"4019ac3f-5162-4016-81fc-dfd0501cac68">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
-		["revision"] = <"1.1.0">
+		["revision"] = <"1.3.0">
 	>
 
 definition
