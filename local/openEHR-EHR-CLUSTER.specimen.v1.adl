@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=4f4d5daf-b6b7-475f-ae49-66b3c5003e6f)
+archetype (adl_version=1.4; uid=339fa35f-f140-4dc9-aeed-bbe9995058e0)
 	openEHR-EHR-CLUSTER.specimen.v1
 
 concept
@@ -189,9 +189,9 @@ Laboratory Technical Framework, Volume 3: Content, Revision 10 [Internet]. USA: 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"22CC4D6E678D5921D1235F94FF1DDDB1">
-		["build_uid"] = <"2135a42f-2b06-49c7-a71b-dd68896fa178">
-		["revision"] = <"1.1.2">
+		["MD5-CAM-1.0.1"] = <"6472C94BF8D8BBA7854A29F0E5175880">
+		["build_uid"] = <"c6680302-3c2d-424f-97d4-5d43c660efdd">
+		["revision"] = <"1.1.0">
 	>
 
 definition
