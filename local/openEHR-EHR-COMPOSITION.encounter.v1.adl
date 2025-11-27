@@ -153,6 +153,30 @@ Nicht zur Darstellung von Berichten eines Diagnosedienstes, z.B. Bildgebung oder
 
 Nicht zur Darstellung von der gleichnamige FHIR-Ressource geeignet- dort liegt eine Diskrepanz vor.">
 		>
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			purpose = <"*To record the document level details of a single interaction, contact or care event between a subject of care and healthcare provider(s) for the provision of healthcare service(s). This can be either a face-to-face or remote interaction.(en)">
+			keywords = <"*encounter(en)","*contact(en)","*visit(en)","*care event(en)">
+			use = <"*Use as a generic document-level container for recording details of a single interaction, contact or care event between a subject of care and healthcare provider(s).
+The contact may be face-to-face, via telephone or another electronic medium. Modality can be captured, if required, via the reference model COMPOSITION/mode attribute.
+
+The main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template.
+
+Even though unconstrained for clinical content, specification of COMPOSITION.Encounter provides significant value by allowing for explicit querying of all Encounters within a patient record.
+
+The Context component contains an optional 'Extension' SLOT that can be used in template design to:
+- add optional contextual information, such as episode information; or
+- allow for harmonisation or alignment with other model formalisms such as FHIR or CIMI, such as explicit representation of participants that are usually managed by the openEHR Reference Model in an openEHR archetype.
+
+Typical examples are a clinic visit, a nursing observation or a telemedicine consultation.(en)">
+			misuse = <"*Not to be used to record details about an entire episode of care.
+
+Not to be used to carry persistent, summarised patient information, such as a problem list or medication summary.
+
+Not to be used to represent the report of a diagnostic service, such as imaging or laboratory testing.
+
+Not to be used to represent the FHIR resource of the same name - there is a mismatch scope and intent.(en)">
+		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Att registrera detaljer om en enskild interaktion eller vårdkontakt mellan patient och vårdgivare. Interaktionen kan både vara fysisk eller på distans.">
@@ -178,30 +202,6 @@ Ska inte användas för att innehålla sammanfattande patientinformation som är
 Ska inte användas för att representera en rapport från en diagnostisk tjänst, exempelvis en röntgenbild eller laboratorietest.
 
 Ska inte användas för att representera FHIR-resursen med samma namn. Det finns en konflikt mellan avsett tillämpnings- och användningsområde.">
-		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"*To record the document level details of a single interaction, contact or care event between a subject of care and healthcare provider(s) for the provision of healthcare service(s). This can be either a face-to-face or remote interaction.(en)">
-			keywords = <"*encounter(en)","*contact(en)","*visit(en)","*care event(en)">
-			use = <"*Use as a generic document-level container for recording details of a single interaction, contact or care event between a subject of care and healthcare provider(s).
-The contact may be face-to-face, via telephone or another electronic medium. Modality can be captured, if required, via the reference model COMPOSITION/mode attribute.
-
-The main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template.
-
-Even though unconstrained for clinical content, specification of COMPOSITION.Encounter provides significant value by allowing for explicit querying of all Encounters within a patient record.
-
-The Context component contains an optional 'Extension' SLOT that can be used in template design to:
-- add optional contextual information, such as episode information; or
-- allow for harmonisation or alignment with other model formalisms such as FHIR or CIMI, such as explicit representation of participants that are usually managed by the openEHR Reference Model in an openEHR archetype.
-
-Typical examples are a clinic visit, a nursing observation or a telemedicine consultation.(en)">
-			misuse = <"*Not to be used to record details about an entire episode of care.
-
-Not to be used to carry persistent, summarised patient information, such as a problem list or medication summary.
-
-Not to be used to represent the report of a diagnostic service, such as imaging or laboratory testing.
-
-Not to be used to represent the FHIR resource of the same name - there is a mismatch scope and intent.(en)">
 		>
 		["ko"] = <
 			language = <[ISO_639-1::ko]>
@@ -233,12 +233,6 @@ Não deve ser utilizado para representar o relato de um serviço diagnóstico co
 
 Não deve ser utilizado para representar recurso FHIR do mesmo nome - há uma incompatibilidade de objetivo e intenção.">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"تسجيل المقابلة على هيئة ملاحظة تقدم الحالة">
-			keywords = <"التقدم","ملاحظة","المقابلة">
-			copyright = <"© openEHR Foundation">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record the document level details of a single interaction, contact or care event between a subject of care and healthcare provider(s) for the provision of healthcare service(s). This can be either a face-to-face or remote interaction.">
@@ -263,6 +257,12 @@ Not to be used to carry persistent, summarised patient information, such as a pr
 Not to be used to represent the report of a diagnostic service, such as imaging or laboratory testing.
 
 Not to be used to represent the FHIR resource of the same name - there is a mismatch scope and intent.">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"تسجيل المقابلة على هيئة ملاحظة تقدم الحالة">
+			keywords = <"التقدم","ملاحظة","المقابلة">
+			copyright = <"© openEHR Foundation">
 		>
 		["it"] = <
 			language = <[ISO_639-1::it]>
@@ -359,24 +359,6 @@ Não deve ser utilizado para representar o relatório de um serviço de diagnós
 Não deve ser utilizado para representar o recurso FHIR com o mesmo nome - existe uma incompatibilidade entre o âmbito e a intenção.
 ">
 		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"Registrar los detalles documentales de una única interacción, contacto o evento de cuidado entre un sujeto de cuidados y uno o más proveedores de uno o más servicios de salud. Esta interacción puede ser presencial o remota.">
-			keywords = <"encuentro","contacto","visita","evento de cuidados","consulta">
-			copyright = <"© openEHR Foundation">
-			use = <"Utilícese como un contendor de nivel de documento para el registro de una única interacción, contacto o evento de cuidados entre un sujeto de cuidados y uno o mas proveedores de cuidados de la salud.
-El contacto puede ser cara a cara, o por vía telefónicao de cualquier otro medio electrónico. La modalidad puede ser representada, si asi se requiere, por medio del atributo modo de la COMPOSITION.
-El componente principal de Secciones o Contenido se ha mantenido deliberadamente libre de restricciones. Esto permite que se incluya en la plantilla cualquier Sección (SECTION) o Asiento (ENTRY) apropiado al propósito clínico.
-Aún cuando se encuentra libre de restricciones en cuanto al contenido clínico, la especificación del COMPOSITION.Encounter agreva valor significativo al permitir la consulta explícita de todos los encuentros conteidos en una historia clínica.
-El componente de Contexto contiene un slot opcional \"Extensión\" que puede ser utilizado en el diseño de una plantilla para:
--agregar información opcional de contexto, tal como información sobre el episodio, o
--permitir la armonización o alineamiento con otros formalismos de modelado tales como FHIR o CIMI, como puede ser la representación explícita de participantes que son generalmente manejados por el Modelo de Referencia en un arquetipo openEHR.
-Son ejemplos típicos una visita a consultorio, una observación de enfermería o una consulta de telemedicina.">
-			misuse = <"No debe ser utilizado para registrar los detalles de la totalidad de un episodio de cuidado
-No debe ser utilizado para almacenar información sumaria persistente de un paciente, tale como una lista de problemas o un resumen de medicamentos.
-No debe ser utilizado para representar el informe de un servicio diagnóstico, tal como un estudio de imágenes o una pruena de laboratorio.
-No debe ser utilizado para representar el recurso FHIR del mismo nombre ya que existe una diapridad de alcance y propósito.">
-		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere detaljer om en enkel interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell, der kontakten omhandler helsetjenester. Den kliniske kontakten kan være direkte ved ansikt-til-ansikt, indirekte via telefon eller videokonferanse, eller asynkron via elektronisk konsultasjon eller brev.">
@@ -396,6 +378,47 @@ Typiske eksempler kan være en poliklinikktime, en sykepleierobservasjon eller e
 Brukes ikke til å inneholde persistent, oppsummert informasjon om individet, som f.eks. problemliste eller medikamentliste.
 Brukes ikke som rapport fra en diagnostisk service, som billeddiagnostikk eller laboratorieprøve.
 Brukes ikke til å representere FHIR-ressursen av samme navn - disse har forskjellig omfang og bruksområde.">
+		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Registrar los detalles documentales de una única interacción, contacto o evento de cuidado entre un sujeto de cuidados y uno o más proveedores de uno o más servicios de salud. Esta interacción puede ser presencial o remota.">
+			keywords = <"encuentro","contacto","visita","evento de cuidados","consulta">
+			copyright = <"© openEHR Foundation">
+			use = <"Utilícese como un contendor de nivel de documento para el registro de una única interacción, contacto o evento de cuidados entre un sujeto de cuidados y uno o mas proveedores de cuidados de la salud.
+El contacto puede ser cara a cara, o por vía telefónicao de cualquier otro medio electrónico. La modalidad puede ser representada, si asi se requiere, por medio del atributo modo de la COMPOSITION.
+El componente principal de Secciones o Contenido se ha mantenido deliberadamente libre de restricciones. Esto permite que se incluya en la plantilla cualquier Sección (SECTION) o Asiento (ENTRY) apropiado al propósito clínico.
+Aún cuando se encuentra libre de restricciones en cuanto al contenido clínico, la especificación del COMPOSITION.Encounter agreva valor significativo al permitir la consulta explícita de todos los encuentros conteidos en una historia clínica.
+El componente de Contexto contiene un slot opcional \"Extensión\" que puede ser utilizado en el diseño de una plantilla para:
+-agregar información opcional de contexto, tal como información sobre el episodio, o
+-permitir la armonización o alineamiento con otros formalismos de modelado tales como FHIR o CIMI, como puede ser la representación explícita de participantes que son generalmente manejados por el Modelo de Referencia en un arquetipo openEHR.
+Son ejemplos típicos una visita a consultorio, una observación de enfermería o una consulta de telemedicina.">
+			misuse = <"No debe ser utilizado para registrar los detalles de la totalidad de un episodio de cuidado
+No debe ser utilizado para almacenar información sumaria persistente de un paciente, tale como una lista de problemas o un resumen de medicamentos.
+No debe ser utilizado para representar el informe de un servicio diagnóstico, tal como un estudio de imágenes o una pruena de laboratorio.
+No debe ser utilizado para representar el recurso FHIR del mismo nombre ya que existe una diapridad de alcance y propósito.">
+		>
+		["ca"] = <
+			language = <[ISO_639-1::ca]>
+			purpose = <"Registrar les dades en l’àmbit del document d'una única interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària. Pot ser una interacció presencial o remota.">
+			keywords = <"encontre","contacte","visita","esdeveniment d’atenció">
+			use = <"Utilitzar com a contenidor genèric en l’àmbit del document per a registrar dades d'una única interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària. El contacte pot ser presencial, per telèfon o un altre mitjà electrònic. La modalitat es pot recollir, si fos necessari, mitjançant l'atribut COMPOSITION/mode del model de referència.
+
+El component principal de Sections/Content s'ha deixat deliberadament sense restriccions. Això permetrà que es completi amb qualsevol arquetip de tipus SECTION o ENTRY adequats per a la finalitat clínica dins d'una plantilla.
+
+Tot i que COMPOSITION.Encounter no té restriccions per al contingut clínic, especificar aquest element proporciona un valor significatiu en permetre la consulta explícita de tots els Encounters dins d'un registre de pacients.
+
+El component Context conté un SLOT opcional de «Extensió» que es pot utilitzar en el disseny de plantilles per a:
+- afegir informació contextual opcional, com ara informació de l'episodi; o
+- permetre l'harmonització o alineació amb altres formalismes model com FHIR o CIMI, com la representació explícita dels participants que solen ser gestionats pel Model de Referència openEHR en un arquetip openEHR.
+
+Exemples típics són una visita clínica, una observació d'infermeria o una consulta de telemedicina.">
+			misuse = <"No utilitzar per a registrar dades sobre un episodi complet d’atenció.
+
+No utilitzar per a contenir informació persistent i resumida del pacient, com ara una llista de problemes o un resum de medicació.
+
+No utilitzar per a registrar l'informe d'un servei de diagnòstic, com ara imatges o proves de laboratori.
+
+No utilitzar per a representar el recurs FHIR del mateix nom - hi ha un abast i una intenció que no coincideixen.">
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
@@ -420,29 +443,6 @@ Niet te gebruiken om volhardende, samengevatte patient-gegevens te bevatten, zoa
 Niet te gebruiken om een rapport van een diagnostische dienst te representeren, zoals beelden of laboratorium-onderzoek.
 
 Niet te gebruiken om een FHIR-bron met eenzelfde naam te representeren - dan is er een conflict in de scope en doelstelling.">
-		>
-		["ca"] = <
-			language = <[ISO_639-1::ca]>
-			purpose = <"Registrar les dades en l’àmbit del document d'una única interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària. Pot ser una interacció presencial o remota.">
-			keywords = <"encontre","contacte","visita","esdeveniment d’atenció">
-			use = <"Utilitzar com a contenidor genèric en l’àmbit del document per a registrar dades d'una única interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària. El contacte pot ser presencial, per telèfon o un altre mitjà electrònic. La modalitat es pot recollir, si fos necessari, mitjançant l'atribut COMPOSITION/mode del model de referència.
-
-El component principal de Sections/Content s'ha deixat deliberadament sense restriccions. Això permetrà que es completi amb qualsevol arquetip de tipus SECTION o ENTRY adequats per a la finalitat clínica dins d'una plantilla.
-
-Tot i que COMPOSITION.Encounter no té restriccions per al contingut clínic, especificar aquest element proporciona un valor significatiu en permetre la consulta explícita de tots els Encounters dins d'un registre de pacients.
-
-El component Context conté un SLOT opcional de «Extensió» que es pot utilitzar en el disseny de plantilles per a:
-- afegir informació contextual opcional, com ara informació de l'episodi; o
-- permetre l'harmonització o alineació amb altres formalismes model com FHIR o CIMI, com la representació explícita dels participants que solen ser gestionats pel Model de Referència openEHR en un arquetip openEHR.
-
-Exemples típics són una visita clínica, una observació d'infermeria o una consulta de telemedicina.">
-			misuse = <"No utilitzar per a registrar dades sobre un episodi complet d’atenció.
-
-No utilitzar per a contenir informació persistent i resumida del pacient, com ara una llista de problemes o un resum de medicació.
-
-No utilitzar per a registrar l'informe d'un servei de diagnòstic, com ara imatges o proves de laboratori.
-
-No utilitzar per a representar el recurs FHIR del mateix nom - hi ha un abast i una intenció que no coincideixen.">
 		>
 	>
 	other_details = <
