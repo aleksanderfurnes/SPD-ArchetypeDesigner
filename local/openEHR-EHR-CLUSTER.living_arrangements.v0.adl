@@ -1,0 +1,121 @@
+archetype (adl_version=1.4; uid=1b495e00-09a5-4903-b2b3-80c0c6d92f97)
+	openEHR-EHR-CLUSTER.living_arrangements.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-05-20">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"c773985dc35fce99f8fcd5acf95184dc">
+		["build_uid"] = <"3aaadc10-42f4-3835-9702-db6bebef7684">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Living Arrangements
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Form of living
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Living Arrangements">
+					description = <"Living Arrangements">
+				>
+				["at0001"] = <
+					text = <"Form of living">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Boform">
+					description = <"*Living Arrangements (en)">
+				>
+				["at0001"] = <
+					text = <"Samlivsform">
+					description = <"Angivelse av hvilken samlivsform pasientens har. ">
+					comment = <"I Norge benyttes gjerne kodelisten no.samlivsform ">
+				>
+				["at0002"] = <
+					text = <"Ansvar for barn under 18 år">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Barn som pårørende">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Ansvar for egne barn/andre over 18 år">
+					description = <"">
+				>
+			>
+		>
+	>
