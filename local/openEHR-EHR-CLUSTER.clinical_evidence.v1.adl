@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=1a30b06f-887a-4b08-ab42-243bf6757c33)
+archetype (adl_version=1.4; uid=8d9cba91-c081-4b58-888b-da8e02c56ee8)
 	openEHR-EHR-CLUSTER.clinical_evidence.v1
 
 concept
@@ -11,7 +11,7 @@ language
 			language = <[ISO_639-1::de]>
 			author = <
 				["name"] = <"Alina Rehberg, Darin Leonhardt">
-				["organisation"] = <"Medizinische Hochschule Hannover, PLRI, PLRI für medizinische Informatik/ Medizinische Hochschule">
+				["organisation"] = <"Medizinische Hochschule Hannover, PLRI">
 				["email"] = <"rehberg.alina@mh-hannover.de, leonhardt.darin@mh-hannover.de">
 			>
 		>
@@ -50,11 +50,9 @@ description
 			copyright = <"© openEHR Foundation, openEHR Norway">
 			use = <"Zur Dokumentationn von Details zu Befunden, die eine klinische Feststellung unterstützen, entweder als Zusammenfassung von Daten, die in anderen (oft der Klasse OBSERVATION) Archetypen verfügbar sind, oder wenn die ursprünglichen Beobachtungsdaten nicht verfügbar sind.
 
-Diesen Archetypen innerhalb eines SLOTS Archetypen wie EVALUATION.problem_diagnose, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication oder ähnlichen zusammenfassenden Archetypen verwenden, bei denen der Name der Feststellung bereits in der EVALUATION angegeben wurde, verschachtelt wird, um den Inhalt um diesen zusätzlichen und optionalen Datensatz zu erweitern. Während LINKs innerhalb des openEHR-Referenzmodells eine Verknüpfung mit Daten ermöglichen, die an anderer Stelle in der Gesundheitsakte gespeichert sind, wurde dieser Archetyp entwickelt, um diese Funktionalität explizit zu machen und um die klinische Sichtbarkeit und Überprüfung dieser Daten zu ermöglichen, wo sie in einer Vorlage oder Spezifikation relevant sein können.
+*Diesen Archetypen innerhalb eines SLOTS Archetypen wie EVALUATION.problem_diagnose, EVALUATION.adverse_reaction_risk, EVALUATION.health_risk, EVALUATION.contraindication oder ähnlichen zusammenfassenden Archetypen verwenden, bei denen der Name der Feststellung bereits in der EVALUATION angegeben wurde, verschachtelt wird, um den Inhalt um diesen zusätzlichen und optionalen Datensatz zu erweitern. Während LINKs innerhalb des openEHR-Referenzmodells eine Verknüpfung mit Daten ermöglichen, die an anderer Stelle in der Gesundheitsakte gespeichert sind, wurde dieser Archetyp entwickelt, um diese Funktionalität explizit zu machen und um die klinische Sichtbarkeit und Überprüfung dieser Daten zu ermöglichen, wo sie in einer Vorlage oder Spezifikation relevant sein können.
 
-Der klinische Beweis kann direkt in diesen Archetyp als \"Finding\" eingegeben werden, oder es kann ein Zitat verwendet werden, um explizit auf Daten innerhalb der Gesundheitsakte zu verweisen.
-
-">
+Der klinische Beweis kann direkt in diesen Archetyp als \"Finding\" eingegeben werden, oder es kann ein Zitat verwendet werden, um explizit auf Daten innerhalb der Gesundheitsakte zu verweisen.">
 			misuse = <"Nicht zur Dokumentation von zusammenfassende Details zu einem identifizierten Problem oder einer Diagnose verwenden - verwenden Sie dazu die EVALUATION.problem_diagnosis.
 
 Nicht zur Dokumentation von zusammenfassenden Details über ein identifiziertes Nebenwirkungsrisiko verwenden - verwenden Sie dazu die Datei EVALUATION.adverse_reaction_risk.
@@ -128,9 +126,9 @@ Not to be used to record summary details about an identified contraindication - 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9CA673C44D07EB44E7473631D0F97DD4">
-		["build_uid"] = <"25f3f07e-1c99-47c3-99a2-56967b763817">
-		["revision"] = <"1.3.1">
+		["MD5-CAM-1.0.1"] = <"09B7BA1910813627AA96976C38DA73FF">
+		["build_uid"] = <"bdf75800-1277-4eed-aa05-6789a2b43af5">
+		["revision"] = <"1.3.0">
 	>
 
 definition
@@ -324,23 +322,23 @@ ontology
 					description = <"Narrative Beschreibung der Methode(n), die zur Festellung der Evidenz verwendet wurde(n).">
 				>
 				["at0003"] = <
-					text = <"Befund">
-					description = <"Identifizierung des Befundes, der die Feststellung stützt">
-					comment = <"Es wird nach Möglichkeit empfohlen den Befund mit einer Terminologie zu kodieren.">
+					text = <"*Befund">
+					description = <"*Identifizierung des Befundes, der die Feststellung stützt">
+					comment = <"*Es wird nach Möglichkeit empfohlen den Befund mit einer Terminologie zu kodieren.">
 				>
 				["at0004"] = <
 					text = <"Befundbeschreibung">
 					description = <"Narrative Beschreibung des Befundes.">
 				>
 				["at0005"] = <
-					text = <"Ergebnis">
-					description = <"Messung oder Wert, der mit dem Befund verbunden ist.">
-					comment = <"Zum Beispiel: Mantoux-Testergebnis.">
+					text = <"*Ergebnis">
+					description = <"*Messung oder Wert, der mit dem Befund verbunden ist.">
+					comment = <"*Zum Beispiel: Mantoux-Testergebnis.">
 				>
 				["at0006"] = <
-					text = <"Feststellungsdatum">
-					description = <"Das Datum, an dem der Befund klinisch festgestellt wurde.">
-					comment = <"Zum Beispiel: Das Datum, an dem der Befund vom Arzt gemacht oder ihm zur Verfügung gestellt wurde.">
+					text = <"*Feststellungsdatum">
+					description = <"*Das Datum, an dem der Befund klinisch festgestellt wurde.">
+					comment = <"*Zum Beispiel: Das Datum, an dem der Befund vom Arzt gemacht oder ihm zur Verfügung gestellt wurde.">
 				>
 				["at0007"] = <
 					text = <"Zitat">
@@ -364,12 +362,12 @@ ontology
 					description = <"Zusätzliche strukturierte Angaben zu den Ergebnissen.">
 				>
 				["at0025"] = <
-					text = <"Strukturiertes Ergebnis">
-					description = <"Strukturierte Angaben über das Ergebnis.">
+					text = <"*CLUSTER_SLOT (en)">
+					description = <"">
 				>
 				["at0026"] = <
-					text = <"Klinisch relevantes Datum/Uhrzeit">
-					description = <"Das Datum/Uhrzeit, zu der das Ergebnis als Beweis für die Feststellung aufgenommen wurde.">
+					text = <"*DV_DATE_TIME (en)">
+					description = <"">
 				>
 			>
 		>
