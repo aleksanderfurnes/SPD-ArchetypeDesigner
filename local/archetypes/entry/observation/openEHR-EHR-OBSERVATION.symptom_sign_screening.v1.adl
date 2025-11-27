@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=dcae10b9-634e-4fa7-b695-1995af5c89dd)
+archetype (adl_version=1.4; uid=910b95b4-b10d-4acc-a758-a66989bec9da)
 	openEHR-EHR-OBSERVATION.symptom_sign_screening.v1
 
 concept
@@ -260,10 +260,10 @@ Ne pas utiliser pour enregistrer des détails sur une simple liste de sélection
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6D34CF0B5CC4E97B39CD3254BCDAD43E">
-		["build_uid"] = <"192195d0-2800-43ef-a743-aeed5c0546aa">
+		["MD5-CAM-1.0.1"] = <"2C619AEB7356EC3C65163C23789A74C1">
+		["build_uid"] = <"2b8dc7d3-48b6-49f6-9b08-eadb372315c9">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
-		["revision"] = <"1.0.5">
+		["revision"] = <"1.0.2">
 	>
 
 definition
