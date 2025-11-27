@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=7d2adbd4-0ab6-4def-af0a-00c722cc180e)
+archetype (adl_version=1.4; uid=4196d789-e582-414d-9a2a-1b900c2865e7)
 	openEHR-EHR-OBSERVATION.procedure_screening.v1
 
 concept
@@ -183,10 +183,10 @@ Ne pas utiliser pour enregistrer les détails d'une simple liste de sélection o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6D1C8A1512EE8EB75EA0FB461D27516C">
-		["build_uid"] = <"35685f52-1b42-495e-888a-5f75bf5b2310">
+		["MD5-CAM-1.0.1"] = <"72B3FFF2A9CC7B57BE58854C62F894CB">
+		["build_uid"] = <"f6890621-56e4-45ba-8a2b-3da5420ca9c1">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
-		["revision"] = <"1.0.4">
+		["revision"] = <"1.0.2">
 	>
 
 definition
