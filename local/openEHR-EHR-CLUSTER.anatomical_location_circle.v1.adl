@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=4dfedab1-463e-4bb1-ad43-5c6ca403f6be)
+archetype (adl_version=1.4; uid=f114b64a-30e8-4646-a6dd-fee53863cc33)
 	openEHR-EHR-CLUSTER.anatomical_location_circle.v1
 
 concept
@@ -106,16 +106,16 @@ Not to be used to specify a relative location of a physical site in the body, su
 		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
 		["references"] = <"Johnson CC, Roberts S, Mintz D, Fabricant PD, Hotchkiss RN, Daluiski A. Location of Osteochondritis Dissecans Lesions of the Capitellum. J Hand Surg Am. 2018 Apr 17. pii: S0363-5023(17)31317-5. doi: 10.1016/j.jhsa.2018.03.017. [Epub ahead of print] PubMed PMID: 29678428.">
 		["current_contact"] = <"Heather Leslie, Atomica Informatics<heather.leslie@atomicainformatics.com>">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8049E3D1A9928E45A3A9DCB9B46ECF85">
-		["build_uid"] = <"ae5fa14f-2e99-4813-9b78-45588cc8b343">
-		["revision"] = <"1.1.0">
+		["MD5-CAM-1.0.1"] = <"678618E29451E816512E7B0093C25FA1">
+		["build_uid"] = <"f54f2a2e-6799-4c76-b3f3-45f08a1e7260">
+		["revision"] = <"1.1.1">
 	>
 
 definition
