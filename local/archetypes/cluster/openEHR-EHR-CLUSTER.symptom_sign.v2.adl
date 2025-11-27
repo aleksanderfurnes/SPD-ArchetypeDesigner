@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=fb495cc3-e03d-4549-9700-1739151f2394)
+archetype (adl_version=1.4; uid=fb495cc3-e03d-4549-9700-1739151f2394)
 	openEHR-EHR-CLUSTER.symptom_sign.v2
 
 concept
-	[at0000]	-- Symptom/Sign
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -63,17 +64,22 @@ language
 			accreditation = <"MD">
 		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2007-02-20">
 		["name"] = <"Tony Shannon">
 		["organisation"] = <"UK NHS, Connecting for Health">
 		["email"] = <"tony.shannon@nhs.net">
-		["date"] = <"2007-02-20">
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Grethe Almenning, Bergen kommune, Norway","Tomas Alme, DIPS, Norway","Erling Are Hole, Helse Bergen, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, Queensland Health, Australia","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Arild Faxvaag, NTNU, Norway","Kåre Flø, DIPS ASA, Norway","Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway","Samuel Frade, Marand, Portugal","Sebastian Garde, Ocean Informatics, Germany","Mikkel Gaup Grønmo, FSE, Helse Nord, Norway (Nasjonal IKT redaktør)","Yves Genevier, Privantis SA, Switzerland","Gyri Gradek, Senter for medisinsk genetikk og molekylærmedisin, Haukeland Universitetssykehus, Norway","Heather Grain, Llewelyn Grain Informatics, Australia","Dag Hanoa, Oslo universitetssykehus, Norway","Knut Harboe, Stavanger Universitetssjukehus, Norway","Sam Heard, Ocean Informatics, Australia","Kristian Heldal, Telemark Hospital Trust, Norway","Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway","Anca Heyd, DIPS ASA, Norway","Roar Holm, Helse Vest IKT A/S, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Lars Ivar Mehlum, Nasjonal IKT HF, Norway","Tom Jarl Jakobsen, Helse Bergen, Norway","Hanne Joensen, Helse Bergen HUS, Norway","Gunnar Jårvik, Nasjonal IKT HF, Norway","Lars Karlsen, DIPS ASA, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Goran Karlstrom, County Of Värmland, Sweden","Shinji Kobayashi, NPO openEHR Japan, Japan","Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway","Elisabeth Kvile, Fysioterapiavdelingen, Haukeland Universitets Sykehus, Norway","Siri Laronningen, Kreftregisteret, Norway","Sabine Leh, Haukeland University Hospital, Department of Pathology, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Hallvard Lærum, Norwegian Directorate of e-health, Norway","alberto maldonado, UPV, Spain","Luis Marco Ruiz, Norwegian Center for Integrated Care and Telemedicine, Norway","Siv Marie Lien, DIPS ASA, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom","Bjoern Naess, DIPS ASA, Norway","Bjørn Næss, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Anne Pauline Anderssen, Helse Nord RHF, Norway","Magne Rekdal, DIPS AS, Norway","Tanja Riise, Nasjonal IKT HF, Norway","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Thomas Schopf, University Hospital of North-Norway, Norway","Anoop Shah, University College London, United Kingdom","Hildegunn Siv Aase, Helse Bergen, Norway","Arild Stangeland, Helse Bergen, Norway","Norwegian Review Summary, Norwegian Public Hospitals, Norway","Line Sæle, Nasjonal IKT HF, Norway","Line Sørensen, Helse Bergen, Norway","Nils Thomas Songstad, UNN HF, BUK, Barneavdelingen., Norway","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","Lene Thoresen, St. Olavs Hospital, Norway","Jon Tysdahl, Furst medlab AS, Norway","Till Uhlig, Nasjonal kompetansetjeneste for revmatologisk rehabilitering, Revmatologisk avd. , Diakonhjemmet Sykehus, Oslo, Norway","John Tore Valand, Helse Bergen, Norway">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Darstellung von Details über eine einzelne Episode eines berichteten Symptoms oder Krankheitsanzeichens einschließlich des Kontexts. Details zu früheren Episoden sollen, wenn angemessen, nicht aufgeführt werden.">
+			keywords = <"Beschwerde","Symptom","Störung","Problem","vorlegende Beschwerde","vorlegendes Symptom","Zeichen","Anzeichen","Krankheitsanzeichen">
+			copyright = <"© openEHR Foundation">
 			use = <"Zu Verwenden, um Details über eine einzelne Episode eines Symptoms oder eines berichteten Krankheitsanzeichens einer Person zu dokumentieren, wie es von der Person, dem Elternteil, dem Betreuer oder einer anderen Partei berichtet wurde. Es kann von einem Arzt als Teil einer Krankengeschichte dokumentiert werden, oder wie es dem Arzt berichtet wurde/wie er es beobachtet hat, oder als Teil eines selbst aufgezeichneten klinischen Fragebogens oder einer persönlichen Gesundheitsakte. Eine vollständige Kranken- oder Patientengeschichet kann mehrere Episoden eines identifizierten Symptoms/Krankheitsanzeichens, mit variierendem Detaillierungsgrad, sowie mehrere Symptome/Krankheitsanzeichen beinhalten.
 
 Dieser Archetyp wurde entwickelt, um das positive Vorhandensein des Symptoms oder Krankheitsanzeichens als Teil der Anamneseerhebung mit OBSERVATION.story oder in Verbindung mit einer positiven Reaktion auf OBSERVATION.symptom_sign_screening darzustellen.
@@ -83,7 +89,6 @@ Im reinsten Sinne sind Symptome subjektive Beobachtungen einer körperlichen ode
 Dieser Archetyp wurde als generisches Muster für alle Symptome und Krankheitsanzeichen entwickelt. Der Slot \"Spezifische Details\" kann verwendet werden, um den Archetyp um zusätzliche, spezifische Datenelemente für komplexere Symptome oder Krankheitsanzeichen zu erweitern. 
 
 Dieser Archetyp wurde speziell für die Verwendung im Slot \"Strukturiertes Detail\" innerhalb des Archetyps OBSERVATION.story entwickelt, kann aber auch in anderen OBSERVATION- oder CLUSTER-Archetypen und in den Slots \"Assoziierte Symptome/Krankheitsanzeichen\" oder \"Vorangegangene Episoden\" in anderen Instanzen dieses CLUSTER.symptom_sign Archetyps verwendet werden.">
-			keywords = <"Beschwerde", "Symptom", "Störung", "Problem", "vorlegende Beschwerde", "vorlegendes Symptom", "Zeichen", "Anzeichen", "Krankheitsanzeichen">
 			misuse = <"Den Archetyp nicht verwenden, um Antworten auf Screening-Fragebögen über das Vorhandensein oder Nichtvorhandensein bestimmter Symptome abzufragen – verwenden Sie für diesen Zweck den Archetyp OBSERVATION.symptom_sign_screening. Dieser CLUSTER.symptom_sign kann jedoch im SLOT „Screening-Details“ im Archetyp OBSERVATION.symptom_sign_screening verschachtelt werden, wenn es notwendig ist, den Fragebogen zu erweitern, indem Details zu Symptomen oder Anzeichen aufgezeichnet werden.
 
 Den Archetyp nicht verwenden, um darzustellen, dass ein Symptom oder Anzeichen explizit als nicht vorhanden gemeldet wurde – verwenden Sie CLUSTER.exclusion_symptom_sign mit Bedacht für bestimmte Zwecke, bei denen der Overhead der Aufzeichnung auf diese Weise die zusätzliche Komplexität rechtfertigt.
@@ -93,11 +98,11 @@ Nicht zur Erfassung objektiver Befunde im Rahmen einer körperlichen Untersuchun
 Nicht für Diagnosen und Probleme, die Teil einer bestehenden Problemliste sind, verwenden - verwenden Sie EVALUATION.problem_diagnosis.
 
 Nicht zur Darstellung einer formalen und wiederholbaren Schweregradskala wie VAS oder NRS verwenden. Verwenden Sie zu diesem Zweck geeignete OBSERVATION-Archetypen.">
-			copyright = <"© openEHR Foundation">
 		>
 		["fi"] = <
 			language = <[ISO_639-1::fi]>
 			purpose = <"*To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.(en)">
+			keywords = <"*complaint(en)","*symptom(en)","*disturbance(en)","*problem(en)","*discomfort(en)","*presenting complaint(en)","*presenting symptom(en)","*sign(en)">
 			use = <"*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.
 
 This archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.
@@ -107,7 +112,6 @@ In the purest sense, symptoms are subjective observations of a physical or menta
 This archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. 
 
 This archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)">
-			keywords = <"*complaint(en)", "*symptom(en)", "*disturbance(en)", "*problem(en)", "*discomfort(en)", "*presenting complaint(en)", "*presenting symptom(en)", "*sign(en)">
 			misuse = <"*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.
 
 Not to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.
@@ -121,6 +125,7 @@ Not to be used to record a formal and repeatable severity scale such as VAS or N
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Att registrera ett uppvisat symtom eller tecken ifrån en enskild episod, inklusive kontext, men inte detaljer om tidigare episoder, om det är tillämpligt.">
+			keywords = <"besvär","symtom","symptom","störning","besvär","problem","obehag","uppvisar besvär","uppvisar symtom","tecken">
 			use = <"*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.
 
 This archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.
@@ -130,7 +135,6 @@ In the purest sense, symptoms are subjective observations of a physical or menta
 This archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. 
 
 This archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)">
-			keywords = <"besvär", "symtom", "symptom", "störning", "besvär", "problem", "obehag", "uppvisar besvär", "uppvisar symtom", "tecken">
 			misuse = <"*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.
 
 Not to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.
@@ -144,6 +148,8 @@ Not to be used to record a formal and repeatable severity scale such as VAS or N
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere detaljer om en enkeltepisode av et rapportert symptom eller sykdomstegn. Dette kan omfatte kontekst, men ikke detaljer, om tidligere episoder av symptomet/sykdomstegnet.">
+			keywords = <"lidelse","plage","problem","ubehag","symptom","sykdomstegn","lyte","skavank">
+			copyright = <"© openEHR Foundation">
 			use = <"	
 For å registrere detaljer om en enkeltepisode av et rapportert symptom eller sykdomstegn hos et individ, som redegjort av personen selv, foreldre, omsorgsperson eller andre parter. Registrering kan skje i forbindelse med opptak av anamnese, eller som en selvregistrering som en del av et klinisk spørreskjema eller personlig journal. En fullstendig klinisk anamnese eller pasientanamnese kan inneholde beskrivelser med ulikt detaljnivå om flere episoder knyttet til samme symptom eller sykdomstegn, og vil også kunne inneholde flere ulike symptomer eller sykdomstegn.
 
@@ -155,7 +161,6 @@ Som svar på dette er arketypen laget for å tillate registrering av hele kontin
 Arketypen er designet for å gi et generisk rammeverk for alle symptomer og rapporterte sykdomstegn. SLOTet \"Spesifikke detaljer\" kan brukes for å utvide arketypen med ytterligere spesifikke dataelementer for komplekse symptomer eller sykdomstegn.
 
 Arketypen skal settes inn i \"Detaljer\"-SLOTet i OBSERVATION.story-arketypen men kan også brukes i en hvilken som helst OBSERVATION eller CLUSTER-arketype. Arketypen kan også gjenbrukes i andre instanser av CLUSTER.symptom_sign-arketypen i SLOTene \"Assosierte symptomer\" eller \"Tidligere detaljer\".">
-			keywords = <"lidelse", "plage", "problem", "ubehag", "symptom", "sykdomstegn", "lyte", "skavank">
 			misuse = <"Brukes ikke for å registrere spørreskjema-spørsmål om tilstedeværelsen eller fraværet av spesifikke symptomer eller sykdomstegn. Bruk OBSERVATION.symptom_sign_screening til dette formålet. Imidlertid kan denne CLUSTER.symptom_sign arketypen brukes i SLOTet \"Ytterligere detaljer\" i OBSERVATION.symptom_sign_screening dersom man ønsker å utvide spørreskjemaet med detaljer om et symptom eller sykdomstegn.
 
 Brukes ikke til eksplisitt registrering av at et symptom eller sykdomstegn ikke er tilstede. Bruk CLUSTER.exclusion_symptom_sign varsomt da det øker tidsbruk ved registrering og tilfører økt kompleksitet.
@@ -165,11 +170,11 @@ Brukes ikke til registrering av objektive funn som en del av en fysisk undersøk
 Brukes ikke til registrering av problemer og diagnoser som en del av en persistent problemliste, til dette brukes EVALUATION.problem_diagnosis.
 
 Brukes ikke til å registrere en formell og repeterbar alvorlighetsgradering som VAS eller NRS. Bruk passende OBSERVATION-arketyper til dette formålet.">
-			copyright = <"© openEHR Foundation">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"Registrar detalhes sobre um episódio único de um sinal ou sintoma relatado incluindo contexto, mas não detalhes, de episódios prévios se apropriado.">
+			keywords = <"queixa","sintoma","distúrbio","problema","desconforto","queixa atual","sintoma atual","sinal">
 			use = <"*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.
 
 This archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.
@@ -179,7 +184,6 @@ In the purest sense, symptoms are subjective observations of a physical or menta
 This archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. 
 
 This archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype. (en)">
-			keywords = <"queixa", "sintoma", "distúrbio", "problema", "desconforto", "queixa atual", "sintoma atual", "sinal">
 			misuse = <"*Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.
 
 Not to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.
@@ -193,6 +197,7 @@ Not to be used to record a formal and repeatable severity scale such as VAS or N
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
 			purpose = <"*To record detail about a symptom - either self-recorded by an individual or recorded on the behalf of a patient by a clinician. A complete patient history may include varying level of details about a variety of symptoms.(en)">
+			copyright = <"© openEHR Foundation">
 			use = <"*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.
 
 This archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.
@@ -211,11 +216,12 @@ Not to be used for recording objective findings as part of a physical examinatio
 Not to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.
 
 Not to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)">
-			copyright = <"© openEHR Foundation">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.">
+			keywords = <"complaint","symptom","disturbance","problem","discomfort","presenting complaint","presenting symptom","sign">
+			copyright = <"© openEHR Foundation">
 			use = <"Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.
 
 This archetype has been designed to record the positive presence of the symptom or sign as part of history taking using OBSERVATION.story, or in conjunction with a positive response to OBSERVATION.symptom_sign_screening.
@@ -225,7 +231,6 @@ In the purest sense, symptoms are subjective observations of a physical or menta
 This archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. 
 
 This archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype.">
-			keywords = <"complaint", "symptom", "disturbance", "problem", "discomfort", "presenting complaint", "presenting symptom", "sign">
 			misuse = <"Not to be used to record screening questionnaire responses about the presence or absence of specific symptoms - use the OBSERVATION.symptom_sign_screening archetype for this purpose. However, this CLUSTER.symptom_sign archetype may be nested within the 'Screening details' SLOT in the OBSERVATION.symptom_sign_screening archetype if it is necessary to extend the questionnaire by recording details about symptom or sign.
 
 Not to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity.
@@ -235,7 +240,6 @@ Not to be used for recording objective findings as part of a physical examinatio
 Not to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.
 
 Not to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose.">
-			copyright = <"© openEHR Foundation">
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
@@ -260,8 +264,6 @@ Not to be used for diagnoses and problems that form part of a persisting Problem
 Not to be used to record a formal and repeatable severity scale such as VAS or NRS. Use appropriate OBSERVATION archetypes for this purpose. (en)">
 		>
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Grethe Almenning, Bergen kommune, Norway", "Tomas Alme, DIPS, Norway", "Erling Are Hole, Helse Bergen, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Rong Chen, Cambio Healthcare Systems, Sweden", "Stephen Chu, Queensland Health, Australia", "Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway", "Arild Faxvaag, NTNU, Norway", "Kåre Flø, DIPS ASA, Norway", "Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway", "Samuel Frade, Marand, Portugal", "Sebastian Garde, Ocean Informatics, Germany", "Mikkel Gaup Grønmo, FSE, Helse Nord, Norway (Nasjonal IKT redaktør)", "Yves Genevier, Privantis SA, Switzerland", "Gyri Gradek, Senter for medisinsk genetikk og molekylærmedisin, Haukeland Universitetssykehus, Norway", "Heather Grain, Llewelyn Grain Informatics, Australia", "Dag Hanoa, Oslo universitetssykehus, Norway", "Knut Harboe, Stavanger Universitetssjukehus, Norway", "Sam Heard, Ocean Informatics, Australia", "Kristian Heldal, Telemark Hospital Trust, Norway", "Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway", "Anca Heyd, DIPS ASA, Norway", "Roar Holm, Helse Vest IKT A/S, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Lars Ivar Mehlum, Nasjonal IKT HF, Norway", "Tom Jarl Jakobsen, Helse Bergen, Norway", "Hanne Joensen, Helse Bergen HUS, Norway", "Gunnar Jårvik, Nasjonal IKT HF, Norway", "Lars Karlsen, DIPS ASA, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Goran Karlstrom, County Of Värmland, Sweden", "Shinji Kobayashi, NPO openEHR Japan, Japan", "Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway", "Elisabeth Kvile, Fysioterapiavdelingen, Haukeland Universitets Sykehus, Norway", "Siri Laronningen, Kreftregisteret, Norway", "Sabine Leh, Haukeland University Hospital, Department of Pathology, Norway", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Hallvard Lærum, Norwegian Directorate of e-health, Norway", "alberto maldonado, UPV, Spain", "Luis Marco Ruiz, Norwegian Center for Integrated Care and Telemedicine, Norway", "Siv Marie Lien, DIPS ASA, Norway", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom", "Bjoern Naess, DIPS ASA, Norway", "Bjørn Næss, DIPS ASA, Norway", "Andrej Orel, Marand d.o.o., Slovenia", "Anne Pauline Anderssen, Helse Nord RHF, Norway", "Magne Rekdal, DIPS AS, Norway", "Tanja Riise, Nasjonal IKT HF, Norway", "Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil", "Thomas Schopf, University Hospital of North-Norway, Norway", "Anoop Shah, University College London, United Kingdom", "Hildegunn Siv Aase, Helse Bergen, Norway", "Arild Stangeland, Helse Bergen, Norway", "Norwegian Review Summary, Norwegian Public Hospitals, Norway", "Line Sæle, Nasjonal IKT HF, Norway", "Line Sørensen, Helse Bergen, Norway", "Nils Thomas Songstad, UNN HF, BUK, Barneavdelingen., Norway", "Rowan Thomas, St. Vincent's Hospital Melbourne, Australia", "Lene Thoresen, St. Olavs Hospital, Norway", "Jon Tysdahl, Furst medlab AS, Norway", "Till Uhlig, Nasjonal kompetansetjeneste for revmatologisk rehabilitering, Revmatologisk avd. , Diakonhjemmet Sykehus, Oslo, Norway", "John Tore Valand, Helse Bergen, Norway">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -517,8 +519,6 @@ definition
 			}
 		}
 	}
-
-
 
 ontology
 	terminologies_available = <"SNOMED-CT", ...>
@@ -2479,7 +2479,7 @@ Se a localização anatômica estiver incluída no nome do Sintoma através de c
 			>
 		>
 	>
-	term_bindings = <
+	term_binding = <
 		["SNOMED-CT"] = <
 			items = <
 				["at0023"] = <[SNOMED-CT::162468002]>
