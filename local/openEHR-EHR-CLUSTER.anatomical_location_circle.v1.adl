@@ -76,20 +76,6 @@ I situasjoner der CLUSTER.anatomical_location kun kan brukes for å angi et stø
 Brukes ikke for å angi en relativ lokalisering av et fysisk sted på kroppen, som f.eks. et blåmerke som ligger 5 cm under navlen. Bruk CLUSTER.anatomical_location_relative for dette formålet.
 ">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"تسجيل المكان التشريحي بالتفصيل">
-			keywords = <"الموقع","المكان","تشريحي">
-			copyright = <"© openEHR Foundation">
-			misuse = <"لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن">
-		>
-		["sl"] = <
-			language = <[ISO_639-1::sl]>
-			purpose = <"*To record details about anatomical location.(en)">
-			keywords = <"*location(en)","*site(en)","*anatomical(en)">
-			copyright = <"© openEHR Foundation">
-			misuse = <"*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record structured details about a physical site on or within the human body that is described in terms of the direction, and optionally the distance, of the site from a central landmark.">
@@ -103,6 +89,20 @@ In the situation where the CLUSTER.anatomical_location can only be used to name 
 			misuse = <"Not to be used to specify a simple location of a named physical site in the body, such as left femur or medial aspect of nose. Use the CLUSTER.anatomical_location archetype for this purpose.
 
 Not to be used to specify a relative location of a physical site in the body, such as a bruise that is 5 cm inferior to the umbilicus. Use the CLUSTER.anatomical_location_relative for this purpose.">
+		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"*To record details about anatomical location.(en)">
+			keywords = <"*location(en)","*site(en)","*anatomical(en)">
+			copyright = <"© openEHR Foundation">
+			misuse = <"*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"تسجيل المكان التشريحي بالتفصيل">
+			keywords = <"الموقع","المكان","تشريحي">
+			copyright = <"© openEHR Foundation">
+			misuse = <"لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن">
 		>
 	>
 	other_details = <
