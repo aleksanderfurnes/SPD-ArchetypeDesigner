@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=69d2930f-2a17-4c69-b472-785d142d9744)
+archetype (adl_version=1.4; uid=8bf00e22-21a9-4441-9c5d-62ccbbdb6b8c)
 	openEHR-EHR-OBSERVATION.investigation_screening.v1
 
 concept
@@ -152,39 +152,6 @@ Not to be used for recording the progress of activities performed as part of an 
 
 Not to be used to record formal diagnostic test results - use appropriate OBSERVATIONS for this purpose. For example, the OBSERVATION.laboratory_test_result or OBSERVATION.imaging_examination_result.">
 		>
-		["ca"] = <
-			language = <[ISO_639-1::ca]>
-			purpose = <"Crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca, incloent-hi, entre d'altres, diagnòstic per imatge i proves de laboratori.">
-			keywords = <"investigació, screening, qüestionari, prevenció, imatge, laboratori, patologia, sang, mostra, esput, EMG, ECG, audició, prova, examen, líquid cefaloraquidi, biòpsia, EEG, ressonància magnètica, tomografia computaritzada, raigs X, TEP, ultrasò, espirometria", ...>
-			use = <"Usat per crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca. L'abast de les investigacions diagnòstiques inclou totes les modalitats de diagnòstic per imatge i la gamma més àmplia de proves de laboratori i d'anatomia patològica. A més, aquest arquetip també es pot utilitzar per registrar quan s'han realitzat altres proves diagnòstiques, com ara proves d'esforç cardíac, proves d'audició i visió, electrocardiograma (ECG) i electroencefalograma (EEG).
-
-Els casos d'ús comuns inclouen, entre d'altres:
-- Autoinforme del pacient
-- Creació dun perfil de pacient en un registre de malalties.
-- Qüestionament sistemàtic a qualsevol consulta relacionada amb patrons de gestió d'investigacions.
-
-La semàntica d'aquest arquetip és intencionalment vaga i consultar aquest arquetip normalment només seria útil o segur dins del context de cada plantilla específica. En general, es canviaria el nom de cada element de dades a una plantilla per representar la pregunta específica formulada. Quan s'han proposat conjunts de valors per a casos d'ús comuns, es poden adaptar per alinear-se amb els requisits locals utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic.
-
-La utilització d'aquesta estructura dins d'una plantilla pot permetre la documentació d'una àmplia gamma de preguntes/respostes, com ara:
-- Us han mirat en alguna ocasió el seu nivell de colesterol? Sí, No, Desconegut.
-- Li han realitzat la prova d'anticossos contra la rubèola? Sí, No, Desconegut.
-- Alguna vegada us han fet proves de detecció d'anèmia falciforme? Sí, No, Desconegut.
-- Quan va ser la seva darrera radiografia de tòrax?
-- Quin va ser el resultat de la prova d'INR més recent?
-- Quines van ser les troballes detectades a l'electrocardiograma?
-- El nadó va passar/fallar la prova d'audició neonatal?
-
-L'estructura EVENT del model de referència es pot fer servir per especificar si les preguntes es relacionen amb un moment determinat o durant un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que enregistra informació sobre una investigació o prova que es va realitzar en qualsevol moment en el passat, i informació sobre una investigació o prova realitzada dins d'un interval de temps específic; per exemple, la diferència entre \"Alguna vegada t'has fet una prova d'INR?\" en comparació amb \"¿S'ha realitzat una prova d'INR en les darreres quatre setmanes?\".
-
-La font d'informació d'una resposta del qüestionari pot variar segons el context, però es pot identificar de manera específica utilitzant l'element 'Proveïdor d'informació' al Model de Referència.
-
-Aquest arquetip ha estat dissenyat per fer-se servir com a eina de detecció o per registrar dades en format de qüestionari simple per al seu ús en situacions com un registre de malalties. Si el qüestionari identifica que s'ha dut a terme una investigació, es poden registrar detalls addicionals necessaris per a la seva persistència com a part d'un registre clínic utilitzant arquetips de resultats de proves específics.">
-			misuse = <"No s'ha d'utilitzar per registrar una ordre per a una investigació; utilitzar INSTRUCTION.service_request per a aquest propòsit.
-
-No s'ha de fer servir per registrar el progrés de les activitats realitzades com a part d'una investigació; utilitzar arquetips del tipus ACTION apropiats per a aquest propòsit.
-
-No s'ha de fer servir per registrar resultats de proves de diagnòstic formals; utilitzar OBSERVATIONS apropiades per a aquest propòsit. Per exemple, OBSERVATION.laboratory_test_result o OBSERVATION.imaging_examination_result.">
-		>
 		["es"] = <
 			language = <[ISO_639-1::es]>
 			purpose = <"Crear una estructura base para registrar respuestas a preguntas de screening predefinidas sobre investigaciones diagnósticas o grupo de investigaciones, incluyendo, entre otros, diagnóstico por imagen y pruebas de laboratorio.">
@@ -218,6 +185,39 @@ No debe utilizarse para registrar el progreso de las actividades realizadas como
 
 No debe utilizarse para registrar resultados de pruebas de diagnóstico formales; usar OBSERVATIONS apropiadas para este propósito. Por ejemplo, OBSERVATION.laboratory_test_result u OBSERVATION.imaging_examination_result.">
 		>
+		["ca"] = <
+			language = <[ISO_639-1::ca]>
+			purpose = <"Crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca, incloent-hi, entre d'altres, diagnòstic per imatge i proves de laboratori.">
+			keywords = <"investigació, screening, qüestionari, prevenció, imatge, laboratori, patologia, sang, mostra, esput, EMG, ECG, audició, prova, examen, líquid cefaloraquidi, biòpsia, EEG, ressonància magnètica, tomografia computaritzada, raigs X, TEP, ultrasò, espirometria", ...>
+			use = <"Usat per crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca. L'abast de les investigacions diagnòstiques inclou totes les modalitats de diagnòstic per imatge i la gamma més àmplia de proves de laboratori i d'anatomia patològica. A més, aquest arquetip també es pot utilitzar per registrar quan s'han realitzat altres proves diagnòstiques, com ara proves d'esforç cardíac, proves d'audició i visió, electrocardiograma (ECG) i electroencefalograma (EEG).
+
+Els casos d'ús comuns inclouen, entre d'altres:
+- Autoinforme del pacient
+- Creació dun perfil de pacient en un registre de malalties.
+- Qüestionament sistemàtic a qualsevol consulta relacionada amb patrons de gestió d'investigacions.
+
+La semàntica d'aquest arquetip és intencionalment vaga i consultar aquest arquetip normalment només seria útil o segur dins del context de cada plantilla específica. En general, es canviaria el nom de cada element de dades a una plantilla per representar la pregunta específica formulada. Quan s'han proposat conjunts de valors per a casos d'ús comuns, es poden adaptar per alinear-se amb els requisits locals utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic.
+
+La utilització d'aquesta estructura dins d'una plantilla pot permetre la documentació d'una àmplia gamma de preguntes/respostes, com ara:
+- Us han mirat en alguna ocasió el seu nivell de colesterol? Sí, No, Desconegut.
+- Li han realitzat la prova d'anticossos contra la rubèola? Sí, No, Desconegut.
+- Alguna vegada us han fet proves de detecció d'anèmia falciforme? Sí, No, Desconegut.
+- Quan va ser la seva darrera radiografia de tòrax?
+- Quin va ser el resultat de la prova d'INR més recent?
+- Quines van ser les troballes detectades a l'electrocardiograma?
+- El nadó va passar/fallar la prova d'audició neonatal?
+
+L'estructura EVENT del model de referència es pot fer servir per especificar si les preguntes es relacionen amb un moment determinat o durant un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que enregistra informació sobre una investigació o prova que es va realitzar en qualsevol moment en el passat, i informació sobre una investigació o prova realitzada dins d'un interval de temps específic; per exemple, la diferència entre \"Alguna vegada t'has fet una prova d'INR?\" en comparació amb \"¿S'ha realitzat una prova d'INR en les darreres quatre setmanes?\".
+
+La font d'informació d'una resposta del qüestionari pot variar segons el context, però es pot identificar de manera específica utilitzant l'element 'Proveïdor d'informació' al Model de Referència.
+
+Aquest arquetip ha estat dissenyat per fer-se servir com a eina de detecció o per registrar dades en format de qüestionari simple per al seu ús en situacions com un registre de malalties. Si el qüestionari identifica que s'ha dut a terme una investigació, es poden registrar detalls addicionals necessaris per a la seva persistència com a part d'un registre clínic utilitzant arquetips de resultats de proves específics.">
+			misuse = <"No s'ha d'utilitzar per registrar una ordre per a una investigació; utilitzar INSTRUCTION.service_request per a aquest propòsit.
+
+No s'ha de fer servir per registrar el progrés de les activitats realitzades com a part d'una investigació; utilitzar arquetips del tipus ACTION apropiats per a aquest propòsit.
+
+No s'ha de fer servir per registrar resultats de proves de diagnòstic formals; utilitzar OBSERVATIONS apropiades per a aquest propòsit. Per exemple, OBSERVATION.laboratory_test_result o OBSERVATION.imaging_examination_result.">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -225,10 +225,10 @@ No debe utilizarse para registrar resultados de pruebas de diagnóstico formales
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"12BB458F5811CD246819C78F394256F2">
-		["build_uid"] = <"4019ac3f-5162-4016-81fc-dfd0501cac68">
+		["MD5-CAM-1.0.1"] = <"4303915A919C8B6D98E44B6105250000">
+		["build_uid"] = <"b77e0cf6-fb2d-4e9b-adb0-4a332280c0ea">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
-		["revision"] = <"1.3.0">
+		["revision"] = <"1.1.0">
 	>
 
 definition
