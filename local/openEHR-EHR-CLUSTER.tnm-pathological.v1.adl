@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=3c3e21f0-0141-40c0-b0c3-d9a45d133dfe)
+archetype (adl_version=1.4; uid=e23e68f4-e931-4ef5-8878-244c3feff47a)
 	openEHR-EHR-CLUSTER.tnm-pathological.v1
 specialize
 	openEHR-EHR-CLUSTER.tnm.v1
@@ -91,9 +91,9 @@ TNM Classification Help (Manual for Cancer Staging); [cited 2019 10 04].  Availa
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"623BAC3524C44A48FA15C2EE2B4243A8">
-		["build_uid"] = <"924c8d16-72bc-4799-abe9-14b0c4c938b5">
-		["revision"] = <"1.0.3">
+		["MD5-CAM-1.0.1"] = <"B918A2E58601EBD86A1F7FE5718BAEFF">
+		["build_uid"] = <"1059b6bc-a9a2-455a-9c3d-5004501d3105">
+		["revision"] = <"1.0.2">
 	>
 
 definition
