@@ -18,9 +18,9 @@ language
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			author = <
-				["name"] = <"Kirsi Poikela, Per Nemirovski">
-				["organisation"] = <"Tieto Sweden AB, B3 HealthTech">
-				["email"] = <"ext.kirsi.poikela@tieto.com, per.nemirovski@b3.se">
+				["name"] = <"Kirsi Poikela, Per Nemirovski, Åsa Skagerhult">
+				["organisation"] = <"Tieto Sweden AB, B3 HealthTech, Region Östergötland">
+				["email"] = <"ext.kirsi.poikela@tieto.com, per.nemirovski@b3.se, asa.skagerhult@regionostergotland.se">
 			>
 		>
 		["fi"] = <
@@ -109,6 +109,14 @@ language
 			>
 			accreditation = <"Code24 BV">
 		>
+		["ca"] = <
+			language = <[ISO_639-1::ca]>
+			author = <
+				["name"] = <"Laura Moral Lopez">
+				["organisation"] = <"Sistema de Salut de Catalunya">
+				["email"] = <"lauramoral@catsalut.cat">
+			>
+		>
 	>
 
 description
@@ -151,22 +159,25 @@ Nicht zur Darstellung von der gleichnamige FHIR-Ressource geeignet- dort liegt e
 			keywords = <"vårdkontakt","vårdbesök","vårdhändelse">
 			use = <"Används för att registrera detaljer från en specifik eller vårdkontakt mellan patient och vårdgivare mellan patient och vårdgivare. 
  
-Interaktionen kan ske genom ett fysiskt möte eller via distans. Uppgifter om mötesform kan vid behov läggas till i egenskaperna i referensmodellen COMPOSITION/mode attribut. 
+Interaktionen kan ske genom ett fysiskt möte eller på distans. Uppgifter om mötesform kan vid behov läggas till i egenskaperna i referensmodellens attribut COMPOSITION/mode. 
 
 De huvudsakliga avsnitts- och innehållskomponenterna har avsiktligt lämnats obegränsade. Det tillåter utvidgning med SECTION- eller ENTRY-arketyper som är lämpliga för det kliniska syftet.
 
-Trots att det inte finns någon begränsning för kliniskt innehåll ger specifikationen för COMPOSITION.Encounter ett signifikant värde genom att tillåta detaljerade förfrågningar om alla händelser i en patientjournal.
+Trots att det inte finns någon begränsning för kliniskt innehåll tillåter arketypen detaljerade förfrågningar om alla händelser i en patientjournal.
 
-'Extension' SLOT kan användas till att lägga till valfri kontextuell information, exempelvis sammanhang eller uppgifter som möjliggör samordning eller anpassning till andra standarder som FHIR eller CIMI samt detaljerade beskrivningar av deltagare som vanligen hanteras av openEHRs referensmodell i en openEHR arketyp.
+'Extension' SLOT kan användas för att:
+- lägga till valfri kontextuell information, exempelvis sammanhang eller uppgifter som möjliggör samordning
+- anpassa till andra standarder såsom FHIR eller CIMI
+- dokumentera detaljer om deltagare som vanligen hanteras av openEHRs referensmodell i en openEHR-arketyp.
 
-Typiska exempel är ett besök på en klinik, en observation av sjuksköterska eller en telemedicinsk konsultation.">
+Exempel på vårdkontakt är ett besök på klinik, en observation av sjuksköterska eller en telemedicinsk konsultation.">
 			misuse = <"Ska inte användas för att registrera detaljer om en hel vårdepisod. 
 
-Ska inte användas för att innehålla beständig/bestående sammanfattande patientinformation som exempelvis COMPOSITION.problem_list (Problemlista) eller COMPOSITION.health_summary (Hälsosammanfattning).
+Ska inte användas för att innehålla sammanfattande patientinformation som är beständig, exempelvis COMPOSITION.problem_list eller EVALUATION.medication_summary.
 
-Ska inte användas för att presentera en rapport från en diagnostisk tjänst, exempelvis en röntgenbild eller laboratorietest. (COMPOSITION.report)
+Ska inte användas för att representera en rapport från en diagnostisk tjänst, exempelvis en röntgenbild eller laboratorietest.
 
-Ska inte användas för att presentera FHIR-resursen med samma namn. Det finns en konflikt mellan avsett tillämpnings- och användningsområde.">
+Ska inte användas för att representera FHIR-resursen med samma namn. Det finns en konflikt mellan avsett tillämpnings- och användningsområde.">
 		>
 		["fi"] = <
 			language = <[ISO_639-1::fi]>
@@ -410,17 +421,40 @@ Niet te gebruiken om een rapport van een diagnostische dienst te representeren, 
 
 Niet te gebruiken om een FHIR-bron met eenzelfde naam te representeren - dan is er een conflict in de scope en doelstelling.">
 		>
+		["ca"] = <
+			language = <[ISO_639-1::ca]>
+			purpose = <"Registrar les dades en l’àmbit del document d'una única interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària. Pot ser una interacció presencial o remota.">
+			keywords = <"encontre","contacte","visita","esdeveniment d’atenció">
+			use = <"Utilitzar com a contenidor genèric en l’àmbit del document per a registrar dades d'una única interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària. El contacte pot ser presencial, per telèfon o un altre mitjà electrònic. La modalitat es pot recollir, si fos necessari, mitjançant l'atribut COMPOSITION/mode del model de referència.
+
+El component principal de Sections/Content s'ha deixat deliberadament sense restriccions. Això permetrà que es completi amb qualsevol arquetip de tipus SECTION o ENTRY adequats per a la finalitat clínica dins d'una plantilla.
+
+Tot i que COMPOSITION.Encounter no té restriccions per al contingut clínic, especificar aquest element proporciona un valor significatiu en permetre la consulta explícita de tots els Encounters dins d'un registre de pacients.
+
+El component Context conté un SLOT opcional de «Extensió» que es pot utilitzar en el disseny de plantilles per a:
+- afegir informació contextual opcional, com ara informació de l'episodi; o
+- permetre l'harmonització o alineació amb altres formalismes model com FHIR o CIMI, com la representació explícita dels participants que solen ser gestionats pel Model de Referència openEHR en un arquetip openEHR.
+
+Exemples típics són una visita clínica, una observació d'infermeria o una consulta de telemedicina.">
+			misuse = <"No utilitzar per a registrar dades sobre un episodi complet d’atenció.
+
+No utilitzar per a contenir informació persistent i resumida del pacient, com ara una llista de problemes o un resum de medicació.
+
+No utilitzar per a registrar l'informe d'un servei de diagnòstic, com ara imatges o proves de laboratori.
+
+No utilitzar per a representar el recurs FHIR del mateix nom - hi ha un abast i una intenció que no coincideixen.">
+		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
 		["references"] = <"TC 251, European Committee for Standardization: EN 13940-1:2007 Health informatics - System of concepts to support continuity of care - Part 1: Basic concepts.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"327A8885F97587660404644C3C6053B6">
-		["build_uid"] = <"30585164-60c3-4512-8fb0-65551f8eaf50">
-		["revision"] = <"1.0.8">
+		["MD5-CAM-1.0.1"] = <"6AFDF4A34EB96917079AC64DB5F65463">
+		["build_uid"] = <"c280ed11-7fda-41c1-9389-ceacb5860808">
+		["revision"] = <"1.0.11">
 	>
 
 definition
@@ -462,8 +496,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to capture local context or to align with other reference models/formalisms.(en)">
-					comment = <"*e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -479,8 +513,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Extension">
-					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
-					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
 			>
 		>
@@ -496,8 +530,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Extensión">
-					description = <"Información adicional requerida para representar el contexto local o para alineamiento con otros modelos de referencia y formalismos.">
-					comment = <"Ej.: Información local del departamento hospitalario o metadatos adicionales para alineamiento con los equivalentes en FHIR o CIMI.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -513,8 +547,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to capture local context or to align with other reference models/formalisms.(en)">
-					comment = <"*e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -530,8 +564,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Extensão">
-					description = <"Informações adicionais necessárias para identificar contexto local ou alinhar com outros formalismos/modelos de referência.">
-					comment = <"Por exemplo: informação departamental local de hospital ou metadados adicionais para alinhar com equivalentes FHIR ou CIMI.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -547,8 +581,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Extensión">
-					description = <"Información adicional requerida para capturar el contexto local o alinear con otros modelos de referencia o formalismos.">
-					comment = <"p.ej. Información departamental del hospital local o metadatos adicionales para alinearse con los equivalentes de FHIR o CIMI.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -564,8 +598,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Extensie">
-					description = <"Aanvullende informatie die vereist is om de lokale context vast te leggen of in lijn te brengen met andere referentie-modellen/formalismen.">
-					comment = <"Bijvoorbeeld lokale ziekenhuisafdeling informatie of aanvullende metadata om uit in lijn te brengen met FHIR of CIMI-equivalenten.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -573,7 +607,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Vårdkontakt">
-					description = <"Interaktion, kontakt eller vårdhändelse mellan patient och vårdgivare inom hälso- och sjukvården.">
+					description = <"Interaktion eller kontakt mellan patient och vårdgivare eller vårdhändelse inom hälso- och sjukvården.">
 				>
 				["at0001"] = <
 					text = <"Tree">
@@ -581,8 +615,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Tilläggsinformation">
-					description = <"Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.">
-					comment = <"Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -598,8 +632,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Erweiterung">
-					description = <"Zusätzliche Informationen, zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle / Formalismen.">
-					comment = <"Zum Beispiel Informationen zu lokalen Krankenhausabteilungen oder zusätzliche Metadaten zur Übereinstimmung mit FHIR- oder CIMI-Äquivalenten.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -615,8 +649,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Laajennus">
-					description = <"*Additional information required to capture local context or to align with other reference models/formalisms.(en)">
-					comment = <"*e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -632,8 +666,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Estensione">
-					description = <"Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.">
-					comment = <"e.g. Informazioni sul reparto ospedaliero locale o metadati aggiuntivi da allineare con gli equivalenti FHIR o CIMI.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -649,8 +683,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Extension">
-					description = <"Informations supplémentaires requises pour saisir le contexte local ou pour s'aligner sur d'autres modèles/formalismes de référence.">
-					comment = <"Par exemple: les informations sur les services hospitaliers locaux ou des métadonnées supplémentaires pour s'aligner sur les équivalents FHIR ou CIMI.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -666,8 +700,8 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Utvidelse">
-					description = <"Tilleggsinformasjon som kan være nødvendig for å dokumentere lokal kontekst, eller for å tilpasse til andre referansemodeller/formalismer.">
-					comment = <"F.eks. lokal avdelingsinformasjon eller ytterligere metadata for tilpasning til FHIR eller CIMI.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
@@ -683,8 +717,25 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Extensão">
-					description = <"Informações adicionais necessárias para captar o contexto local ou para alinhar com outros modelos/formalismos de referência.">
-					comment = <"Por exemplo, informação departamental do hospital local ou metadados adicionais para alinhar com os equivalentes FHIR ou CIMI.">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
+		["ca"] = <
+			items = <
+				["at0000"] = <
+					text = <"Encontre">
+					description = <"Interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Extensió">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
