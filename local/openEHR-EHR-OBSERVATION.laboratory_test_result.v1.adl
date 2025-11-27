@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=90225e36-20a8-403a-8172-77e53b9990b2)
+archetype (adl_version=1.4; uid=a762c05e-8caf-473c-9b1c-39d8df1ea76b)
 	openEHR-EHR-OBSERVATION.laboratory_test_result.v1
 
 concept
@@ -392,9 +392,9 @@ Hl7 FHIR Diagnostic Report resource: HL7 fhir; Available from http://www.hl7.org
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"AB458098681E9505986ADFCEC7FEC742">
-		["build_uid"] = <"0dbb47f7-fb53-4622-9a90-7b91c3778c3b">
-		["revision"] = <"1.2.5">
+		["MD5-CAM-1.0.1"] = <"5B886908205C983DC8905F037C55432D">
+		["build_uid"] = <"bebe75ff-79f9-4270-aace-36142a2c481c">
+		["revision"] = <"1.2.0">
 	>
 
 definition
