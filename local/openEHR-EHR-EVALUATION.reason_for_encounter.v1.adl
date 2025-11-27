@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=3d268aac-eeb5-4f95-b1a8-1d4dec5d0ae7)
+archetype (adl_version=1.4; uid=6db24262-b05a-4fa5-9830-6b28af562c4f)
 	openEHR-EHR-EVALUATION.reason_for_encounter.v1
 
 concept
@@ -142,9 +142,9 @@ No debe ser utilizado para registrar diagnósticos. Para eso utilizar el arqueti
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8F5F414D89192FFF36DB35A41CBCB740">
-		["build_uid"] = <"7b026d2d-41e6-4911-a964-11a9ce4fba26">
-		["revision"] = <"1.0.2">
+		["MD5-CAM-1.0.1"] = <"A0968391FAAE7AC826B3AF4B9950E1D6">
+		["build_uid"] = <"a8ef4b3c-286f-4b45-a34f-87c530f24f10">
+		["revision"] = <"1.0.1">
 	>
 
 definition
