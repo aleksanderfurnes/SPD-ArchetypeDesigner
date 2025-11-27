@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=a82233b9-7f2d-4dd5-8db4-37f6963cfd8c)
+archetype (adl_version=1.4; uid=459e617e-5bf3-4a8c-b0fe-5acbbd0ae385)
 	openEHR-EHR-SECTION.adhoc.v1
 
 concept
@@ -86,7 +86,7 @@ description
 		["email"] = <"ian@freshEHR.com">
 	>
 	lifecycle_state = <"published">
-	other_contributors = <"Tomas Alme, DIPS, Norway","Magnus Alsaker, Helsedirektoratet, Norway","Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT redaktør)","Koray Atalag, University of Auckland, New Zealand","Gustavo Bacelar-Silva, Healthcare Designs, Brazil (openEHR Translation Editor)","Silje Bakke, Bergen Hospital Trust, Norway","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, Queensland Health, Australia","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway","Mikkel Gaup Grønmo, FSE, Helse Nord, Norway (Nasjonal IKT redaktør)","Carrick Gillespie, Omniq AB, Sweden","Susanna Jönsson, Landstinget i Värmland, Sweden","Konstantinos Kalliamvakos, Cambio Healthcare Systems, Sweden","Lars Karlsen, DIPS ASA, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Rikard Lovstrom, Swedish Medical Association, Sweden","Hallvard Lærum, Direktoratet for e-helse, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Bjørn Næss, DIPS ASA, Norway","Jarl Sandberg, Tieto Sweden Healthcare & Welfare AB, Sweden (openEHR Translation Editor)","Åsa Skagerhult, Region Östergötland, Sweden (openEHR Translation Editor)","Andreas Sundstrom, Capio S:t Gorans Hospital, Sweden","Erik Sundvall, Region Östergötland + Linköping University, Sweden","Line Sæle, Nasjonal IKT HF, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)">
+	other_contributors = <"Tomas Alme, DIPS, Norway","Magnus Alsaker, Helsedirektoratet, Norway","Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT redaktør)","Koray Atalag, University of Auckland, New Zealand","Gustavo Bacelar-Silva, Healthcare Designs, Brazil (openEHR Translation Editor)","Silje Bakke, Bergen Hospital Trust, Norway","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (Nasjonal IKT redaktør)","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, Queensland Health, Australia","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway","Mikkel Gaup Grønmo, FSE, Helse Nord, Norway (Nasjonal IKT redaktør)","Carrick Gillespie, Omniq AB, Sweden","Mikkel Johan Gaup Grønmo, Forvaltningssenter EPJ, Helse Nord RHF, Norway (Nasjonal IKT redaktør)","Susanna Jönsson, Landstinget i Värmland, Sweden","Konstantinos Kalliamvakos, Cambio Healthcare Systems, Sweden","Lars Karlsen, DIPS ASA, Norway","Liv Laugen, Oslo universitetssykehus, Norway (Nasjonal IKT redaktør)","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Rikard Lovstrom, Swedish Medical Association, Sweden","Hallvard Lærum, Direktoratet for e-helse, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Lars Morgan Karlsen, DIPS ASA, Norway","Bjørn Næss, DIPS ASA, Norway","Jarl Sandberg, Tieto Sweden Healthcare & Welfare AB, Sweden (openEHR Translation Editor)","Åsa Skagerhult, Region Östergötland, Sweden (openEHR Translation Editor)","Andreas Sundstrom, Capio S:t Gorans Hospital, Sweden","Erik Sundvall, Region Östergötland + Linköping University, Sweden","Line Sæle, Nasjonal IKT HF, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","Marit Alice Venheim, Helse Vest IKT, Norway (Nasjonal IKT redaktør)">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
@@ -165,9 +165,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8FE80F3E80C594AAF99D3BA540A53D73">
-		["build_uid"] = <"46fe0e95-f5cc-44c8-8616-3b9fd0ca6e61">
-		["revision"] = <"1.0.8">
+		["MD5-CAM-1.0.1"] = <"9D358EB1048EA1401802C3E1FDFB9A29">
+		["build_uid"] = <"ad517cad-3e3b-4052-9d61-60c335f931aa">
+		["revision"] = <"1.0.2">
 	>
 
 definition
