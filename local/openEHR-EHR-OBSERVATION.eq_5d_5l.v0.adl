@@ -33,8 +33,10 @@ description
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
-			purpose = <"*To record the results of a EQ-5D-5L questionnaire. (en)">
-			keywords = <"status","eq">
+			purpose = <"*To record the results of a EQ-5D-5L questionnaire.
+
+<<To record the results of the EQ-5D-5L questionnaire, including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring.>> (en)">
+			keywords = <"*status (en)","*eq (en)","*<<eq5d, eq-5d-5l, quality of life, HRQoL, patient-reported outcome, PRO, EuroQol>> (en)">
 			copyright = <"© openEHR Foundation">
 			use = <"*Use to record the results of a EQ-5D-5L questionnaire.
 
@@ -43,11 +45,16 @@ While openEHR archetypes are all freely available under an open license, the spe
 Copyright statement: ©2009. Version 1.2_EN. All rights reserved. Geriatric Medicine Research, Dalhousie University, Halifax, Canada. 
 
 Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html. (en)">
+			misuse = <"*<<This archetype must not be used to modify, reinterpret, or replace the official EQ-5D-5L questionnaire items, response levels, or scoring rules.
+It should not be used for diagnostic purposes or clinical decision-making without appropriate clinical interpretation.
+Distribution of the EQ-5D-5L instrument itself requires adherence to copyright and licensing requirements established by the EuroQol Group.>> (en)">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"*To record the results of a EQ-5D-5L questionnaire. (en)">
-			keywords = <"status","EQ">
+			purpose = <"*To record the results of a EQ-5D-5L questionnaire.
+
+<<To record the results of the EQ-5D-5L questionnaire, including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring.>> (en)">
+			keywords = <"*status (en)","*eq (en)","*<<eq5d, eq-5d-5l, quality of life, HRQoL, patient-reported outcome, PRO, EuroQol>> (en)">
 			copyright = <"© openEHR Foundation">
 			use = <"*Use to record the results of a EQ-5D-5L questionnaire.
 
@@ -56,11 +63,16 @@ While openEHR archetypes are all freely available under an open license, the spe
 Copyright statement: ©2009. Version 1.2_EN. All rights reserved. Geriatric Medicine Research, Dalhousie University, Halifax, Canada. 
 
 Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html. (en)">
+			misuse = <"*<<This archetype must not be used to modify, reinterpret, or replace the official EQ-5D-5L questionnaire items, response levels, or scoring rules.
+It should not be used for diagnostic purposes or clinical decision-making without appropriate clinical interpretation.
+Distribution of the EQ-5D-5L instrument itself requires adherence to copyright and licensing requirements established by the EuroQol Group.>> (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record the results of a EQ-5D-5L questionnaire.">
-			keywords = <"status","eq">
+			purpose = <"To record the results of a EQ-5D-5L questionnaire.
+
+<<To record the results of the EQ-5D-5L questionnaire, including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring.>>">
+			keywords = <"status","eq","<<eq5d, eq-5d-5l, quality of life, HRQoL, patient-reported outcome, PRO, EuroQol>>">
 			copyright = <"© openEHR Foundation">
 			use = <"Use to record the results of a EQ-5D-5L questionnaire.
 
@@ -69,17 +81,28 @@ While openEHR archetypes are all freely available under an open license, the spe
 Copyright statement: ©2009. Version 1.2_EN. All rights reserved. Geriatric Medicine Research, Dalhousie University, Halifax, Canada. 
 
 Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html.">
+			misuse = <"<<This archetype must not be used to modify, reinterpret, or replace the official EQ-5D-5L questionnaire items, response levels, or scoring rules.
+It should not be used for diagnostic purposes or clinical decision-making without appropriate clinical interpretation.
+Distribution of the EQ-5D-5L instrument itself requires adherence to copyright and licensing requirements established by the EuroQol Group.>>">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
 		["references"] = <"The EuroQol Group (1990). EuroQol-a new facility for the measurement of health-related quality of life. Health Policy 16(3):199-208.
-">
+
+<<EuroQol Research Foundation.
+EQ-5D-5L User Guide. Version 4.0. 2025.
+Available from: https://euroqol.org
+ (licence-restricted content).
+
+Brooks R. (1996). EuroQol: The current state of play. Health Policy, 37(1), 53–72.
+
+Herdman M et al. (2011). Development and preliminary testing of the new five-level version of EQ-5D (EQ-5D-5L). Quality of Life Research 20(10):1727–1736.>>">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c30bc71757f210dbbc0543133d138a5f">
+		["MD5-CAM-1.0.1"] = <"8f4360a7ba39b20111029f7ec18b13bd">
 		["build_uid"] = <"86f191d7-6048-4808-b7a8-c34d44d693bb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -175,7 +198,10 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EQ-5D-5L">
-					description = <"A short descriptive system questionnaire and a visual analogue scale (VAS) that provides a simple descriptive profile of a respondent’s health state.">
+					description = <"A short descriptive system questionnaire and a visual analogue scale (VAS) that provides a simple descriptive profile of a respondent’s health state.
+
+<<A standardized health-related quality of life instrument consisting of a five-dimension descriptive system and a visual analogue scale (VAS).
+It provides a structured method for recording an individual’s self-reported health status on the day of assessment.>>">
 				>
 				["at0001"] = <
 					text = <"Event Series">
@@ -340,7 +366,10 @@ code.">
 			items = <
 				["at0000"] = <
 					text = <"*EQ-5D-5L (en)">
-					description = <"*A short descriptive system questionnaire and a visual analogue scale (VAS) that provides a simple descriptive profile of a respondent’s health state. (en)">
+					description = <"*A short descriptive system questionnaire and a visual analogue scale (VAS) that provides a simple descriptive profile of a respondent’s health state.
+
+<<A standardized health-related quality of life instrument consisting of a five-dimension descriptive system and a visual analogue scale (VAS).
+It provides a structured method for recording an individual’s self-reported health status on the day of assessment.>> (en)">
 				>
 				["at0001"] = <
 					text = <"Event Series">
@@ -505,7 +534,10 @@ code. (en)">
 			items = <
 				["at0000"] = <
 					text = <"*EQ-5D-5L (en)">
-					description = <"*A short descriptive system questionnaire and a visual analogue scale (VAS) that provides a simple descriptive profile of a respondent’s health state. (en)">
+					description = <"*A short descriptive system questionnaire and a visual analogue scale (VAS) that provides a simple descriptive profile of a respondent’s health state.
+
+<<A standardized health-related quality of life instrument consisting of a five-dimension descriptive system and a visual analogue scale (VAS).
+It provides a structured method for recording an individual’s self-reported health status on the day of assessment.>> (en)">
 				>
 				["at0001"] = <
 					text = <"Eventserie">
