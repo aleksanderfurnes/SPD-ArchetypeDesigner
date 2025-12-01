@@ -1,0 +1,59 @@
+archetype (adl_version=1.4; uid=27bddc88-72be-4eca-9c4e-904f84540c95)
+	openEHR-EHR-CLUSTER.clinical_context_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-05-05">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	other_contributors = <"Morten Hørthe <mho@dips.no>", ...>
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d9cd326ae851e509aa5473487d665d73">
+		["build_uid"] = <"fa69ba9b-9ec7-31e4-b193-b2dd50816c1e">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Klinisk kontekst
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Forløpstype
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Klinisk kontekst">
+					description = <"Struktur utviklet for å støtte klassifisering av innholdet i dokumenter i strukturert journal for kreft. Hovedformålet er å klassifisere dokumentene til å tilhøre en kreftform definert i elementet forløpsstype. ">
+				>
+				["at0001"] = <
+					text = <"Forløpstype">
+					description = <"">
+				>
+			>
+		>
+	>

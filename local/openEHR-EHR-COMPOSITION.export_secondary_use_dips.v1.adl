@@ -1,0 +1,109 @@
+archetype (adl_version=1.4; uid=54614da4-8654-4a45-a509-1c0df988bcd8)
+	openEHR-EHR-COMPOSITION.export_secondary_use_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2024-10-29">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Composition arketype som er satt opp som DIPS spesifikk rapport arketype (kategori 434). Det betyr at data som legges inn i denne ikke automatisk er gjenstand for gjenbruk. Det må eksplisitt settes opp til å hente fra categoru 434">
+			use = <"Benyttes for data som skal sammenstilles fra ulike deler av journalen med tanke på sekundærbruk til registre. ">
+			misuse = <"Skal ikke brukes for primære registreringer av data i pasientens journal. ">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Composition archetype that is set up as a DIPS specific report archetype (category 434). This means that data entered into this is not automatically subject to reuse. It must be explicitly set up to retrieve from category 434.">
+			copyright = <"© openEHR Foundation">
+			use = <" Used for data that is to be compiled from different parts of the medical record with a view to secondary use for registers.">
+			misuse = <" Not to be used for primary recording of data in the patient's medical record.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"7992b64110455bb88760d5f0dd3a9006">
+		["build_uid"] = <"1140678d-2808-3167-b600-d40d2e9a9622">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Eksport for sekundærbruk
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::434]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {
+				other_context matches {
+					ITEM_TREE[at0001] matches {    -- Item tree
+						items cardinality matches {0..*; unordered} matches {
+							allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Tilleggsinformasjon
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Eksport for sekundærbruk">
+					description = <"Sammendrag av data som trekkes ut for sekundærbruk. For eksempel uttrekk av data til et kvalitetsregister. ">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Tilleggsinformasjon">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Export for secondary use">
+					description = <" Summary of data extracted for secondary use. For example, extraction of data for a quality register.">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Additional information">
+					description = <"">
+				>
+			>
+		>
+	>

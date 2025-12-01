@@ -1,0 +1,65 @@
+archetype (adl_version=1.4; uid=885d803f-97f2-4dc3-948d-729f9d81aa04)
+	openEHR-EHR-SECTION.problem_oncology_sjk.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-04-25">
+		["name"] = <"Kanika Kuwelker">
+		["organisation"] = <"Helse Vest IKT">
+		["email"] = <"kanika.kuwelker@helse-vest-ikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d8a487416523ad110a45b56a105de768">
+		["build_uid"] = <"fa3fd3ae-e110-3be2-943a-544095567374">
+	>
+
+definition
+	SECTION[at0000] matches {    -- problem_oncology_sjk
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype ENTRY[at0021] occurrences matches {0..*} matches {    -- Overordnet diagnostisk informasjon
+				include
+					archetype_id/value matches {/.*/}
+			}
+			allow_archetype SECTION[at0022] occurrences matches {0..*} matches {    -- Seksjonsinndeling
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"problem_oncology_sjk">
+					description = <"Kreftdiagnose">
+				>
+				["at0021"] = <
+					text = <"Overordnet diagnostisk informasjon">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Seksjonsinndeling">
+					description = <"">
+				>
+			>
+		>
+	>

@@ -1,0 +1,46 @@
+archetype (adl_version=1.4; uid=56ce0596-671f-4520-b30b-eea951782679)
+	openEHR-EHR-SECTION.problem_oncology_lymph_node_sjk.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-05-14">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"a7f43e9b48b7ba1634b2e92ccb3de441">
+		["build_uid"] = <"a6ac3597-10ef-31bb-a219-f71a22e579cc">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- problem_oncology_lymph_node_sjk
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"problem_oncology_lymph_node_sjk">
+					description = <"Lymfeknutemetastase_no">
+				>
+			>
+		>
+	>

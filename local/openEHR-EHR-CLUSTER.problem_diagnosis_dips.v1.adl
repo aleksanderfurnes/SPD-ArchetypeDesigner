@@ -1,0 +1,109 @@
+archetype (adl_version=1.4; uid=f0e9a9f5-f87f-3069-874d-edcc145d9da2)
+	openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2017-11-08">
+		["name"] = <"Anca Heyd">
+		["organisation"] = <"Dips ASA">
+		["email"] = <"ahe@dips.no">
+	>
+	lifecycle_state = <"0">
+	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Angir detaljert informasjon som supplement til arketypen probelm/diagnose.">
+			use = <"Angir detaljert informasjon som supplement til arketypen problem/diagnose. Kan benyttes for å sette spesifikke medisinske koder (terminologier) f.eks. ICD, SNOMED-CT. 
+
+Arketypen er utviklet for å kunne repetere flere problem gjerne i tilknytning til flere bidiagnoser. 
+
+En vanlig bruk er sammen med EVALUATION problem/diagnose hvor denne arketypen benyttes for å angi bidiagnoser. ">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"430f5008b76570da992e8c835147d52a">
+		["build_uid"] = <"d0df25be-6391-3f33-a639-8abb7f80eaa6">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Problem/diagnose detaljer
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Diagnosenavn
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Diagnosetype
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Beskrivelse
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Problem/diagnose detaljer">
+					description = <"Brukes for å registrere detaljer til problem/diagnose blant annet ICD koder.">
+				>
+				["at0001"] = <
+					text = <"Diagnosenavn">
+					description = <"Navnet på problem/diagnose">
+				>
+				["at0002"] = <
+					text = <"Diagnosetype">
+					description = <"Informajson om type diagnose f.eks. tentativ, endelig, differensial-, hoved- eller tilleggsdiagnose.">
+				>
+				["at0003"] = <
+					text = <"Beskrivelse">
+					description = <"Narrativ beskrivelse av problem/diagnose.">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Problem/diagnosis details">
+					description = <"Used to register details about the problem or diagnosis, for instance with ICD-terminology.">
+				>
+				["at0001"] = <
+					text = <"Name of diagnosis">
+					description = <"Name of the problem or diagnosis.">
+				>
+				["at0002"] = <
+					text = <"Type of diagnosis">
+					description = <"Information about the type of diagnosis, for instance tentative, definitive, differential, primary or adjunctive diagnosis. ">
+				>
+				["at0003"] = <
+					text = <"Description">
+					description = <"Narrative description of the problem/diagnosis. ">
+				>
+			>
+		>
+	>
