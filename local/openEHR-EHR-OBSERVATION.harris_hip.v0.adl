@@ -53,7 +53,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3eae8ce23308045e9b75ecf007c7869c">
+		["MD5-CAM-1.0.1"] = <"2e218ce2bb630642f591777fed03571e">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -67,7 +67,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- 1. Pain
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- 1. Pain In the ass!
 										value matches {
 											44|[local::at0005],
 											40|[local::at0006],
@@ -277,7 +277,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"1. Pain">
+					text = <"1. Pain In the ass!">
 					description = <"">
 				>
 				["at0005"] = <
@@ -642,7 +642,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"1. Smerte">
+					text = <"*1. Pain In the ass! (en)">
 					description = <"">
 				>
 				["at0005"] = <
