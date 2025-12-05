@@ -53,7 +53,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8369006833b1e482bfffafe5c423cae0">
+		["MD5-CAM-1.0.1"] = <"a508afbe80b11f100a9d06e31ee5a517">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["revision"] = <"0.0.1-alpha">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
@@ -68,7 +68,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- 1. Pain
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Pain
 										value matches {
 											44|[local::at0005],
 											40|[local::at0006],
@@ -78,7 +78,7 @@ definition
 											0|[local::at0010]
 										}
 									}
-									ELEMENT[at0011] occurrences matches {0..1} matches {    -- 2. Support devices
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Support devices
 										value matches {
 											11|[local::at0012],
 											7|[local::at0013],
@@ -88,7 +88,7 @@ definition
 											0|[local::at0017]
 										}
 									}
-									ELEMENT[at0018] occurrences matches {0..1} matches {    -- 3. Distance walked
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Distance walked
 										value matches {
 											11|[local::at0019],
 											8|[local::at0020],
@@ -97,7 +97,7 @@ definition
 											0|[local::at0023]
 										}
 									}
-									ELEMENT[at0024] occurrences matches {0..1} matches {    -- 4. Limp
+									ELEMENT[at0024] occurrences matches {0..1} matches {    -- Limp
 										value matches {
 											11|[local::at0025],
 											8|[local::at0026],
@@ -105,14 +105,14 @@ definition
 											0|[local::at0028]
 										}
 									}
-									ELEMENT[at0029] occurrences matches {0..1} matches {    -- 5. Shoes and socks
+									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Shoes and socks
 										value matches {
 											4|[local::at0030],
 											2|[local::at0031],
 											0|[local::at0032]
 										}
 									}
-									ELEMENT[at0033] occurrences matches {0..1} matches {    -- 6. Stairs
+									ELEMENT[at0033] occurrences matches {0..1} matches {    -- Stairs
 										value matches {
 											4|[local::at0034],
 											2|[local::at0035],
@@ -120,26 +120,26 @@ definition
 											0|[local::at0037]
 										}
 									}
-									ELEMENT[at0038] occurrences matches {0..1} matches {    -- 7. Public transportation
+									ELEMENT[at0038] occurrences matches {0..1} matches {    -- Public transportation
 										value matches {
 											1|[local::at0039],
 											0|[local::at0040]
 										}
 									}
-									ELEMENT[at0041] occurrences matches {0..1} matches {    -- 8. Sitting
+									ELEMENT[at0041] occurrences matches {0..1} matches {    -- Sitting
 										value matches {
 											5|[local::at0042],
 											3|[local::at0043],
 											0|[local::at0044]
 										}
 									}
-									ELEMENT[at0048] occurrences matches {0..1} matches {    -- 9. Absence of deformity
+									ELEMENT[at0048] occurrences matches {0..1} matches {    -- Absence of deformity
 										value matches {
 											0|[local::at0176],
 											4|[local::at0177]
 										}
 									}
-									ELEMENT[at0052] occurrences matches {0..1} matches {    -- 10. Total degrees of flexion
+									ELEMENT[at0052] occurrences matches {0..1} matches {    -- Total degrees of flexion
 										value matches {
 											0.0|[local::at0053],
 											0.04|[local::at0054],
@@ -158,7 +158,7 @@ definition
 											3.9|[local::at0067]
 										}
 									}
-									ELEMENT[at0068] occurrences matches {0..1} matches {    -- 11. Total degrees of abduction
+									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Total degrees of abduction
 										value matches {
 											0.0|[local::at0163],
 											0.2|[local::at0164],
@@ -167,7 +167,7 @@ definition
 											0.65|[local::at0167]
 										}
 									}
-									ELEMENT[at0074] occurrences matches {0..1} matches {    -- 12. Total degrees of external rotation
+									ELEMENT[at0074] occurrences matches {0..1} matches {    -- Total degrees of external rotation
 										value matches {
 											0.0|[local::at0168],
 											0.1|[local::at0169],
@@ -175,7 +175,7 @@ definition
 											0.3|[local::at0171]
 										}
 									}
-									ELEMENT[at0079] occurrences matches {0..1} matches {    -- 13. Total degrees of adduction
+									ELEMENT[at0079] occurrences matches {0..1} matches {    -- Total degrees of adduction
 										value matches {
 											0.0|[local::at0172],
 											0.05|[local::at0173],
@@ -278,7 +278,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"1. Pain">
+					text = <"Pain">
 					description = <"">
 				>
 				["at0005"] = <
@@ -306,7 +306,7 @@ ontology
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"2. Support devices">
+					text = <"Support devices">
 					description = <"">
 				>
 				["at0012"] = <
@@ -334,7 +334,7 @@ ontology
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"3. Distance walked">
+					text = <"Distance walked">
 					description = <"">
 				>
 				["at0019"] = <
@@ -358,7 +358,7 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"4. Limp">
+					text = <"Limp">
 					description = <"">
 				>
 				["at0025"] = <
@@ -378,7 +378,7 @@ ontology
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"5. Shoes and socks">
+					text = <"Shoes and socks">
 					description = <"">
 				>
 				["at0030"] = <
@@ -394,7 +394,7 @@ ontology
 					description = <"">
 				>
 				["at0033"] = <
-					text = <"6. Stairs">
+					text = <"Stairs">
 					description = <"">
 				>
 				["at0034"] = <
@@ -414,7 +414,7 @@ ontology
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"7. Public transportation">
+					text = <"Public transportation">
 					description = <"">
 				>
 				["at0039"] = <
@@ -426,7 +426,7 @@ ontology
 					description = <"">
 				>
 				["at0041"] = <
-					text = <"8. Sitting">
+					text = <"Sitting">
 					description = <"">
 				>
 				["at0042"] = <
@@ -446,11 +446,11 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0048"] = <
-					text = <"9. Absence of deformity">
+					text = <"Absence of deformity">
 					description = <"Criteria: Less than 30 degrees of fixed flexion; Less than 10 degrees of fixed internal rotation in extension; Less than 10 degrees of fixed adduction; Limb length discrepancy less than 3.2 cm (1.5 inches).">
 				>
 				["at0052"] = <
-					text = <"10. Total degrees of flexion">
+					text = <"Total degrees of flexion">
 					description = <"">
 				>
 				["at0053"] = <
@@ -514,15 +514,15 @@ ontology
 					description = <"">
 				>
 				["at0068"] = <
-					text = <"11. Total degrees of abduction">
+					text = <"Total degrees of abduction">
 					description = <"">
 				>
 				["at0074"] = <
-					text = <"12. Total degrees of external rotation">
+					text = <"Total degrees of external rotation">
 					description = <"">
 				>
 				["at0079"] = <
-					text = <"13. Total degrees of adduction">
+					text = <"Total degrees of adduction">
 					description = <"">
 				>
 				["at0084"] = <
@@ -643,7 +643,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"1. Smerte">
+					text = <"*Pain (en)">
 					description = <"">
 				>
 				["at0005"] = <
@@ -671,7 +671,7 @@ ontology
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*2. Support devices (en)">
+					text = <"*Support devices (en)">
 					description = <"">
 				>
 				["at0012"] = <
@@ -699,7 +699,7 @@ ontology
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"*3. Distance walked (en)">
+					text = <"*Distance walked (en)">
 					description = <"">
 				>
 				["at0019"] = <
@@ -723,7 +723,7 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*4. Limp (en)">
+					text = <"*Limp (en)">
 					description = <"">
 				>
 				["at0025"] = <
@@ -743,7 +743,7 @@ ontology
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*5. Shoes and socks (en)">
+					text = <"*Shoes and socks (en)">
 					description = <"">
 				>
 				["at0030"] = <
@@ -759,7 +759,7 @@ ontology
 					description = <"">
 				>
 				["at0033"] = <
-					text = <"*6. Stairs (en)">
+					text = <"*Stairs (en)">
 					description = <"">
 				>
 				["at0034"] = <
@@ -779,7 +779,7 @@ ontology
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"*7. Public transportation (en)">
+					text = <"*Public transportation (en)">
 					description = <"">
 				>
 				["at0039"] = <
@@ -791,7 +791,7 @@ ontology
 					description = <"">
 				>
 				["at0041"] = <
-					text = <"*8. Sitting (en)">
+					text = <"*Sitting (en)">
 					description = <"">
 				>
 				["at0042"] = <
@@ -811,11 +811,11 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0048"] = <
-					text = <"*9. Absence of deformity (en)">
+					text = <"*Absence of deformity (en)">
 					description = <"*Criteria: Less than 30 degrees of fixed flexion; Less than 10 degrees of fixed internal rotation in extension; Less than 10 degrees of fixed adduction; Limb length discrepancy less than 3.2 cm (1.5 inches). (en)">
 				>
 				["at0052"] = <
-					text = <"*10. Total degrees of flexion (en)">
+					text = <"*Total degrees of flexion (en)">
 					description = <"">
 				>
 				["at0053"] = <
@@ -879,15 +879,15 @@ ontology
 					description = <"">
 				>
 				["at0068"] = <
-					text = <"*11. Total degrees of abduction (en)">
+					text = <"*Total degrees of abduction (en)">
 					description = <"">
 				>
 				["at0074"] = <
-					text = <"*12. Total degrees of external rotation (en)">
+					text = <"*Total degrees of external rotation (en)">
 					description = <"">
 				>
 				["at0079"] = <
-					text = <"*13. Total degrees of adduction (en)">
+					text = <"*Total degrees of adduction (en)">
 					description = <"">
 				>
 				["at0084"] = <
