@@ -53,7 +53,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"40efed048f3465ddb35ecb2b56d8b1a1">
+		["MD5-CAM-1.0.1"] = <"8369006833b1e482bfffafe5c423cae0">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["revision"] = <"0.0.1-alpha">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
