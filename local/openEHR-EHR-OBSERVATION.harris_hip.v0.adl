@@ -53,7 +53,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cb9dda7389f96a0a499445f012b9e38c">
+		["MD5-CAM-1.0.1"] = <"2d452cc48cdd97a09ab533565e75ecde">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -135,8 +135,8 @@ definition
 									}
 									ELEMENT[at0048] occurrences matches {0..1} matches {    -- Absence of deformity
 										value matches {
-											0|[local::at0176],
-											4|[local::at0177]
+											4|[local::at0177],
+											0|[local::at0176]
 										}
 									}
 									ELEMENT[at0052] occurrences matches {0..1} matches {    -- Total degrees of flexion
@@ -699,111 +699,111 @@ ontology
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"*Distance walked (en)">
+					text = <"Gangdistanse">
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*Unlimited (en)">
+					text = <"Ubegrenset">
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"*Six blocks (en)">
+					text = <"1-1,5 km">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*Two or three blocks (en)">
+					text = <"<1 km">
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"*Indoors only (en)">
+					text = <"Kun inne">
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"*Bed and chair only (en)">
+					text = <"Seng til stol">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*Limp (en)">
+					text = <"Halting">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"*None (en)">
+					text = <"Ingen">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"*Slight (en)">
+					text = <"LEtt">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"*Moderate (en)">
+					text = <"MIddels">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"*Severe (en)">
+					text = <"Svær">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*Shoes and socks (en)">
+					text = <"Påkledning">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"*With ease (en)">
+					text = <"Inge problemer med sko/sokker">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"*With difficulty (en)">
+					text = <"Problemer med sko/sokker">
 					description = <"">
 				>
 				["at0032"] = <
-					text = <"*Unable (en)">
+					text = <"Umulig å ta på sko/sokker">
 					description = <"">
 				>
 				["at0033"] = <
-					text = <"*Stairs (en)">
+					text = <"Trappegang">
 					description = <"">
 				>
 				["at0034"] = <
-					text = <"*Normally without using a railing (en)">
+					text = <"Normal">
 					description = <"">
 				>
 				["at0035"] = <
-					text = <"*Normally using a railing (en)">
+					text = <"Normal, støtte til rekkverk">
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"*In any manner (en)">
+					text = <"Ett trinn av gangen ved hjelp av rekkverk">
 					description = <"">
 				>
 				["at0037"] = <
-					text = <"*Unable to do stairs (en)">
+					text = <"Umulig">
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"*Public transportation (en)">
+					text = <"Transport">
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"*Able to use transportation (bus) (en)">
+					text = <"Kan bruke kollektiv">
 					description = <"">
 				>
 				["at0040"] = <
-					text = <"*Unable to use public transportation (bus) (en)">
+					text = <"Umulig">
 					description = <"">
 				>
 				["at0041"] = <
-					text = <"*Sitting (en)">
+					text = <"Sitting">
 					description = <"">
 				>
 				["at0042"] = <
-					text = <"*Comfortably in ordinary chair for one hour (en)">
+					text = <"Komfortabel i lav stol >1 tim">
 					description = <"">
 				>
 				["at0043"] = <
-					text = <"*On a high chair for 30 minutes (en)">
+					text = <"Komfortabel">
 					description = <"">
 				>
 				["at0044"] = <
-					text = <"*Unable to sit comfortably in any chair (en)">
+					text = <"Ikke komfortabel i noen stol">
 					description = <"">
 				>
 				["at0047"] = <
@@ -811,8 +811,12 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0048"] = <
-					text = <"*Absence of deformity (en)">
-					description = <"*Criteria: Less than 30 degrees of fixed flexion; Less than 10 degrees of fixed internal rotation in extension; Less than 10 degrees of fixed adduction; Limb length discrepancy less than 3.2 cm (1.5 inches). (en)">
+					text = <"Deformitet">
+					description = <"Kriterier:
+Mindre enn 30 grader fiksert fleksjon
+Mindre enn 10 grader fiksert innadrotasjon i ekstensjon
+Mindre enn 10 grader fiksert adduksjon
+Beindiscrepans mindre enn 3,2 cm (1,5 tommer)">
 				>
 				["at0052"] = <
 					text = <"*Total degrees of flexion (en)">
@@ -980,11 +984,11 @@ ontology
 					description = <"">
 				>
 				["at0176"] = <
-					text = <"*One or more criteria are not met. (en)">
+					text = <"Ett eller flere kriterier er ikke oppfylt">
 					description = <"">
 				>
 				["at0177"] = <
-					text = <"*All four criteria are met. (en)">
+					text = <"Alle fire kriterier er oppfylt">
 					description = <"">
 				>
 			>
