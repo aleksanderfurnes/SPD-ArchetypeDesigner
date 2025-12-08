@@ -53,10 +53,10 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a508afbe80b11f100a9d06e31ee5a517">
+		["MD5-CAM-1.0.1"] = <"cb9dda7389f96a0a499445f012b9e38c">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
-		["revision"] = <"0.0.1-alpha">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -643,59 +643,59 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*Pain (en)">
+					text = <"Smerte">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*None, or ignores it (en)">
+					text = <"Ingen">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*Slight, occasional, no compromise in activity (en)">
-					description = <"">
+					text = <"Lett verking/smerte uten innvirkning på funksjon">
+					description = <"Svak">
 				>
 				["at0007"] = <
-					text = <"*Mild pain, no effect on average activities, rarely moderate pain with unusual activity, may take aspirin (en)">
-					description = <"">
+					text = <"Noe vondt etter mye aktivitet, behov for reseptfri smertestillende">
+					description = <"Lett">
 				>
 				["at0008"] = <
-					text = <"*Moderate pain, tolerable but makes concessions to pain. Some limitations of ordinary activity or work. May require occasional pain medication stronger than aspirin (en)">
-					description = <"">
+					text = <"Tolerabel, men pasienten plages jevnlig. Kan hemme vanlig aktivitet, kan trenge sterkere smertestillende enn paracet">
+					description = <"Moderat">
 				>
 				["at0009"] = <
-					text = <"*Marked pain, serious limitation of activities (en)">
-					description = <"">
+					text = <"Sterke smerter, men oppegående, hemmer aktivitet betydelig, behov for smertestillende sterkere enn paracet, noe nattsmerter">
+					description = <"Sterk">
 				>
 				["at0010"] = <
-					text = <"*Totally disabled, crippled, pain in bed, bedridden (en)">
-					description = <"">
+					text = <"Betydelig nattsmerte, klarer knapt gå pga av smerte">
+					description = <"Invalidiserende">
 				>
 				["at0011"] = <
-					text = <"*Support devices (en)">
+					text = <"Støtte">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"*None (en)">
+					text = <"Ingen">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*Cane/walking stick for long walks (en)">
+					text = <"En stokk lengre tur">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*Cane/walking stick most of the time (en)">
+					text = <"En stokk vanligvis">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"*One crutch (en)">
+					text = <"En krykke">
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"*Two canes/walking sticks (en)">
+					text = <"To stokker">
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"*Two crutches or not able to walk (en)">
+					text = <"To krykker eller umulig å gå">
 					description = <"">
 				>
 				["at0018"] = <
