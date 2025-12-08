@@ -53,7 +53,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"90c4ba70a696b4f7dbd219befe9b7c5b">
+		["MD5-CAM-1.0.1"] = <"9e905537eb471d41682438be4ae00501">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -627,7 +627,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Harris Hip Score (HHS) (en)">
+					text = <"Harris Hip Score (HHS)">
 					description = <"*An assessment score used to evaluate the functional capacity of an individual following hip surgery. (en)">
 				>
 				["at0001"] = <
