@@ -53,7 +53,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6979e9973816c39953b4f5f1b2a4016b">
+		["MD5-CAM-1.0.1"] = <"a58b769754cf0a8175dc7d595f051f35">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -823,63 +823,63 @@ Beindiscrepans mindre enn 3,2 cm (1,5 tommer)">
 					description = <"">
 				>
 				["at0053"] = <
-					text = <"*None (en)">
+					text = <"None">
 					description = <"">
 				>
 				["at0054"] = <
-					text = <"*0>8 (en)">
+					text = <"0>8">
 					description = <"">
 				>
 				["at0055"] = <
-					text = <"*8>16 (en)">
+					text = <"8>16">
 					description = <"">
 				>
 				["at0056"] = <
-					text = <"*16>24 (en)">
+					text = <"16>24">
 					description = <"">
 				>
 				["at0057"] = <
-					text = <"*24>32 (en)">
+					text = <"24>32">
 					description = <"">
 				>
 				["at0058"] = <
-					text = <"*32>40 (en)">
+					text = <"32>40">
 					description = <"">
 				>
 				["at0059"] = <
-					text = <"*40>45 (en)">
+					text = <"40>45">
 					description = <"">
 				>
 				["at0060"] = <
-					text = <"*45>55 (en)">
+					text = <"45>55">
 					description = <"">
 				>
 				["at0061"] = <
-					text = <"*55>65 (en)">
+					text = <"55>65">
 					description = <"">
 				>
 				["at0062"] = <
-					text = <"*65>70 (en)">
+					text = <"65>70">
 					description = <"">
 				>
 				["at0063"] = <
-					text = <"*70>75 (en)">
+					text = <"70>75">
 					description = <"">
 				>
 				["at0064"] = <
-					text = <"*75>80 (en)">
+					text = <"75>80">
 					description = <"">
 				>
 				["at0065"] = <
-					text = <"*80>90 (en)">
+					text = <"80>90">
 					description = <"">
 				>
 				["at0066"] = <
-					text = <"*90>100 (en)">
+					text = <"90>100">
 					description = <"">
 				>
 				["at0067"] = <
-					text = <"*100>110 (en)">
+					text = <"100>110">
 					description = <"">
 				>
 				["at0068"] = <
@@ -900,11 +900,11 @@ Beindiscrepans mindre enn 3,2 cm (1,5 tommer)">
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 				["at0085"] = <
-					text = <"*HHS total (en)">
+					text = <"HHS total">
 					description = <"*The total sum of each component parameter for the Harris hip score. (en)">
 				>
 				["at0086"] = <
-					text = <"*Grading (en)">
+					text = <"Gradering">
 					description = <"*Grading derived from Harris hip score. (en)">
 				>
 				["at0087"] = <
@@ -924,11 +924,11 @@ Beindiscrepans mindre enn 3,2 cm (1,5 tommer)">
 					description = <"*90-100. (en)">
 				>
 				["at0160"] = <
-					text = <"*mHHS raw total (en)">
+					text = <"mHHS rå totalscore">
 					description = <"*The total sum of each component parameter for the modified Harris hip score. (en)">
 				>
 				["at0162"] = <
-					text = <"*mHHS normalised total (en)">
+					text = <"mHHS normalisert totalscore">
 					description = <"*The adjusted score for the Modified Harris Hip Score, representing the raw score expressed on a 0–100 scale for comparability with the original Harris Hip Score. (en)">
 				>
 				["at0163"] = <
