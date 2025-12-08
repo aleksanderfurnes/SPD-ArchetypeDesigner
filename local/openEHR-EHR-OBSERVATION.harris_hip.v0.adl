@@ -53,7 +53,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a58b769754cf0a8175dc7d595f051f35">
+		["MD5-CAM-1.0.1"] = <"90c4ba70a696b4f7dbd219befe9b7c5b">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -932,55 +932,55 @@ Beindiscrepans mindre enn 3,2 cm (1,5 tommer)">
 					description = <"*The adjusted score for the Modified Harris Hip Score, representing the raw score expressed on a 0–100 scale for comparability with the original Harris Hip Score. (en)">
 				>
 				["at0163"] = <
-					text = <"*None (en)">
+					text = <"None">
 					description = <"">
 				>
 				["at0164"] = <
-					text = <"*0>5 (en)">
+					text = <"0>5">
 					description = <"">
 				>
 				["at0165"] = <
-					text = <"*5>10 (en)">
+					text = <"5>10">
 					description = <"">
 				>
 				["at0166"] = <
-					text = <"*10>15 (en)">
+					text = <"10>15">
 					description = <"">
 				>
 				["at0167"] = <
-					text = <"*15>20 (en)">
+					text = <"15>20">
 					description = <"">
 				>
 				["at0168"] = <
-					text = <"*None (en)">
+					text = <"None">
 					description = <"">
 				>
 				["at0169"] = <
-					text = <"*0>5 (en)">
+					text = <"0>5">
 					description = <"">
 				>
 				["at0170"] = <
-					text = <"*5>10 (en)">
+					text = <"5>10">
 					description = <"">
 				>
 				["at0171"] = <
-					text = <"*10>15 (en)">
+					text = <"10>15">
 					description = <"">
 				>
 				["at0172"] = <
-					text = <"*None (en)">
+					text = <"None">
 					description = <"">
 				>
 				["at0173"] = <
-					text = <"*0>5 (en)">
+					text = <"0>5">
 					description = <"">
 				>
 				["at0174"] = <
-					text = <"*5>10 (en)">
+					text = <"5>10">
 					description = <"">
 				>
 				["at0175"] = <
-					text = <"*10>15 (en)">
+					text = <"10>15">
 					description = <"">
 				>
 				["at0176"] = <
