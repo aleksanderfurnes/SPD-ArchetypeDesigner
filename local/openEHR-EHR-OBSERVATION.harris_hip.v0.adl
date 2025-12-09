@@ -26,6 +26,7 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			keywords = <"artroplastikk","brudd","artrose","hofte","Harris hofteskår","modifisert Harris hofteskår">
 			copyright = <"© openEHR Foundation">
 		>
 		["en"] = <
@@ -53,7 +54,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9e905537eb471d41682438be4ae00501">
+		["MD5-CAM-1.0.1"] = <"b9631ce1f8037f67ba5b7cba25634c7b">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -628,7 +629,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Harris Hip Score (HHS)">
-					description = <"*An assessment score used to evaluate the functional capacity of an individual following hip surgery. (en)">
+					description = <"En vurderingsskår som brukes til å evaluere den funksjonelle kapasiteten hos en person etter en hofteoperasjon">
 				>
 				["at0001"] = <
 					text = <"History">
