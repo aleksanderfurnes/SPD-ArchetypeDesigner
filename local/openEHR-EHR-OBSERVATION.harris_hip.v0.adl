@@ -26,8 +26,18 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"Å registrere resultatene for hver enkelt komponent og deres totale sum for den kliniker-vurderte Harris hofteskår (HHS), samt det tilhørende pasientrapporterte målet, den modifiserte Harris hofteskår (mHHS).">
 			keywords = <"artroplastikk","brudd","artrose","hofte","Harris hofteskår","modifisert Harris hofteskår">
 			copyright = <"© openEHR Foundation">
+			use = <"Brukes til å registrere:
+
+resultatene for hver komponentparameter og deres totale sum for Harris hofteskår, som omfatter både pasientrapporterte mål på smerte og funksjon, samt kliniker-vurderte funn av bevegelsesutslag og deformitet; og
+
+resultatene for delsettet av parametere som utgjør Modified Harris hofteskår, som kun inkluderer de pasientrapporterte komponentene fra den opprinnelige Harris hofteskår og utelater alle kliniker-vurderte undersøkelsesfunn.
+
+skåren for Modified Harris hofteskår, registrert enten som:
+– en «rå» skår, som er den faktiske summen av de pasientrapporterte komponentene, med en maksimal verdi på 91, og
+– en «normalisert» skår, som representerer den rå skåren uttrykt på en 0–100-skala for sammenlignbarhet med den opprinnelige Harris hofteskår.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -54,7 +64,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b9631ce1f8037f67ba5b7cba25634c7b">
+		["MD5-CAM-1.0.1"] = <"f172f73c1da5a9325767df6f84d12f9e">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -629,7 +639,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Harris Hip Score (HHS)">
-					description = <"En vurderingsskår som brukes til å evaluere den funksjonelle kapasiteten hos en person etter en hofteoperasjon">
+					description = <"En vurderingsskår som brukes til å evaluere den funksjonelle kapasiteten hos en person etter en hofteoperasjon.">
 				>
 				["at0001"] = <
 					text = <"History">
