@@ -64,7 +64,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3cded65af51c22e8b8eaf479e81a0754">
+		["MD5-CAM-1.0.1"] = <"3974b03ed963ce5ab33ff794565e0fde">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -646,8 +646,8 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"*Any event (en)">
-					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)">
+					text = <"Uspesifisert tidspunkthendelse">
+					description = <"Uspesifisert tidspunkt som kan defineres mer eksplisitt i en templat eller i en applikasjon.">
 				>
 				["at0003"] = <
 					text = <"Tree">
