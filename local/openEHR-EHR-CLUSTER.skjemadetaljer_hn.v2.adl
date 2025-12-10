@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0cbc5e6ccf2c98b9db5c6d27e4eb848d">
+		["MD5-CAM-1.0.1"] = <"ed136035a3b7bf88df0342cc2ccb4fa6">
 		["build_uid"] = <"180b3e90-2f51-3eed-ac82-389ddf91a6e4">
 	>
 
@@ -41,6 +41,16 @@ definition
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Alder
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Utfylt på vegne av
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Navn på utfyller
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -66,6 +76,14 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Alder">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Utfylt på vegne av">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Navn på utfyller">
 					description = <"">
 				>
 			>
