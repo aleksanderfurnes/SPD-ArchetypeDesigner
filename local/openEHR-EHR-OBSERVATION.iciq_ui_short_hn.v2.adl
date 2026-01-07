@@ -43,7 +43,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"ac12d27ccb08291308619db571a7e18d">
+		["MD5-CAM-1.0.1"] = <"5bff915f3dce18aad0ef15422225474f">
 		["build_uid"] = <"1f811f48-1849-4ff3-9943-b8ef1a9a1b4f">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -77,9 +77,16 @@ definition
 									}
 									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Interference with daily life
 										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
+											1|[local::at0031],
+											2|[local::at0032],
+											3|[local::at0033],
+											4|[local::at0034],
+											5|[local::at0035],
+											6|[local::at0036],
+											7|[local::at0037],
+											8|[local::at0038],
+											9|[local::at0039],
+											10|[local::at0040]
 										}
 									}
 									ELEMENT[at0017] occurrences matches {0..1} matches {    -- ICIQ Score
@@ -271,6 +278,46 @@ How much urine do you usually leak (whether you wear protection or not)?">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
+				["at0031"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -403,6 +450,46 @@ How much urine do you usually leak (whether you wear protection or not)?">
 					text = <"Utvidelse">
 					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
 					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
+				>
+				["at0031"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"10">
+					description = <"">
 				>
 			>
 		>
