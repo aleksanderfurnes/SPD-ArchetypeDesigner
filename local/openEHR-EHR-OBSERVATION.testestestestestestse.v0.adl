@@ -1,0 +1,145 @@
+archetype (adl_version=1.4; uid=ad129f07-d365-44f6-a8db-8fafdff29474)
+	openEHR-EHR-OBSERVATION.testestestestestestse.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2026-01-07">
+		["name"] = <"Aleksander Spikkerud Furnes">
+		["organisation"] = <"Helse Nord IKT">
+		["email"] = <"aleksander.spikkerud.furnes@hnikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"6086f4d1f07bf0bf9cf770306e9f2bee">
+		["build_uid"] = <"3a9a5a12-c4d8-3949-b7ad-0987b112ea99">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- testestestestestestse
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Aldri, jeg lekker ikke urin
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Lekker før jeg når toalettet
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Lekker når jeg hoster eller nyser
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Lekker når jeg sover
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Lekker når jeg er fysisk aktiv/trimmer
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Lekker når jeg er ferdig med å late vannet og har tatt på meg klærne
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Ingen åpenbar grunn
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Lekker hele tiden
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"testestestestestestse">
+					description = <"testestestestestestse">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Aldri, jeg lekker ikke urin">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Lekker før jeg når toalettet">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Lekker når jeg hoster eller nyser">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Lekker når jeg sover">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Lekker når jeg er fysisk aktiv/trimmer">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Lekker når jeg er ferdig med å late vannet og har tatt på meg klærne">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Ingen åpenbar grunn">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Lekker hele tiden">
+					description = <"">
+				>
+			>
+		>
+	>
