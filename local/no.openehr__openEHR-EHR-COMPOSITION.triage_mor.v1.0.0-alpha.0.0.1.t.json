@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "24b03640d925a76be131e8ed3b6b21ff",
+      "MD5-CAM-1.0.1" : "3a17c25253e8fa4c2d78caaff5146285",
       "PARENT:MD5-CAM-1.0.1" : "8C341BFFA1E20864451EDDD9770E3D0F"
     },
     "details" : {
@@ -252,14 +252,49 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
+                    "rmAttributeName" : "defining_code",
                     "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "A Rød", "B Gul", "C Grønn", "D Utreiseklar" ]
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "hn_triage_mor_barn"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "hn_triage_mor_barn" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "hn_triage_mor_barn",
+                        "code" : "A",
+                        "value" : "Rød",
+                        "translations" : {
+                          "nb" : "Rød"
+                        }
+                      }, {
+                        "terminologyId" : "hn_triage_mor_barn",
+                        "code" : "B",
+                        "value" : "Gul",
+                        "translations" : {
+                          "nb" : "Gul"
+                        }
+                      }, {
+                        "terminologyId" : "hn_triage_mor_barn",
+                        "code" : "C",
+                        "value" : "Grønn",
+                        "translations" : {
+                          "nb" : "Grønn"
+                        }
+                      }, {
+                        "terminologyId" : "hn_triage_mor_barn",
+                        "code" : "D",
+                        "value" : "Utreiseklar",
+                        "translations" : {
+                          "nb" : "Utreiseklar"
+                        }
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
