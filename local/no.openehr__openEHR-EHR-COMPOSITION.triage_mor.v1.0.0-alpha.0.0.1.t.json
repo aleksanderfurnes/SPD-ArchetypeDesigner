@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "3a17c25253e8fa4c2d78caaff5146285",
+      "MD5-CAM-1.0.1" : "5cc8bf1fac962e0576491f33a87801a4",
       "PARENT:MD5-CAM-1.0.1" : "8C341BFFA1E20864451EDDD9770E3D0F"
     },
     "details" : {
@@ -140,6 +140,15 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-triage-001.v0",
         "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ADMIN_ENTRY",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-triage_hn-001.v1",
+        "referenceType" : "archetypeOverlay"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -221,13 +230,196 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F87F4AE8EA7D5C74FE254B72C50F3FDF"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registerere detaljer om hastegrad i forbindelse med akutt sykdom eller skade, for å bestemme rekkefølgen på behandling der antall pasienter er større enn kapasiteten for å gi samtidig behandling.",
+          "keywords" : [ "triage", "vurdering", "evaluering", "prioritet", "nødsituasjon", "screening", "katastrofe" ],
+          "use" : "For å registerere detaljer om hastegrad i forbindelse med akutt sykdom eller skade, for å bestemme rekkefølgen på behandling der antall pasienter er større enn kapasiteten for å gi samtidig behandling.\r\n\r\nDenne arketypen har blitt utformet for å gi et generisk rammeverk for enhver triagering, og kan spesifiseres for spesifikke kliniske lokasjoner eller som en hendelse i et templat for et spesifikt klinisk scenario. Triagerprioriteten kan være tidsrelatert, slik at pasienter kan flagges for behandling innen et angitt tidsvindu.\r\n\r\nArketypen kan spesialiseres for å representere spesifikke triageringsverktøy.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the assignment of a degree of urgency to wounds or illnesses, in order to decide the order of treatment of a large number of patients or casualties.",
+          "keywords" : [ "triage", "evaluation", "assessment", "priority", "emergency", "screening", "disaster" ],
+          "use" : "Use to record details about the assignment of a degree of urgency to wounds or illnesses, in order to decide the order of treatment of a large number of patients or casualties.\r\n\r\nThis archetype has been designed to provide a generic framework for any triage priority, which may be specifically defined for a specific clinical location or event within a template for a specified clinical scenario. The triage priority may be time-related, indicating that the patient must be attended to within a specified timeframe.\r\n\r\nThis archetype may be specialised to represent specific triage assessment tools.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.triage.v0",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
       "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-triage-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "hn_triage_mor_barn"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "hn_triage_mor_barn" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "hn_triage_mor_barn",
+                        "code" : "A",
+                        "value" : "Rød",
+                        "translations" : {
+                          "nb" : "Rød"
+                        }
+                      }, {
+                        "terminologyId" : "hn_triage_mor_barn",
+                        "code" : "B",
+                        "value" : "Gul",
+                        "translations" : {
+                          "nb" : "Gul"
+                        }
+                      }, {
+                        "terminologyId" : "hn_triage_mor_barn",
+                        "code" : "C",
+                        "value" : "Grønn",
+                        "translations" : {
+                          "nb" : "Grønn"
+                        }
+                      }, {
+                        "terminologyId" : "hn_triage_mor_barn",
+                        "code" : "D",
+                        "value" : "Utreiseklar",
+                        "translations" : {
+                          "nb" : "Utreiseklar"
+                        }
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "f12d328c-cd2d-47d8-a967-9afa3ba2ff28",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Mikkel Johan Gaup Grønmo",
+        "organisation" : "Helse Nord IKT",
+        "email" : "mikkel.johan.gaup.gronmo@hnikt.no"
+      },
+      "accreditation" : "Nasjonal IKT",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "ed53797e-0162-46d3-97d3-ddbe872566c6",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "da8168abd029b92cbeee6c266a35f684"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.triage_hn.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-triage_hn-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
