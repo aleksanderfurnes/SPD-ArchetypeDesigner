@@ -43,7 +43,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"5bff915f3dce18aad0ef15422225474f">
+		["MD5-CAM-1.0.1"] = <"a8757664b434c9a69b9e9beae513551c">
 		["build_uid"] = <"1f811f48-1849-4ff3-9943-b8ef1a9a1b4f">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -113,6 +113,7 @@ definition
 											}
 										}
 									}
+									CLUSTER[at0041] occurrences matches {0..1} matches {*}    -- CLUSTER
 								}
 							}
 						}
@@ -318,6 +319,10 @@ How much urine do you usually leak (whether you wear protection or not)?">
 					text = <"*10 (nb)">
 					description = <"">
 				>
+				["at0041"] = <
+					text = <"CLUSTER">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -489,6 +494,10 @@ How much urine do you usually leak (whether you wear protection or not)?">
 				>
 				["at0040"] = <
 					text = <"10">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Når lekker du urin?">
 					description = <"">
 				>
 			>
