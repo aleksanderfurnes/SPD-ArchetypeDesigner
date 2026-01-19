@@ -43,7 +43,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"a8757664b434c9a69b9e9beae513551c">
+		["MD5-CAM-1.0.1"] = <"eea6a1fc728afe6d289efbb8a6bb079f">
 		["build_uid"] = <"1f811f48-1849-4ff3-9943-b8ef1a9a1b4f">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -113,7 +113,50 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0041] occurrences matches {0..1} matches {*}    -- CLUSTER
+									CLUSTER[at0041] occurrences matches {0..1} matches {    -- CLUSTER
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0042] occurrences matches {0..1} matches {    -- Aldri, jeg lekker ikke urin
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0043] occurrences matches {0..1} matches {    -- Lekker før jeg når toalettet
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0044] occurrences matches {0..1} matches {    -- Lekker når jeg hoster eller nyser
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0045] occurrences matches {0..1} matches {    -- Lekker når jeg sover
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0046] occurrences matches {0..1} matches {    -- Lekker når jeg er fysisk aktiv/trimmer
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0047] occurrences matches {0..1} matches {    -- Lekker når jeg er ferdig med å late vannet og har tatt på meg klærne
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0048] occurrences matches {0..1} matches {    -- Ingen åpenbar grunn
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0049] occurrences matches {0..1} matches {    -- Lekker hele tiden
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -323,6 +366,38 @@ How much urine do you usually leak (whether you wear protection or not)?">
 					text = <"CLUSTER">
 					description = <"">
 				>
+				["at0042"] = <
+					text = <"Aldri, jeg lekker ikke urin">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Lekker før jeg når toalettet">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Lekker når jeg hoster eller nyser">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Lekker når jeg sover">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Lekker når jeg er fysisk aktiv/trimmer">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Lekker når jeg er ferdig med å late vannet og har tatt på meg klærne">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Ingen åpenbar grunn">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Lekker hele tiden">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -498,6 +573,38 @@ How much urine do you usually leak (whether you wear protection or not)?">
 				>
 				["at0041"] = <
 					text = <"Når lekker du urin?">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Aldri, jeg lekker ikke urin">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Lekker før jeg når toalettet">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Lekker når jeg hoster eller nyser">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Lekker når jeg sover">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Lekker når jeg er fysisk aktiv/trimmer">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Lekker når jeg er ferdig med å late vannet og har tatt på meg klærne">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Ingen åpenbar grunn">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Lekker hele tiden">
 					description = <"">
 				>
 			>
