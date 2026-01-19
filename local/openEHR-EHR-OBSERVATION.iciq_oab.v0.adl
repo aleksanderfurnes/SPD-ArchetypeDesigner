@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4285c8f6d142d10b0c919ce0715efbef">
+		["MD5-CAM-1.0.1"] = <"c62fd2793dc0b1f345821abf1035fa90">
 		["build_uid"] = <"753c10da-9874-3a9c-a9eb-1a1d2d91db5a">
 	>
 
@@ -114,12 +114,20 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0033] occurrences matches {0..1} matches {    -- DV_COUNT
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
 								}
 							}
 						}
 					}
 				}
 			}
+		}
+		protocol matches {
+			ITEM_TREE[at0034] matches {*}    -- Item tree
 		}
 	}
 
@@ -255,6 +263,14 @@ ontology
 					text = <"How much does this bother you?">
 					description = <"Please select a number between 0 (not at all) and 10 (a great deal)">
 				>
+				["at0033"] = <
+					text = <"DV_COUNT">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
 			>
 		>
 		["nb"] = <
@@ -386,6 +402,14 @@ ontology
 				["at0032"] = <
 					text = <"Hvor stort problem er det for deg?">
 					description = <"Vær vennlig, velg et tall mellom 0 (ikke noe problem) og 10 (et alvorlig problem).">
+				>
+				["at0033"] = <
+					text = <"Totalskår">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
 				>
 			>
 		>
