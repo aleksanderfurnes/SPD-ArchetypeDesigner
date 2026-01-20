@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e726120808ae8e2e19ae8dd176990b7e">
+		["MD5-CAM-1.0.1"] = <"3381bb69636f1223df1c0a63cdcfd432">
 		["build_uid"] = <"753c10da-9874-3a9c-a9eb-1a1d2d91db5a">
 	>
 
@@ -276,7 +276,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Overactive Bladder questionnaire (en)">
+					text = <"Spørreskjema om overaktiv blære">
 					description = <"ICIQ-OAB">
 				>
 				["at0001"] = <
