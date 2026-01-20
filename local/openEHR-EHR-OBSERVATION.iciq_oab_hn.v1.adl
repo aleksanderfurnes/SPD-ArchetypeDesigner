@@ -37,12 +37,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"70ee9713ae5602413888e68c4656ce08">
+		["MD5-CAM-1.0.1"] = <"e726120808ae8e2e19ae8dd176990b7e">
 		["build_uid"] = <"753c10da-9874-3a9c-a9eb-1a1d2d91db5a">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- iciq_oab_hn
+	OBSERVATION[at0000] matches {    -- Overactive Bladder questionnaire
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -136,7 +136,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"iciq_oab_hn">
+					text = <"Overactive Bladder questionnaire">
 					description = <"ICIQ-OAB">
 				>
 				["at0001"] = <
@@ -276,7 +276,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"iciq_oab_hn">
+					text = <"*Overactive Bladder questionnaire (en)">
 					description = <"ICIQ-OAB">
 				>
 				["at0001"] = <
