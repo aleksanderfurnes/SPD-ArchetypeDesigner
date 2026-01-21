@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "4521ae648871ece80cd6a0bc2e15dfef",
+      "MD5-CAM-1.0.1" : "8664eeaafa294a753b437c84c54638b1",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.0.1",
       "build_uid" : ""
     },
     "details" : {
@@ -327,7 +327,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "helseopplysninger_hn_v20",
+          "text" : "helseopplysninger_hn_v22",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
