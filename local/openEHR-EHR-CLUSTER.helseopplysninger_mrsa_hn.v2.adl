@@ -1,0 +1,87 @@
+archetype (adl_version=1.4; uid=62e474d7-dbba-4dc7-8ae6-ff53d13f622d)
+	openEHR-EHR-CLUSTER.helseopplysninger_mrsa_hn.v2
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-06-04">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"36fa1e69810a5d5c2737957b724ef29c">
+		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- helseopplysninger_mrsa_hn
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0016] occurrences matches {0..1} matches {    -- Har du etter hjemkomst testet deg for antibiotikaresistente bakterier?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0017,    -- Ja, den var negativ
+							at0018,    -- Ja, den var positiv
+							at0019]    -- Nei jeg har ikke testet meg
+						}
+					}
+				}
+			}
+			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Kontakt legekontoret ditt for å teste deg. Prøvene tas 14 dager før du skal møte på sykehuset. Prøvetakingen er gratis.
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"helseopplysninger_mrsa_hn">
+					description = <"helseopplysninger_mrsa_hn">
+				>
+				["at0016"] = <
+					text = <"Har du etter hjemkomst testet deg for antibiotikaresistente bakterier?">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Ja, den var negativ">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Ja, den var positiv">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Nei jeg har ikke testet meg">
+					description = <"">
+				>
+				["[arb'U]"] = <
+					text = <"[arb'U]">
+					description = <"arbitrary unit">
+				>
+				["at0023"] = <
+					text = <"Kontakt legekontoret ditt for å teste deg. Prøvene tas 14 dager før du skal møte på sykehuset. Prøvetakingen er gratis.">
+					description = <"">
+				>
+			>
+		>
+	>
