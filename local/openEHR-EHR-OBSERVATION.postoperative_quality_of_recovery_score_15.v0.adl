@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -27,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6c5c996c301d454689774bc090a55ef9">
+		["MD5-CAM-1.0.1"] = <"81ce7e5bcad3086c2827e639498301bb">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -276,6 +287,113 @@ ontology
 				["at0021"] = <
 					text = <"Part B">
 					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Quality of Recovery 15">
+					description = <"*postoperative_quality_of_recovery_score_15 (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Siste 24 timer">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Har kunnet puste lett">
+					description = <"*Self-rated perception of ability to breathe easily. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0005"] = <
+					text = <"Har hatt matlyst">
+					description = <"*Self-rated perception of ability to enjoy food. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0006"] = <
+					text = <"Har følt meg uthvilt">
+					description = <"*Self-rated perception of feeling rested. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0007"] = <
+					text = <"Har sovet godt">
+					description = <"*Self-rated perception of ability to sleep well. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0008"] = <
+					text = <"Har klart å ivareta personlig hygiene uten hjelp">
+					description = <"*Self-rated perception of ability to look after personal toilet and hygiene unaided. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0009"] = <
+					text = <"Har klart å kommunisere med familie og/eller venner">
+					description = <"*Self-rated perception of ability to communicate with family or friends. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0010"] = <
+					text = <"Har fått støtte fra leger og sykepleiere på sykehuset">
+					description = <"*Self-rated perception of getting support from hospital doctors and nurses. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0011"] = <
+					text = <"Kunne ha gjenopptatt arbeid eller vanlige gjøremål i hjemmet">
+					description = <"*Self-rated perception of ability to return to work or usual home activities. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0012"] = <
+					text = <"Har følt meg vel og at jeg har kontroll">
+					description = <"*Self-rated perception of feeling comfortable and in control. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0013"] = <
+					text = <"Har følt meg i fin form">
+					description = <"*Self-rated perception of general well-being. (en)">
+					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+				>
+				["at0014"] = <
+					text = <"Moderate smerter">
+					description = <"*Self-rated perception of moderate pain. (en)">
+					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+				>
+				["at0015"] = <
+					text = <"Sterke smerter">
+					description = <"*Self-rated perception of severe pain. (en)">
+					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+				>
+				["at0016"] = <
+					text = <"Kvalm eller oppkast">
+					description = <"*Self-rated perception of nausea or vomiting. (en)">
+					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+				>
+				["at0017"] = <
+					text = <"Vært bekymret eller engstelig">
+					description = <"*Self-rated perception of feeling worried or anxious. (en)">
+					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+				>
+				["at0018"] = <
+					text = <"Vært trist eller deprimert">
+					description = <"*Self-rated perception of feeling sad or depressed. (en)">
+					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+				>
+				["at0019"] = <
+					text = <"Del A">
+					description = <"Hvordan har du følt deg det siste døgnet?">
+				>
+				["at0020"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"Del B">
+					description = <"Har du opplevd noe av det følgende det siste døgnet?">
 				>
 			>
 		>
