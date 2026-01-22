@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f5bfe414d0a841e475a64449d67b0411">
+		["MD5-CAM-1.0.1"] = <"4ff06d3bc3b972ebb296b1b921c973b8">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -269,17 +269,17 @@ definition
 											}
 											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Feeling sad or depressed
 												value matches {
-													10|[local::at0176],
-													9|[local::at0177],
-													8|[local::at0178],
-													7|[local::at0179],
-													6|[local::at0180],
-													5|[local::at0181],
-													4|[local::at0182],
-													3|[local::at0183],
-													2|[local::at0184],
-													1|[local::at0185],
-													0|[local::at0186]
+													10|[local::at0185],
+													9|[local::at0186],
+													8|[local::at0187],
+													7|[local::at0188],
+													6|[local::at0189],
+													5|[local::at0190],
+													4|[local::at0191],
+													3|[local::at0192],
+													2|[local::at0193],
+													1|[local::at0194],
+													0|[local::at0195]
 												}
 											}
 										}
@@ -1024,40 +1024,48 @@ ontology
 					text = <"*3 (nb)">
 					description = <"">
 				>
-				["at0176"] = <
+				["at0185"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0186"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0187"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0188"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0189"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0190"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0191"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0192"] = <
 					text = <"*3 (nb)">
 					description = <"">
 				>
-				["at0177"] = <
-					text = <"*3 (nb)">
+				["at0193"] = <
+					text = <"*2 (nb)">
 					description = <"">
 				>
-				["at0178"] = <
-					text = <"*3 (nb)">
+				["at0194"] = <
+					text = <"*1 (nb)">
 					description = <"">
 				>
-				["at0179"] = <
-					text = <"*3 (nb)">
-					description = <"">
-				>
-				["at0180"] = <
-					text = <"*3 (nb)">
-					description = <"">
-				>
-				["at0181"] = <
-					text = <"*3 (nb)">
-					description = <"">
-				>
-				["at0182"] = <
-					text = <"*3 (nb)">
-					description = <"">
-				>
-				["at0183"] = <
-					text = <"*3 (nb)">
-					description = <"">
-				>
-				["at0184"] = <
-					text = <"*3 (nb)">
+				["at0195"] = <
+					text = <"*0 (nb)">
 					description = <"">
 				>
 			>
@@ -1740,31 +1748,31 @@ ontology
 					description = <"">
 				>
 				["at0165"] = <
-					text = <"1">
+					text = <"10">
 					description = <"">
 				>
 				["at0166"] = <
-					text = <"3">
+					text = <"9">
 					description = <"">
 				>
 				["at0167"] = <
-					text = <"3">
+					text = <"8">
 					description = <"">
 				>
 				["at0168"] = <
-					text = <"3">
+					text = <"7">
 					description = <"">
 				>
 				["at0169"] = <
-					text = <"3">
+					text = <"6">
 					description = <"">
 				>
 				["at0170"] = <
-					text = <"3">
+					text = <"5">
 					description = <"">
 				>
 				["at0171"] = <
-					text = <"3">
+					text = <"4">
 					description = <"">
 				>
 				["at0172"] = <
@@ -1772,51 +1780,59 @@ ontology
 					description = <"">
 				>
 				["at0173"] = <
-					text = <"3">
+					text = <"2">
 					description = <"">
 				>
 				["at0174"] = <
-					text = <"3">
+					text = <"1">
 					description = <"">
 				>
 				["at0175"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0185"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0186"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0187"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0188"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0189"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0190"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0191"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0192"] = <
 					text = <"3">
 					description = <"">
 				>
-				["at0176"] = <
-					text = <"3">
+				["at0193"] = <
+					text = <"2">
 					description = <"">
 				>
-				["at0177"] = <
-					text = <"3">
+				["at0194"] = <
+					text = <"1">
 					description = <"">
 				>
-				["at0178"] = <
-					text = <"3">
-					description = <"">
-				>
-				["at0179"] = <
-					text = <"3">
-					description = <"">
-				>
-				["at0180"] = <
-					text = <"3">
-					description = <"">
-				>
-				["at0181"] = <
-					text = <"3">
-					description = <"">
-				>
-				["at0182"] = <
-					text = <"3">
-					description = <"">
-				>
-				["at0183"] = <
-					text = <"3">
-					description = <"">
-				>
-				["at0184"] = <
-					text = <"3">
+				["at0195"] = <
+					text = <"0">
 					description = <"">
 				>
 			>
