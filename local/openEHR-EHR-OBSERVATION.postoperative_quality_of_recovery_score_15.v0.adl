@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4cefae93d36e9d6603053726e260fed1">
+		["MD5-CAM-1.0.1"] = <"a2059e12b8dd92f970d6821467c72b87">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -293,7 +293,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Quality of Recovery 15 (en)">
+					text = <"Quality of Recovery 15">
 					description = <"postoperative_quality_of_recovery_score_15">
 				>
 				["at0001"] = <
