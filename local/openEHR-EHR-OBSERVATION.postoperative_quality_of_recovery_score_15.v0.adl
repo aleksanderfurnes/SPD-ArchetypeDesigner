@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a2059e12b8dd92f970d6821467c72b87">
+		["MD5-CAM-1.0.1"] = <"0f5c7770987719eced9b45af8ab8b4dc">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -361,27 +361,27 @@ ontology
 				["at0014"] = <
 					text = <"Moderate smerter">
 					description = <"Selvvurdert oppfatning av moderat smerte.">
-					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
 				>
 				["at0015"] = <
 					text = <"Sterke smerter">
 					description = <"Selvvurdert oppfatning av sterke smerter.">
-					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
 				>
 				["at0016"] = <
 					text = <"Kvalm eller oppkast">
 					description = <"Selvvurdert oppfatning av kvalme eller oppkast.">
-					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
 				>
 				["at0017"] = <
 					text = <"Vært bekymret eller engstelig">
 					description = <"Selvvurdert oppfatning av å føle seg bekymret eller engstelig.">
-					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
 				>
 				["at0018"] = <
 					text = <"Vært trist eller deprimert">
 					description = <"Selvvurdert oppfatning av å føle seg trist eller deprimert.">
-					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
 				>
 				["at0019"] = <
 					text = <"Del A">
