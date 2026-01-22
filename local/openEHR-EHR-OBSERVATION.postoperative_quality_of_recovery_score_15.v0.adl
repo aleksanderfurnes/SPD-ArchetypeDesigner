@@ -23,12 +23,12 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Stark PA, Myles PS, Burke JA. Development and psychometric evaluation of a postoperative quality of recovery score: the QoR-15. Anesthesiology. 2013 Jun;118(6):1332-40. doi: 10.1097/ALN.0b013e318289b84b. PMID: 23411725.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fb72c2eecf224c0ccd7b31841afd9ceb">
+		["MD5-CAM-1.0.1"] = <"6c5c996c301d454689774bc090a55ef9">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
-		["references"] = <"Stark PA, Myles PS, Burke JA. Development and psychometric evaluation of a postoperative quality of recovery score: the QoR-15. Anesthesiology. 2013 Jun;118(6):1332-40. doi: 10.1097/ALN.0b013e318289b84b. PMID: 23411725.">
 	>
 
 definition
@@ -40,108 +40,116 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Able to breathe easily
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
+									CLUSTER[at0019] occurrences matches {0..1} matches {    -- Part A
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0004] occurrences matches {0..1} matches {    -- Able to breathe easily
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0005] occurrences matches {0..1} matches {    -- Been able to enjoy food
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0006] occurrences matches {0..1} matches {    -- Feeling rested
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0007] occurrences matches {0..1} matches {    -- Have a good sleep
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0008] occurrences matches {0..1} matches {    -- Able to look after personal toilet and hygiene unaided
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0009] occurrences matches {0..1} matches {    -- Able to communicate with family or friends
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Getting support from hospital doctors and nurses
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0011] occurrences matches {0..1} matches {    -- Able to return to work or usual home activities
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Feeling comfortable and in control
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0013] occurrences matches {0..1} matches {    -- Having a feeling of general well-being
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
 											}
 										}
 									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Been able to enjoy food
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
+									CLUSTER[at0021] occurrences matches {0..1} matches {    -- Part B
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0014] occurrences matches {0..1} matches {    -- Moderate pain
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
 											}
-										}
-									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Feeling rested
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
+											ELEMENT[at0015] occurrences matches {0..1} matches {    -- Severe pain
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
 											}
-										}
-									}
-									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Have a good sleep
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Nausea or vomiting
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
 											}
-										}
-									}
-									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Able to look after personal toilet and hygiene unaided
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
+											ELEMENT[at0017] occurrences matches {0..1} matches {    -- Feeling worried or anxious
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
 											}
-										}
-									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Able to communicate with family or friends
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Getting support from hospital doctors and nurses
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Able to return to work or usual home activities
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Feeling comfortable and in control
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Having a feeling of general well-being
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Moderate pain
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Severe pain
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Nausea or vomiting
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Feeling worried or anxious
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
-											}
-										}
-									}
-									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Feeling sad or depressed
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..10|}
+											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Feeling sad or depressed
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
 											}
 										}
 									}
@@ -156,6 +164,9 @@ definition
 					}
 				}
 			}
+		}
+		protocol matches {
+			ITEM_TREE[at0020] matches {*}    -- Item tree
 		}
 	}
 
@@ -253,6 +264,18 @@ ontology
 					text = <"Feeling sad or depressed">
 					description = <"Self-rated perception of feeling sad or depressed.">
 					comment = <"10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor]. ">
+				>
+				["at0019"] = <
+					text = <"Part A">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"Part B">
+					description = <"">
 				>
 			>
 		>
