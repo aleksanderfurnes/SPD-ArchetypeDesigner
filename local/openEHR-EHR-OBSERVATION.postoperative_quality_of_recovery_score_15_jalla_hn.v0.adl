@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f5bfe414d0a841e475a64449d67b0411">
+		["MD5-CAM-1.0.1"] = <"c98c0e9f2ee7069c25b344b373924cd0">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -55,72 +55,152 @@ definition
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0004] occurrences matches {0..1} matches {    -- Able to breathe easily
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0022],
+													1|[local::at0023],
+													2|[local::at0024],
+													3|[local::at0025],
+													4|[local::at0026],
+													5|[local::at0027],
+													6|[local::at0028],
+													7|[local::at0029],
+													8|[local::at0030],
+													9|[local::at0031],
+													10|[local::at0032]
 												}
 											}
 											ELEMENT[at0005] occurrences matches {0..1} matches {    -- Been able to enjoy food
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0033],
+													1|[local::at0034],
+													2|[local::at0035],
+													3|[local::at0036],
+													4|[local::at0037],
+													5|[local::at0038],
+													6|[local::at0039],
+													7|[local::at0040],
+													8|[local::at0041],
+													9|[local::at0042],
+													10|[local::at0043]
 												}
 											}
 											ELEMENT[at0006] occurrences matches {0..1} matches {    -- Feeling rested
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0044],
+													1|[local::at0045],
+													2|[local::at0046],
+													3|[local::at0047],
+													4|[local::at0048],
+													5|[local::at0049],
+													6|[local::at0050],
+													7|[local::at0051],
+													8|[local::at0052],
+													9|[local::at0053],
+													10|[local::at0054]
 												}
 											}
 											ELEMENT[at0007] occurrences matches {0..1} matches {    -- Have a good sleep
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0055],
+													1|[local::at0056],
+													2|[local::at0057],
+													3|[local::at0058],
+													4|[local::at0059],
+													5|[local::at0060],
+													6|[local::at0061],
+													7|[local::at0062],
+													8|[local::at0063],
+													9|[local::at0064],
+													10|[local::at0065]
 												}
 											}
 											ELEMENT[at0008] occurrences matches {0..1} matches {    -- Able to look after personal toilet and hygiene unaided
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0066],
+													1|[local::at0067],
+													2|[local::at0068],
+													3|[local::at0069],
+													4|[local::at0070],
+													5|[local::at0071],
+													6|[local::at0072],
+													7|[local::at0073],
+													8|[local::at0074],
+													9|[local::at0075],
+													10|[local::at0076]
 												}
 											}
 											ELEMENT[at0009] occurrences matches {0..1} matches {    -- Able to communicate with family or friends
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0077],
+													1|[local::at0078],
+													2|[local::at0079],
+													3|[local::at0080],
+													4|[local::at0081],
+													5|[local::at0082],
+													6|[local::at0083],
+													7|[local::at0084],
+													8|[local::at0085],
+													9|[local::at0086],
+													10|[local::at0087]
 												}
 											}
 											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Getting support from hospital doctors and nurses
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0088],
+													1|[local::at0089],
+													2|[local::at0090],
+													3|[local::at0091],
+													4|[local::at0092],
+													5|[local::at0093],
+													6|[local::at0094],
+													7|[local::at0095],
+													8|[local::at0096],
+													9|[local::at0097],
+													10|[local::at0098]
 												}
 											}
 											ELEMENT[at0011] occurrences matches {0..1} matches {    -- Able to return to work or usual home activities
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0099],
+													1|[local::at0100],
+													2|[local::at0101],
+													3|[local::at0102],
+													4|[local::at0103],
+													5|[local::at0104],
+													6|[local::at0105],
+													7|[local::at0106],
+													8|[local::at0107],
+													9|[local::at0108],
+													10|[local::at0109]
 												}
 											}
 											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Feeling comfortable and in control
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0110],
+													1|[local::at0111],
+													2|[local::at0112],
+													3|[local::at0113],
+													4|[local::at0114],
+													5|[local::at0115],
+													6|[local::at0116],
+													7|[local::at0117],
+													8|[local::at0118],
+													9|[local::at0119],
+													10|[local::at0120]
 												}
 											}
 											ELEMENT[at0013] occurrences matches {0..1} matches {    -- Having a feeling of general well-being
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													0|[local::at0121],
+													1|[local::at0122],
+													2|[local::at0123],
+													3|[local::at0124],
+													4|[local::at0125],
+													5|[local::at0126],
+													6|[local::at0127],
+													7|[local::at0128],
+													8|[local::at0129],
+													9|[local::at0130],
+													10|[local::at0131]
 												}
 											}
 										}
@@ -129,37 +209,75 @@ definition
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0014] occurrences matches {0..1} matches {    -- Moderate pain
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													10|[local::at0132],
+													9|[local::at0133],
+													8|[local::at0134],
+													7|[local::at0135],
+													6|[local::at0136],
+													5|[local::at0137],
+													4|[local::at0138],
+													3|[local::at0139],
+													2|[local::at0140],
+													1|[local::at0141],
+													0|[local::at0142]
 												}
 											}
 											ELEMENT[at0015] occurrences matches {0..1} matches {    -- Severe pain
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													10|[local::at0143],
+													9|[local::at0144],
+													8|[local::at0145],
+													7|[local::at0146],
+													6|[local::at0147],
+													5|[local::at0148],
+													4|[local::at0149],
+													3|[local::at0150],
+													2|[local::at0151],
+													1|[local::at0152],
+													0|[local::at0153]
 												}
 											}
 											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Nausea or vomiting
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													10|[local::at0154],
+													9|[local::at0155],
+													8|[local::at0156],
+													7|[local::at0157],
+													6|[local::at0158],
+													5|[local::at0159],
+													4|[local::at0160],
+													3|[local::at0161],
+													2|[local::at0162],
+													1|[local::at0163],
+													0|[local::at0164]
 												}
 											}
 											ELEMENT[at0017] occurrences matches {0..1} matches {    -- Feeling worried or anxious
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													1|[local::at0165],
+													2|[local::at0166],
+													3|[local::at0167],
+													4|[local::at0168],
+													5|[local::at0169],
+													6|[local::at0170],
+													7|[local::at0171],
+													8|[local::at0172],
+													9|[local::at0173],
+													10|[local::at0174]
 												}
 											}
 											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Feeling sad or depressed
 												value matches {
-													DV_COUNT matches {
-														magnitude matches {|0..10|}
-													}
+													1|[local::at0175],
+													2|[local::at0176],
+													3|[local::at0177],
+													4|[local::at0178],
+													5|[local::at0179],
+													6|[local::at0180],
+													7|[local::at0181],
+													8|[local::at0182],
+													9|[local::at0183],
+													10|[local::at0184]
 												}
 											}
 										}
@@ -288,6 +406,658 @@ ontology
 					text = <"Part B">
 					description = <"">
 				>
+				["at0022"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0105"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0110"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0112"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0113"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0114"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0115"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0116"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0117"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0126"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0127"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0128"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0129"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0130"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0131"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0132"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0133"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0134"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0135"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0136"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0137"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0138"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0139"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0140"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0141"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0142"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0143"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0144"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0145"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0146"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0147"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0148"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0149"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0150"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0151"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0152"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0153"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0154"] = <
+					text = <"*10 (nb)">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"*9 (nb)">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"*8 (nb)">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"*7 (nb)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*6 (nb)">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"*5 (nb)">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"*4 (nb)">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"*2 (nb)">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"*1 (nb)">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0169"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0170"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0180"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0181"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0182"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0183"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
+				["at0184"] = <
+					text = <"*3 (nb)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -394,6 +1164,658 @@ ontology
 				["at0021"] = <
 					text = <"Del B">
 					description = <"Har du opplevd noe av det følgende det siste døgnet?">
+				>
+				["at0022"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0105"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0110"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0112"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0113"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0114"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0115"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0116"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0117"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0126"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0127"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0128"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0129"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0130"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0131"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0132"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0133"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0134"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0135"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0136"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0137"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0138"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0139"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0140"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0141"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0142"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0143"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0144"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0145"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0146"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0147"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0148"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0149"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0150"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0151"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0152"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0153"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0154"] = <
+					text = <"10">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0169"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0170"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0180"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0181"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0182"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0183"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0184"] = <
+					text = <"3">
+					description = <"">
 				>
 			>
 		>
