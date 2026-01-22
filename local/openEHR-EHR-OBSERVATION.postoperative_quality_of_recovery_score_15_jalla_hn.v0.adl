@@ -1,0 +1,400 @@
+archetype (adl_version=1.4; uid=702c5cdf-2981-4c24-89f3-38df28c29ab0)
+	openEHR-EHR-OBSERVATION.postoperative_quality_of_recovery_score_15_jalla_hn.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-10-30">
+		["name"] = <"Aleksander Spikkerud Furnes">
+		["organisation"] = <"Helse Nord IKT">
+		["email"] = <"aleksander.spikkerud.furnes@hnikt.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Stark PA, Myles PS, Burke JA. Development and psychometric evaluation of a postoperative quality of recovery score: the QoR-15. Anesthesiology. 2013 Jun;118(6):1332-40. doi: 10.1097/ALN.0b013e318289b84b. PMID: 23411725.">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"f5bfe414d0a841e475a64449d67b0411">
+		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- postoperative_quality_of_recovery_score_15_jalla_hn
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					INTERVAL_EVENT[at0002] matches {    -- Last 24 hours
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0019] occurrences matches {0..1} matches {    -- Part A
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0004] occurrences matches {0..1} matches {    -- Able to breathe easily
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0005] occurrences matches {0..1} matches {    -- Been able to enjoy food
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0006] occurrences matches {0..1} matches {    -- Feeling rested
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0007] occurrences matches {0..1} matches {    -- Have a good sleep
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0008] occurrences matches {0..1} matches {    -- Able to look after personal toilet and hygiene unaided
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0009] occurrences matches {0..1} matches {    -- Able to communicate with family or friends
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Getting support from hospital doctors and nurses
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0011] occurrences matches {0..1} matches {    -- Able to return to work or usual home activities
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Feeling comfortable and in control
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0013] occurrences matches {0..1} matches {    -- Having a feeling of general well-being
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0021] occurrences matches {0..1} matches {    -- Part B
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0014] occurrences matches {0..1} matches {    -- Moderate pain
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0015] occurrences matches {0..1} matches {    -- Severe pain
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Nausea or vomiting
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0017] occurrences matches {0..1} matches {    -- Feeling worried or anxious
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Feeling sad or depressed
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..10|}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						width matches {
+							DV_DURATION matches {
+								value matches {PT24H}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0020] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"postoperative_quality_of_recovery_score_15_jalla_hn">
+					description = <"postoperative_quality_of_recovery_score_15">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Last 24 hours">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Able to breathe easily">
+					description = <"Self-rated perception of ability to breathe easily.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0005"] = <
+					text = <"Been able to enjoy food">
+					description = <"Self-rated perception of ability to enjoy food.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0006"] = <
+					text = <"Feeling rested">
+					description = <"Self-rated perception of feeling rested.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0007"] = <
+					text = <"Have a good sleep">
+					description = <"Self-rated perception of ability to sleep well.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0008"] = <
+					text = <"Able to look after personal toilet and hygiene unaided">
+					description = <"Self-rated perception of ability to look after personal toilet and hygiene unaided.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0009"] = <
+					text = <"Able to communicate with family or friends">
+					description = <"Self-rated perception of ability to communicate with family or friends.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0010"] = <
+					text = <"Getting support from hospital doctors and nurses">
+					description = <"Self-rated perception of getting support from hospital doctors and nurses.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0011"] = <
+					text = <"Able to return to work or usual home activities">
+					description = <"Self-rated perception of ability to return to work or usual home activities.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0012"] = <
+					text = <"Feeling comfortable and in control">
+					description = <"Self-rated perception of feeling comfortable and in control.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0013"] = <
+					text = <"Having a feeling of general well-being">
+					description = <"Self-rated perception of general well-being.">
+					comment = <"0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent]. ">
+				>
+				["at0014"] = <
+					text = <"Moderate pain">
+					description = <"Self-rated perception of moderate pain.">
+					comment = <"10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor]. ">
+				>
+				["at0015"] = <
+					text = <"Severe pain">
+					description = <"Self-rated perception of severe pain.">
+					comment = <"10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor]. ">
+				>
+				["at0016"] = <
+					text = <"Nausea or vomiting">
+					description = <"Self-rated perception of nausea or vomiting.">
+					comment = <"10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor]. ">
+				>
+				["at0017"] = <
+					text = <"Feeling worried or anxious">
+					description = <"Self-rated perception of feeling worried or anxious.">
+					comment = <"10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor]. ">
+				>
+				["at0018"] = <
+					text = <"Feeling sad or depressed">
+					description = <"Self-rated perception of feeling sad or depressed.">
+					comment = <"10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor]. ">
+				>
+				["at0019"] = <
+					text = <"Part A">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"Part B">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"postoperative_quality_of_recovery_score_15_jalla_hn">
+					description = <"postoperative_quality_of_recovery_score_15">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Siste 24 timer">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Har kunnet puste lett">
+					description = <"Selvvurdert oppfatning av evnen til å puste lett.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0005"] = <
+					text = <"Har hatt matlyst">
+					description = <"Selvvurdert oppfatning av evnen til å nyte mat.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0006"] = <
+					text = <"Har følt meg uthvilt">
+					description = <"Selvvurdert oppfatning av å føle seg uthvilt.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0007"] = <
+					text = <"Har sovet godt">
+					description = <"Selvvurdert oppfatning av evnen til å sove godt.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0008"] = <
+					text = <"Har klart å ivareta personlig hygiene uten hjelp">
+					description = <"Selvvurdert oppfatning av evnen til å ivareta personlig toalett og hygiene uten hjelp.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0009"] = <
+					text = <"Har klart å kommunisere med familie og/eller venner">
+					description = <"Selvvurdert oppfatning av evnen til å kommunisere med familie eller venner.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0010"] = <
+					text = <"Har fått støtte fra leger og sykepleiere på sykehuset">
+					description = <"Selvvurdert oppfatning av å få støtte fra leger og sykepleiere på sykehuset.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0011"] = <
+					text = <"Kunne ha gjenopptatt arbeid eller vanlige gjøremål i hjemmet">
+					description = <"Selvvurdert oppfatning av evnen til å gå tilbake til arbeid eller vanlige hjemmeaktiviteter.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0012"] = <
+					text = <"Har følt meg vel og at jeg har kontroll">
+					description = <"Selvvurdert oppfatning av å føle seg komfortabel og i kontroll.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0013"] = <
+					text = <"Har følt meg i fin form">
+					description = <"Selvvurdert oppfatning av generell velvære.">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
+				>
+				["at0014"] = <
+					text = <"Moderate smerter">
+					description = <"Selvvurdert oppfatning av moderat smerte.">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
+				>
+				["at0015"] = <
+					text = <"Sterke smerter">
+					description = <"Selvvurdert oppfatning av sterke smerter.">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
+				>
+				["at0016"] = <
+					text = <"Kvalm eller oppkast">
+					description = <"Selvvurdert oppfatning av kvalme eller oppkast.">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
+				>
+				["at0017"] = <
+					text = <"Vært bekymret eller engstelig">
+					description = <"Selvvurdert oppfatning av å føle seg bekymret eller engstelig.">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
+				>
+				["at0018"] = <
+					text = <"Vært trist eller deprimert">
+					description = <"Selvvurdert oppfatning av å føle seg trist eller deprimert.">
+					comment = <"10 = Ikke i det hele tatt [utmerket] og 0 = Hele tiden [dårlig].">
+				>
+				["at0019"] = <
+					text = <"Del A">
+					description = <"Hvordan har du følt deg det siste døgnet?">
+				>
+				["at0020"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"Del B">
+					description = <"Har du opplevd noe av det følgende det siste døgnet?">
+				>
+			>
+		>
+	>
