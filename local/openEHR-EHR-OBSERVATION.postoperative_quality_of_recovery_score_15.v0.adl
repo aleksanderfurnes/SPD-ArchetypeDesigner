@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7d7a1b7a1566bab0a547c7e26d6ae3d9">
+		["MD5-CAM-1.0.1"] = <"81ce7e5bcad3086c2827e639498301bb">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -311,52 +311,52 @@ ontology
 				["at0004"] = <
 					text = <"Har kunnet puste lett">
 					description = <"Selvvurdert oppfatning av evnen til å puste lett.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0005"] = <
 					text = <"Har hatt matlyst">
 					description = <"Selvvurdert oppfatning av evnen til å nyte mat.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0006"] = <
 					text = <"Har følt meg uthvilt">
 					description = <"Selvvurdert oppfatning av å føle seg uthvilt.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0007"] = <
 					text = <"Har sovet godt">
 					description = <"Selvvurdert oppfatning av evnen til å sove godt.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0008"] = <
 					text = <"Har klart å ivareta personlig hygiene uten hjelp">
 					description = <"Selvvurdert oppfatning av evnen til å ivareta personlig toalett og hygiene uten hjelp.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0009"] = <
 					text = <"Har klart å kommunisere med familie og/eller venner">
 					description = <"Selvvurdert oppfatning av evnen til å kommunisere med familie eller venner.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0010"] = <
 					text = <"Har fått støtte fra leger og sykepleiere på sykehuset">
 					description = <"Selvvurdert oppfatning av å få støtte fra leger og sykepleiere på sykehuset.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0011"] = <
 					text = <"Kunne ha gjenopptatt arbeid eller vanlige gjøremål i hjemmet">
 					description = <"Selvvurdert oppfatning av evnen til å gå tilbake til arbeid eller vanlige hjemmeaktiviteter.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0012"] = <
 					text = <"Har følt meg vel og at jeg har kontroll">
 					description = <"Selvvurdert oppfatning av å føle seg komfortabel og i kontroll.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0013"] = <
 					text = <"Har følt meg i fin form">
 					description = <"Selvvurdert oppfatning av generell velvære.">
-					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
+					comment = <"0 = Ikke i det hele tatt [dårlig] og 10 = Hele tiden [utmerket].">
 				>
 				["at0014"] = <
 					text = <"Moderate smerter">
