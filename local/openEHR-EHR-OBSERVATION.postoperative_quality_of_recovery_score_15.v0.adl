@@ -38,12 +38,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"81ce7e5bcad3086c2827e639498301bb">
+		["MD5-CAM-1.0.1"] = <"4cefae93d36e9d6603053726e260fed1">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- postoperative_quality_of_recovery_score_15
+	OBSERVATION[at0000] matches {    -- Quality of Recovery 15
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -186,7 +186,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"postoperative_quality_of_recovery_score_15">
+					text = <"Quality of Recovery 15">
 					description = <"postoperative_quality_of_recovery_score_15">
 				>
 				["at0001"] = <
@@ -293,7 +293,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Quality of Recovery 15">
+					text = <"*Quality of Recovery 15 (en)">
 					description = <"postoperative_quality_of_recovery_score_15">
 				>
 				["at0001"] = <
@@ -361,27 +361,27 @@ ontology
 				["at0014"] = <
 					text = <"Moderate smerter">
 					description = <"Selvvurdert oppfatning av moderat smerte.">
-					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
+					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
 				>
 				["at0015"] = <
 					text = <"Sterke smerter">
 					description = <"Selvvurdert oppfatning av sterke smerter.">
-					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
+					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
 				>
 				["at0016"] = <
 					text = <"Kvalm eller oppkast">
 					description = <"Selvvurdert oppfatning av kvalme eller oppkast.">
-					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
+					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
 				>
 				["at0017"] = <
 					text = <"Vært bekymret eller engstelig">
 					description = <"Selvvurdert oppfatning av å føle seg bekymret eller engstelig.">
-					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
+					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
 				>
 				["at0018"] = <
 					text = <"Vært trist eller deprimert">
 					description = <"Selvvurdert oppfatning av å føle seg trist eller deprimert.">
-					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
+					comment = <"0 = Ikke i det hele tatt [utmerket] og 10 = Hele tiden [dårlig].">
 				>
 				["at0019"] = <
 					text = <"Del A">
