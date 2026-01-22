@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"81ce7e5bcad3086c2827e639498301bb">
+		["MD5-CAM-1.0.1"] = <"7d7a1b7a1566bab0a547c7e26d6ae3d9">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -294,7 +294,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Quality of Recovery 15">
-					description = <"*postoperative_quality_of_recovery_score_15 (en)">
+					description = <"postoperative_quality_of_recovery_score_15">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -310,78 +310,78 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Har kunnet puste lett">
-					description = <"*Self-rated perception of ability to breathe easily. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av evnen til å puste lett.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0005"] = <
 					text = <"Har hatt matlyst">
-					description = <"*Self-rated perception of ability to enjoy food. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av evnen til å nyte mat.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0006"] = <
 					text = <"Har følt meg uthvilt">
-					description = <"*Self-rated perception of feeling rested. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av å føle seg uthvilt.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0007"] = <
 					text = <"Har sovet godt">
-					description = <"*Self-rated perception of ability to sleep well. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av evnen til å sove godt.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0008"] = <
 					text = <"Har klart å ivareta personlig hygiene uten hjelp">
-					description = <"*Self-rated perception of ability to look after personal toilet and hygiene unaided. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av evnen til å ivareta personlig toalett og hygiene uten hjelp.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0009"] = <
 					text = <"Har klart å kommunisere med familie og/eller venner">
-					description = <"*Self-rated perception of ability to communicate with family or friends. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av evnen til å kommunisere med familie eller venner.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0010"] = <
 					text = <"Har fått støtte fra leger og sykepleiere på sykehuset">
-					description = <"*Self-rated perception of getting support from hospital doctors and nurses. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av å få støtte fra leger og sykepleiere på sykehuset.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0011"] = <
 					text = <"Kunne ha gjenopptatt arbeid eller vanlige gjøremål i hjemmet">
-					description = <"*Self-rated perception of ability to return to work or usual home activities. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av evnen til å gå tilbake til arbeid eller vanlige hjemmeaktiviteter.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0012"] = <
 					text = <"Har følt meg vel og at jeg har kontroll">
-					description = <"*Self-rated perception of feeling comfortable and in control. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av å føle seg komfortabel og i kontroll.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0013"] = <
 					text = <"Har følt meg i fin form">
-					description = <"*Self-rated perception of general well-being. (en)">
-					comment = <"*0 represents 'None of the time' [poor] and 10 represents 'All of the time' [excellent].  (en)">
+					description = <"Selvvurdert oppfatning av generell velvære.">
+					comment = <" 0 representerer «Ikke noen gang» [dårlig] og 10 representerer «Hele tiden» [utmerket].">
 				>
 				["at0014"] = <
 					text = <"Moderate smerter">
-					description = <"*Self-rated perception of moderate pain. (en)">
-					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+					description = <"Selvvurdert oppfatning av moderat smerte.">
+					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
 				>
 				["at0015"] = <
 					text = <"Sterke smerter">
-					description = <"*Self-rated perception of severe pain. (en)">
-					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+					description = <"Selvvurdert oppfatning av sterke smerter.">
+					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
 				>
 				["at0016"] = <
 					text = <"Kvalm eller oppkast">
-					description = <"*Self-rated perception of nausea or vomiting. (en)">
-					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+					description = <"Selvvurdert oppfatning av kvalme eller oppkast.">
+					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
 				>
 				["at0017"] = <
 					text = <"Vært bekymret eller engstelig">
-					description = <"*Self-rated perception of feeling worried or anxious. (en)">
-					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+					description = <"Selvvurdert oppfatning av å føle seg bekymret eller engstelig.">
+					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
 				>
 				["at0018"] = <
 					text = <"Vært trist eller deprimert">
-					description = <"*Self-rated perception of feeling sad or depressed. (en)">
-					comment = <"*10 represents 'None of the time' [excellent] and 0 represents 'All of the time' [poor].  (en)">
+					description = <"Selvvurdert oppfatning av å føle seg trist eller deprimert.">
+					comment = <" 10 representerer «Ikke noen gang» [utmerket] og 0 representerer «Hele tiden» [dårlig].">
 				>
 				["at0019"] = <
 					text = <"Del A">
