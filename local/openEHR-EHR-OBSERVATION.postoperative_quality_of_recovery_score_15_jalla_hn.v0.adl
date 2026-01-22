@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c98c0e9f2ee7069c25b344b373924cd0">
+		["MD5-CAM-1.0.1"] = <"f5bfe414d0a841e475a64449d67b0411">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -254,30 +254,32 @@ definition
 											}
 											ELEMENT[at0017] occurrences matches {0..1} matches {    -- Feeling worried or anxious
 												value matches {
-													1|[local::at0165],
-													2|[local::at0166],
-													3|[local::at0167],
-													4|[local::at0168],
-													5|[local::at0169],
-													6|[local::at0170],
-													7|[local::at0171],
-													8|[local::at0172],
-													9|[local::at0173],
-													10|[local::at0174]
+													10|[local::at0165],
+													9|[local::at0166],
+													8|[local::at0167],
+													7|[local::at0168],
+													6|[local::at0169],
+													5|[local::at0170],
+													4|[local::at0171],
+													3|[local::at0172],
+													2|[local::at0173],
+													1|[local::at0174],
+													0|[local::at0175]
 												}
 											}
 											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Feeling sad or depressed
 												value matches {
-													1|[local::at0175],
-													2|[local::at0176],
-													3|[local::at0177],
-													4|[local::at0178],
-													5|[local::at0179],
+													10|[local::at0176],
+													9|[local::at0177],
+													8|[local::at0178],
+													7|[local::at0179],
 													6|[local::at0180],
-													7|[local::at0181],
-													8|[local::at0182],
-													9|[local::at0183],
-													10|[local::at0184]
+													5|[local::at0181],
+													4|[local::at0182],
+													3|[local::at0183],
+													2|[local::at0184],
+													1|[local::at0185],
+													0|[local::at0186]
 												}
 											}
 										}
