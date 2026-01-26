@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "af2d1259063187a8b2e379c95c8b16a9",
+      "MD5-CAM-1.0.1" : "18807ff0b6617fd9bf5d857d5a46c2ac",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -175,6 +175,15 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-expanded_prostate_cancer_index_composite-001.v1",
         "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-epic_seksuelle_hjelpemidler_hn-001.v0",
+        "referenceType" : "archetypeOverlay"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -264,7 +273,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "ed136035a3b7bf88df0342cc2ccb4fa6"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.skjemadetaljer_hn.v2",
     "differential" : true,
@@ -315,7 +337,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7CDF6D3125C612655983203AF554B258"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registere resultater fra det helserelaterte livkvalitetsspørreskjemaet (HRQoL) for pasienter med prostatakreft.",
+          "keywords" : [ "prostatakreft", "livskvalitet", "QoL", "PROM", "EPIC-26", "HRQoL" ],
+          "use" : "Brukes for å registrere resultater fra det helserelaterte livkvalitetsspørreskjemaet for pasienter med prostatakreft.\r\n\r\nDenne arketypen inneholder alle 51 elementene fra EPIC 2.2002-versjonen av spørreskjemaet, og som av rettighetshaverne er markert som \"Most Recent Version\". Spørreskjemaet er uforandret siden 2002, og anses som stabilt. Arketypen inneholder ingen informasjon om versjon, verken i det tekniske navnet eller i konseptnavnet. Dersom det blir forandinger i spørreskjemaet i fremtiden, må en ny versjon av arketypen bli lagd. Denne arketypen kan også bli brukt for å representere versjon 6.2002 av EPIC Short Form (EPIC-26) i et templat. Se eksempeltemplat i CKM'ens \"Resource Centre\".\r\n\r\nEPIC-spørreskjemaet inneholder i seg selv ingen sumskårer, verken delskårer eller totalskår. Forfatterne av EPIC har tilgjengeliggjort instruksjoner for skåring for domenene 'Urinary', 'Bowel' 'Hormonal' og 'Sexual', lenket til under \"Referanser\". Med tanke på at arketyper er for datafangst og lagring, og ikke bare å representere selve spørreskjemaet, er det lagt til elementer for alle skåringene som er beskrevet i disse instruksjonene. Merk at svar for hvert enkelt element må bli standardisert til en 0 til 100 skala i henhold til skåringsinstruksjonene og det er disse verdiene som er grunnlaget for delskårene. De beregningene og logikken som må til for dette må lages i en applikasjon.\r\n\r\nSelv om spørsmålsnumrene er forskjellige mellom det fulle EPIC-51-spørreskjemaet og det nedkortede EPIC-26-spørreskjemaet, deler de det samme unike 'Item number', som finnes i hvert elements 'Annotations', i Key attribute 'epic_item_id'. Dette, sammen med de ekstra 'Annotation'-nøklene 'domain', 'subscale' og 'subscale2', lar dataforbrukere bruke arketypen som en oppslagsstruktur for å beregne skåringer som er beskrevet i \"Scoring Instructions for the Expanded Prostate cancer Index Composite\" og \"Scoring Instructions for the Expanded Prostate cancer Index Composite Short Form\".I tillegg har hvert element identifisert det nummeret hvert spørsmål vises som i EPIC 2.2002 og EPIC-SF 6.2002 som Keys i Annotation. Annotation Keys er som følger:\r\n\r\n- \"epic_item_id\" identifiserer det unike 'Item number' som er felles mellom EPIC 2.2002 og EPIC Short Form.\r\n- \"domain\" identifiserer hvilket domene hvert spørsmål hører til: 'Urinary', 'Bowel', 'Sexual' og 'Hormonal'.\r\n- \"subscale\" indikerer hvilket underdomene ('Function' eller 'Bother') som er assosiert med hvert spørsmål, og er navnet på formatet [domain name + subscale].\r\n- \"subscale2\" indikerer hvilket underdomene ('Incontinence' eller 'Irritative/Obstructive') som er assosiert med hvert spørsmål innenfor domenet 'Urinary'.\r\n- \"epic_2_2002_number\" identifiserer hvilket nummer spørsmålet har i den siste versjonen (EPIC 2.2002) Expanded Prostate Cancer Index Composite.\r\n- \"sf_6_2002_number\" identifiserer hvilket nummer spørsmålet har i Expanded Prostate Cancer Index Composite Short Form (EPIC-26, EPIC-SF 6.2002).\r\n\r\nI klinisk praksis er det vanlig å gjøre en baseline-måling før behandling. Dersom individet er under aktiv oppfølging i påvente av en fremtidig behandling (ekspektans) kan det imidlertid eksistere flere slike målinger før behandling. Dersom det er nødvendig kan en \"Baseline-hendelse\" bli eksplisitt bli laget som en spesifikt tidspunktshendelse i et templat eller under kjøring av applikasjonen.\r\n\r\nSelv om denne arketypen normalt vil bli brukt i COMPOSITION.self_reported_data (Selvrapporterte data), kan det avhengig av situasjonen begrunnes å bruke en annen COMPOSITION.\r\n\r\nSelv om alle arketyper fra openEHR er gratis tilgjengelig under en åpen lisens, er det spesifikke innholdet i denne Expanded Prostate Cancer Index Composite (EPIC) opphavsrettbeskyttet. Enhver bruk av denne arketypen i en implementasjon må være i henhold til kravene som er satt av eierne av opphavsretten. Spørsmål om lisenser for kommersiell bruk kan rettes til University of Michigan som beskrevet nedenfor. Copyright statement: © 2000 The Regents of the University of Michigan, Regents of the University of California, Emory University and Cedars-Sinai. All rights reserved. Copyright information: MImeasures@umich.edu\r\n\r\nSiden det bare finnes validert oversettelse av EPIC-26 til norsk, er det bare de spørsmålene som hører til denne som er oversatt i arketypen. Dersom det blir behov for å ta i bruk hele EPIC 2.2002 i Norge, bør de resterende spørsmålene være gjenstand for en tilsvarende prosess som for den validerte oversettelsen av EPIC-26, og arketypen oppdateres med resultatet av den oversettelsen.",
+          "misuse" : "Skal ikke brukes for EPIC-CP. Bruk OBSERVATION.epic_cp for dette.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the results from the health-related quality of life (HRQoL) questionnaire in patients with prostate cancer.",
+          "keywords" : [ "prostate cancer, quality of life, QOL, PROM, EPIC-26, HRQoL" ],
+          "use" : "Use to record the results from the questionnaire used to measure the health-related quality of life (HRQoL) in patients with prostate cancer.\r\n\r\nThis archetype consists of all 51 elements in the EPIC 2.2002 version questionnaire, which by the copyright holders is identified as \"Most Recent Version\". The questionnaire is unchanged since 2002 and considered stable, and the archetype contains no information on version in the archetype's technical or concept name. If there are future changes, a new version of the archetype will have to be made. This archetype can also be used to represent the 6.2002 version of EPIC Short Form (EPIC-26) in a template. See the example template in the CKM's 'Resource Centre'.\r\n\r\nThe EPIC questionnaire itself does not contain any summary scores, neither subscores or total score. The authors of EPIC have provided scoring instructions for the urinary, bowel, hormonal and sexual domains, see the 'Reference' section. With respect to the archetypes are for data capture and storage, not only representing the questionnaire, elements for all the scores described in the scoring instructions has been added. Note that the response for each item needs to be standardized to a 0 to 100 scale according to the scoring instructions, and assembled to the various scores. The required computing and logic has to be made in an application.\r\n\r\nEven though the question numbers differ between the full EPIC-51 form and the short EPIC-26 form, they share the same unique 'Item number', which can be found in each element's 'Annotations', in the Key attribute 'epic_item_id'. This, along with the additional 'Annotations' keys 'domain', 'subscale' and 'subscale2', allows data consumers to use the archetype as a look-up structure to compute scores as described in \"Scoring Instructions for the Expanded Prostate cancer Index Composite\" and \"Scoring Instructions for the Expanded Prostate cancer Index Composite Short Form\". In addition each element has identified the number each question appears as in EPIC 2.2002 and EPIC-SF 6.2002 versions as Keys in Annotation. The Annotations Keys are as follows:\r\n\r\n- \"epic_item_id\" identifies the unique 'Item number' shared between EPIC 50 and EPIC Short form.\r\n- \"domain\" identifies which domain each question belongs to: 'Urinary', 'Bowel', 'Sexual' or 'Hormonal'.\r\n- \"subscale\" indicates the specific subscale ('Function' or 'Bother') associated with each question and is named in the format [domain name + subscale].\r\n- \"subscale2\" indicates the specific subscale ('Incontinence' or 'Irritative/Obstructive') associated with each question in the 'Urinary' domain.\r\n- \"epic_2_2002_number\" identifies the number the question has in the most recent version (EPIC 2.2002) Expanded Prostate Cancer Index Composite.\r\n- \"sf_6_2002_number\" identifies the number the question has in the Expanded Prostate Cancer Index Composite Short Form (EPIC-26, EPIC-SF 6.2002) version.\r\n\r\nIn clinical practice it is normal to make a baseline measure ahead of the treatment. However, in situations where the individual is under active surveillance in expectancy of a future treatment, more than one pre-treatment measure might exist. A 'Baseline' event could be explicitly modelled as a specified point in time event in a template or at run-time, if required.\r\n\r\nWhile this archetype normally will reside in COMPOSITION.self_reported_data, it might be justified to use an other COMPOSITION depending on the situation.\r\n\r\nWhile openEHR archetypes are all freely available under an open license, the specific content of this Expanded Prostate cancer Index Composite (EPIC) archetype is copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners. Commercial use license inquiries can be directed to the University of Michigan as outlined below. Copyright statement: © 2000 The Regents of the University of Michigan, Regents of the University of California, Emory University and Cedars-Sinai. All rights reserved. Copyright information: MImeasures@umich.edu.",
+          "misuse" : "Not to be used for the EPIC-CP questionnaire. Use the OBSERVATION.epic_cp for this purpose.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -952,6 +1005,57 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "a33764ad-dba6-4c05-821f-52d5951fa38a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "801e5f5c2b9a260d984a178e4b1f46dd"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.epic_seksuelle_hjelpemidler_hn.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-epic_seksuelle_hjelpemidler_hn-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "4c214e8a-3bcf-3797-92ec-3571400449de",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
