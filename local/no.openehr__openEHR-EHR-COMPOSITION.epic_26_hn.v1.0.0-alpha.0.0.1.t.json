@@ -1,0 +1,1023 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "6dfd061c-6ba9-46c1-9571-9adaf8ca897c",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2026-01-26",
+      "name" : "Aleksander Spikkerud Furnes",
+      "organisation" : "Helse Nord IKT",
+      "email" : "aleksander.spikkerud.furnes@hnikt.no"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "0.1.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "af2d1259063187a8b2e379c95c8b16a9",
+      "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
+    },
+    "details" : {
+      "nn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nn"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.self_reported_data.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_self_reported_data.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0003",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..1",
+                "nodeId" : "at0004.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-skjemadetaljer_hn-001.v2",
+                "referenceType" : "archetypeOverlay"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-expanded_prostate_cancer_index_composite-001.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.epic_26_hn.v1.0.0-alpha.0.0.1",
+          "description" : "Generic container for information provided by an individual."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.epic_26_hn.v1.0.0-alpha.0.0.1",
+          "description" : "Generisk container for informasjon gitt av et individ."
+        }
+      },
+      "nn" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.epic_26_hn.v1.0.0-alpha.0.0.1",
+          "description" : "*Generic container for information provided by an individual. (en)"
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.epic_26_hn.v1.0.0-alpha.0.0.1",
+          "description" : "Generell behållare för information som tillhandahålls av en individ."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.epic_26_hn.v1.0.0-alpha.0.0.1",
+          "description" : "Generischer Container für Informationen, die von einer Person bereitgestellt werden."
+        }
+      },
+      "fr" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.epic_26_hn.v1.0.0-alpha.0.0.1",
+          "description" : "Conteneur générique pour des informations fournies par un individu."
+        }
+      },
+      "pt" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.epic_26_hn.v1.0.0-alpha.0.0.1",
+          "description" : "Contentor genérico para informação fornecida por um indivíduo."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "cb4a8c15-317d-36da-a0e2-b8b17a32f0f0",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "no.openehr__openEHR-EHR-COMPOSITION.epic_26_hn.v1.0.0-alpha.0.0.1",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "5837ebdb-ce75-4b6b-bce9-b8c424451239",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "ed136035a3b7bf88df0342cc2ccb4fa6"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.skjemadetaljer_hn.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-skjemadetaljer_hn-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "180b3e90-2f51-3eed-ac82-389ddf91a6e4",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "357c2f61-5c40-4706-af85-9d7bc0e07068",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "7CDF6D3125C612655983203AF554B258"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0108]" : {
+            "epic_item_id" : "59",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "18",
+            "domain" : "Sexual",
+            "sf_6_2002_number" : "9"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0320]/items[at0210]" : {
+            "epic_item_id" : "49",
+            "subscale" : "Bowel bother",
+            "epic_2_2002_number" : "15a",
+            "domain" : "Bowel",
+            "sf_6_2002_number" : "6a"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0323]/items[at0138]" : {
+            "epic_item_id" : "75",
+            "subscale" : "Hormonal bother",
+            "epic_2_2002_number" : "31b",
+            "domain" : "Hormonal",
+            "sf_6_2002_number" : "13b"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0323]/items[at0150]" : {
+            "epic_item_id" : "78",
+            "subscale" : "Hormonal bother",
+            "epic_2_2002_number" : "31e",
+            "domain" : "Hormonal",
+            "sf_6_2002_number" : "13d"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0222]" : {
+            "epic_item_id" : "27",
+            "subscale2" : "Urinary function",
+            "subscale" : "Incontinence",
+            "epic_2_2002_number" : "5",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "3"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0052]" : {
+            "epic_item_id" : "34",
+            "subscale" : "Urinary bother",
+            "epic_2_2002_number" : "7",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "5"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0319]/items[at0034]" : {
+            "epic_item_id" : "30",
+            "subscale2" : "Irritative/Obstructive",
+            "subscale" : "Urinary bother",
+            "epic_2_2002_number" : "6c",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "4c"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0319]/items[at0022]" : {
+            "epic_item_id" : "28",
+            "subscale2" : "Urinary bother",
+            "subscale" : "Incontinence",
+            "epic_2_2002_number" : "6a",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "4a"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0319]/items[at0046]" : {
+            "epic_item_id" : "33",
+            "subscale2" : "Irritative/Obstructive",
+            "subscale" : "Urinary bother",
+            "epic_2_2002_number" : "6f",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "4e"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0113]" : {
+            "epic_item_id" : "60",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "19",
+            "domain" : "Sexual",
+            "sf_6_2002_number" : "10"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0004]" : {
+            "epic_item_id" : "23",
+            "subscale2" : "Incontinence",
+            "subscale" : "Urinary function",
+            "epic_2_2002_number" : "1",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "1"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0125]" : {
+            "epic_item_id" : "68",
+            "subscale" : "Sexual bother",
+            "epic_2_2002_number" : "25",
+            "domain" : "Sexual",
+            "sf_6_2002_number" : "12"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0320]/items[at0077]" : {
+            "epic_item_id" : "53",
+            "subscale" : "Bowel bother",
+            "epic_2_2002_number" : "15e",
+            "domain" : "Bowel",
+            "sf_6_2002_number" : "6d"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0321]/items[at0097]" : {
+            "epic_item_id" : "58",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "17c",
+            "domain" : "Sexual",
+            "sf_6_2002_number" : "8b"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0089]" : {
+            "epic_item_id" : "55",
+            "subscale" : "Bowel bother",
+            "epic_2_2002_number" : "16",
+            "domain" : "Bowel",
+            "sf_6_2002_number" : "7"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0323]/items[at0144]" : {
+            "epic_item_id" : "77",
+            "subscale" : "Hormonal bother",
+            "epic_2_2002_number" : "31d",
+            "domain" : "Hormonal",
+            "sf_6_2002_number" : "13c"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0323]/items[at0156]" : {
+            "epic_item_id" : "79",
+            "subscale" : "Hormonal bother",
+            "epic_2_2002_number" : "31f",
+            "domain" : "Hormonal",
+            "sf_6_2002_number" : "13e"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0323]/items[at0132]" : {
+            "epic_item_id" : "74",
+            "subscale" : "Hormonal bother",
+            "epic_2_2002_number" : "31a",
+            "domain" : "Hormonal",
+            "sf_6_2002_number" : "13a"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0010]" : {
+            "epic_item_id" : "26",
+            "subscale2" : "Urinary function",
+            "subscale" : "Incontinence",
+            "epic_2_2002_number" : "4",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "2"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0119]" : {
+            "epic_item_id" : "64",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "23",
+            "domain" : "Sexual",
+            "sf_6_2002_number" : "11"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0319]/items[at0028]" : {
+            "epic_item_id" : "29",
+            "subscale2" : "Irritative/Obstructive",
+            "subscale" : "Urinary bother",
+            "epic_2_2002_number" : "6b",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "4b"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0320]/items[at0071]" : {
+            "epic_item_id" : "52",
+            "subscale" : "Bowel bother",
+            "epic_2_2002_number" : "15d",
+            "domain" : "Bowel",
+            "sf_6_2002_number" : "6c"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0320]/items[at0083]" : {
+            "epic_item_id" : "54",
+            "subscale" : "Bowel bother",
+            "epic_2_2002_number" : "15f",
+            "domain" : "Bowel",
+            "sf_6_2002_number" : "6e"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0319]/items[at0040]" : {
+            "epic_item_id" : "31",
+            "subscale2" : "Irritative/Obstructive",
+            "subscale" : "Urinary bother",
+            "epic_2_2002_number" : "6d",
+            "domain" : "Urinary",
+            "sf_6_2002_number" : "4d"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0320]/items[at0059]" : {
+            "epic_item_id" : "50",
+            "subscale" : "Bowel bother",
+            "epic_2_2002_number" : "15b",
+            "domain" : "Bowel",
+            "sf_6_2002_number" : "6b"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0321]/items[at0095]" : {
+            "epic_item_id" : "57",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "17b",
+            "domain" : "Sexual",
+            "sf_6_2002_number" : "8a"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0180.1]" : {
+            "epic_item_id" : "42",
+            "subscale" : "Bowel function",
+            "epic_2_2002_number" : "8",
+            "domain" : "Bowel"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0223.1]" : {
+            "epic_item_id" : "43",
+            "subscale" : "Bowel function",
+            "epic_2_2002_number" : "9",
+            "domain" : "Bowel"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0192.1]" : {
+            "epic_item_id" : "44",
+            "subscale" : "Bowel function",
+            "epic_2_2002_number" : "10",
+            "domain" : "Bowel"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0186.1]" : {
+            "epic_item_id" : "45",
+            "subscale" : "Bowel function",
+            "epic_2_2002_number" : "11",
+            "domain" : "Bowel"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0204.1]" : {
+            "epic_item_id" : "46",
+            "subscale" : "Bowel function",
+            "epic_2_2002_number" : "12",
+            "domain" : "Bowel"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0015.1]" : {
+            "epic_item_id" : "47",
+            "subscale" : "Bowel function",
+            "epic_2_2002_number" : "13",
+            "domain" : "Bowel"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0198.1]" : {
+            "epic_item_id" : "48",
+            "subscale" : "Bowel function",
+            "epic_2_2002_number" : "14",
+            "domain" : "Bowel"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0320]/items[at0065.1]" : {
+            "epic_item_id" : "51",
+            "subscale" : "Bowel bother",
+            "epic_2_2002_number" : "15c",
+            "domain" : "Bowel"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0321]/items[at0216.1]" : {
+            "epic_item_id" : "56",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "17a",
+            "domain" : "Sexual"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0235.1]" : {
+            "epic_item_id" : "61",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "20",
+            "domain" : "Sexual"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0241.1]" : {
+            "epic_item_id" : "62",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "21",
+            "domain" : "Sexual"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0247.1]" : {
+            "epic_item_id" : "63",
+            "subscale" : "Sexual function",
+            "epic_2_2002_number" : "22",
+            "domain" : "Sexual"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0322.1]/items[at0265]" : {
+            "epic_item_id" : "67",
+            "subscale" : "Sexual bother",
+            "epic_2_2002_number" : "24c",
+            "domain" : "Sexual"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0322.1]/items[at0253]" : {
+            "epic_item_id" : "66",
+            "subscale" : "Sexual bother",
+            "epic_2_2002_number" : "24b",
+            "domain" : "Sexual"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0322.1]/items[at0259]" : {
+            "epic_item_id" : "65",
+            "subscale" : "Sexual bother",
+            "epic_2_2002_number" : "24a",
+            "domain" : "Sexual"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0271.1]" : {
+            "epic_item_id" : "69",
+            "subscale" : "Hormonal function",
+            "epic_2_2002_number" : "26",
+            "domain" : "Hormonal"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0277.1]" : {
+            "epic_item_id" : "70",
+            "subscale" : "Hormonal function",
+            "epic_2_2002_number" : "27",
+            "domain" : "Hormonal"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0283.1]" : {
+            "epic_item_id" : "71",
+            "subscale" : "Hormonal function",
+            "epic_2_2002_number" : "28",
+            "domain" : "Hormonal"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0289.1]" : {
+            "epic_item_id" : "72",
+            "subscale" : "Hormonal function",
+            "epic_2_2002_number" : "29",
+            "domain" : "Hormonal"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0295.1]" : {
+            "epic_item_id" : "73",
+            "subscale" : "Hormonal function",
+            "epic_2_2002_number" : "30",
+            "domain" : "Hormonal"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0323]/items[at0301.1]" : {
+            "epic_item_id" : "76",
+            "subscale" : "Hormonal bother",
+            "epic_2_2002_number" : "31c",
+            "domain" : "Hormonal"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0307.1]" : {
+            "epic_item_id" : "80",
+            "epic_2_2002_number" : "32"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0162.1]" : {
+            "epic_item_id" : "24",
+            "subscale2" : "Urinary function",
+            "subscale" : "Irritative/Obstructive",
+            "epic_2_2002_number" : "2",
+            "domain" : "Urinary"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0168.1]" : {
+            "epic_item_id" : "25",
+            "subscale2" : "Urinary function",
+            "subscale" : "Irritative/Obstructive",
+            "epic_2_2002_number" : "3",
+            "domain" : "Urinary"
+          },
+          "/data[at0001]/events[at0313]/data[at0003]/items[at0319]/items[at0174.1]" : {
+            "epic_item_id" : "32",
+            "subscale2" : "Irritative/Obstructive",
+            "subscale" : "Urinary bother",
+            "epic_2_2002_number" : "6e",
+            "domain" : "Urinary"
+          }
+        },
+        "nb" : { }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.expanded_prostate_cancer_index_composite.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-expanded_prostate_cancer_index_composite-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0313",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0162.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0168.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0319",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0174.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0180.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0223.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0192.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0186.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0204.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0015.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0198.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0320",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0065.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0321",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0216.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0235.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0241.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0247.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0322.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0271.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0277.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0283.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0289.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0295.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0323",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0301.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0307.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "7f3d0d31-31d3-4066-8e1b-9fbedea79529",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen, June Marie Nepstad Knappskog",
+        "organisation" : "Oslo University Hospital, Helse Nord IKT AS, Norway (openEHR Editor)",
+        "email" : "varntzen@ous-hf.no, june.marie.nepstad.knappskog@hnikt.no"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nn"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
