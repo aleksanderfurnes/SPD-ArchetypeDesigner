@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0",
+      "sem_ver" : "2.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b602270ae914800a3f30b019aef01e03",
+      "MD5-CAM-1.0.1" : "0193f9523af0775eeb275b9c5879ec83",
       "PARENT:MD5-CAM-1.0.1" : "8C341BFFA1E20864451EDDD9770E3D0F"
     },
     "details" : {
@@ -168,7 +168,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "no.openehr__openEHR-EHR-COMPOSITION.triage_mor.v1.0.0-alpha.0.0.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.triage_mor.v1.0.0",
           "description" : "Document to communicate information to others, commonly in response to a request from another party."
         }
       },
@@ -192,7 +192,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "no.openehr__openEHR-EHR-COMPOSITION.triage_mor.v1.0.0-alpha.0.0.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.triage_mor.v1.0.0",
           "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
         }
       }
