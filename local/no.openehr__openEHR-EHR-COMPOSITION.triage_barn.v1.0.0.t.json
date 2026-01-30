@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "2.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "51187c59726b0919856146f7483cd966",
+      "MD5-CAM-1.0.1" : "f4cc430b5515b4aa64b8ae3259eb9e4c",
       "PARENT:MD5-CAM-1.0.1" : "8C341BFFA1E20864451EDDD9770E3D0F"
     },
     "details" : {
@@ -192,7 +192,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "no.openehr__openEHR-EHR-COMPOSITION.triage_barn.v1.0.0-alpha.0.0.1",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.triage_barn.v1.0.0",
           "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
         }
       }
