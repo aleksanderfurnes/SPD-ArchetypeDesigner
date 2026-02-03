@@ -64,7 +64,7 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f580f4ec642b8996b664475025046d1d">
+		["MD5-CAM-1.0.1"] = <"351a33e6b08ad7b158f833c2e9924eba">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -458,7 +458,11 @@ ontology
 				>
 				["at0048"] = <
 					text = <"Absence of deformity">
-					description = <"Criteria: Less than 30 degrees of fixed flexion; Less than 10 degrees of fixed internal rotation in extension; Less than 10 degrees of fixed adduction; Limb length discrepancy less than 3.2 cm (1.5 inches).">
+					description = <"Criteria: 
+Less than 30 degrees of fixed flexion Contracture
+Less than 10 degrees of fixed adduction 
+Less than 10 degrees of fixed internal rotation in extension 
+Limb length discrepancy less than 3.2 cm.">
 				>
 				["at0052"] = <
 					text = <"Total degrees of flexion">
@@ -822,12 +826,12 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0048"] = <
-					text = <"Deformitet">
+					text = <"Fravær av deformitet">
 					description = <"Kriterier:
-Mindre enn 30 grader fiksert fleksjon
-Mindre enn 10 grader fiksert innadrotasjon i ekstensjon
-Mindre enn 10 grader fiksert adduksjon
-Beindiscrepans mindre enn 3,2 cm (1,5 tommer)">
+Fast fleksjonskontraktur mindre enn 30°
+Fast adduksjon mindre enn 10°
+Fast innadrotasjon i ekstensjon mindre enn 10°
+Beinlengdeforskjell mindre enn 3,2 cm">
 				>
 				["at0052"] = <
 					text = <"Totalt bevegelsesutslag i fleksjon">
