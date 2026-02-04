@@ -22,8 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "a23961575529aca35a159cbfa797058a",
-      "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
+      "MD5-CAM-1.0.1" : "62a20e49cd5c842a728bbf875d6ff241",
+      "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
+      "sem_ver" : "0.1.1",
+      "build_uid" : ""
     },
     "details" : {
       "nn" : {
@@ -250,7 +252,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "brystkreft_helsenorge_HN_v2",
+          "text" : "brystkreft_helsenorge_HN_v3",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
