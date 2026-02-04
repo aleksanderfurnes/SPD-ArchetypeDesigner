@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "62a20e49cd5c842a728bbf875d6ff241",
+      "MD5-CAM-1.0.1" : "95a8bf2b590803e37f44755cd371bbdd",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
-      "sem_ver" : "0.1.1",
+      "sem_ver" : "1.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -167,6 +167,15 @@
         "unique" : false
       },
       "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.22",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-investigation_screening-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
         "occurrences" : "0..1",
@@ -651,17 +660,23 @@
                                     "terminologyId" : "SNOMED-CT_bp",
                                     "code" : "302343007",
                                     "value" : "Ja",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Ja"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_bp",
                                     "code" : "0",
                                     "value" : "Nei",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Nei"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_bp",
                                     "code" : "99",
                                     "value" : "Ukjent",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Vet ikke"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -763,17 +778,23 @@
                                     "terminologyId" : "SNOMED-CT_es",
                                     "code" : "83152002",
                                     "value" : "Ja",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Ja"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_es",
                                     "code" : "0",
                                     "value" : "Nei",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Nei"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_es",
                                     "code" : "99",
                                     "value" : "Ukjent",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Vet ikke"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -878,17 +899,23 @@
                                     "terminologyId" : "SNOMED-CT_ivf",
                                     "code" : "52637005",
                                     "value" : "Ja",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Ja"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_ivf",
                                     "code" : "0",
                                     "value" : "Nei",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Nei"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_ivf",
                                     "code" : "99",
                                     "value" : "Ukjent",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Vet ikke"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -984,22 +1011,30 @@
                                     "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "170955009",
                                     "value" : "Ja",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Ja"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "0",
                                     "value" : "Nei",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Nei"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "161652003",
                                     "value" : "Har brukt tidligere",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Har brukt tidligere"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "99",
                                     "value" : "Ukjent",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Vet ikke"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -1145,7 +1180,7 @@
           "at0005.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.4",
-            "text" : "Bruker du, eller har du brukt, hormonsubstitusjon (HRT)?",
+            "text" : "Bruker du, eller har du brukt hormonsubstitusjon i form av tabletter, krem, plaster eller spray?",
             "description" : "Har den identifiserte prosedyren vært utført?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
@@ -1662,17 +1697,23 @@
                     "terminologyId" : "local_terms",
                     "code" : "43981004",
                     "value" : "Venstre",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "Venstre"
+                    }
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "20837000",
                     "value" : "Høyre",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "Høyre"
+                    }
                   }, {
                     "terminologyId" : "local_terms",
                     "code" : "83238006",
                     "value" : "Begge",
-                    "translations" : { }
+                    "translations" : {
+                      "nb" : "Begge"
+                    }
                   } ]
                 } ]
               } ],
@@ -2258,7 +2299,9 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "248957007",
                                     "value" : "menstruasjon",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "menstruasjon"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -2292,22 +2335,30 @@
                                     "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "302757007",
                                     "value" : "Regelmessig",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Regelmessig"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "80182007",
                                     "value" : "Uregelmessig",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Uregelmessig"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "289903006",
                                     "value" : "Menopause",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Opphørt"
+                                    }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "99",
                                     "value" : "Ukjent",
-                                    "translations" : { }
+                                    "translations" : {
+                                      "nb" : "Vet ikke"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -2965,12 +3016,16 @@
                             "terminologyId" : "SNOMED-CT",
                             "code" : "449038007",
                             "value" : "Ja",
-                            "translations" : { }
+                            "translations" : {
+                              "nb" : "Ja"
+                            }
                           }, {
                             "terminologyId" : "SNOMED-CT",
                             "code" : "373067005",
                             "value" : "Nei",
-                            "translations" : { }
+                            "translations" : {
+                              "nb" : "Nei"
+                            }
                           } ]
                         } ]
                       } ],
@@ -3531,10 +3586,32 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local"
+                                "value" : "SNOMED-CT_tidlkreft"
                               },
-                              "constraint" : [ "ac0.4" ],
-                              "selectedTerminologies" : [ ]
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED-CT_tidlkreft" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED-CT_tidlkreft",
+                                "code" : "373066001",
+                                "value" : "Ja",
+                                "translations" : {
+                                  "nb" : "Ja"
+                                }
+                              }, {
+                                "terminologyId" : "SNOMED-CT_tidlkreft",
+                                "code" : "0",
+                                "value" : "Nei",
+                                "translations" : {
+                                  "nb" : "Nei"
+                                }
+                              }, {
+                                "terminologyId" : "SNOMED-CT_tidlkreft",
+                                "code" : "99",
+                                "value" : "Vet ikke",
+                                "translations" : {
+                                  "nb" : "Vet ikke"
+                                }
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -3578,12 +3655,6 @@
             "text" : "Problem/Diagnosis screening questionnaire (2)",
             "description" : "Series of questions and associated answers used to screen for issues, problems or diagnoses.",
             "comment" : "The answers may be self-reported."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "nb" : {
@@ -3606,12 +3677,6 @@
             "code" : "at0043.1",
             "text" : "Merknad om tidligere kreft",
             "description" : "Fritekstbeskrivelse om bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "de" : {
@@ -3621,12 +3686,6 @@
             "text" : "Screening-Fragebogen zum Problem/zur Diagnose (2)",
             "description" : "Eine Reihe von Fragen und zugehörigen Antworten, die zum Screening auf Vorhandensein von Beschwerden, Problemen oder Diagnosen verwendet werden.",
             "comment" : "Die Antworten können selbst berichtet werden."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "nl" : {
@@ -3636,12 +3695,6 @@
             "text" : "*Problem/Diagnosis screening questionnaire (en) (2)",
             "description" : "*Series of questions and associated answers used to screen for issues, problems or diagnoses. (en)",
             "comment" : "*The answers may be self-reported.(en)"
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "ca" : {
@@ -3651,12 +3704,6 @@
             "text" : "Sondeig de detecció d'un problema/diagnòstic (2)",
             "description" : "Sèrie de preguntes i respostes relacionades, utilitzades per a detectar qüestions, problemes o diagnòstics.",
             "comment" : "Les respostes poden ser autodiagnosticades."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "fr" : {
@@ -3666,12 +3713,6 @@
             "text" : "Questionnaire de dépistage des problèmes/diagnostics (2)",
             "description" : "Série de questions et de réponses associées utilisées pour dépister des questions, des problèmes ou des diagnostics.",
             "comment" : "Les réponses peuvent être autodéclarées."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "es" : {
@@ -3681,12 +3722,6 @@
             "text" : "Cuestionario de detección de Problema/Diagnóstico (2)",
             "description" : "Serie de preguntas y respuestas relacionadas, utilizadas para detectar cuestiones, problemas o diagnósticos.",
             "comment" : "Las respuestas pueden ser autorreportadas"
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         }
       },
@@ -3712,6 +3747,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ ]
         }
       }
     },
@@ -3997,10 +4047,32 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local"
+                                "value" : "SNOMED-CT_tidlkreftbeh"
                               },
-                              "constraint" : [ "ac0.4" ],
-                              "selectedTerminologies" : [ ]
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED-CT_tidlkreftbeh" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED-CT_tidlkreftbeh",
+                                "code" : "373066001",
+                                "value" : "Ja",
+                                "translations" : {
+                                  "nb" : "Ja"
+                                }
+                              }, {
+                                "terminologyId" : "SNOMED-CT_tidlkreftbeh",
+                                "code" : "0",
+                                "value" : "Nei",
+                                "translations" : {
+                                  "nb" : "Nei"
+                                }
+                              }, {
+                                "terminologyId" : "SNOMED-CT_tidlkreftbeh",
+                                "code" : "99",
+                                "value" : "Vet ikke",
+                                "translations" : {
+                                  "nb" : "Vet ikke"
+                                }
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -4044,12 +4116,6 @@
             "text" : "Procedure screening questionnaire (2)",
             "description" : "Series of questions and associated answers used to screen for procedures that has been carried out in the past.",
             "comment" : "The answers may be self-reported."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "nb" : {
@@ -4072,12 +4138,6 @@
             "code" : "at0041.1",
             "text" : "Merknad om tidligere kreftbehandling",
             "description" : "Fritekstbeskrivelse om prosedyrer som er tidligere utført og som er innenfor kartleggingsformålet."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "de" : {
@@ -4087,12 +4147,6 @@
             "text" : "Screening-Fragebogen zur Prozeduren (2)",
             "description" : "Eine Reihe von Fragen und zugehörigen Antworten, die zum Screening auf Prozeduren, die in der Vergangenheit durchgeführt wurden, verwendet werden.",
             "comment" : "Die Antworten können selbst berichtet werden."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "it" : {
@@ -4102,12 +4156,6 @@
             "text" : "Questionario di screening della procedura (2)",
             "description" : "*Series of questions and associated answers used to screen for procedures that has been carried out in the past. (en)",
             "comment" : "*The answers may be self-reported. (en)"
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
         "fr" : {
@@ -4117,12 +4165,6 @@
             "text" : "Questionnaire d'évaluation de la procédure (2)",
             "description" : "Série de questions et de réponses associées utilisées pour vérifier si des procédures ont été effectuées dans le passé.",
             "comment" : "Les réponses peuvent être autodéclarées."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         }
       },
@@ -4148,6 +4190,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ "at0031", "at0032", "at0038" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0031", "at0032", "at0038" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ ]
         }
       }
     },
@@ -4510,7 +4567,7 @@
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
-            "text" : "Alder ved menopause",
+            "text" : "Alder da menstruasjonen opphørte",
             "description" : "Alderen til et individ ved hendelsestidspunktet, beregnet ut fra fødselsdatoen.",
             "comment" : "I de fleste tilfeller benyttes datatypen DV_DURATION for å registrere den kronologiske alderen. Datatypen DV_INTERVAL_DURATION brukes for å registrere et strukturert aldersintervall i tilfeller der det er usikkerhet om individets nøyaktige alder. Datatypen DV_QUANTITY brukes til å registrere en alder med desimaler i år eller gjennomsnittlige julianske år (365,25 dager), datatypen DV_TEXT brukes til å registrere en tekstlig representasjon av individets alder eller alderskategori ofte benyttet i spørreskjema. \r\nFor eksempel: \"P3M2W\", \"0,2884615384615385 a_j\" eller \"3 måneder 2 uker\", \"31-40 år\" eller \"Tenåring\"."
           }
@@ -4576,6 +4633,320 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "ba452c12-5d01-4fda-9e36-6167f594ac94",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "4303915A919C8B6D98E44B6105250000"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.investigation_screening.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-investigation_screening-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0022",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0023.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0001",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0040.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0027.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.1" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_BOOLEAN",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0043.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0026.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0044.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-helseopplysninger_hoyde_vekt_bmi_hn-001.v1",
+                      "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Høyde og vekt",
+            "description" : "Spørsmål og tilhørende svar som er knyttet til kartlegging om diagnostiske undersøkelser har vært utført eller ikke.",
+            "comment" : "Svarene kan være selvrapporterte."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "es" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        },
+        "ca" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0028", "at0029", "at0030", "at0045" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "b77e0cf6-fb2d-4e9b-adb0-4a332280c0ea",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Darin Leonhardt",
+        "organisation" : "Medizinische Hochschule Hannover, PLRI, PLRI für medizinische Informatik/ Medizinische Hochschule",
+        "email" : "Strauch.Natalia@mh-hannover.de, leonhardt.darin@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Kanika Kuwelker, John Tore Valand, Vebjørn Arntzen",
+        "organisation" : "Helse Vest IKT, Helse Bergen, Oslo University Hospital",
+        "email" : "kanika.kuwelker@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "ecdac198-db2d-45d5-821b-449cdb1594fe",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "5cf98553f8b0438f6c7d8544c126dc79"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.helseopplysninger_hoyde_vekt_bmi_hn.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-helseopplysninger_hoyde_vekt_bmi_hn-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "c0191756-0a14-3bac-9b2d-8a56f3822877",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
