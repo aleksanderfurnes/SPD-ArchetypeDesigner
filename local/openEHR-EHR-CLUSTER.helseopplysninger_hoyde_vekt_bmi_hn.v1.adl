@@ -1,0 +1,94 @@
+archetype (adl_version=1.4; uid=f0e0a85c-26ff-42a1-a3c4-fb397469e924)
+	openEHR-EHR-CLUSTER.helseopplysninger_hoyde_vekt_bmi_hn.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-06-05">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"5cf98553f8b0438f6c7d8544c126dc79">
+		["build_uid"] = <"c0191756-0a14-3bac-9b2d-8a56f3822877">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- helseopplysninger_hoyde_vekt_bmi_hn
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Høyde
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Vekt
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::124]>
+						list = <
+							["1"] = <
+								units = <"kg">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- BMI
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::349]>
+						list = <
+							["1"] = <
+								units = <"kg/m2">
+							>
+						>
+					>
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"helseopplysninger_hoyde_vekt_bmi_hn">
+					description = <"helseopplysninger_hoyde_vekt_bmi_hn">
+				>
+				["at0001"] = <
+					text = <"Høyde">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Vekt">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"BMI">
+					description = <"">
+				>
+			>
+		>
+	>
