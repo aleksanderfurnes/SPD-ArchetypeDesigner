@@ -79,7 +79,7 @@ Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-s
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"34f099bb1abb5c0a6d02b04973e23514">
+		["MD5-CAM-1.0.1"] = <"78ef23477099ce039f90d190b50eec24">
 		["build_uid"] = <"86f191d7-6048-4808-b7a8-c34d44d693bb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -520,7 +520,7 @@ code. (en)">
 					description = <"@ intern @">
 				>
 				["at0004"] = <
-					text = <"GANGE">
+					text = <"Gange">
 					description = <"Problemer med mobilitet.">
 				>
 				["at0005"] = <
@@ -528,20 +528,20 @@ code. (en)">
 					description = <"*">
 				>
 				["at0006"] = <
-					text = <"PERSONLIG STELL">
+					text = <"Personlig stell">
 					description = <"Problemer med egenomsorg.">
 				>
 				["at0007"] = <
-					text = <"VANLIGE GJØREMÅL (f.eks. arbeid, studier, husarbeid, familie- eller fritidsaktiviteter)">
+					text = <"Vanlige gjøremål (f.eks. arbeid, studier, husarbeid, familie- eller fritidsaktiviteter)">
 					description = <"Problemer med vanlige aktiviteter.">
 					comment = <"f.eks arbeid, studier, husarbeid, familie- eller fritidsaktiviteter.">
 				>
 				["at0008"] = <
-					text = <"SMERTER/UBEHAG">
+					text = <"Smerter/ubehag">
 					description = <"Problemer med smerte eller ubehag.">
 				>
 				["at0009"] = <
-					text = <"ANGEST/DEPRESJON">
+					text = <"Angest/depresjon">
 					description = <"Problem med angst eller depresjon.">
 				>
 				["at0010"] = <
@@ -549,7 +549,7 @@ code. (en)">
 					description = <"En egenvurdering av generell helse på en skala fra 0 til 100">
 				>
 				["at0011"] = <
-					text = <"*Health state (en)">
+					text = <"Helse status">
 					description = <"*A 5-digit code formed from the scores of each component, with 9 indicating a missing value
 
 *A unique health state is defined by combining
