@@ -79,7 +79,7 @@ Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-s
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"78ef23477099ce039f90d190b50eec24">
+		["MD5-CAM-1.0.1"] = <"490d75d950a8d7a546d113b789455c6a">
 		["build_uid"] = <"86f191d7-6048-4808-b7a8-c34d44d693bb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -505,7 +505,7 @@ code. (en)">
 			items = <
 				["at0000"] = <
 					text = <"eq_5d_5l_hn">
-					description = <"*A short descriptive system questionnaire and a visual analogue scale (VAS) that provides a simple descriptive profile of a respondent’s health state. (en)">
+					description = <"Et kort, beskrivende system spørreskjema og en visuell analog skala (VAS) som gir en enkel, beskrivende profil av respondentens helsetilstand.">
 				>
 				["at0001"] = <
 					text = <"Eventserie">
