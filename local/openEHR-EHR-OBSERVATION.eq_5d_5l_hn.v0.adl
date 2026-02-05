@@ -46,16 +46,18 @@ Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-s
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"*To record the results of a EQ-5D-5L questionnaire. (en)">
+			purpose = <"For å registrere resultatene av et EQ-5D-5L-spørreskjema.">
 			keywords = <"status","EQ">
 			copyright = <"© openEHR Foundation">
-			use = <"*Use to record the results of a EQ-5D-5L questionnaire.
+			use = <"Brukes til å registrere resultatene av et EQ-5D-5L-spørreskjema.
 
-While openEHR archetypes are all freely available under an open license, the specific content of this EQ-5D-5L archetype is copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners. 
+Selv om openEHR-arketyper er fritt tilgjengelige under en åpen lisens, er det spesifikke innholdet i denne EQ-5D-5L-arketypen opphavsrettslig beskyttet. All bruk av denne arketypen i implementasjoner må være i samsvar med vilkårene fastsatt av rettighetshaverne.
 
-Copyright statement: ©2009. Version 1.2_EN. All rights reserved. Geriatric Medicine Research, Dalhousie University, Halifax, Canada. 
+Opphavsrett: ©2009. Versjon 1.2_EN. Alle rettigheter forbeholdt.
+Geriatric Medicine Research, Dalhousie University, Halifax, Canada.
 
-Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html. (en)">
+Informasjon om opphavsrett: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html
+ ">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
