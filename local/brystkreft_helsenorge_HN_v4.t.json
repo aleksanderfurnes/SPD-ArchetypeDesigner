@@ -673,7 +673,7 @@
                                   }, {
                                     "terminologyId" : "SNOMED-CT_bp",
                                     "code" : "99",
-                                    "value" : "Ukjent",
+                                    "value" : "Vet ikke",
                                     "translations" : {
                                       "nb" : "Vet ikke"
                                     }
@@ -791,7 +791,7 @@
                                   }, {
                                     "terminologyId" : "SNOMED-CT_es",
                                     "code" : "99",
-                                    "value" : "Ukjent",
+                                    "value" : "Vet ikke",
                                     "translations" : {
                                       "nb" : "Vet ikke"
                                     }
@@ -912,7 +912,7 @@
                                   }, {
                                     "terminologyId" : "SNOMED-CT_ivf",
                                     "code" : "99",
-                                    "value" : "Ukjent",
+                                    "value" : "Vet ikke",
                                     "translations" : {
                                       "nb" : "Vet ikke"
                                     }
@@ -1031,7 +1031,7 @@
                                   }, {
                                     "terminologyId" : "SNOMED-CT_hrt",
                                     "code" : "99",
-                                    "value" : "Ukjent",
+                                    "value" : "Vet ikke",
                                     "translations" : {
                                       "nb" : "Vet ikke"
                                     }
@@ -2355,7 +2355,7 @@
                                   }, {
                                     "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "99",
-                                    "value" : "Ukjent",
+                                    "value" : "Vet ikke",
                                     "translations" : {
                                       "nb" : "Vet ikke"
                                     }
