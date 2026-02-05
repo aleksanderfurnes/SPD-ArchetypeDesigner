@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "6207db9ca52d2a32f8d471c155afb757",
+      "MD5-CAM-1.0.1" : "995e5c81bc07bf1dc80dbda71f567157",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
       "sem_ver" : "5.0.0",
       "build_uid" : ""
@@ -2348,14 +2348,14 @@
                                   }, {
                                     "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "289903006",
-                                    "value" : "Opphørt",
+                                    "value" : "Menopause",
                                     "translations" : {
                                       "nb" : "Opphørt"
                                     }
                                   }, {
                                     "terminologyId" : "SNOMED-CT_mens",
                                     "code" : "99",
-                                    "value" : "Vet ikke",
+                                    "value" : "Ukjent",
                                     "translations" : {
                                       "nb" : "Vet ikke"
                                     }
