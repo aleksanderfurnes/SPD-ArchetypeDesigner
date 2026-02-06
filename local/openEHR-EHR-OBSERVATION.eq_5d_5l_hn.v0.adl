@@ -97,7 +97,7 @@ Herdman M et al. (2011). Development and preliminary testing of the new five-lev
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"670cde98b1333e5041495291d72cd413">
+		["MD5-CAM-1.0.1"] = <"108e9a9662872e3430bdc25c49752034">
 		["build_uid"] = <"86f191d7-6048-4808-b7a8-c34d44d693bb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -571,13 +571,13 @@ It provides a structured method for recording an individual’s self-reported he
 				>
 				["at0011"] = <
 					text = <"Helse status">
-					description = <"*A 5-digit code formed from the scores of each component, with 9 indicating a missing value
+					description = <"En femsifret kode dannet av skårene for hver komponent, der 9 indikerer en manglende verdi.
 
-*A unique health state is defined by combining
-one level from each of the five dimensions.
-A total of 3125 possible health states is defined
-in this way. Each state is referred to by a 5-digit
-code. (en)">
+En unik helsetilstand defineres ved å kombinere
+ett nivå fra hver av de fem dimensjonene.
+Totalt 3125 mulige helsetilstander defineres
+på denne måten. Hver tilstand refereres til med
+en femsifret kode.">
 					comment = <"f.eks '21491'">
 				>
 				["at0012"] = <
