@@ -49,8 +49,8 @@ Distribution of the EQ-5D-5L instrument itself requires adherence to copyright a
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"*To record the results of the EQ-5D-5L questionnaire, including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring. (en)">
-			keywords = <"*eq5d, eq-5d-5l, quality of life, HRQoL, patient-reported outcome, PRO, EuroQol (en)", ...>
+			purpose = <"For å registrere resultatene fra EQ-5D-5L-spørreskjemaet, inkludert svar på de fem helsedimensjonene og den selvrapporterte helsetilstanden målt med visuell analog skala, til bruk i klinisk praksis, forskning eller overvåking av helseresultater.">
+			keywords = <"EQ-5D, EQ-5D-5L, livskvalitet, helserelatert livskvalitet (HRQoL), pasientrapportert utfallsmål (PRO), EuroQol", ...>
 			copyright = <"© openEHR Foundation">
 			use = <"Brukes til å registrere resultatene av et EQ-5D-5L-spørreskjema.
 
@@ -61,9 +61,9 @@ Geriatric Medicine Research, Dalhousie University, Halifax, Canada.
 
 Informasjon om opphavsrett: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html
  ">
-			misuse = <"*This archetype must not be used to modify, reinterpret, or replace the official EQ-5D-5L questionnaire items, response levels, or scoring rules.
-It should not be used for diagnostic purposes or clinical decision-making without appropriate clinical interpretation.
-Distribution of the EQ-5D-5L instrument itself requires adherence to copyright and licensing requirements established by the EuroQol Group. (en)">
+			misuse = <"Denne arketypen må ikke brukes til å endre, omtolke eller erstatte de offisielle EQ-5D-5L-spørsmålene, svarnivåene eller skåringsreglene.
+Den skal ikke brukes til diagnostiske formål eller kliniske beslutninger uten egnet klinisk tolkning.
+Distribusjon av selve EQ-5D-5L-instrumentet krever etterlevelse av opphavsretts- og lisenskrav fastsatt av EuroQol-gruppen.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -97,7 +97,7 @@ Herdman M et al. (2011). Development and preliminary testing of the new five-lev
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"108e9a9662872e3430bdc25c49752034">
+		["MD5-CAM-1.0.1"] = <"14a737096d3d212096c13b080a50a3a3">
 		["build_uid"] = <"86f191d7-6048-4808-b7a8-c34d44d693bb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -525,8 +525,9 @@ code. (en)">
 			items = <
 				["at0000"] = <
 					text = <"eq_5d_5l_hn">
-					description = <"*A standardized health-related quality of life instrument consisting of a five-dimension descriptive system and a visual analogue scale (VAS).
-It provides a structured method for recording an individual’s self-reported health status on the day of assessment. (en)">
+					description = <"Et standardisert instrument for måling av helserelatert livskvalitet som består av et beskrivende system med fem dimensjoner og en visuell analog skala (VAS).
+Det gir en strukturert metode for å registrere en persons selvrapporterte helsetilstand på vurderingsdagen.
+">
 				>
 				["at0001"] = <
 					text = <"Eventserie">
