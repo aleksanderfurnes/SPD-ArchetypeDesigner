@@ -85,9 +85,9 @@ Distribution of the EQ-5D-5L instrument itself requires adherence to copyright a
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["references"] = <"This archetype must not be used to modify, reinterpret, or replace the official EQ-5D-5L questionnaire items, response levels, or scoring rules.
-It should not be used for diagnostic purposes or clinical decision-making without appropriate clinical interpretation.
-Distribution of the EQ-5D-5L instrument itself requires adherence to copyright and licensing requirements established by the EuroQol Group.
+		["references"] = <"Denne arketypen må ikke brukes til å endre, omtolke eller erstatte de offisielle spørsmålene, svarnivåene eller skåringsreglene i EQ-5D-5L-spørreskjemaet.
+Den skal ikke brukes til diagnostiske formål eller som grunnlag for kliniske beslutninger uten egnet klinisk tolkning.
+Distribusjon av selve EQ-5D-5L-instrumentet krever at opphavsretts- og lisenskrav fastsatt av EuroQol-gruppen overholdes.
 
 Brooks R. (1996). EuroQol: The current state of play. Health Policy, 37(1), 53–72.
 
