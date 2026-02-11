@@ -85,14 +85,8 @@ Distribution of the EQ-5D-5L instrument itself requires adherence to copyright a
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["references"] = <"This archetype must not be used to modify, reinterpret, or replace the official questions, response levels, or scoring rules of the EQ-5D-5L questionnaire.
-
-It must not be used for diagnostic purposes or as a basis for clinical decision-making without appropriate clinical interpretation.
-
-Distribution of the EQ-5D-5L instrument itself requires compliance with the copyright and licensing requirements established by the EuroQol Group.
-
+		["references"] = <"
 Brooks R. (1996). EuroQol: The current state of play. Health Policy, 37(1), 53–72.
-
 
 Herdman M et al. (2011). Development and preliminary testing of the new five-level version of EQ-5D (EQ-5D-5L). Quality of Life Research 20(10):1727–1736.
 ">
