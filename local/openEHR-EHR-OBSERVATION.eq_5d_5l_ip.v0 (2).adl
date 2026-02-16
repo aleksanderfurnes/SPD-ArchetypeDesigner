@@ -1,0 +1,687 @@
+archetype (adl_version=1.4; uid=cec84a9c-906c-4168-8024-4e849424fed0)
+	openEHR-EHR-OBSERVATION.eq_5d_5l_ip.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+				["name"] = <"Johannes Schmidt">
+				["organisation"] = <"Better Deutschland GmbH">
+				["email"] = <"johannes.schmidt@better.care">
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2015-11-05">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			purpose = <"*To record the results of the EQ-5D-5L questionnaire, including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring. (en)">
+			keywords = <"*eq5d, eq-5d-5l, quality of life, HRQoL, patient-reported outcome, PRO, EuroQol (en)", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the results of a EQ-5D-5L questionnaire.
+
+While openEHR archetypes are all freely available under an open license, the specific content of this EQ-5D-5L archetype is copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners. 
+
+Copyright statement: ©2009. Version 1.2_EN. All rights reserved. Geriatric Medicine Research, Dalhousie University, Halifax, Canada. 
+
+Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html. (en)">
+			misuse = <"*This archetype must not be used to modify, reinterpret, or replace the official EQ-5D-5L questionnaire items, response levels, or scoring rules.
+It should not be used for diagnostic purposes or clinical decision-making without appropriate clinical interpretation.
+Distribution of the EQ-5D-5L instrument itself requires adherence to copyright and licensing requirements established by the EuroQol Group. (en)">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere resultatene fra EQ-5D-5L-spørreskjemaet, inkludert svar på de fem helsedimensjonene og den selvrapporterte helsetilstanden målt med visuell analog skala, til bruk i klinisk praksis, forskning eller overvåking av helseresultater.">
+			keywords = <"EQ-5D, EQ-5D-5L, livskvalitet, helserelatert livskvalitet (HRQoL), pasientrapportert utfallsmål (PRO), EuroQol", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"Brukes til å registrere resultatene av et EQ-5D-5L-spørreskjema.
+
+Selv om openEHR-arketyper er fritt tilgjengelige under en åpen lisens, er det spesifikke innholdet i denne EQ-5D-5L-arketypen opphavsrettslig beskyttet. All bruk av denne arketypen i implementasjoner må være i samsvar med vilkårene fastsatt av rettighetshaverne.
+
+Opphavsrett: ©2009. Versjon 1.2_EN. Alle rettigheter forbeholdt.
+Geriatric Medicine Research, Dalhousie University, Halifax, Canada.
+
+Informasjon om opphavsrett: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html
+ ">
+			misuse = <"Denne arketypen må ikke brukes til å endre, omtolke eller erstatte de offisielle EQ-5D-5L-spørsmålene, svarnivåene eller skåringsreglene.
+Den skal ikke brukes til diagnostiske formål eller kliniske beslutninger uten egnet klinisk tolkning.
+Distribusjon av selve EQ-5D-5L-instrumentet krever etterlevelse av opphavsretts- og lisenskrav fastsatt av EuroQol-gruppen.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the results of the EQ-5D-5L questionnaire, including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring.">
+			keywords = <"eq5d, eq-5d-5l, quality of life, HRQoL, patient-reported outcome, PRO, EuroQol", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"Use to record the results of a EQ-5D-5L questionnaire.
+
+While openEHR archetypes are all freely available under an open license, the specific content of this EQ-5D-5L archetype is copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners. 
+
+Copyright statement: ©2009. Version 1.2_EN. All rights reserved. Geriatric Medicine Research, Dalhousie University, Halifax, Canada. 
+
+Copyright information: https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html.">
+			misuse = <"This archetype must not be used to modify, reinterpret, or replace the official EQ-5D-5L questionnaire items, response levels, or scoring rules.
+It should not be used for diagnostic purposes or clinical decision-making without appropriate clinical interpretation.
+Distribution of the EQ-5D-5L instrument itself requires adherence to copyright and licensing requirements established by the EuroQol Group.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"
+Brooks R. (1996). EuroQol: The current state of play. Health Policy, 37(1), 53–72.
+
+Herdman M et al. (2011). Development and preliminary testing of the new five-level version of EQ-5D (EQ-5D-5L). Quality of Life Research 20(10):1727–1736.
+">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"030557a7c13009b4ee8b1d2157642bb1">
+		["build_uid"] = <"86f191d7-6048-4808-b7a8-c34d44d693bb">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- eq_5d_5l_ip
+		data matches {
+			HISTORY[at0001] matches {    -- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Mobility
+										value matches {
+											1|[local::at0005],
+											2|[local::at0012],
+											3|[local::at0013],
+											4|[local::at0014],
+											5|[local::at0015]
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Self-care
+										value matches {
+											1|[local::at0016],
+											2|[local::at0017],
+											3|[local::at0018],
+											4|[local::at0019],
+											5|[local::at0020]
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Usual activities
+										value matches {
+											1|[local::at0021],
+											2|[local::at0022],
+											3|[local::at0023],
+											4|[local::at0024],
+											5|[local::at0025]
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Pain/discomfort
+										value matches {
+											1|[local::at0026],
+											2|[local::at0027],
+											3|[local::at0028],
+											4|[local::at0029],
+											5|[local::at0030]
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Anxiety/depression
+										value matches {
+											1|[local::at0031],
+											2|[local::at0032],
+											3|[local::at0033],
+											4|[local::at0034],
+											5|[local::at0035]
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Health state
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Overall health
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..100|}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0036] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0037] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"eq_5d_5l_ip">
+					description = <"A standardized health-related quality of life instrument consisting of a five-dimension descriptive system and a visual analogue scale (VAS).
+It provides a structured method for recording an individual’s self-reported health status on the day of assessment.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Mobility">
+					description = <"Issues with mobility.">
+				>
+				["at0005"] = <
+					text = <"I have no problems in walking about">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Self-care">
+					description = <"Issues with self-care.">
+				>
+				["at0007"] = <
+					text = <"Usual activities">
+					description = <"Issues with usual activities.">
+					comment = <"e.g. work, study, housework, family or leisure activities.">
+				>
+				["at0008"] = <
+					text = <"Pain/discomfort">
+					description = <"Issues of pain or discomfort.">
+				>
+				["at0009"] = <
+					text = <"Anxiety/depression">
+					description = <"Issue with anxiety or depression.">
+				>
+				["at0010"] = <
+					text = <"Overall health">
+					description = <"A self-assessment of overall health on a scale from 0 to 100">
+				>
+				["at0011"] = <
+					text = <"Health state">
+					description = <"A 5-digit code formed from the scores of each component, with 9 indicating a missing value
+
+*A unique health state is defined by combining
+one level from each of the five dimensions.
+A total of 3125 possible health states is defined
+in this way. Each state is referred to by a 5-digit
+code.">
+					comment = <"e.g. '21491'">
+				>
+				["at0012"] = <
+					text = <"I have slight problems in walking about">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"I have moderate problems in walking about">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"I have severe problems in walking about">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"I am unable to walk about">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"I have no problems washing or dressing myself">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"I have slight problems washing or dressing myself">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"I have moderate problems washing or dressing myself">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"I have severe problems washing or dressing myself">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"I am unable to wash or dress myself">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"I have no problems doing my usual activities">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"I have slight problems doing my usual activities">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"I have moderate problems doing my usual activities">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"I have severe problems doing my usual activities">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"I am unable to do my usual activities">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"I have no pain or discomfort">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"I have slight pain or discomfort">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"I have moderate pain or discomfort">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"I have severe pain or discomfort">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"I have extreme pain or discomfort">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"I am not anxious or depressed">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"I am slightly anxious or depressed">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"I am moderately anxious or depressed">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"I am severely anxious or depressed">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"I am extremely anxious or depressed">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0037"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"eq_5d_5l_ip">
+					description = <"*A standardized health-related quality of life instrument consisting of a five-dimension descriptive system and a visual analogue scale (VAS).
+It provides a structured method for recording an individual’s self-reported health status on the day of assessment. (en)">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"beliebiges Ereignis">
+					description = <"**(en)">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Beweglichkeit/ Mobilität">
+					description = <"Probleme mit der Mobilität">
+				>
+				["at0005"] = <
+					text = <"Ich habe keine Probleme herumzugehen">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Für sich selbst sorgen">
+					description = <"Probleme für sich selbst zu sorgen.">
+				>
+				["at0007"] = <
+					text = <"Alltägliche Tätigkeiten (z.B. Arbeit, Studium, Hausarbeit, Familie, Freizeit)">
+					description = <"Probleme mit alltäglichen Tätigkeiten.">
+					comment = <"z.B. Arbeit, Studium, Hausarbeit, Familie oder Freizeitaktivitäten.">
+				>
+				["at0008"] = <
+					text = <"Schmerzen oder körperliche Beschwerden">
+					description = <"Probleme mit Beschwerden / Schmwerzen.">
+				>
+				["at0009"] = <
+					text = <"Angst oder Niedergeschlagenheit">
+					description = <"Problem mit Angstzuständen oder Depressionen">
+				>
+				["at0010"] = <
+					text = <"Gesundheitsskala">
+					description = <"Eine Selbsteinschätzung des allgemeinen Gesundheitszustands auf einer Skala von 0 bis 100">
+				>
+				["at0011"] = <
+					text = <"*Health state (en)">
+					description = <"*A 5-digit code formed from the scores of each component, with 9 indicating a missing value
+
+*A unique health state is defined by combining
+one level from each of the five dimensions.
+A total of 3125 possible health states is defined
+in this way. Each state is referred to by a 5-digit
+code. (en)">
+					comment = <"z.B.. '21491'">
+				>
+				["at0012"] = <
+					text = <"Ich habe leichte Probleme herumzugehen">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Ich habe mäßige Probleme herumzugehen">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Ich habe große Probleme herumzugehen">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Ich bin nicht in der Lage herumzugehen">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"Ich habe große Probleme, mich selbst zu waschen oder anzuziehen">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"Ich habe keine Schmerzen oder Beschwerden">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"Ich habe leichte Schmerzen oder Beschwerden">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Ich habe mäßige Schmerzen oder Beschwerden">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Ich habe starke Schmerzen oder Beschwerden">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Ich habe extreme Schmerzen oder Beschwerden">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Ich bin nicht ängstlich oder deprimiert">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Ich bin ein wenig ängstlich oder deprimiert">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Ich bin mäßig ängstlich oder deprimiert">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"Ich bin sehr ängstlich oder deprimiert">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Ich bin extrem ängstlich oder deprimiert">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0037"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"eq_5d_5l_ip">
+					description = <"Et standardisert instrument for måling av helserelatert livskvalitet som består av et beskrivende system med fem dimensjoner og en visuell analog skala (VAS).
+Det gir en strukturert metode for å registrere en persons selvrapporterte helsetilstand på vurderingsdagen.
+">
+				>
+				["at0001"] = <
+					text = <"Eventserie">
+					description = <"@ intern @">
+				>
+				["at0002"] = <
+					text = <"Uspesifisert hendelse">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tre">
+					description = <"@ intern @">
+				>
+				["at0004"] = <
+					text = <"Gange">
+					description = <"Problemer med mobilitet.">
+				>
+				["at0005"] = <
+					text = <"Jeg har ingen problemer med å gå omkring">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Personlig stell">
+					description = <"Problemer med egenomsorg.">
+				>
+				["at0007"] = <
+					text = <"Vanlige gjøremål (f.eks. arbeid, studier, husarbeid, familie- eller fritidsaktiviteter)">
+					description = <"Problemer med vanlige aktiviteter.">
+					comment = <"f.eks arbeid, studier, husarbeid, familie- eller fritidsaktiviteter.">
+				>
+				["at0008"] = <
+					text = <"Smerter/ubehag">
+					description = <"Problemer med smerte eller ubehag.">
+				>
+				["at0009"] = <
+					text = <"Angest/depresjon">
+					description = <"Problem med angst eller depresjon.">
+				>
+				["at0010"] = <
+					text = <"Generell helse">
+					description = <"En egenvurdering av generell helse på en skala fra 0 til 100">
+				>
+				["at0011"] = <
+					text = <"Helse status">
+					description = <"En femsifret kode dannet av skårene for hver komponent, der 9 indikerer en manglende verdi.
+
+En unik helsetilstand defineres ved å kombinere
+ett nivå fra hver av de fem dimensjonene.
+Totalt 3125 mulige helsetilstander defineres
+på denne måten. Hver tilstand refereres til med
+en femsifret kode.">
+					comment = <"f.eks '21491'">
+				>
+				["at0012"] = <
+					text = <"Jeg har litt problemer med å gå omkring">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Jeg har middels store problemer med å gå omkring">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Jeg har store problemer med å gå omkring">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Jeg er ute av stand til å gå omkring">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Jeg har ingen problemer med å vaske meg eller kle meg">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Jeg har litt problemer med å vaske meg eller kle meg">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Jeg har middels store problemer med å vaske meg eller kle meg">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"Jeg har store problemer med å vaske meg eller kle meg">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Jeg er ute av stand til å vaske meg eller kle meg">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Jeg har ingen problemer med å utføre mine vanlige gjøremål">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Jeg har litt problemer med å utføre mine vanlige gjøremål">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Jeg har middels store problemer med å utføre mine vanlige gjøremål">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"Jeg har store problemer med å utføre mine vanlige gjøremå">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"Jeg er ute av stand til å utføre mine vanlige gjøremål">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"Jeg har verken smerter eller ubehag">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"Jeg har litt smerter eller ubehag">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Jeg har middels sterke smerter eller ubehag">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Jeg har sterke smerter eller ubehag">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Jeg har svært sterke smerter eller ubehag">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Jeg er verken engstelig eller deprimert">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Jeg er litt engstelig eller deprimert">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Jeg er middels engstelig eller deprimert">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"Jeg er svært engstelig eller deprimert">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Jeg er ekstremt engstelig eller deprimert">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0037"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
+	>
