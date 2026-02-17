@@ -1,0 +1,118 @@
+archetype (adl_version=1.4; uid=f16a51e6-744b-42e7-999c-5475e30dff55)
+	openEHR-EHR-CLUSTER.selvrapportert_smittsom_sykdom_eller_eksponering_hv.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2022-10-06">
+		["name"] = <"Marit Alice Venheim">
+		["organisation"] = <"Helse Vest IKT">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere spesifikk selvrapportert smittsom sykdom eller mulig eksponering for smittsom sykdom hos et individ som en del av egenerklæringsskjema.">
+			use = <"Brukes for å registrere spesifikk selvrapportert smittsom sykdom eller mulig eksponering for smittsom sykdom hos et individ som en del av egenerklæringsskjema.">
+			misuse = <"Brukes ikke for å angi smittestatus eller eksponeringsstatus. 
+Brukes ikke utenfor et egen- eller helseerklæringskjema.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"fd0a26b4740d44e7fc4230292ffe660b">
+		["build_uid"] = <"e7085c12-69d3-336d-aa9d-c3d650641b3f">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- selvrapportert_smittsom_sykdom_eller_eksponering_hv
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Har du arbeidet, fått tannbehandling eller behandling ved sykehus utenfor Norden i løpet av de siste 12 måneder?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Ja
+							at0003]    -- Nei
+						}
+					}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Informasjon
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Har du en smittsom sykdom?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0005,    -- Ja
+							at0006]    -- Nei
+						}
+					}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Vennligst spesifiser
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"selvrapportert_smittsom_sykdom_eller_eksponering_hv">
+					description = <"Spesifikk selvrapportert smittsom sykdom eller mulig eksponering for smittsom sykdom hos et individ som en del av egenerklæringsskjema.">
+				>
+				["at0001"] = <
+					text = <"Har du arbeidet, fått tannbehandling eller behandling ved sykehus utenfor Norden i løpet av de siste 12 måneder?">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Har du en smittsom sykdom?">
+					description = <"For eksempel HIV, tuberkolose, heptatitt eller annet.">
+				>
+				["at0005"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Informasjon">
+					description = <"">
+					comment = <"Info tekst: 
+Ta kontakt med din fastlege så snart som mulig. Du vil da få hjelp til å ta nødvendige prøver og få nødvendig informasjon. Prøvene skal helst være tatt før innleggelse, for å forebygge at multiresistente bakterier blir en del av bakteriefloraen ved sykehuset.">
+				>
+				["at0008"] = <
+					text = <"Vennligst spesifiser">
+					description = <"For eksempel HIV, Hepatitt C, Tuberkulose, MRSA, ESBL, VRE.">
+				>
+			>
+		>
+	>
