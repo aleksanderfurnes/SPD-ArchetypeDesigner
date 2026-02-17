@@ -1,0 +1,85 @@
+archetype (adl_version=1.4; uid=034858d0-233f-4d1b-842f-ddcb304a7140)
+	openEHR-EHR-CLUSTER.fylle_ut_pa_vegne_av_helsenorge_hv.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["nn"] = <
+			language = <[ISO_639-1::nn]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2022-03-07">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nn"] = <
+			language = <[ISO_639-1::nn]>
+			copyright = <"© openEHR Foundation">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d39122a18c365e62fd6ac9b7a6aac990">
+		["build_uid"] = <"84e8b53e-5f18-3090-8547-ac15ea646da6">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- fylle_ut_pa_vegne_av_helsenorge_hv
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Om det er på vegne av eller ei. True er på vegne av
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+				null_flavour matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::271]
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"fylle_ut_pa_vegne_av_helsenorge_hv">
+					description = <"Fylle ut pa vegne av Helsenorge">
+				>
+				["at0003"] = <
+					text = <"Om det er på vegne av eller ei. True er på vegne av">
+					description = <"http://ehelse.no/fhir/StructureDefinition/sdf-fhirpath">
+				>
+			>
+		>
+		["nn"] = <
+			items = <
+				["at0000"] = <
+					text = <"fylle_ut_pa_vegne_av_helsenorge_hv">
+					description = <"*Fylle ut pa vegne av Helsenorge (nb)">
+				>
+				["at0003"] = <
+					text = <"*Om det er på vegne av eller ei. True er på vegne av (nb)">
+					description = <"*http://ehelse.no/fhir/StructureDefinition/sdf-fhirpath (nb)">
+				>
+			>
+		>
+	>
