@@ -1,0 +1,178 @@
+archetype (adl_version=1.4; uid=f35b92e2-a1ba-4efb-ab46-b96e15f265fc)
+	openEHR-EHR-CLUSTER.ivf_egenrapport_hv.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2024-03-06">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere data som inngår i egenerklæring ved IVF behandling.">
+			copyright = <"© openEHR Foundation">
+			use = <"Brukes for å registrere data som inngår i egenerklæring ved IVF behandling.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"6a4c03a057616ab50ae88c4a4474e10d">
+		["build_uid"] = <"fc427faf-67f3-3666-9fe7-249aa6aef96f">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- IVF egenrapport hv
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Wanted children since
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Do you have regular intercourse?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0003,    -- Yes
+							at0004]    -- No
+						}
+					}
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- 2 times or more per week
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Scheduled around ovulation time
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Have you made any previous partners pregnant?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0009,    -- Yes
+							at0010]    -- No
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"IVF egenrapport hv">
+					description = <"IVF egenrapport hv">
+				>
+				["at0001"] = <
+					text = <"Wanted children since">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Do you have regular intercourse?">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"2 times or more per week">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Scheduled around ovulation time">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Have you made any previous partners pregnant?">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"No">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"IVF egenrapport hv">
+					description = <"Selvrapportert data som inngår i egenerklæring ved IVF behandling.">
+				>
+				["at0001"] = <
+					text = <"Barneønske siden">
+					description = <"">
+					comment = <"Årstall">
+				>
+				["at0002"] = <
+					text = <"Har dere regelmessig samleie">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"2 ganger eller oftere per uke">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Planlagt rundt eggløsningstidspunkt">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Har du gjort noen tidligere partnere gravide?">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Nei">
+					description = <"">
+				>
+			>
+		>
+	>
