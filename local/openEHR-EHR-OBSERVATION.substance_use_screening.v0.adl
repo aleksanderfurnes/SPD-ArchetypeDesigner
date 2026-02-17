@@ -1,0 +1,787 @@
+archetype (adl_version=1.4; uid=4be680cc-74f0-4073-98ef-9bba973d5381)
+	openEHR-EHR-OBSERVATION.substance_use_screening.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+				["name"] = <"Kim Sommer, Natalia Strauch, Alina Rehberg">
+				["organisation"] = <"Medizinische Hochschule Hannover">
+				["email"] = <"sommer.kimkatrin@mh-hannover.de, Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de">
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Silje Ljosland Bakke, Marit Alice Venheim, John Tore Valand, Liv Laugen, Vebjørn Arntzen">
+				["organisation"] = <"Helse Vest IKT AS, Helse Bergen, ​Oslo University Hospital, Norway, Oslo universitetssykehus">
+				["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no, marit.alice.venheim@helse-vest-ikt.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, liv.laugen@ous-hf.no, varntzen@ous-hf.no">
+			>
+		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			author = <
+				["name"] = <"Martijn van Eenennaam">
+				["organisation"] = <"Nedap Healthcare">
+				["email"] = <"martijn.vaneenennaam@nedap.com">
+			>
+			accreditation = <"PhD">
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2018-11-07">
+		["name"] = <"Silje Ljosland Bakke">
+		["organisation"] = <"Nasjonal IKT HF">
+		["email"] = <"silje.ljosland.bakke@nasjonalikt.no">
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <"Nuno Abreu, Oporto Hospital Center, Portugal","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Ivar Berge, Oslo University Hospital, Norway (openEHR Editor)","SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India","Tara Bonet Chinillach, Catalan Health Service, Spain","Hanne Marte Bårholm, Helse Vest IKT, Norway (openEHR Editor)","Clara Calleja Vega, CatSalut. Servei Català de la Salut., Spain","giovanni delussu, crs4, Italy","Manuela Domingo, hospital general universitario dr. balmis, Spain","Grant Forrest, Lunaria Ltd, United Kingdom","Santiago Frid, Hospital Clínic de Barcelona, Spain","Rosane Gotardo, Systema Ltda., Brazil","Mikkel Johan Gaup Grønmo, Helse Nord IKT, Norway (openEHR Editor)","Evelyn Hovenga, EJSH Consulting, Australia","Mika Kiviaho, Tietoevry, Finland","June Marie Nepstad Knappskog, Helse Nord IKT AS, Norway (openEHR Editor), Norway (openEHR Editor)","Martin Koch, Servei Català de la Salut, Spain","Bouwe Koopal, ADkwADraat B.V., Netherlands","Ronald Krawec, Alberta Health Services, Canada","Anjali Kulkarni, Karkinos, India","Kanika Kuwelker, Helse Vest IKT, Norway (openEHR Editor)","Jörgen Kuylenstierna, eWeave AB, Sweden","michel laji!, Karolinska Institutet, Sweden","Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)","Darin Leonhardt, PLRI für medizinische Informatik/ Medizinische Hochschule, Germany","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Rikard Lovstrom, Swedish Medical Association, Sweden","Michael Lutz, BITsoft, Germany","Priscila Maranhão, MEDCIDS-FMUP, Portugal","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom","Paul Miller, NES Digital Service, NHS Scotland, United Kingdom","Laura Moral Lopez, Sistema de Salut de Catalunya, Spain","Mikael Nyström, Cambio Healthcare Systems AB, Sweden","Ana Pascual Segura, Catsalut, Spain","Xavier Pastor, Hospital Clínic - University of Barcelona, Spain","Marlene Pérez Colman, Digital Health and Care Wales, United Kingdom","Terje Sagmyr, Helse Vest IKT, Norway (openEHR Editor)","Norwegian Review Summary, Norwegian Public Hospitals, Norway","John Tore Valand, Helse Vest IKT, Norway (openEHR Editor)","Marit Alice Venheim, Helse Vest IKT, Norway (openEHR Editor)">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			purpose = <"*To create a framework for recording answers to pre-defined screening questions about use of legal or illegal substances, as well as harmful or hazardous use of medications. (en)">
+			keywords = <"*substance, screening, questionnaire, drug, addiction, abuse, misuse, addiction, dependence, doping, stimulants (en)", ...>
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF, openEHR Foundation, openEHR Foundation">
+			use = <"*Use create a framework for recording answers to pre-defined screening questions about use of legal or illegal substances, as well as harmful or hazardous use of medications.
+The scope of this archetype includes:
+- use of legal and illegal substances; and 
+- consumption of a prescribed medication beyond its intended scope or expected use
+
+Common use cases include, but are not limited to:
+- Systematic questioning in any consultation, for example:
+--- Have you smoked a cigarette during the last week? Yes, No, Unknown
+--- When did you last smoke a cigarette? 
+--- Have you ever injected drugs? Yes, No, Unknown.
+--- Do you use anabolic steroids? Yes, No, Unknown.
+--- Have you consumed any alcohol during the last 4 hours? Yes, No, Unknown.
+
+The semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN data types choice to match each specific use case.
+
+The EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a substance that has been used at any time in the past and information about a substance used within a specified time interval - for example the difference between \"Do you drink alcohol?\" compared to \"Have you been drinking any alcohol during the last four weeks?\". 
+
+The source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.
+
+This archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a substance, it is recommended that clinical system record and persist the specific details about the substance using a relevant archetype, for example the EVALUATION.alcohol_consumption_summary, EVALUATION.tobacco_smoking_summary, EVALUATION.substance_use_summary, or EVALUATION.health_risk archetypes. (en)">
+			misuse = <"*Not to be used to record the typical frequency or amount of use of any substance. Use the EVALUATION.substance_use_summary or an appropriate substance-specific summary archetype.
+
+Not to be used for recording a summary of use of a substance over the lifetime of the individual - use EVALUATION.substance_use_summary for this purpose.
+
+Not to be used for recording a summary of use of tobacco over the lifetime of the individual - use EVALUATION.smokeless_tobacco_summary or EVALUATION.tobacco_smoking_summary for this purpose.
+
+Not to be used for recording a summary of use of alcohol over the lifetime of the individual - use EVALUATION.alcohol_consumption_summary for this purpose.
+
+Not to be used to record event-or period-based information about the use of a substance, outside of a screening context - use a relevant OBSERVATION.archetype for this purpose.
+
+Not to be used for recording information about the use of a medication, outside of a screening context - use a relevant medication archetype for this purpose. (en)">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruk av lovlige eller ulovlige substanser/stoffer, samt skadelig eller farlig bruk av medisiner.">
+			keywords = <"intervjuskjema, kartleggingsskjema, screening, spørreskjema, spørreundersøkelse, dop, rusmiddel, substans, stoff, narkotika, avhengighet, misbruk, stimulantia, doping, rusavhengighet", ...>
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF, openEHR Foundation, openEHR Foundation">
+			use = <"Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruk av lovlige eller ulovlige substanser/stoffer, samt skadelig eller farlig bruk av medisiner.
+
+Vanlige bruksområder inkluderer, men er ikke begrenset til:
+- Systematiske spørsmål ved konsultasjoner, for eksempel:
+--- Har du røykt i den siste uken? Ja, Nei, Usikker.
+--- Har du røkt i løpet av den siste uken? Ja, Nei, Ukjent.
+--- Når røkte du sist?
+--- Har du noen gang injisert narkotika? Ja, Nei, Ukjent.
+--- Bruker du anabole steroider? Ja, Nei, Ukjent.
+--- Har du konsumert alkohol i løpet av de siste 4 timene? Ja, Nei, Ukjent.
+
+Semantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det spesifikke spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.
+
+EVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.
+Bruk egne instanser av denne arketypen for å skille mellom spørsmål om bruk av substanser på et hvilket som helst tidspunkt eller i et tidsintervall. For eksempel; \"Drikker du alkohol?\" sammenlignet med \"Har du drukket alkohol de siste fire ukene?\"
+
+Kilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.
+
+Denne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i spørreskjemaet identifiseres at bruken av en substans er tilstede, anbefales det at spesifikke detaljer om substansen registreres og lagres i pasientjournalen i en relevant arketype, for eksempel i arketypene EVALUATION.alcohol_consumption_summary (Alkoholanamnese), EVALUATION.tobacco_smoking_summary (Røykeanamnese), EVALUATION.substance_use_summary (Substansbrukanamnese) eller EVALUATION.health_risk archetypes (Helserisiko).">
+			misuse = <"Brukes ikke til å registrere typisk brukermønster eller mengde av en bestemt substans/stoff, bruk arketypen EVALUATION.substance_use_summary (Substansbrukanamnese) til dette formålet.
+	
+Brukes ikke for å registrere et sammendrag av bruken av en substans over et individs livstid, bruk arketypen EVALUATION.substance_use_summary (Substansbrukanamnese) til dette formålet.
+
+Brukes ikke for å registrere et sammendrag av bruken av tobakk over et individs livstid, bruk arketypen EVALUATION.smokeless_tobacco_summary (Røykfri tobakksanamnese) eller EVALUATION.tobacco_smoking_summary (Røykeanamnese) til dette formålet.
+
+Brukes ikke for å registrere et sammendrag av bruken av alkohol over et individs livstid, bruk arketypen EVALUATION.alcohol_consumption_summary (Alkoholanamnese) til dette formålet.
+
+Brukes ikke for å registrere hendelses- eller periodebasert informasjon om bruken av en substans utenfor konteksten av kartleggingen, bruke en relevant OBSERVATION-arketype til dette formålet.
+
+Brukes ikke for å registrere informasjon om bruken av medikamenter utenfor konteksten av kartleggingen, bruk relevante medikasjons-arketyper til dette formålet.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To create a framework for recording answers to pre-defined screening questions about use of legal or illegal substances, as well as harmful or hazardous use of medications.">
+			keywords = <"substance, screening, questionnaire, drug, addiction, abuse, misuse, addiction, dependence, doping, stimulants", ...>
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
+			use = <"Use create a framework for recording answers to pre-defined screening questions about use of legal or illegal substances, as well as harmful or hazardous use of medications.
+The scope of this archetype includes:
+- use of legal and illegal substances; and 
+- consumption of a prescribed medication beyond its intended scope or expected use
+
+Common use cases include, but are not limited to:
+- Systematic questioning in any consultation, for example:
+--- Have you smoked a cigarette during the last week? Yes, No, Unknown
+--- When did you last smoke a cigarette? 
+--- Have you ever injected drugs? Yes, No, Unknown.
+--- Do you use anabolic steroids? Yes, No, Unknown.
+--- Have you consumed any alcohol during the last 4 hours? Yes, No, Unknown.
+
+The semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN data types choice to match each specific use case.
+
+The EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a substance that has been used at any time in the past and information about a substance used within a specified time interval - for example the difference between \"Do you drink alcohol?\" compared to \"Have you been drinking any alcohol during the last four weeks?\". 
+
+The source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.
+
+This archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a substance, it is recommended that clinical system record and persist the specific details about the substance using a relevant archetype, for example the EVALUATION.alcohol_consumption_summary, EVALUATION.tobacco_smoking_summary, EVALUATION.substance_use_summary, or EVALUATION.health_risk archetypes.">
+			misuse = <"Not to be used to record the typical frequency or amount of use of any substance. Use the EVALUATION.substance_use_summary or an appropriate substance-specific summary archetype.
+
+Not to be used for recording a summary of use of a substance over the lifetime of the individual - use EVALUATION.substance_use_summary for this purpose.
+
+Not to be used for recording a summary of use of tobacco over the lifetime of the individual - use EVALUATION.smokeless_tobacco_summary or EVALUATION.tobacco_smoking_summary for this purpose.
+
+Not to be used for recording a summary of use of alcohol over the lifetime of the individual - use EVALUATION.alcohol_consumption_summary for this purpose.
+
+Not to be used to record event-or period-based information about the use of a substance, outside of a screening context - use a relevant OBSERVATION.archetype for this purpose.
+
+Not to be used for recording information about the use of a medication, outside of a screening context - use a relevant medication archetype for this purpose.">
+		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			purpose = <"*To create a framework for recording answers to pre-defined screening questions about use of legal or illegal substances, as well as harmful or hazardous use of medications. (en)">
+			keywords = <"*substance, screening, questionnaire, drug, addiction, abuse, misuse, addiction, dependence, doping, stimulants (en)", ...>
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF, openEHR Foundation, openEHR Foundation">
+			use = <"*Use create a framework for recording answers to pre-defined screening questions about use of legal or illegal substances, as well as harmful or hazardous use of medications.
+The scope of this archetype includes:
+- use of legal and illegal substances; and 
+- consumption of a prescribed medication beyond its intended scope or expected use
+
+Common use cases include, but are not limited to:
+- Systematic questioning in any consultation, for example:
+--- Have you smoked a cigarette during the last week? Yes, No, Unknown
+--- When did you last smoke a cigarette? 
+--- Have you ever injected drugs? Yes, No, Unknown.
+--- Do you use anabolic steroids? Yes, No, Unknown.
+--- Have you consumed any alcohol during the last 4 hours? Yes, No, Unknown.
+
+The semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN data types choice to match each specific use case.
+
+The EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a substance that has been used at any time in the past and information about a substance used within a specified time interval - for example the difference between \"Do you drink alcohol?\" compared to \"Have you been drinking any alcohol during the last four weeks?\". 
+
+The source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.
+
+This archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a substance, it is recommended that clinical system record and persist the specific details about the substance using a relevant archetype, for example the EVALUATION.alcohol_consumption_summary, EVALUATION.tobacco_smoking_summary, EVALUATION.substance_use_summary, or EVALUATION.health_risk archetypes. (en)">
+			misuse = <"*Not to be used to record the typical frequency or amount of use of any substance. Use the EVALUATION.substance_use_summary or an appropriate substance-specific summary archetype.
+
+Not to be used for recording a summary of use of a substance over the lifetime of the individual - use EVALUATION.substance_use_summary for this purpose.
+
+Not to be used for recording a summary of use of tobacco over the lifetime of the individual - use EVALUATION.smokeless_tobacco_summary or EVALUATION.tobacco_smoking_summary for this purpose.
+
+Not to be used for recording a summary of use of alcohol over the lifetime of the individual - use EVALUATION.alcohol_consumption_summary for this purpose.
+
+Not to be used to record event-or period-based information about the use of a substance, outside of a screening context - use a relevant OBSERVATION.archetype for this purpose.
+
+Not to be used for recording information about the use of a medication, outside of a screening context - use a relevant medication archetype for this purpose. (en)">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"184EA60198D0254E66C38D03E24044C9">
+		["build_uid"] = <"758aeec7-7f97-46a0-b27f-85ecc46bb5e0">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Substance use screening questionnaire
+		data matches {
+			HISTORY[at0022] matches {    -- Event Series
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0023] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0001] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0040] occurrences matches {0..1} matches {    -- Screening purpose
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0052] occurrences matches {0..1} matches {    -- Substance use?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0053,    -- Yes
+													at0054,    -- No
+													at0055]    -- Unknown
+												}
+											}
+											DV_TEXT matches {*}
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0042] occurrences matches {0..1} matches {    -- Description
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									CLUSTER[at0026] occurrences matches {0..*} matches {    -- Specific substance
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0021] matches {    -- Substance name
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0024] occurrences matches {0..1} matches {    -- Used?
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0036,    -- Yes
+															at0037,    -- No
+															at0039]    -- Unknown
+														}
+													}
+													DV_TEXT matches {*}
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0003] occurrences matches {0..1} matches {    -- Last used
+												value matches {
+													DV_DATE_TIME matches {*}
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0002] occurrences matches {0..*} matches {    -- Timing
+												value matches {
+													DV_DATE_TIME matches {*}
+													DV_DURATION matches {*}
+													DV_INTERVAL<DV_DATE_TIME> matches {*}
+													DV_INTERVAL<DV_DURATION> matches {*}
+													DV_TEXT matches {*}
+												}
+											}
+											allow_archetype CLUSTER[at0041] occurrences matches {0..*} matches {    -- Additional details
+												include
+													archetype_id/value matches {/.*/}
+											}
+											ELEMENT[at0025] occurrences matches {0..1} matches {    -- Comment
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+									allow_archetype CLUSTER[at0043] occurrences matches {0..*} matches {    -- Additional details
+										include
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0056] occurrences matches {0..1} matches {    -- Overall comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0005] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0019] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Substance use screening questionnaire">
+					description = <"Series of questions and associated answers used to screen for the harmful or hazardous use of medications, and other legal or illegal substances.">
+					comment = <"Includes substance dependence and abuse, addiction and doping. Examples of substances include, but are not limited to, alcohol, tobacco, amphetamines, barbiturates, benzodiazepines, cannabis, cocaine, hallucinogens, opioids, anabolic steroids, erythropoietin, or sniffing glue.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Timing">
+					description = <"Indication of timing related to the use of the substance or grouping of substances.">
+					comment = <"The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the use of the substance or grouping of substances occurred. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the age of the individual at the time of the use of the substance or grouping of substances; or the duration of time since the use occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year.">
+				>
+				["at0003"] = <
+					text = <"Last used">
+					description = <"The date and/or time of the most recent use of the substance or group of substances.">
+					comment = <"Can be a partial date, for example, only a year.">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0019"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0021"] = <
+					text = <"Substance name">
+					description = <"Name of substance or grouping of substances.">
+					comment = <"Coding of the 'Substance name' with a terminology is preferred, where possible.
+
+For example: For example: 'tobacco'; 'cigarette'; 'alcohol'; 'performance enhancing drugs'; 'heroin'; 'cannabinoids'; 'opiates' or 'CNS stimulants'.
+">
+				>
+				["at0022"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0023"] = <
+					text = <"Any event">
+					description = <"Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.">
+				>
+				["at0024"] = <
+					text = <"Used?">
+					description = <"Is there a history of use of a specific substance or group of substances.">
+					comment = <"In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. For example an alternative valueset using the DV_TEXT datatype can be: Currently using [The individual currently uses the specific substance either on a regular basis or as required.] Never used [The individual has never used the specific substance.] Used in the past [The individual has used the specific substance in the past, but isn't currently using it.] Unknown [It is not known whether the individual uses or has used the specific substance.]">
+				>
+				["at0025"] = <
+					text = <"Comment">
+					description = <"Additional narrative about use of the specific substance or grouping of substances, not captured in other fields.">
+				>
+				["at0026"] = <
+					text = <"Specific substance">
+					description = <"Details about a specified substance or grouping of substances relevant for the screening purpose.">
+					comment = <"Use separate instances of this CLUSTER to differentiate between specific substances or groupings of substance.">
+				>
+				["at0036"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Unknown">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Screening purpose">
+					description = <"The context or reason for screening.">
+					comment = <"This data element is intended to provide collection context for the question/answer groups when queried at a later date. It is not expected that this data element will be exposed to the individual, but only stored in data. For example: pre-admission screening or the name of the actual questionnaire.">
+				>
+				["at0041"] = <
+					text = <"Additional details">
+					description = <"Structured details or questions about the specific substance or grouping of substances.">
+				>
+				["at0042"] = <
+					text = <"Description">
+					description = <"Narrative description about the history of use of any substance relevant for the screening purpose.">
+				>
+				["at0043"] = <
+					text = <"Additional details">
+					description = <"Structured details or questions about the screening for substance or grouping of substances.">
+				>
+				["at0052"] = <
+					text = <"Substance use?">
+					description = <"Is there a history of use of any substance other than alcohol or tobacco, related to the screening purpose?">
+					comment = <"For specific screening questions about use of tobacco smoking, smokeless tobacco, or alcohol, use the 'Specific substance' cluster.
+
+In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.">
+				>
+				["at0053"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Unknown">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Overall comment">
+					description = <"Additional narrative about the questionnaire, not captured in other fields.">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Kartleggingsspørsmål om bruk av substanser">
+					description = <"Spørsmål og tilhørende svar som brukes til å kartlegge skadelig eller farlig bruk av legemidler og andre lovlige og ulovlige substanser/stoffer.">
+					comment = <"Inkluderer avhengighet og misbruk av substans-/stoffer og doping. Eksempler på stoffer inkluderer, men er ikke begrenset til, alkohol, tobakk, amfetaminer, barbiturater, benzodiazepiner, cannabis, kokain, hallusinogener, opioider, anabole steroider, erythropoietin eller limsniffing.
+
+">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Tidsangivelse">
+					description = <"Tidsangivelse for bruken av substansen/stoffet eller gruppen av substanser/stoff.">
+					comment = <"Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for bruken av en substans i et spørreskjema. Den spesifikke og tiltenkte semantikken defineres i et templat. For eksempel: den faktiske datoen og/eller tidspunktet; alderen til individet på tidspunktet for bruk av substanset eller gruppen av substanser; eller tidsvarigheten siden bruken fant sted. Dette kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME.">
+				>
+				["at0003"] = <
+					text = <"Sist brukt">
+					description = <"Datoen og/eller tidspunktet for siste bruk av substansen/stoffet eller gruppen av substanser/stoff.">
+					comment = <"Kan være en deldato, for eksempel kun årstall.">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0019"] = <
+					text = <"Ytterligere informasjon">
+					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
+					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR.">
+				>
+				["at0021"] = <
+					text = <"Substansnavn">
+					description = <"Navnet på substansen/stoffet eller gruppen av substanser/stoffer.">
+					comment = <"Koding av \"Substansnavn\" med en terminologi foretrekkes der det er mulig.
+
+For eksempel: \"tobakk\"; \"sigaretter\"; \"alkohol\"; \"prestasjonsfremmende medikamenter\"; \"heroin\"; \"cannabinoider\"; \"opiater\" eller \"CNS-stimulerende midler\".">
+				>
+				["at0022"] = <
+					text = <"*HISTORY (en)">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Uspesifisert hendelse">
+					description = <"Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon.">
+				>
+				["at0024"] = <
+					text = <"Brukt?">
+					description = <"Er den spesifikke substansen/stoffet eller gruppen av substanser/stoffer noen gang brukt?">
+					comment = <"Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN. Eksempel på et alternativt verdisett ved å benytte datatypen DV_TEXT kan være: Nåværende bruk [Individet bruker for tiden den spesifikke substansen enten fast eller ved behov.], Aldri brukt [Individet har aldri brukt den spesifikke substansen.], Tidligere bruk [Individet har tidligere brukt den spesifikke substansen, men bruker den for tiden ikke.], Usikker [Det er ikke kjent hvorvidt individet bruker eller har brukt den spesifikke substansen].">
+				>
+				["at0025"] = <
+					text = <"Kommentar">
+					description = <"Ytterligere fritekst om den spesifikke substansen/stoffet eller grupper av substanser/stoffer som ikke er fanget opp av andre felt.">
+				>
+				["at0026"] = <
+					text = <"Spesifikk substans">
+					description = <"Detaljer om en spesifikk substans/stoff eller gruppe av substanser/stoffer som er innenfor kartleggingsformålet.">
+					comment = <"Bruk separate instanser av dette clusteret for å skille mellom spesifikke substanser/stoffer eller grupper av substanser/stoffer.">
+				>
+				["at0036"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Usikker">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Kartleggingsformål">
+					description = <"Konteksten eller årsaken for kartleggingen.">
+					comment = <"Dette dataelementet er ment for å sette en kontekst for spørsmålene om man senere ønsker å gjøre spørringer på dataene. Det er ikke forventet at dette dataelementet skal være synlig for en bruker av skjemaet, men kun tilgjengelig i de lagrede dataene. For eksempel: \"Preoperativ screening\" eller navnet på det faktiske spørreskjemaet.">
+				>
+				["at0041"] = <
+					text = <"Ytterligere detaljer">
+					description = <"Strukturerte detaljer eller spørsmål om bruken av den spesifikke substansen/stoffet eller gruppen av substanser/stoff.">
+				>
+				["at0042"] = <
+					text = <"Beskrivelse">
+					description = <"Fritekstbeskrivelse om bruken av enhver substans/stoff som er innenfor kartleggingsformålet.">
+				>
+				["at0043"] = <
+					text = <"Ytterligere detaljer">
+					description = <"Strukturerte detaljer eller spørsmål om kartleggingen av substansen/stoffet eller gruppe av substanser/stoffer.">
+				>
+				["at0052"] = <
+					text = <"Substans/stoff bruk?">
+					description = <"Finnes det noen historikk på substans/stoff-bruk, andre enn alkohol eller tobakk, som er innenfor kartleggingsformålet?">
+					comment = <"For spesifikke kartleggingsspørsmål om tobakk, røykfri tobakk eller alkohol, bruk det \"Spesifikk substans\" - clusteret. 
+
+Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.">
+				>
+				["at0053"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Usikker">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Overordnet kommentar">
+					description = <"Ytterligere detaljer om kartleggingen som ikke er fanget opp i andre felt.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"Fragebogen zum Substanzkonsum-Screening">
+					description = <"*Series of questions and associated answers used to screen for the harmful or hazardous use of medications, and other legal or illegal substances. (en)">
+					comment = <"*Includes substance dependence and abuse, addiction and doping. Examples of substances include, but are not limited to, alcohol, tobacco, amphetamines, barbiturates, benzodiazepines, cannabis, cocaine, hallucinogens, opioids, anabolic steroids, erythropoietin, or sniffing glue. (en)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Zeitangaben">
+					description = <"*Indication of timing related to the use of the substance or grouping of substances. (en)">
+					comment = <"*The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the use of the substance or grouping of substances occurred. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the age of the individual at the time of the use of the substance or grouping of substances; or the duration of time since the use occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)">
+				>
+				["at0003"] = <
+					text = <"*Last used (en)">
+					description = <"*The date and/or time of the most recent use of the substance or group of substances. (en)">
+					comment = <"Kann ein Teildatum sein, zum Beispiel nur die Jahresangabe.">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0019"] = <
+					text = <"Erweiterung">
+					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
+					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen.">
+				>
+				["at0021"] = <
+					text = <"Name der Substanz">
+					description = <"Name der Substanz oder Substanzgruppe.">
+					comment = <"*Coding of the 'Substance name' with a terminology is preferred, where possible.
+
+For example: For example: 'tobacco'; 'cigarette'; 'alcohol'; 'performance enhancing drugs'; 'heroin'; 'cannabinoids'; 'opiates' or 'CNS stimulants'.
+ (en)">
+				>
+				["at0022"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0023"] = <
+					text = <"Beliebiges Ereignis">
+					description = <"Standardwert, ein undefinierter/s Zeitpunkt oder Intervallereignis, das explizit im Template oder zur Laufzeit der Anwendung definiert werden kann.">
+				>
+				["at0024"] = <
+					text = <"*Used? (en)">
+					description = <"Gibt es eine Geschichte des Konsums einer bestimmten Substanz oder Substanzgruppe?">
+					comment = <"Im Template würde das Datenelement in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choce-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen. Ein alternativer Wertesatz, der den Datentyp DV_TEXT verwendet, kann zum Beispiel sein: Aktueller Gebrauch[Die Person wendet derzeit die bestimmte Substanz entweder regelmäßig oder nach Bedarf an.] Nie gebraucht [Die Person hat die bestimmte Substanz nie angewendet.] In der Vergangenheit angewendet [Die Person hat die spezifische Substanz in der Vergangenheit konsumiert, nimmt sie aber derzeit nicht.] Unbekannt [Es ist nicht bekannt, ob die Person die spezifische Substanz konsumiert oder konsumiert hat.]">
+				>
+				["at0025"] = <
+					text = <"Kommentar">
+					description = <"*Additional narrative about use of the specific substance, not captured in other fields. (en)">
+				>
+				["at0026"] = <
+					text = <"Spezifische Substanz">
+					description = <"Details zu einer spezifischen Substanz oder Substanzgruppe, die für Screening-Zwecke relevant sind.">
+					comment = <"Verwenden Sie separate Instanzen dieses CLUSTERs, um zwischen bestimmten Substanzen oder Substanzgruppen zu unterscheiden.">
+				>
+				["at0036"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Nein">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Unbekannt">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Zweck des Screenings">
+					description = <"Der Kontext oder Grund für das Screening.">
+					comment = <"Dieses Datenelement soll bei einer späteren Abfrage den Erhebungskontext für die Frage/Antwort-Gruppen bereitstellen. Es wird nicht erwartet, dass dieses Datenelement der Person ausgegeben wird, sondern nur in Daten gespeichert wird. Zum Beispiel: Screening vor der Aufnahme oder der Name des eigentlichen Fragebogens.">
+				>
+				["at0041"] = <
+					text = <"Zusätzliche Angaben">
+					description = <"Strukturierte Angaben oder Fragen zur konkreten Substanz oder Substanzgruppe.">
+				>
+				["at0042"] = <
+					text = <"Beschreibung">
+					description = <"Beschreibung der Geschichte des Konsums einer Substanz, die für Screening-Zwecke relevant ist.">
+				>
+				["at0043"] = <
+					text = <"Zusätzliche Angaben">
+					description = <"Strukturierte Angaben oder Fragen zum Screening von Substanzen oder Substanzgruppen.">
+				>
+				["at0052"] = <
+					text = <"*Substance use? (en)">
+					description = <"*Is there a history of use of any substance other than alcohol or tobacco, related to the screening purpose? (en)">
+					comment = <"*For specific screening questions about use of tobacco smoking, smokeless tobacco, or alcohol, use the 'Specific substance' cluster.
+
+In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)">
+				>
+				["at0053"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Unbekannt">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Overall comment (en)">
+					description = <"*Additional narrative about the questionnaire, not captured in other fields. (en)">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Substance use screening questionnaire (en)">
+					description = <"*Series of questions and associated answers used to screen for the harmful or hazardous use of medications, and other legal or illegal substances. (en)">
+					comment = <"*Includes substance dependence and abuse, addiction and doping. Examples of substances include, but are not limited to, alcohol, tobacco, amphetamines, barbiturates, benzodiazepines, cannabis, cocaine, hallucinogens, opioids, anabolic steroids, erythropoietin, or sniffing glue. (en)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Timing (en)">
+					description = <"*Indication of timing related to the use of the substance or grouping of substances. (en)">
+					comment = <"*The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the use of the substance or grouping of substances occurred. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the age of the individual at the time of the use of the substance or grouping of substances; or the duration of time since the use occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)">
+				>
+				["at0003"] = <
+					text = <"*Last used (en)">
+					description = <"*The date and/or time of the most recent use of the substance or group of substances. (en)">
+					comment = <"*Can be a partial date, for example, only a year. (en)">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0019"] = <
+					text = <"Uitbreiding">
+					description = <"Aanvullende informatie vereist voor uitbreiding van het model met lokale context of om aan te sluiten bij andere referentiemodellen of formalismen.">
+					comment = <"Bijvoorbeeld: lokale informatie vereisten; of aanvullende metadata om aan te sluiten bij FHIR.">
+				>
+				["at0021"] = <
+					text = <"Medicatie naam">
+					description = <"*Name of substance or grouping of substance. (en)">
+					comment = <"*Coding of the 'Substance name' with a terminology is preferred, where possible.
+
+For example: For example: 'tobacco'; 'cigarette'; 'alcohol'; 'performance enhancing drugs'; 'heroin'; 'cannabinoids'; 'opiates' or 'CNS stimulants'.
+ (en)">
+				>
+				["at0022"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0023"] = <
+					text = <"Willekeurig event">
+					description = <"Standaard, niet nader gedefiniëerd moment in tijd of tijdsinterval dat expliciet gedefiniëerd kan worden in een template of tijdens run-time.">
+				>
+				["at0024"] = <
+					text = <"*Used? (en)">
+					description = <"*Is there a history of use of a specific substance or group of substances. (en)">
+					comment = <"*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. For example an alternative valueset using the DV_TEXT datatype can be: Currently using [The individual currently uses the specific medication either on a regular basis or as required.] Never used [The individual has never used the specific substance.] Used in the past [The individual has used the specific substance in the past, but isn't currently using it.] Unknown [It is not known whether the individual uses or has used the specific substance.] (en)">
+				>
+				["at0025"] = <
+					text = <"Commentaar">
+					description = <"*Additional narrative about use of the specific substance, not captured in other fields. (en)">
+				>
+				["at0026"] = <
+					text = <"*Specific substance (en)">
+					description = <"*Details about a specified substance or grouping of substances relevant for the screening purpose. (en)">
+					comment = <"*Use separate instances of this CLUSTER to differentiate between specific substances or groupings of substance. (en)">
+				>
+				["at0036"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Onbekend">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Doel van screening">
+					description = <"De reden voor het uitvoeren van de screening.">
+					comment = <"Bijvoorbeeld: screening voor gebruik van een klasse medicatie in het verleden, zoals bisphosphonaten.">
+				>
+				["at0041"] = <
+					text = <"*Additional details (en)">
+					description = <"*Structured details or questions about the specific substance or grouping of substances. (en)">
+				>
+				["at0042"] = <
+					text = <"*Description (en)">
+					description = <"*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)">
+				>
+				["at0043"] = <
+					text = <"*Additional details (en)">
+					description = <"*Structured details or questions about the screening for substance or grouping of substances. (en)">
+				>
+				["at0052"] = <
+					text = <"*Substance use? (en)">
+					description = <"*Is there a history of use of any substance other than alcohol or tobacco, related to the screening purpose? (en)">
+					comment = <"*For specific screening questions about use of tobacco smoking, smokeless tobacco, or alcohol, use the 'Specific substance' cluster.
+
+In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)">
+				>
+				["at0053"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Onbekend">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Overall comment (en)">
+					description = <"*Additional narrative about the questionnaire, not captured in other fields. (en)">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0039"] = <[SNOMED-CT::261665006]>
+				["at0055"] = <[SNOMED-CT::261665006]>
+				["at0036"] = <[SNOMED-CT::373066001]>
+				["at0053"] = <[SNOMED-CT::373066001]>
+				["at0037"] = <[SNOMED-CT::373067005]>
+				["at0054"] = <[SNOMED-CT::373067005]>
+			>
+		>
+	>
