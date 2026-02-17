@@ -1,0 +1,102 @@
+archetype (adl_version=1.4; uid=c7dff297-3f5e-4c8c-8479-209bcd98262f)
+	openEHR-EHR-CLUSTER.art__pre_p_problem_diagnose_hv.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2024-03-14">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å lagre selvrapportert informasjon ompredefinert diagnose, problem eller misbruk av substans.">
+			use = <"Brukes for å lagre selvrapportert informasjon ompredefinert diagnose, problem eller misbruk av substans.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"cd2f0428fb516649695e0fac911c092d">
+		["build_uid"] = <"0baa4e11-8529-341f-a9bd-58a78d7f5cbe">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- ART_ pre_p_problem_diagnose_hv
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Genital skade
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Testisretensjon
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Kusma som voksen
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Underlivsinfeksjoner
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Bruk av steroider
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Nei. Ingen av disse er aktuelle
+				value matches {
+					DV_BOOLEAN matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"ART_ pre_p_problem_diagnose_hv">
+					description = <"Selvrapportert informason om predefinert diagnose, problem eller misbruk av substans.">
+				>
+				["at0001"] = <
+					text = <"Genital skade">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Testisretensjon">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Kusma som voksen">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Underlivsinfeksjoner">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Bruk av steroider">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Nei. Ingen av disse er aktuelle">
+					description = <"">
+				>
+			>
+		>
+	>
