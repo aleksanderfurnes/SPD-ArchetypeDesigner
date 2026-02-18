@@ -1,0 +1,91 @@
+archetype (adl_version=1.4; uid=f7db3985-4570-4a38-975b-ee03c7ffaee2)
+	openEHR-EHR-EVALUATION.selvrapporterte_data_egenerklaering.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2022-09-30">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"cd035efeb368bb13c0f7cf71e06b11f3">
+		["build_uid"] = <"ff01dd8b-642d-3212-b600-fe86b667c88c">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- selvrapporterte_data_egenerklaering
+		data matches {
+			ITEM_TREE[at0003] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0004] matches {    -- Pasientskjema egenerklæring
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Skjema innhold
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Last updated
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"selvrapporterte_data_egenerklaering">
+					description = <"Selvrapporterte data egenerklaering">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Last updated">
+					description = <"Dato/tid for når skjema var sist oppdatert.">
+				>
+				["at0003"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Pasientskjema egenerklæring">
+					description = <"Navnet på pasientskjema / egenerklæring.">
+					comment = <"For eksempel:  Beintetthetsmåling Egenerklæring, Helseerklæring før inngrep og operasjon.">
+				>
+				["at0005"] = <
+					text = <"Skjema innhold">
+					description = <"Her legges innholdet i skjema.">
+				>
+			>
+		>
+	>
