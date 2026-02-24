@@ -39,7 +39,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"367e46d3ad073e160c5fe0f7309b2686">
+		["MD5-CAM-1.0.1"] = <"321891c5f20b4d3758fa2d9eb125e208">
 		["build_uid"] = <"826cf29f-5019-3cdf-9ef1-47ec3939b524">
 	>
 
@@ -262,7 +262,7 @@ ontology
 				>
 				["at0018"] = <
 					text = <"4. Sitting or lying">
-					description = <"">
+					description = <"What amount of hip pain have you experienced the last week during the following activities?">
 				>
 				["at0019"] = <
 					text = <"None">
@@ -286,7 +286,7 @@ ontology
 				>
 				["at0025"] = <
 					text = <"2. Walking on a flat surface">
-					description = <"">
+					description = <"What amount of hip pain have you experienced the last week during the following activities?">
 				>
 				["at0026"] = <
 					text = <"None">
@@ -310,7 +310,7 @@ ontology
 				>
 				["at0031"] = <
 					text = <"3. Going up or down stairs">
-					description = <"">
+					description = <"What amount of hip pain have you experienced the last week during the following activities?">
 				>
 				["at0032"] = <
 					text = <"None">
@@ -602,7 +602,7 @@ ontology
 				>
 				["at0018"] = <
 					text = <"*4. Sitting or lying (en)">
-					description = <"">
+					description = <"*What amount of hip pain have you experienced the last week during the following activities? (en)">
 				>
 				["at0019"] = <
 					text = <"*None (en)">
@@ -626,7 +626,7 @@ ontology
 				>
 				["at0025"] = <
 					text = <"*2. Walking on a flat surface (en)">
-					description = <"">
+					description = <"*What amount of hip pain have you experienced the last week during the following activities? (en)">
 				>
 				["at0026"] = <
 					text = <"*None (en)">
@@ -650,7 +650,7 @@ ontology
 				>
 				["at0031"] = <
 					text = <"*3. Going up or down stairs (en)">
-					description = <"">
+					description = <"*What amount of hip pain have you experienced the last week during the following activities? (en)">
 				>
 				["at0032"] = <
 					text = <"*None (en)">
