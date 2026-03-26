@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "acc968e592bac44107753867f63274fd",
+      "MD5-CAM-1.0.1" : "7f951032888f241a57d7d5abecd85aa9",
       "PARENT:MD5-CAM-1.0.1" : "3B0765A6B395C9D01595FDF2D440E6CB"
     },
     "details" : {
@@ -4595,33 +4595,14 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
+                  "rmTypeName" : "DV_TEXT",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
+                    "rmAttributeName" : "value",
                     "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "Kommunal_Rehabilitering"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "Kommunal_Rehabilitering" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "Kommunal_Rehabilitering",
-                        "code" : "1",
-                        "value" : "Kommunal rehabilitering dag"
-                      }, {
-                        "terminologyId" : "Kommunal_Rehabilitering",
-                        "code" : "2",
-                        "value" : "Kommunal rehabilitering hjemme"
-                      }, {
-                        "terminologyId" : "Kommunal_Rehabilitering",
-                        "code" : "3",
-                        "value" : "Kommunal rehabilitering døgn"
-                      } ]
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Kommunal rehabilitering dag", "Kommunal rehabilitering hjemme", "Kommunal rehabilitering døgn" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
