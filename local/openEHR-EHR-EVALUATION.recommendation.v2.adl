@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=a15aad41-4ae9-4588-be4e-5c67f83e442f)
+archetype (adl_version=1.4; uid=b0f6df2f-5deb-40d6-a3e1-5963345acf11)
 	openEHR-EHR-EVALUATION.recommendation.v2
 
 concept
@@ -48,31 +48,6 @@ language
 				["email"] = <"vladimir.pizzo@hsl.org.br">
 			>
 		>
-		["nl"] = <
-			language = <[ISO_639-1::nl]>
-			author = <
-				["name"] = <"Joost Holslag">
-				["organisation"] = <"Nedap">
-				["email"] = <"joost.holslag@nedap.com">
-			>
-			accreditation = <"MD">
-		>
-		["es"] = <
-			language = <[ISO_639-1::es]>
-			author = <
-				["name"] = <"Julio de Sosa">
-				["organisation"] = <"Servei Català de la Salut">
-				["email"] = <"juliodesosa@catsalut.cat">
-			>
-		>
-		["ca"] = <
-			language = <[ISO_639-1::ca]>
-			author = <
-				["name"] = <"Julio de Sosa">
-				["organisation"] = <"Servei Català de la Salut">
-				["email"] = <"juliodesosa@catsalut.cat">
-			>
-		>
 	>
 
 description
@@ -83,7 +58,7 @@ description
 		["email"] = <"heather.leslie@atomicainformatics.com">
 	>
 	lifecycle_state = <"published">
-	other_contributors = <"Vebjørn Arntzen, Oslo universitetssykehus HF, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway","Bente Gjelsvik, Helse Bergen, Norway","Sam Heard, Ocean Informatics, Australia","Kristian Heldal, Telemark Hospital Trust, Norway","Hilde Hollås, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Shinji Kobayashi, National Institute of Public Health, Japan","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Hallvard Lærum, Oslo Universitetssykehus HF, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Andrej Orel, Marand d.o.o., Slovenia","Anne Pauline Anderssen, Helse Nord RHF, Norway","Tanja Riise, Nasjonal IKT HF, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)">
+	other_contributors = <"Anne Pauline Anderssen, Helse Nord RHF, Norway","Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT redaktør)","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (Nasjonal IKT redaktør)","Lars Bitsch-Larsen, Haukeland University Hospital, Bergen, Norway","Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway","Bente Gjelsvik, Helse Bergen, Norway","Mikkel Johan Gaup Grønmo, Forvaltningssenter EPJ, Helse Nord RHF, Norway (Nasjonal IKT redaktør)","Sam Heard, Ocean Informatics, Australia","Kristian Heldal, Telemark Hospital Trust, Norway","Hilde Hollås, Norway","Lars Morgan Karlsen, Nordlandssykehuset Bodø, Norway","Shinji Kobayashi, National Institute of Public Health, Japan","Liv Laugen, Oslo universitetssykehus, Norway (Nasjonal IKT redaktør)","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Hallvard Lærum, Direktoratet for e-helse, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Andrej Orel, Marand d.o.o., Slovenia","Tanja Riise, Nasjonal IKT HF, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","Marit Alice Venheim, Helse Vest IKT, Norway (Nasjonal IKT redaktør)">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
@@ -104,15 +79,6 @@ Zum Beispiel als Bestandteil der Schlussfolgerungen, die im Rahmen einer klinisc
 Är tänkt att ge stöd för att dokumentera en behandlingsrekommendation vid en specifik tidpunkt. Exempelvis som en del av slutsatsen vid en klinisk konsultation.">
 			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
 		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.">
-			keywords = <"consejo","propuesta","sugerencia">
-			use = <"Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.
-
-El caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.">
-			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
-		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Anvendes for å registrere et forslag, et råd eller en anmodning om klinisk oppfølging på et spesifikt tidspunkt.">
@@ -122,6 +88,15 @@ El caso de uso previsto se vincula a permitir el registro por parte del clínico
 Arketypen er ment å understøtte klinikere som dokumenterer en eller flere anbefalinger på et spesifikt tidspunkt.
 Anbefalingen kan for eksempel benyttes som en del av dokumentasjonen av konklusjonene som trekkes i forbindelse med en klinisk konsultasjon.">
 			misuse = <"Brukes ikke for å registrere strukturerte dataelementer for å beskrive ytterligere instruksjoner som for eksempel 'timing', frekvens, varighet eller dose. Bruk relevante INSTRUCTION-arketyper for dette formålet.">
+		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.">
+			keywords = <"consejo","propuesta","sugerencia">
+			use = <"Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.
+
+El caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.">
+			misuse = <"*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
@@ -144,36 +119,6 @@ The intended use case is to support a clinician recording a recommendation, or r
 For example, as a component of the conclusions drawn as part of a clinical consultation.">
 			misuse = <"Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose.">
 		>
-		["nl"] = <
-			language = <[ISO_639-1::nl]>
-			purpose = <"Het vastleggen van een suggestie, advies of voorstel voor behandeling op een bepaald moment.">
-			keywords = <"advies","voorstel","suggestie">
-			use = <"Gebruik voor het vastleggen van een suggestie, advies of voorstel voor behandeling op een specifiek moment.
-
-Het beoogd gebruik is het ondersteunen van een clinicus bij het vastleggen van een advies, of adviezen, op een specifiek moment in de tijd.
-Bijvoorbeeld als onderdeel van de conclusies uit een gezondheidsconsult.">
-			misuse = <"Niet te gebruiken voor het vastleggen van gestructureerde data elementen die opdrachten gedetailleerd specificeren, zoals timing, frequentie, duur of dosering - gebruik hiervoor de toepasselijke INSTRUCTION archetypes.">
-		>
-		["es"] = <
-			language = <[ISO_639-1::es]>
-			purpose = <"Registrar una sugerencia, consejo o propuesta de gestión clínica en un momento determinado.">
-			keywords = <"consejo","propuesta","sugerencia">
-			use = <"Se utiliza para registrar una sugerencia, consejo o propuesta de gestión clínica en un momento determinado.
-
-El caso de uso previsto es ayudar a un clínico a registrar una recomendación, o recomendaciones, en un momento específico. 
-Por ejemplo, como componente de las conclusiones extraídas en el marco de una consulta clínica.">
-			misuse = <"No debe utilizarse para incluir elementos de datos estructurados que detallen instrucciones adicionales, como el tiempo, la frecuencia, la duración o la dosis; para ello, utilice los arquetipos de tipo INSTRUCTION adecuados.">
-		>
-		["ca"] = <
-			language = <[ISO_639-1::ca]>
-			purpose = <"Registrar un suggeriment, consell o proposta de gestió clínica en un moment determinat.">
-			keywords = <"consell","proposta","suggeriment">
-			use = <"Es fa servir per registrar un suggeriment, consell o proposta de gestió clínica en un moment determinat.
-
-El cas d'ús previst és ajudar un clínic a registrar una recomanació, o recomanacions, en un moment específic.
-Per exemple, com a component de les conclusions extretes en el marc de la consulta clínica.">
-			misuse = <"No s'ha d'utilitzar per incloure elements de dades estructurats que detallin instruccions addicionals, com ara el temps, la freqüència, la durada o la dosi; per fer-ho, utilitzeu els arquetips de tipus INSTRUCTION adequats.">
-		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -182,9 +127,9 @@ Per exemple, com a component de les conclusions extretes en el marc de la consul
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d00844d955e7c05df20284137da522b7">
-		["build_uid"] = <"1c00256d-4057-4075-a7d1-7161980e7684">
-		["revision"] = <"2.0.4">
+		["MD5-CAM-1.0.1"] = <"F3A7D36EBD28087AD91119914C081F32">
+		["build_uid"] = <"d31bd093-f325-4f21-a982-8f8520a7baa2">
+		["revision"] = <"2.0.0">
 	>
 
 definition
@@ -206,10 +151,6 @@ definition
 						value matches {
 							DV_TEXT matches {*}
 						}
-					}
-					allow_archetype CLUSTER[at0008] occurrences matches {0..*} matches {    -- Evidence
-						include
-							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -270,10 +211,6 @@ ontology
 					text = <"Last updated">
 					description = <"The date this recommendation was last updated.">
 				>
-				["at0008"] = <
-					text = <"Evidence">
-					description = <"">
-				>
 			>
 		>
 		["es-ar"] = <
@@ -312,10 +249,6 @@ ontology
 				["at0007"] = <
 					text = <"*Last updated (en)">
 					description = <"*The date this recommendation was last updated. (en)">
-				>
-				["at0008"] = <
-					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
 				>
 			>
 		>
@@ -356,10 +289,6 @@ ontology
 					text = <"*Last updated (en)">
 					description = <"*The date this recommendation was last updated. (en)">
 				>
-				["at0008"] = <
-					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
-				>
 			>
 		>
 		["nb"] = <
@@ -398,10 +327,6 @@ ontology
 				["at0007"] = <
 					text = <"Sist oppdatert">
 					description = <"Datoen denne anbefalingen sist ble oppdatert.">
-				>
-				["at0008"] = <
-					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
 				>
 			>
 		>
@@ -442,10 +367,6 @@ ontology
 					text = <"*Last updated (en)">
 					description = <"*The date this recommendation was last updated. (en)">
 				>
-				["at0008"] = <
-					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
-				>
 			>
 		>
 		["de"] = <
@@ -484,139 +405,6 @@ ontology
 				["at0007"] = <
 					text = <"Zuletzt aktualisiert">
 					description = <"Das Datum, an dem diese Empfehlung zuletzt aktualisiert wurde.">
-				>
-				["at0008"] = <
-					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
-				>
-			>
-		>
-		["nl"] = <
-			items = <
-				["at0000"] = <
-					text = <"Advies">
-					description = <"Een suggestie, advies of voorstel voor behandeling.">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Advies">
-					description = <"Verhalende beschrijving van het advies.">
-					comment = <"Mag gecodeerd worden middels terminologie, indien vereist.">
-				>
-				["at0003"] = <
-					text = <"Onderbouwing">
-					description = <"De onderbouwing voor het advies.">
-				>
-				["at0004"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0005"] = <
-					text = <"Uitbreiding">
-					description = <"Additionele informatie benodigd voor het uitbreiden van het model met lokale content of het allignen met andere referentie modellen of formalismen.">
-					comment = <"Bijvoorbeeld: lokale informatie eisen of metadata om te alignen met FHIR.">
-				>
-				["at0006"] = <
-					text = <"Onderwerp">
-					description = <"Het onderwerp waar het advies over gaat.">
-					comment = <"Bruikbaar als verschillende type adviezen op het zelfde moment gemaakt worden binnen dezelfde dataset.">
-				>
-				["at0007"] = <
-					text = <"Laatst geüpdate">
-					description = <"De datum waarop het advies voor het laatst is geüpdate.">
-				>
-				["at0008"] = <
-					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
-				>
-			>
-		>
-		["es"] = <
-			items = <
-				["at0000"] = <
-					text = <"Recomendación">
-					description = <"Una sugerencia, consejo o propuesta de gestión clínica.">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Recomendación">
-					description = <"Descripción narrativa de la recomendación.">
-					comment = <"Puede codificarse, utilizando una terminología, si es necesario.">
-				>
-				["at0003"] = <
-					text = <"Justificación">
-					description = <"Justificación de la recomendación.">
-				>
-				["at0004"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0005"] = <
-					text = <"Ampliación">
-					description = <"Información adicional necesaria para ampliar el modelo con contenido local o para alinearlo con otros modelos o formalismos de referencia.">
-					comment = <"Por ejemplo: requisitos locales de información; o metadatos adicionales para alinearse con FHIR.">
-				>
-				["at0006"] = <
-					text = <"Asunto">
-					description = <"El tema o asunto de la recomendación.">
-					comment = <"Útil si se hacen varios tipos de recomendaciones al mismo tiempo y dentro del mismo conjunto de datos.">
-				>
-				["at0007"] = <
-					text = <"Última actualización">
-					description = <"Fecha de la última actualización de esta recomendación.">
-				>
-				["at0008"] = <
-					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
-				>
-			>
-		>
-		["ca"] = <
-			items = <
-				["at0000"] = <
-					text = <"Recomanació">
-					description = <"Un suggeriment, consell o proposta de gestió clínica.">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Recomanació">
-					description = <"Descripció narrativa de la recomanació.">
-					comment = <"Es pot codificar, utilitzant una terminologia, si cal.">
-				>
-				["at0003"] = <
-					text = <"Justificació">
-					description = <"Justificació de la recomanació.">
-				>
-				["at0004"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0005"] = <
-					text = <"Ampliació">
-					description = <"Informació addicional necessària per ampliar el model amb contingut local o per alinear-lo amb altres models o formalismes de referència.">
-					comment = <"Per exemple: requisits d'informació locals; o metadades addicionals per alinear-se amb FHIR.">
-				>
-				["at0006"] = <
-					text = <"Assumpte">
-					description = <"El tema o assumpte de la recomanació.">
-					comment = <"Útil si es fan diversos tipus de recomanacions alhora i dins del mateix conjunt de dades.">
-				>
-				["at0007"] = <
-					text = <"Última actualització">
-					description = <"Data de la darrera actualització d'aquesta recomanació.">
-				>
-				["at0008"] = <
-					text = <"*CLUSTER_SLOT (en)">
-					description = <"">
 				>
 			>
 		>
