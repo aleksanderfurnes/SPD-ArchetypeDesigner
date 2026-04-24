@@ -1,0 +1,54 @@
+archetype (adl_version=1.4; uid=c1e97410-8894-46cc-bbab-00210c6182a8)
+	openEHR-EHR-COMPOSITION.miksjonsdagbok.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2026-04-14">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"49d16185934f4313e6f91626266421d0">
+		["build_uid"] = <"a480559c-976e-3599-8291-f1419c734567">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Miksjonsdagbok
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {*}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Miksjonsdagbok">
+					description = <"Miksjonsdagbok">
+				>
+			>
+		>
+	>
