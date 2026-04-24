@@ -1,0 +1,54 @@
+archetype (adl_version=1.4; uid=347773b0-c843-478a-a1ad-ff4237d3bffe)
+	openEHR-EHR-CLUSTER.miksjonsdagbok.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2026-04-13">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d720914f071d01f11ff8f57862041168">
+		["build_uid"] = <"90c06eb3-3e61-33f1-83c9-a42f523625ce">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Miksjonsdagbok
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- CLUSTER
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Miksjonsdagbok">
+					description = <"Miksjonsdagbok">
+				>
+				["at0002"] = <
+					text = <"CLUSTER">
+					description = <"">
+				>
+			>
+		>
+	>
