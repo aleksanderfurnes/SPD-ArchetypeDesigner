@@ -1,0 +1,82 @@
+archetype (adl_version=1.4; uid=1e7a3dae-3639-4893-adf6-02f2d9448140)
+	openEHR-EHR-OBSERVATION.antall_vannlatninger.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2026-04-13">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"93631b60840cadcef2908a07803630df">
+		["build_uid"] = <"4c050ed2-e56a-3746-9124-70eb59bacc18">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Vannlatninger_per_24h
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Antall vannlatninger pr 24 timer
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|-1..25|}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Vannlatninger_per_24h">
+					description = <"Antall vannlatninger">
+					comment = <"Før inngrepet registreres objektive pasientrapporterte data fra to hjemmetester pasientene utfører før første konsultasjon: et 24-timers vannlatningsskjema (miksjonsskjema) og 24-timers bleieveietest, samt objektive urodynamiske målinger utført ved preope">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Antall vannlatninger pr 24 timer">
+					description = <"">
+				>
+			>
+		>
+	>
