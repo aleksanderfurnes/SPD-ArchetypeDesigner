@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.0.0",
+      "sem_ver" : "10.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "df83a5575a1984e82ff30f33541313d0",
+      "MD5-CAM-1.0.1" : "a5e14c400eaea58490dfd686c31f0858",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -222,21 +222,21 @@
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.64",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-investigation_screening-002.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ACTION",
         "occurrences" : "0..1",
         "nodeId" : "at0.35",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ACTION.ovl-procedure-003.v1",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "OBSERVATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.47",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-investigation_screening-002.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -1346,7 +1346,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "BA031C5AA941FB7AD98139E0FBCBA346"
+        "PARENT:MD5-CAM-1.0.1" : "C6FB6DB1E0BC90E3BC8A0255BEAF7328"
       },
       "details" : {
         "de" : {
@@ -1633,7 +1633,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "BA031C5AA941FB7AD98139E0FBCBA346"
+        "PARENT:MD5-CAM-1.0.1" : "C6FB6DB1E0BC90E3BC8A0255BEAF7328"
       },
       "details" : {
         "de" : {
@@ -1969,7 +1969,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1A4C242F172E23354BB0EFD96C5E06E7"
+        "PARENT:MD5-CAM-1.0.1" : "2901736D16044A54B371671EB223D67D"
       },
       "details" : {
         "de" : {
@@ -8633,7 +8633,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "BA031C5AA941FB7AD98139E0FBCBA346"
+        "PARENT:MD5-CAM-1.0.1" : "C6FB6DB1E0BC90E3BC8A0255BEAF7328"
       },
       "details" : {
         "de" : {
@@ -9337,234 +9337,6 @@
         },
         "es" : { },
         "ca" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "b77e0cf6-fb2d-4e9b-adb0-4a332280c0ea",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch, Darin Leonhardt",
-        "organisation" : "Medizinische Hochschule Hannover, PLRI, PLRI für medizinische Informatik/ Medizinische Hochschule",
-        "email" : "Strauch.Natalia@mh-hannover.de, leonhardt.darin@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Kanika Kuwelker, John Tore Valand, Vebjørn Arntzen",
-        "organisation" : "Helse Vest IKT, Helse Bergen, Oslo University Hospital",
-        "email" : "kanika.kuwelker@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "es"
-      },
-      "author" : {
-        "name" : "Julio de Sosa",
-        "organisation" : "Servei Català de la Salut",
-        "email" : "juliodesosa@catsalut.cat"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "ca"
-      },
-      "author" : {
-        "name" : "Julio de Sosa",
-        "organisation" : "Servei Català de la Salut",
-        "email" : "juliodesosa@catsalut.cat"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "bf854ee5-7e75-4eda-abae-319c4ed21289",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4303915A919C8B6D98E44B6105250000"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Schaffung eines Schemas für die Aufzeichnung von Antworten auf vordefinierte Screening-Fragen zu diagnostischen Untersuchungen oder einer Gruppe von Untersuchungen, einschließlich, aber nicht beschränkt auf bildgebende Untersuchungen und Labortests.",
-          "keywords" : [ "Untersuchung, Screening, Fragebogen, Prävention, Bildgebung, Labor, Pathologie, Blut, Probe, Sputum, EMG, EKG, Gehör, Test, Untersuchung, Rückenmarksflüssigkeit, Biopsie, EEG, MRI, CT, Röntgen, PET, Ultraschall, Spirometrie" ],
-          "use" : "Dient zur Erstellung eines Schemas für die Aufzeichnung von Antworten auf vordefinierte Screening-Fragen zu diagnostischen Untersuchungen oder Gruppen von Untersuchungen. Der Umfang der diagnostischen Untersuchungen umfasst alle Arten von bildgebenden Untersuchungen und das breiteste Spektrum an Labor- und anatomisch-pathologischen Tests. Darüber hinaus kann dieser Archetyp auch verwendet werden, um zu erfassen, wann andere diagnostische Tests durchgeführt wurden, wie z. B. Herzbelastungstests, Hör- und Sehtests, Elektrokardiographie (EKG) und Elektroenzephalographie (EEG).\r\n\r\nHäufige Anwendungsfälle sind unter anderem:\r\n- Selbstauskunft der Patienten\r\n- Erstellung eines Patientenprofils in einem Krankheitsregister\r\n- Systematische Befragung im Rahmen einer Konsultation in Bezug auf die Verabreichung von Untersuchungsmethoden\r\n\r\nDie Semantik dieses Archetyps ist absichtlich offen formuliert, und eine Abfrage dieses Archetyps wäre normalerweise nur im Kontext der jeweiligen Vorlage sinnvoll oder sicher. Jedes Datenelement würde in der Regel in einer Vorlage umbenannt, um die spezifische Frage zu repräsentieren. Falls Wertesätze für allgemeine Anwendungsfälle vorgeschlagen wurden, können diese an die lokalen Anforderungen angepasst werden, indem die Datentypen DV_TEXT oder DV_BOOLEAN verwendet werden, um jedem spezifischen Anwendungsfall zu entsprechen.\r\n\r\nDie Verwendung dieses Schemas innerhalb einer Vorlage ermöglicht die Dokumentation eines breiten Spektrums von Frage/Antwort-Paaren wie z. B.:\r\n- Haben Sie jemals Ihren Cholesterinspiegel testen lassen? Ja, Nein, Unbekannt.\r\n- Wurden Sie auf Röteln-Antikörper getestet? Ja, Nein, Unbekannt.\r\n- Wurden Sie jemals auf Sichelzellenanämie untersucht? Ja, Nein, Unbekannt.\r\n- Wann war Ihre letzte Röntgenaufnahme der Brust?\r\n- Wie lautete das Ergebnis Ihres letzten INR-Tests?\r\n- Wie lautete der Befund des Elektrokardiogramms?\r\n- Hat der Säugling ein Neugeborenen-Hörscreening bestanden/nicht bestanden?\r\n\r\nDie EVENT-Struktur aus dem Referenzmodell kann verwendet werden, um anzugeben, ob sich die Fragen auf einen Zeitpunkt oder einen Zeitraum beziehen. Verwenden Sie eine separate Instanz dieses Archetyps, um zwischen einem Fragebogen, der Informationen über eine Untersuchung oder einen Test aufzeichnet, die/der zu einem beliebigen Zeitpunkt in der Vergangenheit durchgeführt wurde, und Informationen über eine Untersuchung oder einen Test, die/der innerhalb eines bestimmten Zeitraums durchgeführt wurde, zu unterscheiden - z. B. der Unterschied zwischen \"Hatten Sie jemals einen INR-Test?\" im Vergleich zu \"Hatten Sie in den letzten vier Wochen einen INR-Test?\"\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann aber mit Hilfe des Elements \"Information provider\" im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Instrument verwendet zu werden oder um einfache Fragebogen-Daten für Situationen wie ein Krankheitsregister aufzuzeichnen. Wenn der Screening-Fragebogen angibt, dass eine Untersuchung durchgeführt wurde, können zusätzliche Details, die für die Speicherung in einer klinischen Akte erforderlich sind, mithilfe spezifischer Archetypen für Testergebnisse erfasst werden.",
-          "misuse" : "Nicht für die Aufzeichnung eines Untersuchungsauftrags zu verwenden - verwenden Sie zu diesem Zweck INSTRUCTION.service_request.\r\n\r\nNicht für die Aufzeichnung des Fortschritts von Aktivitäten, die als Teil einer Untersuchung durchgeführt werden, zu verwenden - verwenden Sie zu diesem Zweck entsprechende ACTION-Archetypen.\r\n\r\nNicht für die Aufzeichnung formaler diagnostischer Testergebnisse zu verwenden - verwenden Sie zu diesem Zweck geeignete OBSERVATIONS. Zum Beispiel die OBSERVATION.laboratory_test_result oder OBSERVATION.imaging_examination_result.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om diagnostiske undersøkelser eller gruppe av undersøkelser. Dette inkluderer, men er ikke begrenset til bildediagnostiske undersøkelser og laboratorieundersøkelser.",
-          "keywords" : [ "utredning", "undersøkelse", "kartlegging", "spørreskjema", "forebygging", "bildediagnostikk", "laboratorie", "patologi", "blodprøve", "sputum", "EMG", "EKG", "EEG", "MR", "CT", "røntgen", "PET", "spirometri", "EKKO", "billeddiagnostikk", "ultralyd", "vevsprøve", "hørseltest", "synstest" ],
-          "use" : "Bruk for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruk av en spesifisert diagnostisk undersøkelse eller gruppering av undersøkelser. Omfanget av diagnostiske undersøkelser inkluderer alle modaliteter av bildediagnostiske undersøkelser og den videste definisjonen av laboratorie- og patologiprøver. I tillegg kan arketypen brukes til å registrere om andre diagnostiske undersøkelser har vært gjort, som belastnings-EKG, hørsel- eller synstest eller ECG.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Selvrapportering av pasienter\r\n- Til en pasientprofil i et register for sykdommer\r\n- Systematiske spørsmål i enhver konsultasjon, relatert til administrasjon av undersøkelser\r\n\r\nSemantikken til denne arketypen er med vilje løs, og å spørre etter denne arketypen vil normalt bare være nyttig eller trygt innenfor konteksten til hver spesifikk mal. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN i stedet.\r\n\r\nVed å anvende dette rammeverket i et templat kan gjøre det mulig å dokumentere en vidt spekter av spørsmål/svar, som:\r\n\r\n- Har du noen gang fått testet kolesterolnivået ditt? Ja, Nei, Ukjent.\r\n- Har du blitt testet for rubella-antistoffer? Ja, Nei, Ukjent.\r\n- Har du noen gang blitt screenet for sigdcellesykdom? Ja, Nei, Ukjent\r\n- Når var ditt siste røntgenbilde av thorax?\r\n- Hva var svaret på din siste INR-prøve?\r\n- Hva var funnene på EKG-et?\r\n- Var svaret normalt på screeningen i hørselundersøkelsen for nyfødte?\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall. Bruk egne instanser av denne arketypen for å skille mellom spørsmål om diagnostiske undersøkelser som gjelder et hvilket som helst tidspunkt eller for et tidsintervall. For eksempel; \"Har du noen gang tatt en INR-prøve?\" sammenlignet med \"Har du tatt en INR-prøve i løpet av de siste fire ukene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodell.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i spørreskjemaet identifiseres at det er gjort en undersøkelse som bør lagres i den elektroniske journalen er det tenkt at de spesifikke detaljene om undersøkelsen skal lagres i persistente arketyper laget spesielt for det formålet.",
-          "misuse" : "Skal ikke brukes til å registrere bestilling av diagnostiske tester - bruk INSTRUCTION.service_request for dette formålet.\r\n\r\nSkal ikke brukes til å registrere fremdriften til aktiviteter utført som en del av undersøkelse - bruk ACTION.laboratory_test for dette formålet.\r\n\r\nSkal ikke brukes til å registrere formelle diagnostiske testresultater - bruk OBSERVATION.laboratory_test_result eller OBSERVATION.imaging_examination_result for dette formålet.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To create a framework for recording answers to pre-defined screening questions about diagnostic investigations or group of investigations, including but not limited to imaging examinations and laboratory tests.",
-          "keywords" : [ "investigation, screening, questionnaire, prevention, imaging, laboratory, pathology, blood, sample, sputum, EMG, ECG, hearing, test, examination, spinal fluid, biopsy, EEG, MRI, CT, X-ray, PET, ultrasound, spirometry" ],
-          "use" : "Use to create a framework for recording answers to pre-defined screening questions about diagnostic investigations or groups of investigations. The scope of diagnostic investigations includes all modalities of imaging examinations and the broadest range of laboratory and anatomical pathology tests. In addition, this archetype can also be used to record when other diagnostic tests have been carried out, such as cardiac stress testing, hearing and vision testing, electrocardiography (ECG) and electroencephalography (EEG).\r\n\r\nCommon use cases include, but are not limited to:\r\n- Patient self-reporting\r\n- Creating a patient profile in a disease registry\r\n- Systematic questioning in any consultation related to patterns of investigation administration\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. Each data element would usually be renamed in a template to represent the specific question asked. Where value sets have been proposed for common use cases, these can be adapted to align with local requirements by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. \r\n\r\nUtilising this framework within a template can enable documentation of a broad range of question/answer pairs such as:\r\n- Have you ever had your cholesterol level tested? Yes, No, Unknown.\r\n- Have you been tested for rubella antibodies? Yes, No, Unknown.\r\n- Have you ever been screened for sickle cell disease? Yes, No, Unknown.\r\n- When was your last Chest X-ray?\r\n- What was the result of your most recent INR test?\r\n- What were the findings of the electrocardiogram?\r\n- Did the infant pass/fail a Neonatal hearing screen?\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about an investigation or test that has been done at any time in the past and information about an investigation or test done within a specified time interval - for example, the difference between \"Have you ever had an INR test?\" compared to \"Have you had an INR test during the last four weeks?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies an investigation has been carried out, additional details required for persistence as part of a clinical record can be captured using specific test result archetypes.",
-          "misuse" : "Not to be used for recording an order for an investigation - use INSTRUCTION.service_request for this purpose.\r\n\r\nNot to be used for recording the progress of activities performed as part of an investigation - use appropriate ACTION archetypes for this purpose.\r\n\r\nNot to be used to record formal diagnostic test results - use appropriate OBSERVATIONS for this purpose. For example, the OBSERVATION.laboratory_test_result or OBSERVATION.imaging_examination_result.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "es" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "es"
-          },
-          "purpose" : "Crear una estructura base para registrar respuestas a preguntas de screening predefinidas sobre investigaciones diagnósticas o grupo de investigaciones, incluyendo, entre otros, diagnóstico por imagen y pruebas de laboratorio.",
-          "keywords" : [ "investigación, screening, cuestionario, prevención, imagen, laboratorio, patología, sangre, muestra, esputo, EMG, ECG, audición, prueba, examen, líquido cefalorraquídeo, biopsia, EEG, resonancia magnética, tomografía computarizada, rayos X, TEP, ultrasonido, espirometría" ],
-          "use" : "Usado para crear una estructura base para registrar respuestas a preguntas de screening predefinidas sobre investigaciones diagnósticas o grupo de investigaciones. El alcance de las investigaciones diagnósticas incluye todas las modalidades de diagnóstico por imagen y la más amplia gama de pruebas de laboratorio y de anatomía patológica. Además, este arquetipo también se puede utilizar para registrar cuándo se han realizado otras pruebas diagnósticas, como pruebas de esfuerzo cardíaco, pruebas de audición y visión, electrocardiograma (ECG) y electroencefalograma (EEG).\r\n\r\nLos casos de uso comunes incluyen, entre otros:\r\n- Autoinforme del paciente\r\n- Creación de un perfil de paciente en un registro de enfermedades.\r\n- Cuestionamiento sistemático en cualquier consulta relacionada con patrones de gestión de investigaciones.\r\n\r\nLa semántica de este arquetipo es intencionalmente vaga y consultar este arquetipo normalmente solo sería útil o seguro dentro del contexto de cada plantilla específica. Por lo general, se cambiaría el nombre de cada elemento de datos en una plantilla para representar la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para alinearse con los requisitos locales utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico.\r\n\r\nLa utilización de esta estructura dentro de una plantilla puede permitir la documentación de una amplia gama de preguntas/respuestas, como por ejemplo:\r\n- ¿Le han mirado en alguna ocasión su nivel de colesterol? Sí, No, Desconocido.\r\n- ¿Le han realizado la prueba de anticuerpos contra la rubéola? Sí, No, Desconocido.\r\n- ¿Alguna vez le han hecho pruebas de detección de anemia falciforme? Sí, No, Desconocido.\r\n- ¿Cuándo fue su última radiografía de tórax?\r\n- ¿Cuál fue el resultado de su prueba de INR más reciente?\r\n- ¿Cuáles fueron los hallazgos detectados en el electrocardiograma?\r\n- ¿El bebé pasó/falló la prueba de audición neonatal?\r\n\r\nLa estructura EVENT del modelo de referencia se puede utilizar para especificar si las preguntas se relacionan con un momento determinado o durante un período de tiempo. Utilice una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre una investigación o prueba que se realizó en cualquier momento en el pasado, e información sobre una investigación o prueba realizada dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Alguna vez te has hecho una prueba de INR?\" en comparación con \"¿Se ha realizado una prueba de INR en las últimas cuatro semanas?\".\r\n\r\nLa fuente de información de una respuesta del cuestionario puede variar según el contexto, pero puede ifentificarse de forma específica utilizando el elemento 'Proveedor de información' en el Modelo de Referencia.\r\n\r\nEste arquetipo ha sido diseñado para usarse como herramienta de detección o para registrar datos en formato de cuestionario simple para su uso en situaciones como un registro de enfermedades. Si el cuestionario identifica que se ha llevado a cabo una investigación, se pueden registrar detalles adicionales necesarios para su persistencia como parte de un registro clínico, utilizando arquetipos de resultados de pruebas específicos.",
-          "misuse" : "No debe utilizarse para registrar una orden para una investigación; usar INSTRUCTION.service_request para este propósito.\r\n\r\nNo debe utilizarse para registrar el progreso de las actividades realizadas como parte de una investigación; usar arquetipos del tipo ACTION apropiados para este propósito.\r\n\r\nNo debe utilizarse para registrar resultados de pruebas de diagnóstico formales; usar OBSERVATIONS apropiadas para este propósito. Por ejemplo, OBSERVATION.laboratory_test_result u OBSERVATION.imaging_examination_result.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "ca" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "ca"
-          },
-          "purpose" : "Crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca, incloent-hi, entre d'altres, diagnòstic per imatge i proves de laboratori.",
-          "keywords" : [ "investigació, screening, qüestionari, prevenció, imatge, laboratori, patologia, sang, mostra, esput, EMG, ECG, audició, prova, examen, líquid cefaloraquidi, biòpsia, EEG, ressonància magnètica, tomografia computaritzada, raigs X, TEP, ultrasò, espirometria" ],
-          "use" : "Usat per crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca. L'abast de les investigacions diagnòstiques inclou totes les modalitats de diagnòstic per imatge i la gamma més àmplia de proves de laboratori i d'anatomia patològica. A més, aquest arquetip també es pot utilitzar per registrar quan s'han realitzat altres proves diagnòstiques, com ara proves d'esforç cardíac, proves d'audició i visió, electrocardiograma (ECG) i electroencefalograma (EEG).\r\n\r\nEls casos d'ús comuns inclouen, entre d'altres:\r\n- Autoinforme del pacient\r\n- Creació dun perfil de pacient en un registre de malalties.\r\n- Qüestionament sistemàtic a qualsevol consulta relacionada amb patrons de gestió d'investigacions.\r\n\r\nLa semàntica d'aquest arquetip és intencionalment vaga i consultar aquest arquetip normalment només seria útil o segur dins del context de cada plantilla específica. En general, es canviaria el nom de cada element de dades a una plantilla per representar la pregunta específica formulada. Quan s'han proposat conjunts de valors per a casos d'ús comuns, es poden adaptar per alinear-se amb els requisits locals utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic.\r\n\r\nLa utilització d'aquesta estructura dins d'una plantilla pot permetre la documentació d'una àmplia gamma de preguntes/respostes, com ara:\r\n- Us han mirat en alguna ocasió el seu nivell de colesterol? Sí, No, Desconegut.\r\n- Li han realitzat la prova d'anticossos contra la rubèola? Sí, No, Desconegut.\r\n- Alguna vegada us han fet proves de detecció d'anèmia falciforme? Sí, No, Desconegut.\r\n- Quan va ser la seva darrera radiografia de tòrax?\r\n- Quin va ser el resultat de la prova d'INR més recent?\r\n- Quines van ser les troballes detectades a l'electrocardiograma?\r\n- El nadó va passar/fallar la prova d'audició neonatal?\r\n\r\nL'estructura EVENT del model de referència es pot fer servir per especificar si les preguntes es relacionen amb un moment determinat o durant un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que enregistra informació sobre una investigació o prova que es va realitzar en qualsevol moment en el passat, i informació sobre una investigació o prova realitzada dins d'un interval de temps específic; per exemple, la diferència entre \"Alguna vegada t'has fet una prova d'INR?\" en comparació amb \"¿S'ha realitzat una prova d'INR en les darreres quatre setmanes?\".\r\n\r\nLa font d'informació d'una resposta del qüestionari pot variar segons el context, però es pot identificar de manera específica utilitzant l'element 'Proveïdor d'informació' al Model de Referència.\r\n\r\nAquest arquetip ha estat dissenyat per fer-se servir com a eina de detecció o per registrar dades en format de qüestionari simple per al seu ús en situacions com un registre de malalties. Si el qüestionari identifica que s'ha dut a terme una investigació, es poden registrar detalls addicionals necessaris per a la seva persistència com a part d'un registre clínic utilitzant arquetips de resultats de proves específics.",
-          "misuse" : "No s'ha d'utilitzar per registrar una ordre per a una investigació; utilitzar INSTRUCTION.service_request per a aquest propòsit.\r\n\r\nNo s'ha de fer servir per registrar el progrés de les activitats realitzades com a part d'una investigació; utilitzar arquetips del tipus ACTION apropiats per a aquest propòsit.\r\n\r\nNo s'ha de fer servir per registrar resultats de proves de diagnòstic formals; utilitzar OBSERVATIONS apropiades per a aquest propòsit. Per exemple, OBSERVATION.laboratory_test_result o OBSERVATION.imaging_examination_result.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.investigation_screening.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-investigation_screening-002.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "OBSERVATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Diagnostic investigation screening questionnaire (2)",
-            "description" : "Series of questions and associated answers used to screen whether diagnostic investigations have been carried out.",
-            "comment" : "The answers may be self-reported."
-          }
-        },
-        "de" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Screening-Fragebogen zur diagnostischen Untersuchungen (2)",
-            "description" : "Eine Reihe von Fragen und die dazugehörigen Antworten dienen der Überprüfung, ob diagnostische Untersuchungen durchgeführt wurden.",
-            "comment" : "Die Antworten können selbst berichtet werden."
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Kartleggingsspørsmål om diagnostiske undersøkelser (2)",
-            "description" : "Spørsmål og tilhørende svar som er knyttet til kartlegging om diagnostiske undersøkelser har vært utført eller ikke.",
-            "comment" : "Svarene kan være selvrapporterte."
-          }
-        },
-        "es" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Cuestionario de detección de investigación diagnóstica (2)",
-            "description" : "Serie de preguntas y respuestas asociadas, utilizadas para evaluar si se han realizado investigaciones diagnósticas.",
-            "comment" : "Las respuestas pueden ser autoinformadas."
-          }
-        },
-        "ca" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Qüestionari de detecció de recerca diagnòstica (2)",
-            "description" : "Sèrie de preguntes i respostes associades, utilitzades per avaluar si s'han fet investigacions diagnòstiques.",
-            "comment" : "Les respostes poden ser autoinformades."
-          }
-        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -14398,6 +14170,149 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Qüestionari de detecció de recerca diagnòstica (3)",
+            "description" : "Sèrie de preguntes i respostes associades, utilitzades per avaluar si s'han fet investigacions diagnòstiques.",
+            "comment" : "Les respostes poden ser autoinformades."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "b77e0cf6-fb2d-4e9b-adb0-4a332280c0ea",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Darin Leonhardt",
+        "organisation" : "Medizinische Hochschule Hannover, PLRI, PLRI für medizinische Informatik/ Medizinische Hochschule",
+        "email" : "Strauch.Natalia@mh-hannover.de, leonhardt.darin@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Kanika Kuwelker, John Tore Valand, Vebjørn Arntzen",
+        "organisation" : "Helse Vest IKT, Helse Bergen, Oslo University Hospital",
+        "email" : "kanika.kuwelker@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "55d93cd5-51a4-4d0c-80c3-ee5de73d0acf",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "4303915A919C8B6D98E44B6105250000"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.investigation_screening.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-investigation_screening-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Diagnostic investigation screening questionnaire (2)",
+            "description" : "Series of questions and associated answers used to screen whether diagnostic investigations have been carried out.",
+            "comment" : "The answers may be self-reported."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Screening-Fragebogen zur diagnostischen Untersuchungen (2)",
+            "description" : "Eine Reihe von Fragen und die dazugehörigen Antworten dienen der Überprüfung, ob diagnostische Untersuchungen durchgeführt wurden.",
+            "comment" : "Die Antworten können selbst berichtet werden."
+          }
+        },
+        "nb" : { },
+        "es" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Cuestionario de detección de investigación diagnóstica (2)",
+            "description" : "Serie de preguntas y respuestas asociadas, utilizadas para evaluar si se han realizado investigaciones diagnósticas.",
+            "comment" : "Las respuestas pueden ser autoinformadas."
+          }
+        },
+        "ca" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Qüestionari de detecció de recerca diagnòstica (2)",
             "description" : "Sèrie de preguntes i respostes associades, utilitzades per avaluar si s'han fet investigacions diagnòstiques.",
             "comment" : "Les respostes poden ser autoinformades."
           }
