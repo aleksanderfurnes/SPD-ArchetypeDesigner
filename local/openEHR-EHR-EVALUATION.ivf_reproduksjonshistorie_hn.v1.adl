@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0d5288388828b18dde90809407939f58">
+		["MD5-CAM-1.0.1"] = <"1f0aebcf3561c548c7a70f2f1a81d9e5">
 		["build_uid"] = <"ec1c5999-4861-3d15-8adb-bb008d70cd0c">
 	>
 
@@ -52,7 +52,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"IVF_reproduksjonshistorie_hn">
-					description = <"IVF_reproduksjonshistorie_hn">
+					description = <"Utviklet spesifikt til IVF egenerklæringsskjema.">
 				>
 				["at0001"] = <
 					text = <"Item tree">
