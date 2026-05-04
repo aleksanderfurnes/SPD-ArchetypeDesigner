@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "349dd100eaedd0060789ed6018169b8a",
+      "MD5-CAM-1.0.1" : "1774324b52140335ad051d6bcc78dd7d",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -13039,7 +13039,55 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "B86221C48C2CEB8A6A69C54B37E03BEA"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om målt væsketap, uansett mekanisme.",
+          "keywords" : [ "væske", "inn/ut", "væskebalanse", "væsketap", "urin", "oppkast", "drensvæske", "aspirat", "eksudat", "tap", "transpirasjon", "svette", "avføring", "sårvæske" ],
+          "use" : "Brukes for å registrere detaljer om målt væsketap, uavhengig av mekanisme.\r\n\r\nDenne arketypen skal brukes for å registrere detaljer om:\r\n- hver enkel måling av et væsketap, for eksempel mengden av hver oppkast, eller\r\n- den totale mengden væsketap fra en enkelt kilde i en spesifisert periode, for eksempel den totale mengden diurese i løpet av en vakt. \r\n\r\nDe registrerte detaljene i denne væsketap-arketypen kan overføres til et skjema for væskebalanse.\r\n\r\nFor hver enkelt måling man registrerer bør man bruke en separat instans av denne arketypen. \r\n\r\nEt skjema for væskebalanse vil vanligvis bestå av en kombinasjon av flere instanser av både OBSERVATION.fluid_input (Norsk: Væskeinntak) og OBSERVATION.fluid_output (Norsk: Væsketap) for å fange opp alt av inntak og væsketap, pluss en enkelt instans av OBSERVATION.fluid_balance for å registrere den overordnede væskebalansen.",
+          "misuse" : "Skal ikke brukes for å registrere væskeinntak. Bruk OBSERVATION.fluid_input (Væskeinntak) til dette. \r\n\r\nSkal ikke brukes for å registrere væskebalanse, eller utregning av perspiratio. Bruk OBSERVATION.fluid_balance (Væskebalanse) til dette.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about measured fluids lost or excreted via any mechanism.",
+          "keywords" : [ "fluid", "balance", "output", "urine", "vomit", "drain", "drainage", "aspirate", "exudate", "loss" ],
+          "use" : "Use to record details about measured fluids lost or excreted via any mechanism.\r\n\r\nThis archetype will be used to record details about:\r\n- each single fluid output measurement, for example the volume of each vomit; or\r\n- the total fluid output from a single source over a specified period of time, for example the total urine output over an 8 hour nursing shift.\r\n\r\nEach fluid measurement should be recorded using a separate instance of this archetype.\r\n\r\nThe details recorded using this fluid output archetype may inform fluid balance calculations. \r\n\r\nA fluid balance chart will typically require a combination of multiple instances of this archetype and multiple instances of OBSERVATION.fluid_input archetype to capture all of the various inputs and outputs, plus a single instance of the OBSERVATION.fluid_balance to record the overall fluid status.",
+          "misuse" : "Not to be used to record fluid input. Use OBSERVATION.fluid_input for this purpose.\r\n\r\nNot to be used to record fluid balance calculations or to record the calculation of insensible fluid loss. Use OBSERVATION.fluid_balance for this purpose.",
+          "copyright" : "© Australian Digital Health Agency, openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To record details of fluid input, often used as part of fluid balance estimation.(en)",
+          "keywords" : [ "*fluid(en)", "*fluid balance(en)", "*input output(en)", "*io(en)", "*input(en)" ],
+          "use" : "*Use to record details of fluid input as part of routine nursing care.\r\n\r\nUse to record details of individual fluid input activities, in order to allow fluid balance estimations. For example: \"Oral\", \"Cup of Tea\", 220ml; or 1 litre Normal Saline infusion.\r\n\r\nMay also be used to record descriptive assessments of input.\r\n\r\n(en)",
+          "misuse" : "*Do not use as a primary record of the administration of fluids e.g intravascular, dialyisis. May be used alongside administration recrods ,normally an ACTION.(en)",
+          "copyright" : "© Australian Digital Health Agency, openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.fluid_output.v1",
     "differential" : true,
@@ -13131,6 +13179,7 @@
                             "rmAttributeName" : "property",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
                               "terminologyId" : {
                                 "value" : "openehr"
                               },
@@ -13141,39 +13190,22 @@
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
-                              "children" : [ ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
                               "rmAttributeName" : "units",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "precision",
+                              "rmAttributeName" : "magnitude",
                               "children" : [ ]
                             } ],
                             "tuples" : [ {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
-                                "@type" : "C_REAL",
-                                "constraint" : [ {
-                                  "lower" : 0.0,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : true
-                                } ]
-                              }, {
                                 "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
                                 "constraint" : [ "ml" ]
                               }, {
-                                "@type" : "C_INTEGER",
-                                "constraint" : [ ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "lowerIncluded" : true,
@@ -13181,37 +13213,6 @@
                                   "lowerUnbounded" : false,
                                   "upperUnbounded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "l" ]
-                              }, {
-                                "@type" : "C_INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 3,
-                                  "upper" : 3,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
-                                } ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_REAL",
-                                "constraint" : [ {
-                                  "lower" : 0.0,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : false,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : true
-                                } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "[foz_us]" ]
-                              }, {
-                                "@type" : "C_INTEGER",
-                                "constraint" : [ ]
                               } ]
                             } ]
                           } ]
