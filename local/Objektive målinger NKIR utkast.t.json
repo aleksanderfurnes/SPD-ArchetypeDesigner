@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.1.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "011d78bf94d144687b690e7de1a256aa",
+      "MD5-CAM-1.0.1" : "72bf3e6c7391ae58f407b162e56b1614",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -426,7 +426,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -815,7 +814,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0027.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -833,7 +831,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.1" ],
+                              "constraint" : [ "ac0.4" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -854,7 +852,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0043.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
@@ -868,7 +865,6 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0024.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -886,7 +882,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.2" ],
+                                  "constraint" : [ "ac0.5" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -907,14 +903,12 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0047.1",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0003.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -980,30 +974,30 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -1015,44 +1009,44 @@
             "description" : "Spørsmål og tilhørende svar som er knyttet til kartlegging om diagnostiske undersøkelser har vært utført eller ikke.",
             "comment" : "Svarene kan være selvrapporterte."
           },
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "es" : {
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "ca" : {
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : ""
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
@@ -1073,6 +1067,16 @@
         "ac0.3" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
+          "members" : [ "at0036", "at0037", "at0039", "at0046" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0028", "at0029", "at0030", "at0045" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
           "members" : [ "at0036", "at0037", "at0039", "at0046" ]
         }
       }
