@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "7.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ae6689ac335e9f1a13b83598b81f0b1b",
+      "MD5-CAM-1.0.1" : "586cfb8708063bf329fe06030c33cf2d",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -10791,7 +10791,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Trykk på vannlatning",
+            "text" : "Trykk vannlatning",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt."
           },
           "at0048.1" : {
@@ -11303,7 +11303,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Lukketyrkk i urinrøret",
+            "text" : "Lukketrykk i urinrøret",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt."
           },
           "at0048.1" : {
