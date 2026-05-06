@@ -1,0 +1,573 @@
+archetype (adl_version=1.4; uid=6a934beb-ec65-46ce-96e7-4ab88d69c287)
+	openEHR-EHR-CLUSTER.ivf_barn_tidligere_forhold_hn.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2026-05-06">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"74effcf6d107dc2ba5d04694126c0ba0">
+		["build_uid"] = <"afb6f5e2-e1b5-32b9-809b-ad5160c4e788">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- ivf_barn_tidligere_forhold_hn
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Partner
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0003,    -- Aktuell partner
+							at0004]    -- Annen partner
+						}
+					}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Tidligere gravid?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0006,    -- Ja
+							at0007]    -- Nei
+						}
+					}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Spontanabort
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Provosert abort
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Ekstrauterin graviditet
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Antall barn
+				value matches {
+					DV_COUNT matches {
+						magnitude matches {|0..10|}
+					}
+				}
+			}
+			CLUSTER[at0013] occurrences matches {0..1} matches {    -- Barn (1)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0016,    -- Vaginal fødsel
+									at0017]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0018] occurrences matches {0..1} matches {    -- Barn (2)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0021,    -- Vaginal fødsel
+									at0022]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0023] occurrences matches {0..1} matches {    -- Barn (3)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0026,    -- Vaginal fødsel
+									at0027]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0028] occurrences matches {0..1} matches {    -- Barn (4)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0031,    -- Vaginal fødsel
+									at0032]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0033] occurrences matches {0..1} matches {    -- Barn (5)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0036,    -- Vaginal fødsel
+									at0037]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0038] occurrences matches {0..1} matches {    -- Barn (6)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0039] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0041,    -- Vaginal fødsel
+									at0042]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0043] occurrences matches {0..1} matches {    -- Barn (7)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0046,    -- Vaginal fødsel
+									at0047]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0048] occurrences matches {0..1} matches {    -- Barn (8)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0049] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0050] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0051,    -- Vaginal fødsel
+									at0052]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0053] occurrences matches {0..1} matches {    -- Barn (9)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0054] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0055] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0056,    -- Vaginal fødsel
+									at0057]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0058] occurrences matches {0..1} matches {    -- Barn (10)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0059] occurrences matches {0..1} matches {    -- Født (Årstall)
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|1900..2200|}
+							}
+						}
+					}
+					ELEMENT[at0060] occurrences matches {0..1} matches {    -- Fødselsmåte
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0061,    -- Vaginal fødsel
+									at0062]    -- Keisersnitt
+								}
+							}
+						}
+					}
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Har du daglig omsorg for andre barn?
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0063,    -- Ja
+							at0064]    -- Nei
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"ivf_barn_tidligere_forhold_hn">
+					description = <"IVF_tidligere_graviditet_hn">
+				>
+				["at0002"] = <
+					text = <"Partner">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Aktuell partner">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Annen partner">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Tidligere gravid?">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Spontanabort">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Provosert abort">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Ekstrauterin graviditet">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Antall barn">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Har du daglig omsorg for andre barn?">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Barn (1)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Barn (2)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Barn (3)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Barn (4)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Barn (5)">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Barn (6)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Barn (7)">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Barn (8)">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Barn (9)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Barn (10)">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Fødselsmåte">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Vaginal fødsel">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"Nei">
+					description = <"">
+				>
+			>
+		>
+	>
