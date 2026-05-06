@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f057143c7a0df149043638159d84f67d">
+		["MD5-CAM-1.0.1"] = <"62f9013cc409a388388eb0e044c9bb23">
 		["build_uid"] = <"afb6f5e2-e1b5-32b9-809b-ad5160c4e788">
 	>
 
@@ -296,7 +296,13 @@ definition
 			}
 			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Har du daglig omsorg for andre barn?
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0063,    -- Ja
+							at0064]    -- Nei
+						}
+					}
 				}
 			}
 		}
@@ -552,6 +558,14 @@ ontology
 				>
 				["at0062"] = <
 					text = <"Keisersnitt">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"Nei">
 					description = <"">
 				>
 			>
