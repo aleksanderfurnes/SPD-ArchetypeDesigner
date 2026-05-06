@@ -1,0 +1,84 @@
+archetype (adl_version=1.4; uid=3f2cd349-232b-44a3-b817-f4f9487e6828)
+	openEHR-EHR-CLUSTER.ivf_tidligere_forsok_hn.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2026-05-06">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d2f8911478f165045d2a0e57879120bb">
+		["build_uid"] = <"e6ca6c51-5fdf-3de1-b76c-dc4124ed42a1">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- IVF_tidligere_forsok_hn
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Måned
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Årstall
+				value matches {
+					DV_COUNT matches {
+						magnitude matches {|1900..2200|}
+					}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Ved klinikk
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Resultat
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"IVF_tidligere_forsok_hn">
+					description = <"IVF_tidligere_forsok_hn">
+				>
+				["at0001"] = <
+					text = <"Måned">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Årstall">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Ved klinikk">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Resultat">
+					description = <"">
+				>
+			>
+		>
+	>
