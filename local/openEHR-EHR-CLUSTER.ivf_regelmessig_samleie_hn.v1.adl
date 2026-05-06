@@ -23,14 +23,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3bee4655d5b8f4cfe80bd156540b7d43">
+		["MD5-CAM-1.0.1"] = <"f1746610d973754b781b96f15ef2954d">
 		["build_uid"] = <"abd8a5aa-edf0-3a5d-bb37-ac1f5311fd59">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- IVF_regelmessig_samleie_hn
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0002] matches {    -- Har dere regelmessig samleie?
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Har dere regelmessig samleie?
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
