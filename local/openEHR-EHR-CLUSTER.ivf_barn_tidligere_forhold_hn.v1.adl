@@ -23,25 +23,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"74effcf6d107dc2ba5d04694126c0ba0">
+		["MD5-CAM-1.0.1"] = <"4a1c2f3ee1136ed6a05389351a54e4c4">
 		["build_uid"] = <"afb6f5e2-e1b5-32b9-809b-ad5160c4e788">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- ivf_barn_tidligere_forhold_hn
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Partner
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0003,    -- Aktuell partner
-							at0004]    -- Annen partner
-						}
-					}
-				}
-			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Tidligere gravid?
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Har du gjort noen tidligere partnere gravide?
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -52,19 +41,15 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Spontanabort
+			ELEMENT[at0065] occurrences matches {0..1} matches {    -- Har du barn fra tidligere forhold?
 				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Provosert abort
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Ekstrauterin graviditet
-				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0066,    -- Ja
+							at0067]    -- Nei
+						}
+					}
 				}
 			}
 			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Antall barn
@@ -83,224 +68,323 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0016,    -- Vaginal fødsel
-									at0017]    -- Keisersnitt
+									at0016,    -- Ja
+									at0017]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0068] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0069,    -- Ja
+									at0070]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0018] occurrences matches {0..1} matches {    -- Barn (2)
+			CLUSTER[at0079] occurrences matches {0..1} matches {    -- Barn (2)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0080] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0081] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0021,    -- Vaginal fødsel
-									at0022]    -- Keisersnitt
+									at0082,    -- Ja
+									at0083]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0084] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0085,    -- Ja
+									at0086]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0023] occurrences matches {0..1} matches {    -- Barn (3)
+			CLUSTER[at0087] occurrences matches {0..1} matches {    -- Barn (3)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0088] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0089] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0026,    -- Vaginal fødsel
-									at0027]    -- Keisersnitt
+									at0090,    -- Ja
+									at0091]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0092] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0093,    -- Ja
+									at0094]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0028] occurrences matches {0..1} matches {    -- Barn (4)
+			CLUSTER[at0095] occurrences matches {0..1} matches {    -- Barn (4)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0096] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0097] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0031,    -- Vaginal fødsel
-									at0032]    -- Keisersnitt
+									at0098,    -- Ja
+									at0099]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0100] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0101,    -- Ja
+									at0102]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0033] occurrences matches {0..1} matches {    -- Barn (5)
+			CLUSTER[at0103] occurrences matches {0..1} matches {    -- Barn (5)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0104] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0105] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0036,    -- Vaginal fødsel
-									at0037]    -- Keisersnitt
+									at0106,    -- Ja
+									at0107]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0108] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0109,    -- Ja
+									at0110]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0038] occurrences matches {0..1} matches {    -- Barn (6)
+			CLUSTER[at0111] occurrences matches {0..1} matches {    -- Barn (6)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0039] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0112] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0113] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0041,    -- Vaginal fødsel
-									at0042]    -- Keisersnitt
+									at0114,    -- Ja
+									at0115]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0116] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0117,    -- Ja
+									at0118]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0043] occurrences matches {0..1} matches {    -- Barn (7)
+			CLUSTER[at0119] occurrences matches {0..1} matches {    -- Barn (7)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0120] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0121] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0046,    -- Vaginal fødsel
-									at0047]    -- Keisersnitt
+									at0122,    -- Ja
+									at0123]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0124] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0125,    -- Ja
+									at0126]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0048] occurrences matches {0..1} matches {    -- Barn (8)
+			CLUSTER[at0127] occurrences matches {0..1} matches {    -- Barn (8)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0049] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0128] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0050] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0129] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0051,    -- Vaginal fødsel
-									at0052]    -- Keisersnitt
+									at0130,    -- Ja
+									at0131]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0132] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0133,    -- Ja
+									at0134]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0053] occurrences matches {0..1} matches {    -- Barn (9)
+			CLUSTER[at0135] occurrences matches {0..1} matches {    -- Barn (9)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0054] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0136] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0055] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0137] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0056,    -- Vaginal fødsel
-									at0057]    -- Keisersnitt
+									at0138,    -- Ja
+									at0139]    -- Nei
+								}
+							}
+						}
+					}
+					ELEMENT[at0140] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0141,    -- Ja
+									at0142]    -- Nei
 								}
 							}
 						}
 					}
 				}
 			}
-			CLUSTER[at0058] occurrences matches {0..1} matches {    -- Barn (10)
+			CLUSTER[at0143] occurrences matches {0..1} matches {    -- Barn (10)
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0059] occurrences matches {0..1} matches {    -- Født (Årstall)
+					ELEMENT[at0144] occurrences matches {0..1} matches {    -- Født (Årstall)
 						value matches {
 							DV_COUNT matches {
 								magnitude matches {|1900..2200|}
 							}
 						}
 					}
-					ELEMENT[at0060] occurrences matches {0..1} matches {    -- Fødselsmåte
+					ELEMENT[at0145] occurrences matches {0..1} matches {    -- Har du omsorg for dette barnet?
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0061,    -- Vaginal fødsel
-									at0062]    -- Keisersnitt
+									at0146,    -- Ja
+									at0147]    -- Nei
 								}
 							}
 						}
 					}
-				}
-			}
-			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Har du daglig omsorg for andre barn?
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0063,    -- Ja
-							at0064]    -- Nei
+					ELEMENT[at0148] occurrences matches {0..1} matches {    -- Er dette barnet adoptert?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0149,    -- Ja
+									at0150]    -- Nei
+								}
+							}
 						}
 					}
 				}
@@ -316,20 +400,8 @@ ontology
 					text = <"ivf_barn_tidligere_forhold_hn">
 					description = <"IVF_tidligere_graviditet_hn">
 				>
-				["at0002"] = <
-					text = <"Partner">
-					description = <"">
-				>
-				["at0003"] = <
-					text = <"Aktuell partner">
-					description = <"">
-				>
-				["at0004"] = <
-					text = <"Annen partner">
-					description = <"">
-				>
 				["at0005"] = <
-					text = <"Tidligere gravid?">
+					text = <"Har du gjort noen tidligere partnere gravide?">
 					description = <"">
 				>
 				["at0006"] = <
@@ -340,24 +412,8 @@ ontology
 					text = <"Nei">
 					description = <"">
 				>
-				["at0008"] = <
-					text = <"Spontanabort">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"Provosert abort">
-					description = <"">
-				>
-				["at0010"] = <
-					text = <"Ekstrauterin graviditet">
-					description = <"">
-				>
 				["at0011"] = <
 					text = <"Antall barn">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Har du daglig omsorg for andre barn?">
 					description = <"">
 				>
 				["at0013"] = <
@@ -369,202 +425,326 @@ ontology
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"Fødselsmåte">
+					text = <"Har du omsorg for dette barnet?">
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0017"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0018"] = <
-					text = <"Barn (2)">
-					description = <"">
-				>
-				["at0019"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"Barn (3)">
-					description = <"">
-				>
-				["at0024"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0025"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0026"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0027"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0028"] = <
-					text = <"Barn (4)">
-					description = <"">
-				>
-				["at0029"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0030"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0031"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0032"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0033"] = <
-					text = <"Barn (5)">
-					description = <"">
-				>
-				["at0034"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0035"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0036"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0037"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0038"] = <
-					text = <"Barn (6)">
-					description = <"">
-				>
-				["at0039"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0040"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0041"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0042"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0043"] = <
-					text = <"Barn (7)">
-					description = <"">
-				>
-				["at0044"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0045"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0046"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0047"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0048"] = <
-					text = <"Barn (8)">
-					description = <"">
-				>
-				["at0049"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0050"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0051"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0052"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0053"] = <
-					text = <"Barn (9)">
-					description = <"">
-				>
-				["at0054"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0055"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0056"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0057"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0058"] = <
-					text = <"Barn (10)">
-					description = <"">
-				>
-				["at0059"] = <
-					text = <"Født (Årstall)">
-					description = <"">
-				>
-				["at0060"] = <
-					text = <"Fødselsmåte">
-					description = <"">
-				>
-				["at0061"] = <
-					text = <"Vaginal fødsel">
-					description = <"">
-				>
-				["at0062"] = <
-					text = <"Keisersnitt">
-					description = <"">
-				>
-				["at0063"] = <
 					text = <"Ja">
 					description = <"">
 				>
-				["at0064"] = <
+				["at0017"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"Har du barn fra tidligere forhold?">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Barn (2)">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"Barn (3)">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"Barn (4)">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"Barn (5)">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0105"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0110"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"Barn (6)">
+					description = <"">
+				>
+				["at0112"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0113"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0114"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0115"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0116"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0117"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"Barn (7)">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0126"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0127"] = <
+					text = <"Barn (8)">
+					description = <"">
+				>
+				["at0128"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0129"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0130"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0131"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0132"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0133"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0134"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0135"] = <
+					text = <"Barn (9)">
+					description = <"">
+				>
+				["at0136"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0137"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0138"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0139"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0140"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0141"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0142"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0143"] = <
+					text = <"Barn (10)">
+					description = <"">
+				>
+				["at0144"] = <
+					text = <"Født (Årstall)">
+					description = <"">
+				>
+				["at0145"] = <
+					text = <"Har du omsorg for dette barnet?">
+					description = <"">
+				>
+				["at0146"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0147"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0148"] = <
+					text = <"Er dette barnet adoptert?">
+					description = <"">
+				>
+				["at0149"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0150"] = <
 					text = <"Nei">
 					description = <"">
 				>
