@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"82877bdd8f1b5d5f63db13b7c8c9af7d">
+		["MD5-CAM-1.0.1"] = <"01da0e60d5e8c344b5c4c92e15d3bbd9">
 		["build_uid"] = <"02c93e52-f257-3b42-b71a-0ab420b69a5b">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Samtykke_IVF_tine_tilbakefore_egg
+	CLUSTER[at0000] matches {    -- IVF_tine_tilbakefore_egg_hn
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] matches {    -- Partner er informert om, og gir sitt samtykke til at befruktede egg tines og tilbakeføres til kvinnen
 				value matches {
@@ -49,7 +49,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Samtykke_IVF_tine_tilbakefore_egg">
+					text = <"IVF_tine_tilbakefore_egg_hn">
 					description = <"Samtykke_IVF_tine_tilbakefore_egg">
 				>
 				["at0001"] = <
