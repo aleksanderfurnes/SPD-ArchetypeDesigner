@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "20.0.0",
+      "sem_ver" : "21.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ac8ed4a5b3ad48326f1aba5e1ea97260",
+      "MD5-CAM-1.0.1" : "07f837d7f5b66518ec92e1c5dadbd7b7",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -18123,7 +18123,7 @@
           "at0044.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0044.1",
-            "text" : "Angi år/sykehus/diagnose",
+            "text" : "Utdyp (år/sykehus/diagnose)",
             "description" : "Fritekstbeskrivelse om tidligere sykdomshåndterings- eller behandlingsaktiviteter som er innenfor kartleggingsformålet.\r\n"
           }
         },
