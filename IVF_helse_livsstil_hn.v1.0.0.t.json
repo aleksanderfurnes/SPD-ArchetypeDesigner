@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0261785e4af7a96dc0288f0659f819db",
-      "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
+      "MD5-CAM-1.0.1" : "9548434f22e7b6724b815821458cbff3",
+      "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
+      "sem_ver" : "0.2.0",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -149,7 +151,7 @@
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-SECTION.adhoc heading (2).v1"
+    "value" : "openEHR-EHR-SECTION.adhoc_heading_(2).v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -276,7 +278,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Ad hoc heading (2)",
+          "text" : "Helse og livsstil",
           "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
         }
       },
@@ -358,7 +360,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "6215e14c-0035-3769-99d9-c662e2880fab",
+  "buildUid" : "ee0cd795-0735-391e-a9ea-e5dc225cec63",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
