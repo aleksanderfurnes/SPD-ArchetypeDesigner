@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "24.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "97fe2d69dc7b9ce6dee8049e43086d1e",
+      "MD5-CAM-1.0.1" : "abe954118399e9e888d8d6f59e5e3f53",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -358,14 +358,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : {
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Administrativt kjønn",
-            "description" : ""
-          }
-        }
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
