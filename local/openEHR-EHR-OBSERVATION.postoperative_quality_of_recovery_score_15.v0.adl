@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5557a7ccf69d5129316c93d23444533a">
+		["MD5-CAM-1.0.1"] = <"531176b8d4b6436ada9ece7b13c8c3ff">
 		["build_uid"] = <"49db086e-1700-3199-bf08-3b9bc35f66c5">
 	>
 
@@ -405,7 +405,7 @@ ontology
 					description = <"Har du opplevd noe av det følgende det siste døgnet?">
 				>
 				["at0022"] = <
-					text = <"*Total score (en)">
+					text = <"Totalskår">
 					description = <"">
 				>
 			>
