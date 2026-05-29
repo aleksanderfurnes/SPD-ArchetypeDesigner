@@ -1,0 +1,133 @@
+archetype (adl_version=1.4; uid=d8c5ec80-cbc1-4255-8e4d-675916d9f139)
+	openEHR-EHR-OBSERVATION.alle_datatyper_hnikt.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["name"] = <"Aleksander Spikkerud Furnes">
+		["organisation"] = <"Helse Nord IKT">
+		["email"] = <"aleksander.spikkerud.furnes@hnikt.no">
+		["date"] = <"2026-05-29">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"7cf2980498870015fa23accc34f0fa04">
+		["build_uid"] = <"c706886e-3b90-32cf-81e5-0a6666b88247">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- alle_datatyper_hnikt
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- quantity
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- proportion
+										value matches {
+											DV_PROPORTION matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- count
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- ordinal
+										value matches {
+											1|[local::at0008],
+											2|[local::at0009],
+											3|[local::at0010],
+											4|[local::at0011],
+											5|[local::at0012]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"alle_datatyper_hnikt">
+					description = <"alle_datatyper_hnikt">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"quantity">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"proportion">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"count">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"ordinal">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"en">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"to">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"tre">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"fire">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"fem">
+					description = <"">
+				>
+			>
+		>
+	>
