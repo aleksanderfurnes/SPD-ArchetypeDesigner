@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "24.0.0",
+      "sem_ver" : "24.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "abe954118399e9e888d8d6f59e5e3f53",
+      "MD5-CAM-1.0.1" : "97cb39cdb83021d941e68cf9d9b9170d",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -5983,7 +5983,7 @@
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
-            "text" : "Årstall",
+            "text" : "Dato for siste celleprøve fra livmorhalsen?",
             "description" : "Tidsangivelse for undersøkelsen.",
             "comment" : "Elementet \"Tidsangivelse\" er med hensikt løst modellert for å legge til rette for myriadene av mulighetene det kan brukes i spørreskjemaer for å fange når en undersøkelse ble utført. Den spesifikke og tiltenkte semantikken kan bli ytterligere klargjort i et templat. For eksempel: Undersøkelsens faktiske dato og/eller klokkeslett, start- og slutttid for undersøkelsen, et tidsintervall for når undersøkelsen ble gjort, varigheten av en undersøkelse, individets alder på tidspunktet for undersøkelsen, eller hvor lenge det siden den ble gjort. Kan være en delvis dato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
           },
