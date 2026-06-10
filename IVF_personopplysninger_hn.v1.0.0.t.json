@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "7dbff34c0632f6e10d862eb21c601a67",
+      "MD5-CAM-1.0.1" : "b959af03cd49adb821b318952bb8508d",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
-      "sem_ver" : "0.2.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -2928,15 +2928,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0002.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
               "occurrences" : "1..1",
-              "nodeId" : "at0004.1",
+              "nodeId" : "at0004.2",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -2949,12 +2942,18 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "Ja", "Nei" ]
+                      "constraint" : [ "Yrkesaktiv", "Arbeidsavklaringspenger", "Uførepensjon", "Annet" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2983,7 +2982,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0004.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Employment status (2)",
+            "description" : "Statement about the individual's current employment.",
+            "comment" : "For example: employed; unemployed; or not in labour force. Coding with a terminology is desirable, where possible. Detail about each occupation can be recorded within the CLUSTER.occupation_record archetype."
+          }
+        },
         "nb" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2991,11 +2998,17 @@
             "text" : "Arbeid",
             "description" : "Sammendrag eller varig (persistent) informasjon om et individs nåværende eller tidligere arbeid og/eller roller."
           },
-          "at0004.1" : {
+          "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Er du yrkesaktiv?",
-            "description" : "Utsagn om individets nåværende jobb/rolle.",
+            "code" : "at0002.1",
+            "text" : "Spesifiser (årsak og tidsrom)",
+            "description" : "Fritekstbeskrivelse for utdyping av årsak og tidsrom hvis svaret er Arbeidsavklaringspenger, Uførepensjon eller Annet.\n \n"
+          },
+          "at0004.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.2",
+            "text" : "Arbeidsstatus",
+            "description" : "",
             "comment" : "For eksempel: \"Inntektsgivende arbeid\", \"Arbeidsledig\", \"Pensjonist\". Koding med en terminologi er ønskelig, der det er mulig, for eksempel OID 8150 (Volven.no). Detaljene om hver enkel jobb/ rolle kan registreres i arketypen CLUSTER.occupation_record (Arbeidsforhold/rolle)."
           }
         }
