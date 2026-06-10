@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8bf8b026dd1f15640444a4ba699f3dca",
+      "MD5-CAM-1.0.1" : "a913b5964949489c29a5a54cf3f3440c",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.0.1",
       "build_uid" : ""
     },
     "details" : {
@@ -4755,7 +4755,7 @@
           "at0005.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.3",
-            "text" : "Allergi mot latex",
+            "text" : "Allergi mot røntgenkontrastmidler",
             "description" : "Finnes det en historikk med overfølsomhetsreaksjoner mot \"Substansnavn\" som er relevant for kartleggingsformålet?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
