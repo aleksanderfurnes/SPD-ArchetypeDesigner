@@ -19,8 +19,10 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "494a607640744dcc06c993efda70744e",
-      "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
+      "MD5-CAM-1.0.1" : "7dbff34c0632f6e10d862eb21c601a67",
+      "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
+      "sem_ver" : "0.2.0",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -149,7 +151,7 @@
   "differential" : true,
   "archetypeId" : {
     "@type" : "ARCHETYPE_HRID",
-    "value" : "openEHR-EHR-SECTION.adhoc heading.v1"
+    "value" : "openEHR-EHR-SECTION.adhoc_heading.v1"
   },
   "definition" : {
     "@type" : "C_COMPLEX_OBJECT",
@@ -241,7 +243,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "2d6b1e06-e506-31a0-9cc7-2e16519b0e29",
+  "buildUid" : "71fe0c75-f3cb-310e-93e7-28584b99b736",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -1623,6 +1625,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -2336,6 +2339,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "1..1",
                           "nodeId" : "at0005.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -2378,6 +2382,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0022.2",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -2477,7 +2482,7 @@
             "code" : "at0005.1",
             "text" : "Samlivsform",
             "description" : "Har individet hatt noen erfaring med det spesifiserte \"Sosialt forhold\"?",
-            "comment" : "I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+            "comment" : "Valget Enslig er med i templatet, men tas bort fra skjema fram til sykehuset starter med behandling av enslige. "
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2930,6 +2935,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0004.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
