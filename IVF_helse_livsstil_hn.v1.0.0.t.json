@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a913b5964949489c29a5a54cf3f3440c",
+      "MD5-CAM-1.0.1" : "b0a1db0af57b5be581db4ae8ff2c9aef",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
-      "sem_ver" : "1.0.1",
+      "sem_ver" : "1.1.0",
       "build_uid" : ""
     },
     "details" : {
@@ -5118,20 +5118,10 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.9" ],
+                                  "constraint" : [ "ac0.11" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_BOOLEAN",
-                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -5206,10 +5196,10 @@
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.9",
+            "code" : "ac0.11",
             "description" : ""
           }
         },
@@ -5240,10 +5230,10 @@
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
+            "code" : "ac0.11",
             "description" : ""
           }
         },
@@ -5254,10 +5244,10 @@
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
+            "code" : "ac0.11",
             "description" : ""
           }
         },
@@ -5268,10 +5258,10 @@
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
+            "code" : "ac0.11",
             "description" : ""
           }
         },
@@ -5282,10 +5272,10 @@
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
+            "code" : "ac0.11",
             "description" : ""
           }
         },
@@ -5296,10 +5286,10 @@
             "code" : "ac0.8",
             "description" : ""
           },
-          "ac0.9" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
+            "code" : "ac0.11",
             "description" : ""
           }
         }
@@ -5350,6 +5340,16 @@
         "ac0.9" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.9",
+          "members" : [ "at0023", "at0024", "at0045" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0023", "at0024", "at0045" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
           "members" : [ "at0023", "at0024", "at0045" ]
         }
       }
