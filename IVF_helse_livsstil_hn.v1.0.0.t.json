@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a4d79b9bb403d9db28dbfdc33afc5729",
+      "MD5-CAM-1.0.1" : "1190826fc9b48b37a184a4e3db5941ba",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
-      "sem_ver" : "1.2.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -2813,7 +2813,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.18" ],
+                                  "constraint" : [ "ac0.22" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -2949,7 +2949,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.19" ],
+                                  "constraint" : [ "ac0.23" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -3102,7 +3102,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.20" ],
+                                  "constraint" : [ "ac0.24" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -3238,7 +3238,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.21" ],
+                                  "constraint" : [ "ac0.25" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -3364,28 +3364,28 @@
             "description" : "Details about a specified substance or class/grouping of substances relevant for the screening purpose.",
             "comment" : "Use a separate instance of this CLUSTER to record specific details about each substance or class/grouping."
           },
-          "ac0.18" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.18",
+            "code" : "ac0.22",
             "description" : ""
           },
-          "ac0.19" : {
+          "ac0.23" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.19",
+            "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.20" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.20",
+            "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.21" : {
+          "ac0.25" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.21",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
@@ -3428,14 +3428,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
             "text" : "Røyker du?",
-            "description" : "Er den spesifikke substansen eller gruppen av substanser noen gang brukt?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN. Eksempel på et alternativt verdisett ved å benytte datatypen DV_TEXT kan være: Nåværende bruker, Aldri brukt, Tidligere bruker, Ukjent."
           },
           "at0024.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.2",
             "text" : "Drikker du alkohol?",
-            "description" : "Er den spesifikke substansen eller gruppen av substanser noen gang brukt?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN. Eksempel på et alternativt verdisett ved å benytte datatypen DV_TEXT kan være: Nåværende bruker, Aldri brukt, Tidligere bruker, Ukjent."
           },
           "at0025.1" : {
@@ -3454,7 +3454,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.3",
             "text" : "Bruker du snus?",
-            "description" : "Er den spesifikke substansen eller gruppen av substanser noen gang brukt?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN. Eksempel på et alternativt verdisett ved å benytte datatypen DV_TEXT kan være: Nåværende bruker, Aldri brukt, Tidligere bruker, Ukjent."
           },
           "at0025.3" : {
@@ -3467,7 +3467,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.4",
             "text" : "Har du noen gang brukt narkotika?",
-            "description" : "Er den spesifikke substansen eller gruppen av substanser noen gang brukt?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN. Eksempel på et alternativt verdisett ved å benytte datatypen DV_TEXT kan være: Nåværende bruker, Aldri brukt, Tidligere bruker, Ukjent."
           },
           "at0025.4" : {
@@ -3476,28 +3476,28 @@
             "text" : "Vennligst spesifiser",
             "description" : "Ytterligere fritekst om den spesifikke substansen eller grupper av substanser som ikke er fanget opp av andre felt."
           },
-          "ac0.18" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
+            "code" : "ac0.22",
             "description" : ""
           },
-          "ac0.19" : {
+          "ac0.23" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.19",
+            "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.20" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.20",
+            "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.21" : {
+          "ac0.25" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.21",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
@@ -3529,28 +3529,28 @@
             "description" : "Details zu einer spezifischen Substanz oder Substanzgruppe, die für Screening-Zwecke relevant sind.",
             "comment" : "Verwenden Sie eine separate Instanz dieses CLUSTERs, um spezifische Details über jeden Stoff oder jede Klasse/Gruppe zu erfassen."
           },
-          "ac0.18" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
+            "code" : "ac0.22",
             "description" : ""
           },
-          "ac0.19" : {
+          "ac0.23" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.19",
+            "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.20" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.20",
+            "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.21" : {
+          "ac0.25" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.21",
+            "code" : "ac0.25",
             "description" : ""
           }
         },
@@ -3582,28 +3582,28 @@
             "description" : "*Details about a specified substance or grouping of substances relevant for the screening purpose. (en)",
             "comment" : "*Use a separate instance of this CLUSTER to record specific details about each substance or grouping. (en)"
           },
-          "ac0.18" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
+            "code" : "ac0.22",
             "description" : ""
           },
-          "ac0.19" : {
+          "ac0.23" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.19",
+            "code" : "ac0.23",
             "description" : ""
           },
-          "ac0.20" : {
+          "ac0.24" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.20",
+            "code" : "ac0.24",
             "description" : ""
           },
-          "ac0.21" : {
+          "ac0.25" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.21",
+            "code" : "ac0.25",
             "description" : ""
           }
         }
@@ -3714,6 +3714,26 @@
         "ac0.21" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.21",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0036", "at0037" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
           "members" : [ "at0036", "at0037" ]
         }
       }
@@ -3942,7 +3962,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.4" ],
+                              "constraint" : [ "ac0.5" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -3981,10 +4001,10 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -3993,35 +4013,35 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0027.1",
             "text" : "Bruker du noen legemidler?",
-            "description" : "Finnes det noen tidligere legemiddelbruk som er innenfor kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
             "text" : "Vennligst spesifiser hvilke legemidler du bruker, dosering og hvorfor du bruker disse",
-            "description" : "Fritekstbeskrivelse om bruken av noen legemidler som er innenfor kartleggingsformålet."
+            "description" : ""
           },
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
@@ -4047,6 +4067,11 @@
         "ac0.4" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
+          "members" : [ "at0028", "at0029" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
           "members" : [ "at0028", "at0029" ]
         }
       }
@@ -4243,7 +4268,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.6" ],
+                              "constraint" : [ "ac0.8" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -4693,10 +4718,10 @@
             "text" : "Specific adverse reaction (4)",
             "description" : "Details about a specific adverse reaction to an identified substance, or substance class or grouping, relevant for the screening purpose."
           },
-          "ac0.6" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.6",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
@@ -4705,7 +4730,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "Har du en kjent allergi, eller har du hatt noen allergiske reaksjoner?",
-            "description" : "Finnes det en historikk av overfølsomhetsreaksjoner som er relevant til kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0022.1" : {
@@ -4742,28 +4767,28 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Allergi mot legemidler",
-            "description" : "Finnes det en historikk med overfølsomhetsreaksjoner mot \"Substansnavn\" som er relevant for kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0005.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
             "text" : "Allergi mot latex",
-            "description" : "Finnes det en historikk med overfølsomhetsreaksjoner mot \"Substansnavn\" som er relevant for kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0005.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.3",
             "text" : "Allergi mot røntgenkontrastmidler",
-            "description" : "Finnes det en historikk med overfølsomhetsreaksjoner mot \"Substansnavn\" som er relevant for kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0005.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.4",
             "text" : "Andre allergier",
-            "description" : "Finnes det en historikk med overfølsomhetsreaksjoner mot \"Substansnavn\" som er relevant for kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0025.4" : {
@@ -4772,10 +4797,10 @@
             "text" : "Vennligst spesifiser hvilke andre allergier",
             "description" : "Ytterligere fritekst om det spesifikke overfølsomhetsreaksjonsspørsmålet som ikke er omfattet av andre felt."
           },
-          "ac0.6" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.8",
             "description" : ""
           }
         }
@@ -4817,6 +4842,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.7",
           "members" : [ "at0052", "at0053", "at0054", "at0055" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0044", "at0045" ]
         }
       }
     },
@@ -5042,7 +5072,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.8" ],
+                              "constraint" : [ "ac0.13" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -5118,7 +5148,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.11" ],
+                                  "constraint" : [ "ac0.12" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -5190,16 +5220,16 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.8" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.8",
+            "code" : "ac0.12",
             "description" : ""
           },
-          "ac0.11" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.11",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
@@ -5208,7 +5238,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "Er du diagnostisert med noen fysiske eller psykiske sykdommer?",
-            "description" : "Finnes det noen bekymringer, plager, problemer eller diagnoser. som er innenfor kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0043.1" : {
@@ -5221,75 +5251,75 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Har du hatt blodpropp eller har noen i familien din hatt blodpropp?",
-            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
-          "ac0.8" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.12",
             "description" : ""
           },
-          "ac0.11" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.8" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.12",
             "description" : ""
           },
-          "ac0.11" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.8" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.12",
             "description" : ""
           },
-          "ac0.11" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
         "ca" : {
-          "ac0.8" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.12",
             "description" : ""
           },
-          "ac0.11" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
         "fr" : {
-          "ac0.8" : {
+          "ac0.12" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.12",
             "description" : ""
           },
-          "ac0.11" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.11",
+            "code" : "ac0.13",
             "description" : ""
           }
         }
@@ -5351,6 +5381,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.11",
           "members" : [ "at0023", "at0024", "at0045" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0023", "at0024", "at0045" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0031", "at0032" ]
         }
       }
     },
@@ -5638,7 +5678,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.4" ],
+                                  "constraint" : [ "ac0.5" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -5681,10 +5721,10 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
@@ -5693,21 +5733,21 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0044.1",
             "text" : "Er det noen arvelige sykdommer i familien?",
-            "description" : "Har det spesifikke problemet eller diagnosen noen gang vært tilstede i familien?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN. I tilfeller der et individ er adoptert eller ingen informasjon er tilgjengelig anbefales det å registere \"Ukjent\".\r\nFor eksempel: Har noen i familien din diabetes?"
           },
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.4" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.5",
             "description" : ""
           }
         }
@@ -5733,6 +5773,11 @@
         "ac0.4" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
+          "members" : [ "at0045", "at0046", "at0048" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
           "members" : [ "at0045", "at0046", "at0048" ]
         }
       }
@@ -5959,7 +6004,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.5" ],
+                              "constraint" : [ "ac0.6" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -5998,10 +6043,10 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -6010,7 +6055,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "Har du gjennomgått operasjon(er)?",
-            "description" : "Finnes det noen tidligere gjennomførte prosedyrer som som er innenfor kartleggingsformålet?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0041.1" : {
@@ -6019,34 +6064,34 @@
             "text" : "Hvilke(n)?",
             "description" : "Fritekstbeskrivelse om prosedyrer som er tidligere utført og som er innenfor kartleggingsformålet."
           },
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
         "it" : {
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
         "fr" : {
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         }
@@ -6077,6 +6122,11 @@
         "ac0.5" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
+          "members" : [ "at0031", "at0032" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
           "members" : [ "at0031", "at0032" ]
         }
       }
@@ -6399,7 +6449,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.8" ],
+                                  "constraint" : [ "ac0.11" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -6494,7 +6544,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.10" ],
+                                  "constraint" : [ "ac0.12" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -6545,12 +6595,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -6562,6 +6606,18 @@
             "code" : "at0022",
             "text" : "Management activity (2)",
             "description" : "Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."
+          },
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.11",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.12",
+            "description" : ""
           }
         },
         "nb" : {
@@ -6569,14 +6625,8 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Har du tidligere vært innlagt på sykehus?",
-            "description" : "Er det historikk av den spesifikke sykdomshåndterings- eller behandlingsaktiviteten?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
           },
           "at0035.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -6600,7 +6650,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
             "text" : "Har du hatt langvarig sykemelding de siste 5 årene?",
-            "description" : "Er det historikk av den spesifikke sykdomshåndterings- eller behandlingsaktiviteten?",
+            "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
           "at0035.2" : {
@@ -6608,15 +6658,21 @@
             "code" : "at0035.2",
             "text" : "Utdyp (årsak og tidsrom)",
             "description" : "Fylles ut dersom Ja er avhaket."
+          },
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.11",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
           }
         },
         "de" : {
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -6628,15 +6684,21 @@
             "code" : "at0022",
             "text" : "Managementaktivität (2)",
             "description" : "Details zu einer bestimmten Management- oder Behandlungsaktivität oder einer Reihe von Management- oder Behandlungstätigkeiten, die für das Screening relevant sind."
+          },
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.11",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
           }
         },
         "it" : {
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : ""
-          },
           "ac0.9" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -6648,6 +6710,18 @@
             "code" : "at0022",
             "text" : "*Management activity (en) (2)",
             "description" : "*Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose. (en)"
+          },
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.11",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : ""
           }
         }
       },
@@ -6702,6 +6776,16 @@
         "ac0.10" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.10",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
           "members" : [ "at0023", "at0024" ]
         }
       }
@@ -6874,7 +6958,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.6" ],
+                              "constraint" : [ "ac0.7" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -6948,18 +7032,18 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -6968,13 +7052,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0027.1",
             "text" : "Har du arbeidet, fått tannbehandling eller behandling ved sykehus utenfor Norden i løpet av de siste 12 månedene?",
-            "description" : "Finnes det historikk for reiseaktivitet relatert til kartleggingsformålet?",
+            "description" : "",
             "comment" : "I et templat vil dataelementet vanligvis omformuleres til det spesifikke spørsmålet som stilles. Det foreslåtte verdisettet kan tilpasses til lokal bruk ved å velge mellom DV_TEXT eller DV_BOOLEAN datatypene for å tilrettelegge for hvert enkelt bruksområde."
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         }
@@ -7010,6 +7094,11 @@
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
+          "members" : [ "at0028", "at0029" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
           "members" : [ "at0028", "at0029" ]
         }
       }
