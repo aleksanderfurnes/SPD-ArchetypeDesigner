@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "29.0.0",
+      "sem_ver" : "30.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "3651fad09dde54bf810eefb2b19d4122",
+      "MD5-CAM-1.0.1" : "878a4c2c6ecd5032f5a5b6d196b83839",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -2208,6 +2208,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -2277,6 +2278,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0014.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -2289,12 +2291,13 @@
                         "rmAttributeName" : "defining_code",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "at0015", "at0016" ]
+                          "constraint" : [ "ac0.2" ],
+                          "selectedTerminologies" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -2304,6 +2307,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0017.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -2336,6 +2340,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0018.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -2459,6 +2464,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "nb" : {
@@ -2485,6 +2496,12 @@
             "code" : "at0017.1",
             "text" : "Sykluslengde (gjennomsnitt)",
             "description" : "Vanlig sykluslengde i løpet av denne episoden."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
           }
         },
         "fi" : {
@@ -2492,6 +2509,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
             "description" : ""
           }
         }
@@ -2503,6 +2526,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
           "members" : [ "at0026", "at0005", "at0006", "at0007" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0015", "at0016" ]
         }
       }
     },
@@ -2812,6 +2840,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "1..1",
                           "nodeId" : "at0005.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -2829,7 +2858,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.5" ],
+                                  "constraint" : [ "ac0.6" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -2906,10 +2935,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -2940,10 +2969,10 @@
             "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge bekymringer, plager, problemer eller diagnoser.",
             "comment" : "Svarene kan være selvrapporterte."
           },
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -2954,10 +2983,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -2968,10 +2997,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -2982,10 +3011,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -2996,10 +3025,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.5" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.6",
             "description" : ""
           }
         }
@@ -3030,6 +3059,11 @@
         "ac0.5" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
+          "members" : [ "at0023", "at0024", "at0045" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
           "members" : [ "at0023", "at0024", "at0045" ]
         }
       }
@@ -3282,7 +3316,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
+                      "occurrences" : "1..1",
                       "nodeId" : "at0027.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -3300,7 +3334,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.12" ],
+                              "constraint" : [ "ac0.13" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -3929,10 +3963,10 @@
             "description" : "Details about a specified investigation or grouping of investigations relevant for the screening purpose.",
             "comment" : "Use separate instances of this CLUSTER to differentiate between specific investigations or groupings of investigations."
           },
-          "ac0.12" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.12",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
@@ -3965,10 +3999,10 @@
             "description" : "Angaben zu einer bestimmten Untersuchung oder einer Gruppe von Untersuchungen, die für den Zweck des Screenings relevant sind.",
             "comment" : "Verwenden Sie separate Instanzen von diesem CLUSTER, um zwischen bestimmten Untersuchungen oder Gruppierungen von Untersuchungen zu unterscheiden."
           },
-          "ac0.12" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
@@ -4056,10 +4090,10 @@
             "text" : "Hvilke(n)?",
             "description" : "Ytterligere fritekst om den spesifikke undersøkelsen som ikke er omfattet av andre felt."
           },
-          "ac0.12" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
@@ -4092,10 +4126,10 @@
             "description" : "Detalles sobre una investigación o grupo de investigaciones relevantes para el propósito del screening.",
             "comment" : "Utilice instancias separadas de este CLUSTER para diferenciar entre investigaciones específicas o grupo de investigaciones."
           },
-          "ac0.12" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.13",
             "description" : ""
           }
         },
@@ -4128,10 +4162,10 @@
             "description" : "Detalls sobre una investigació o grup d'investigacions rellevants per al propòsit de l'screening.",
             "comment" : "Utilitzeu instàncies separades d'aquest CLUSTER per diferenciar entre investigacions específiques o grup de recerca."
           },
-          "ac0.12" : {
+          "ac0.13" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.12",
+            "code" : "ac0.13",
             "description" : ""
           }
         }
@@ -4197,6 +4231,11 @@
         "ac0.12" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.12",
+          "members" : [ "at0028", "at0029" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
           "members" : [ "at0028", "at0029" ]
         }
       }
@@ -4418,7 +4457,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
+                      "occurrences" : "1..1",
                       "nodeId" : "at0039.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -4436,7 +4475,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.6" ],
+                              "constraint" : [ "ac0.7" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -4476,10 +4515,10 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -4491,26 +4530,26 @@
             "description" : "",
             "comment" : "Sykdomshåndtering eller behandling kan være fullført, eller pågående. Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
         "it" : {
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         }
@@ -4546,6 +4585,11 @@
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
+          "members" : [ "at0040", "at0041" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
           "members" : [ "at0040", "at0041" ]
         }
       }
@@ -4855,6 +4899,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "1..1",
                           "nodeId" : "at0005.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -4872,7 +4917,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.16" ],
+                                  "constraint" : [ "ac0.19" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -4970,6 +5015,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "1..1",
                           "nodeId" : "at0005.2",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -4987,7 +5033,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.17" ],
+                                  "constraint" : [ "ac0.20" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -5085,6 +5131,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "1..1",
                           "nodeId" : "at0005.3",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -5102,7 +5149,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.18" ],
+                                  "constraint" : [ "ac0.21" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -5199,22 +5246,22 @@
             "text" : "Specific problem or diagnosis (3)",
             "description" : "Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose."
           },
-          "ac0.16" : {
+          "ac0.19" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.16",
+            "code" : "ac0.19",
             "description" : ""
           },
-          "ac0.17" : {
+          "ac0.20" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.17",
+            "code" : "ac0.20",
             "description" : ""
           },
-          "ac0.18" : {
+          "ac0.21" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.18",
+            "code" : "ac0.21",
             "description" : ""
           }
         },
@@ -5278,22 +5325,22 @@
             "description" : "",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
-          "ac0.16" : {
+          "ac0.19" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
+            "code" : "ac0.19",
             "description" : ""
           },
-          "ac0.17" : {
+          "ac0.20" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.17",
+            "code" : "ac0.20",
             "description" : ""
           },
-          "ac0.18" : {
+          "ac0.21" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
+            "code" : "ac0.21",
             "description" : ""
           }
         },
@@ -5323,22 +5370,22 @@
             "text" : "Bestimmter Zustand (3)",
             "description" : "Details zu einer spezifischen Beschwerde, Diagnose oder zu einem bestimmten Problem oder einer Gruppe an Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind."
           },
-          "ac0.16" : {
+          "ac0.19" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
+            "code" : "ac0.19",
             "description" : ""
           },
-          "ac0.17" : {
+          "ac0.20" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.17",
+            "code" : "ac0.20",
             "description" : ""
           },
-          "ac0.18" : {
+          "ac0.21" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
+            "code" : "ac0.21",
             "description" : ""
           }
         },
@@ -5368,22 +5415,22 @@
             "text" : "*Specifieke aandoening (3)",
             "description" : "*Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose. (en)"
           },
-          "ac0.16" : {
+          "ac0.19" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
+            "code" : "ac0.19",
             "description" : ""
           },
-          "ac0.17" : {
+          "ac0.20" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.17",
+            "code" : "ac0.20",
             "description" : ""
           },
-          "ac0.18" : {
+          "ac0.21" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
+            "code" : "ac0.21",
             "description" : ""
           }
         },
@@ -5413,22 +5460,22 @@
             "text" : "Problema o diagnòstic específic (3)",
             "description" : "Dades sobre una qüestió, problema o diagnòstic específic, o grup de problemes o diagnòstics rellevants per a un objectiu de detecció."
           },
-          "ac0.16" : {
+          "ac0.19" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
+            "code" : "ac0.19",
             "description" : ""
           },
-          "ac0.17" : {
+          "ac0.20" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.17",
+            "code" : "ac0.20",
             "description" : ""
           },
-          "ac0.18" : {
+          "ac0.21" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
+            "code" : "ac0.21",
             "description" : ""
           }
         },
@@ -5458,22 +5505,22 @@
             "text" : "Problème ou diagnostic spécifique (3)",
             "description" : "Détails sur une question, un problème ou un diagnostic spécifique ou un groupe de problèmes ou de diagnostics pertinents pour l'objectif du dépistage."
           },
-          "ac0.16" : {
+          "ac0.19" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
+            "code" : "ac0.19",
             "description" : ""
           },
-          "ac0.17" : {
+          "ac0.20" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.17",
+            "code" : "ac0.20",
             "description" : ""
           },
-          "ac0.18" : {
+          "ac0.21" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
+            "code" : "ac0.21",
             "description" : ""
           }
         }
@@ -5569,6 +5616,21 @@
         "ac0.18" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.18",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
           "members" : [ "at0023", "at0024" ]
         }
       }
@@ -6403,7 +6465,43 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1950,
+                    "upper" : 2200,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -6467,18 +6565,104 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "nb" : { }
+        "nb" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0003", "at0004" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0006", "at0007" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "abd8a5aa-edf0-3a5d-bb37-ac1f5311fd59",
@@ -6537,6 +6721,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
           "nodeId" : "at0002.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -6554,7 +6739,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.1" ],
+                  "constraint" : [ "ac0.2" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -6565,6 +6750,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
           "nodeId" : "at0005.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -6577,12 +6763,13 @@
                 "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "at0006", "at0007" ]
+                  "constraint" : [ "ac0.3" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -6592,6 +6779,39 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0011.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 0,
+                    "upper" : 10,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
           "nodeId" : "at0012.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -6604,12 +6824,13 @@
                 "rmAttributeName" : "defining_code",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "at0063", "at0064" ]
+                  "constraint" : [ "ac0.4" ],
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -6631,12 +6852,6 @@
             "text" : "Aktuell partner",
             "description" : "IVF_tidligere_graviditet_hn"
           },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
@@ -6648,6 +6863,24 @@
             "code" : "at0012.1",
             "text" : "Har du daglig omsorg for andre barn med aktuell partner?",
             "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : ""
           }
         }
       },
@@ -6658,6 +6891,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
           "members" : [ "at0003" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0003" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0006", "at0007" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0063", "at0064" ]
         }
       }
     },
@@ -6718,6 +6966,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
           "nodeId" : "at0002.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -6735,7 +6984,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.3" ],
+                  "constraint" : [ "ac0.4" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -6764,6 +7013,38 @@
                     "value" : "local"
                   },
                   "constraint" : [ "at0006", "at0007" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0011.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 0,
+                    "upper" : 10,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -6812,12 +7093,6 @@
             "text" : "Annen partner",
             "description" : "IVF_tidligere_graviditet_hn"
           },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
@@ -6828,6 +7103,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0012.1",
             "text" : "Har du delt omsorg for andre barn med annen partner?",
+            "description" : ""
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
             "description" : ""
           }
         }
@@ -6848,6 +7129,11 @@
         "ac0.3" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
+          "members" : [ "at0004" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
           "members" : [ "at0004" ]
         }
       }
@@ -7115,6 +7401,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "1..1",
                           "nodeId" : "at0005.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -7132,7 +7419,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.6" ],
+                                  "constraint" : [ "ac0.7" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -7207,10 +7494,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -7240,10 +7527,10 @@
             "text" : "Annet",
             "description" : "Fritekstbeskrivelse om prosedyrer som er tidligere utført og som er innenfor kartleggingsformålet."
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -7254,10 +7541,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -7268,10 +7555,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         },
@@ -7282,10 +7569,10 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.7",
             "description" : ""
           }
         }
@@ -7321,6 +7608,11 @@
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
           "members" : [ "at0023", "at0024" ]
         }
       }
@@ -7428,7 +7720,54 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1900,
+                    "upper" : 2200,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
