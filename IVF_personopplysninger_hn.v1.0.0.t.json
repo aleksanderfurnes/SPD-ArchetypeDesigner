@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "600b0be67b6404e92269aab78eae2fa8",
+      "MD5-CAM-1.0.1" : "8e79b8ba5f510c460ab7fcedb762c5c1",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -530,7 +530,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Navn på fastlege",
-            "description" : "Ustrukturert navn for personen.",
+            "description" : "",
             "comment" : "Innholdet i dette elementet kan være en sammenstilling av en eller flere komponenter fra arketypen CLUSTER.structured_name. For eksempel: \"John Markham\", \"Professor Sir John Markham\", \"John Markham Jnr MP\"."
           }
         },
@@ -784,7 +784,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Navn på fastlegekontor",
-            "description" : "Ustrukturert navn for organisasjonen.",
+            "description" : "",
             "comment" : "For eksempel: \"Haukeland Sykehus\", \"Årstad hjemmesykepleie\", \"YNWA Oslo\" eller \"JB Smith advokater\"."
           }
         },
@@ -1367,7 +1367,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Adresse fastlegekontor",
-            "description" : "En ustrukturert adresselinje som representerer alle gatenivå- eller postboksdetaljer som kan støtte identifikasjon av en lokalisering.",
+            "description" : "",
             "comment" : "Forekomster for dette dataelementet er satt til 0..* for å tillate registrering av flere fritekst-\"Adresselinje\"-dataelementer for å representerer alle ulike måter man har behov for å uttrykke en «adresse» i kontekst av dataelementet «By». Flere adresselinjer kan representeres i et templat, omdøpt til 'Adresselinje 1', 'Adresselinje 2' osv.\r\n\r\nFor eksempel: \r\n \"7A/52 Davis Street\" eller \"Leilighet 7A\" som adresselinje 1 og \"52 Davis Street\" som adresselinje 2; en postboksplassering langs veien, for eksempel \"RMB 725, Princes Highway\"; eller et beskrivende landemerke, for eksempel \"På hjørnet mellom Storgaten og Lillegaten\" eller \"Det andre huset til høyre etter butikken med rød dør\"."
           }
         },
@@ -1766,7 +1766,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
             "text" : "Kan du kommunisere godt på norsk eller engelsk?",
-            "description" : "En fritekstbeskrivelse om individets overordnede evne til kommunikasjon, inkludert funksjonsnedsettelser og behov for kommunikasjonshjelpemidler."
+            "description" : ""
           },
           "at0015.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1928,6 +1928,12 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0002.1",
           "attributes" : [ ],
@@ -1982,6 +1988,20 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Navn på språket",
+            "description" : "",
+            "comment" : "For eksempel Mandarin, swahili, fransk eller norsk tegnspråk. Koding av \"Språknavn\" med en terminologi er ønskelig om mulig. For eksempel ISO 639-3 eller Glottolog. Kodene i ISO 639-3 inneholder både navn på språket men kan også representere navn og modalitet, for eksempel norsk tegnspråk. Verdisettet kan variere med modalitet."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Navn på språket",
+            "description" : "",
+            "comment" : "For eksempel Mandarin, swahili, fransk eller norsk tegnspråk. Koding av \"Språknavn\" med en terminologi er ønskelig om mulig. For eksempel ISO 639-3 eller Glottolog. Kodene i ISO 639-3 inneholder både navn på språket men kan også representere navn og modalitet, for eksempel norsk tegnspråk. Verdisettet kan variere med modalitet."
           }
         },
         "en" : {
@@ -2144,7 +2164,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Har du behov for tolk?",
-            "description" : "Om individet trenger tolk.",
+            "description" : "",
             "comment" : "For eksempel kan et engelsktalende individ i Quebec trenge tolk dersom administrasjonsspråket er fransk, og dermed konsultasjonen gjennomføres på fransk, men ikke dersom administrasjonsspråket er engelsk."
           }
         }
@@ -2542,7 +2562,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
             "text" : "Samlivsform",
-            "description" : "Har individet hatt noen erfaring med det spesifiserte \"Sosialt forhold\"?",
+            "description" : "",
             "comment" : "Valget Enslig er med i templatet, men tas bort fra skjema fram til sykehuset starter med behandling av enslige. "
           },
           "at0000.1" : {
@@ -2567,8 +2587,22 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
             "text" : "Har vært samboere",
-            "description" : "Har individet hatt noen erfaring med det spesifiserte \"Sosialt forhold\"?",
+            "description" : "",
             "comment" : "I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Sosialt forhold",
+            "description" : "",
+            "comment" : "Dette elementet tilbyr valg mellom fritekst og kodet tekst. Det er antatt at listen av kodede verdier vil vokse ettersom man identifiserer flere behov. Det er anbefalt å kode \"Sosialt forhold\" med en terminologi dersom det er mulig - for eksempel relevante termer innen hierarkiet til SNOMED CT's Social context finding hierarchy (SCTID: 108329005). Alternativt som fritekst, for eksempel \"Forsørgelsesbyrde\", \"Sosial isolasjon\", \"Diskriminering\", \"Minoritetsstress\"."
+          },
+          "at0004.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Sosialt forhold",
+            "description" : "",
+            "comment" : "Dette elementet tilbyr valg mellom fritekst og kodet tekst. Det er antatt at listen av kodede verdier vil vokse ettersom man identifiserer flere behov. Det er anbefalt å kode \"Sosialt forhold\" med en terminologi dersom det er mulig - for eksempel relevante termer innen hierarkiet til SNOMED CT's Social context finding hierarchy (SCTID: 108329005). Alternativt som fritekst, for eksempel \"Forsørgelsesbyrde\", \"Sosial isolasjon\", \"Diskriminering\", \"Minoritetsstress\"."
           }
         },
         "it" : {
@@ -2824,14 +2858,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Navn på partner",
-            "description" : "Ustrukturert navn for personen.",
+            "description" : "",
             "comment" : "Innholdet i dette elementet kan være en sammenstilling av en eller flere komponenter fra arketypen CLUSTER.structured_name. For eksempel: \"John Markham\", \"Professor Sir John Markham\", \"John Markham Jnr MP\"."
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Fødselsnummer til partner (11 siffer)",
-            "description" : "Identifikator for personen.",
+            "description" : "",
             "comment" : "Forekomster for dette dataelementet er satt til 0..* for å tillatte registrering av mer enn én Identifikator. Legg merke til at DV_IDENTIFIER-datatypen inneholder flere underkomponenter for å registrere ID-verdi, type, utsteder og tilordnet. For eksempel: personnummer, førerkort eller passnummer."
           }
         },
@@ -3694,14 +3728,14 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0013.1",
             "text" : "Stillingsprosent",
-            "description" : "Arbeidsforholdet/rollens andel eller prosent av en heltidsstilling.",
+            "description" : "",
             "comment" : "Definisjonen av \"heltid\" kan variere mellom ulike yrker. For eksempel \"0,5\", 50 %\" eller \"deltid\". I noen situasjoner kan det være passende å registrere faktisk antall arbeidstimer i elementet \"Antall arbeidstimer\"."
           },
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Yrke/utdanning",
-            "description" : "Klassifisering av yrket individet har.",
+            "description" : "",
             "comment" : "Koding med en terminologi er ønskelig om mulig. For eksempel kategorisering i henhold til STYRK-08.\r\nFor eksempel: \"Salgssjef\" eller \"Programvareutvikler\"."
           }
         },
@@ -3997,7 +4031,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Arbeidsgiver",
-            "description" : "Ustrukturert navn for organisasjonen.",
+            "description" : "",
             "comment" : "For eksempel: \"Haukeland Sykehus\", \"Årstad hjemmesykepleie\", \"YNWA Oslo\" eller \"JB Smith advokater\"."
           }
         },
@@ -4226,7 +4260,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "NAV-kommune",
-            "description" : "Ustrukturert navn for organisasjonen.",
+            "description" : "",
             "comment" : "For eksempel: \"Haukeland Sykehus\", \"Årstad hjemmesykepleie\", \"YNWA Oslo\" eller \"JB Smith advokater\"."
           }
         },
