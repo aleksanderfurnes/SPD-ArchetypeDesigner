@@ -19,9 +19,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8e79b8ba5f510c460ab7fcedb762c5c1",
+      "MD5-CAM-1.0.1" : "cd3c08eab5300710cf6b840741a92bd8",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -1989,13 +1989,6 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Navn på språket",
-            "description" : "",
-            "comment" : "For eksempel Mandarin, swahili, fransk eller norsk tegnspråk. Koding av \"Språknavn\" med en terminologi er ønskelig om mulig. For eksempel ISO 639-3 eller Glottolog. Kodene i ISO 639-3 inneholder både navn på språket men kan også representere navn og modalitet, for eksempel norsk tegnspråk. Verdisettet kan variere med modalitet."
-          },
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
@@ -2430,10 +2423,6 @@
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "87915002",
                                     "value" : "Gift"
-                                  }, {
-                                    "terminologyId" : "SNOMED-CT",
-                                    "code" : "125681006",
-                                    "value" : "Enslig"
                                   } ]
                                 } ]
                               } ],
