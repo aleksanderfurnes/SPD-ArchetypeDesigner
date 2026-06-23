@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "32.0.0",
+      "sem_ver" : "32.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4480f04ec72950273e13d641b0ba71e3",
+      "MD5-CAM-1.0.1" : "e46d9f71c8e7979e845d9447d5b2117f",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -7526,9 +7526,9 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Har du gjennomgått assistert befrukning (behandling)?",
-            "description" : "",
-            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+            "text" : "Har du gjennomgått assistert befruktning (behandling)?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.",
+            "description" : ""
           },
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
