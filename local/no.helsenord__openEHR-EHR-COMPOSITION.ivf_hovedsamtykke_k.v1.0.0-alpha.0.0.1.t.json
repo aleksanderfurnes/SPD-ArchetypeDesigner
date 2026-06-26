@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.0.0",
+      "sem_ver" : "9.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5e6614e9c7b4c98091fcdca31ad407bf",
+      "MD5-CAM-1.0.1" : "d5694a812762bcd57817c8d1c6bcaf28",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -204,7 +204,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "ivf_samtykke_tin_hn_v0",
+          "text" : "ivf_hovedsamtykke_hn_v0",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
