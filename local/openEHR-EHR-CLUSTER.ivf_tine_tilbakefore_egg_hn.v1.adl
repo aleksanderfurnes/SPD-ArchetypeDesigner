@@ -23,42 +23,20 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0a293ecd16514b9d72a92a453cb7c328">
+		["MD5-CAM-1.0.1"] = <"a6ba5487e446620c44346cf56169a731">
 		["build_uid"] = <"02c93e52-f257-3b42-b71a-0ab420b69a5b">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- ivf_tine_tilbakefore_egg_hn
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] matches {    -- Vi samtykker til at frosne befruktede egg tines og tilbakeføres til kvinnen
+			ELEMENT[at0001] matches {    -- Jeg samtykker til at frosne befruktede egg tines og tilbakeføres til kvinnen
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
 							at0002,    -- Ja
 							at0003]    -- Nei
-						}
-					}
-				}
-			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Vi bekrefter at vi har hatt anledning til å overveie innholdet i dette dokumentet og be om ytterligere opplysninger eller informasjon
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0006,    -- Ja
-							at0007]    -- Nei
-						}
-					}
-				}
-			}
-			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Vi samtykker til at journalnotat, prøveresultat og annet som angår vår behandling ved assistert befruktning kan legges inn i partners journal
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0009,    -- Ja
-							at0010]    -- Nei
 						}
 					}
 				}
@@ -75,7 +53,7 @@ ontology
 					description = <"Samtykke_IVF_tine_tilbakefore_egg">
 				>
 				["at0001"] = <
-					text = <"Vi samtykker til at frosne befruktede egg tines og tilbakeføres til kvinnen">
+					text = <"Jeg samtykker til at frosne befruktede egg tines og tilbakeføres til kvinnen">
 					description = <"">
 				>
 				["at0002"] = <
@@ -83,30 +61,6 @@ ontology
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Nei">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"Vi bekrefter at vi har hatt anledning til å overveie innholdet i dette dokumentet og be om ytterligere opplysninger eller informasjon">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Nei">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Vi samtykker til at journalnotat, prøveresultat og annet som angår vår behandling ved assistert befruktning kan legges inn i partners journal">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0010"] = <
 					text = <"Nei">
 					description = <"">
 				>
