@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.0.0",
+      "sem_ver" : "9.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "3404431d08da5d785bb8bdf4ae849be1",
+      "MD5-CAM-1.0.1" : "e0d7a296379aab424fda66687c31b45c",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -910,7 +910,7 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Vi bekrefter at vi er gift/samboende",
+            "text" : "Jeg bekrefter at vi er gift/samboende",
             "description" : "Har individet hatt noen erfaring med det spesifiserte \"Sosialt forhold\"?",
             "comment" : "I templat vil navnet på dataelementet normalt omformuleres til det spesifikke spørsmålet. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
@@ -1322,7 +1322,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "a6ba5487e446620c44346cf56169a731"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.ivf_tine_tilbakefore_egg_hn.v1",
     "differential" : true,
@@ -1373,7 +1386,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "86b25d8ab73e7fc24fc2724e6c9a9f0a"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.ivf_samtykkeinformasjon_hn.v1",
     "differential" : true,
