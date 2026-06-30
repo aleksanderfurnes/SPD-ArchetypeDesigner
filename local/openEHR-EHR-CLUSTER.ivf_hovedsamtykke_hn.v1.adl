@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1aeaa4d29976940f649605b3db4b240f">
+		["MD5-CAM-1.0.1"] = <"5382e304fae0c34b849538919190af06">
 		["build_uid"] = <"02c93e52-f257-3b42-b71a-0ab420b69a5b">
 	>
 
@@ -59,6 +59,17 @@ definition
 							[local::
 							at0009,    -- Ja
 							at0010]    -- Nei
+						}
+					}
+				}
+			}
+			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Jeg bekrefter å ha mottatt informasjonen ovenfor fra IVF-poliklinikken, UNN Tromsø, og samtykker herved til behandling med assistert befruktning
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0021,    -- Ja
+							at0022]    -- Nei
 						}
 					}
 				}
@@ -161,6 +172,18 @@ ontology
 					description = <"">
 				>
 				["at0019"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Jeg bekrefter å ha mottatt informasjonen ovenfor fra IVF-poliklinikken, UNN Tromsø, og samtykker herved til behandling med assistert befruktning">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0022"] = <
 					text = <"Nei">
 					description = <"">
 				>
