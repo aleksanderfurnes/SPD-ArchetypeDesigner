@@ -23,14 +23,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"82da8d8e2aa5cf2ef79eb1016047fc25">
+		["MD5-CAM-1.0.1"] = <"dc5bbc7ba4f2eec9e18630dabfb4d34b">
 		["build_uid"] = <"02c93e52-f257-3b42-b71a-0ab420b69a5b">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- ivf_hovedsamtykke_hn
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] matches {    -- Jeg samtykker til nedfrysning av befruktede egg
+			ELEMENT[at0001] matches {    -- Jeg samtykker til nedfrysing av befruktede egg
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -112,7 +112,7 @@ ontology
 					description = <"Samtykke_IVF_tine_tilbakefore_egg">
 				>
 				["at0001"] = <
-					text = <"Jeg samtykker til nedfrysning av befruktede egg">
+					text = <"Jeg samtykker til nedfrysing av befruktede egg">
 					description = <"">
 				>
 				["at0002"] = <
