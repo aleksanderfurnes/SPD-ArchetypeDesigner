@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5382e304fae0c34b849538919190af06">
+		["MD5-CAM-1.0.1"] = <"82da8d8e2aa5cf2ef79eb1016047fc25">
 		["build_uid"] = <"02c93e52-f257-3b42-b71a-0ab420b69a5b">
 	>
 
@@ -63,7 +63,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Jeg bekrefter å ha mottatt informasjonen ovenfor fra IVF-poliklinikken, UNN Tromsø, og samtykker herved til behandling med assistert befruktning
+			ELEMENT[at0020] matches {    -- Jeg bekrefter å ha mottatt informasjonen ovenfor fra IVF-poliklinikken, UNN Tromsø, og samtykker herved til behandling med assistert befruktning
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
