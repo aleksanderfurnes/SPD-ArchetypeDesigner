@@ -1,0 +1,96 @@
+archetype (adl_version=1.4; uid=3f519c78-3479-4d02-a8f8-e72afaf91365)
+	openEHR-EHR-OBSERVATION.hn_guss_evaluering_bilde_hn.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["name"] = <"Aleksander Spikkerud Furnes">
+		["organisation"] = <"Helse Nord IKT">
+		["email"] = <"aleksander.spikkerud.furnes@hnikt.no">
+		["date"] = <"2026-07-01">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"f85c3cb75a038d6fb44b04297ab19552">
+		["build_uid"] = <"208d60d3-59a0-3ede-bffb-bd9b2ede7eb3">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- hn_guss_evaluering_bilde_hn
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Er det teit at vi må gjøre sånn her?
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005,    -- Ja
+													at0006]    -- Også ja
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"hn_guss_evaluering_bilde_hn">
+					description = <"hn_guss_evaluering_bilde_hn">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Er det teit at vi må gjøre sånn her?">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Også ja">
+					description = <"">
+				>
+			>
+		>
+	>
