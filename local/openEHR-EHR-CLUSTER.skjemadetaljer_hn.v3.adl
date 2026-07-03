@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c6d140b7b49ca7b9a1383195b54425d3">
+		["MD5-CAM-1.0.1"] = <"79917c3d2ac3132f59064b4527a3c1b8">
 		["build_uid"] = <"180b3e90-2f51-3eed-ac82-389ddf91a6e4">
 	>
 
@@ -94,6 +94,7 @@ ontology
 				["at0006"] = <
 					text = <"Skjema kommentar">
 					description = <"">
+					comment = <"Den godkjente arketypen \"tidfestet fritekstfelt\" kan kun brukes av klinikere, dette skal kommentarfelt derfor brukes av pasienten.">
 				>
 			>
 		>
