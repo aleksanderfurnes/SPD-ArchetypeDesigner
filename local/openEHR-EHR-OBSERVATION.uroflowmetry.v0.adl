@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0a4cf409537ec706d6e01bc2d0dccfeb">
+		["MD5-CAM-1.0.1"] = <"c077dd013c9179caad44a43882c71818">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 	>
 
@@ -83,7 +83,12 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0010] matches {*}    -- Item tree
+			ITEM_TREE[at0010] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					CLUSTER[at0015] occurrences matches {0..1} matches {*}    -- Extension
+					CLUSTER[at0016] occurrences matches {0..1} matches {*}    -- Device
+				}
+			}
 		}
 	}
 
@@ -141,6 +146,14 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Position">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Extension">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Device">
 					description = <"">
 				>
 			>
