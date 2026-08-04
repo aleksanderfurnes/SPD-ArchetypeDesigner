@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"87a1b10cec48d9bd81617435f224b913">
+		["MD5-CAM-1.0.1"] = <"0a4cf409537ec706d6e01bc2d0dccfeb">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 	>
 
@@ -34,11 +34,56 @@ definition
 				events cardinality matches {1..*; unordered} matches {
 					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
 						data matches {
-							ITEM_TREE[at0003] matches {*}    -- Tree
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0005] occurrences matches {0..1} matches {    -- Measurements
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0009] occurrences matches {0..1} matches {    -- Maximum flow rate
+												value matches {
+													DV_QUANTITY matches {*}
+												}
+											}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Clinical interpretation
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									allow_archetype CLUSTER[at0008] occurrences matches {0..*} matches {    -- Multimedia representation
+										include
+											archetype_id/value matches {/.*/}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0012] matches {    -- Item tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Confounding factors
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Position
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+								}
+							}
 						}
 					}
 				}
 			}
+		}
+		protocol matches {
+			ITEM_TREE[at0010] matches {*}    -- Item tree
 		}
 	}
 
@@ -61,6 +106,42 @@ ontology
 				["at0003"] = <
 					text = <"Tree">
 					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Measurements">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Clinical interpretation">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Multimedia representation">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Maximum flow rate">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0012"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0013"] = <
+					text = <"Confounding factors">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Position">
+					description = <"">
 				>
 			>
 		>
