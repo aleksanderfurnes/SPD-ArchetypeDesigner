@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c077dd013c9179caad44a43882c71818">
+		["MD5-CAM-1.0.1"] = <"81c60ef0f7aeb652ea6ea44041805352">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 	>
 
@@ -39,6 +39,26 @@ definition
 									CLUSTER[at0005] occurrences matches {0..1} matches {    -- Measurements
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0009] occurrences matches {0..1} matches {    -- Maximum flow rate
+												value matches {
+													DV_QUANTITY matches {*}
+												}
+											}
+											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Voided volume
+												value matches {
+													DV_QUANTITY matches {*}
+												}
+											}
+											ELEMENT[at0019] occurrences matches {0..1} matches {    -- Average flow rate
+												value matches {
+													DV_QUANTITY matches {*}
+												}
+											}
+											ELEMENT[at0020] occurrences matches {0..1} matches {    -- Time to maximum flow
+												value matches {
+													DV_QUANTITY matches {*}
+												}
+											}
+											ELEMENT[at0021] occurrences matches {0..1} matches {    -- Flow time
 												value matches {
 													DV_QUANTITY matches {*}
 												}
@@ -154,6 +174,22 @@ ontology
 				>
 				["at0016"] = <
 					text = <"Device">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Voided volume">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Average flow rate">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Time to maximum flow">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Flow time">
 					description = <"">
 				>
 			>
