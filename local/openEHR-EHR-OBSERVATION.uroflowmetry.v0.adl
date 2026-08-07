@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"778719166a8233cd9a0f99ef3a605fa7">
+		["MD5-CAM-1.0.1"] = <"33d62f7ac31d40894cb3dc49a7cc4bfc">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 	>
 
@@ -106,7 +106,7 @@ definition
 			ITEM_TREE[at0010] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
 					CLUSTER[at0015] occurrences matches {0..1} matches {*}    -- Extension
-					CLUSTER[at0016] occurrences matches {0..1} matches {*}    -- Device
+					CLUSTER[at0016] occurrences matches {0..*} matches {*}    -- Device
 				}
 			}
 		}
@@ -174,7 +174,7 @@ ontology
 				>
 				["at0016"] = <
 					text = <"Device">
-					description = <"">
+					description = <"Details of the device used to measure uroflowmetry.">
 				>
 				["at0018"] = <
 					text = <"Voided volume">
