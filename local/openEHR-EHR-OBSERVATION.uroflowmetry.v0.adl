@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"33d62f7ac31d40894cb3dc49a7cc4bfc">
+		["MD5-CAM-1.0.1"] = <"1ecc6b534ac4407b19ac1c99b99cca9c">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 	>
 
@@ -126,7 +126,7 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Any event">
-					description = <"@ internal @">
+					description = <"Default, unspecified point-in-time or interval event which may be explicitly defined in a template or at run-time.">
 				>
 				["at0003"] = <
 					text = <"Tree">
@@ -162,7 +162,7 @@ ontology
 				>
 				["at0013"] = <
 					text = <"Confounding factors">
-					description = <"">
+					description = <"(Additional) Issues or factors that may impact on <the measurement of body temperature>, not captured in other fields.">
 				>
 				["at0014"] = <
 					text = <"Position">
@@ -170,7 +170,8 @@ ontology
 				>
 				["at0015"] = <
 					text = <"Extension">
-					description = <"">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
 				["at0016"] = <
 					text = <"Device">
