@@ -23,8 +23,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"48067ba2e491cc2fdad56ee3413eaa4e">
+		["MD5-CAM-1.0.1"] = <"38b3415934597fbabff38d62b892ca82">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
@@ -166,7 +167,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Position">
-					description = <"">
+					description = <"The body position of the individual at the time of measurement.">
 				>
 				["at0015"] = <
 					text = <"Extension">
