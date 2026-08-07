@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1ecc6b534ac4407b19ac1c99b99cca9c">
+		["MD5-CAM-1.0.1"] = <"48067ba2e491cc2fdad56ee3413eaa4e">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 	>
 
@@ -138,11 +138,11 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Clinical interpretation">
-					description = <"">
+					description = <"Overall clinical interpretation about all of the measurements and calculated ratios.">
 				>
 				["at0007"] = <
 					text = <"Comment">
-					description = <"">
+					description = <"Additional narrative about the <insert appropriate phrase here, for example ‘test results and interpretation’> not captured in other fields.">
 				>
 				["at0008"] = <
 					text = <"Multimedia representation">
