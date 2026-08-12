@@ -26,18 +26,17 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"Å registrere resultatene for hver enkelt komponent og deres totale sum for den kliniker-vurderte Harris hofteskår (HHS), samt det tilhørende pasientrapporterte målet, den modifiserte Harris hofteskår (mHHS).">
+			purpose = <"For å registrere resultatene for hver enkelt komponent og deres totale sum for den kliniker-vurderte Harris hofteskår (HHS), samt det tilhørende pasientrapporterte målet, den modifiserte Harris hofteskår (mHHS).">
 			keywords = <"artroplastikk","brudd","artrose","hofte","Harris hofteskår","modifisert Harris hofteskår">
 			copyright = <"© openEHR Foundation">
-			use = <"Brukes til å registrere:
+			use = <"Brukes for å registrere:
+- resultatene for hver komponentparameter og deres totale sum for Harris hofteskår, som omfatter både pasientrapporterte mål på smerte og funksjon, samt kliniker-vurderte funn av bevegelsesutslag og deformitet; og
+- resultatene for delsettet av parametere som utgjør Modified Harris hofteskår, som kun inkluderer de pasientrapporterte komponentene fra den opprinnelige Harris hofteskår og utelater alle kliniker-vurderte undersøkelsesfunn.
+- skåren for Modified Harris hofteskår, registrert:
+  -- enten som en «rå» skår, som er den faktiske summen av de pasientrapporterte komponentene, med en maksimal verdi på 91,
+  -- eller som en «normalisert» skår, som representerer den rå skåren uttrykt på en 0-100-skala for sammenlignbarhet med den opprinnelige Harris hofteskår.
 
-resultatene for hver komponentparameter og deres totale sum for Harris hofteskår, som omfatter både pasientrapporterte mål på smerte og funksjon, samt kliniker-vurderte funn av bevegelsesutslag og deformitet; og
-
-resultatene for delsettet av parametere som utgjør Modified Harris hofteskår, som kun inkluderer de pasientrapporterte komponentene fra den opprinnelige Harris hofteskår og utelater alle kliniker-vurderte undersøkelsesfunn.
-
-skåren for Modified Harris hofteskår, registrert enten som:
-– en «rå» skår, som er den faktiske summen av de pasientrapporterte komponentene, med en maksimal verdi på 91, og
-– en «normalisert» skår, som representerer den rå skåren uttrykt på en 0–100-skala for sammenlignbarhet med den opprinnelige Harris hofteskår.">
+Selv om openEHR-arketyper er fritt tilgjengelige under en åpen lisens, er det uklart om det spesifikke innholdet i denne Harris Hip Score-arketypen er opphavsrettslig beskyttet. Den opprinnelige kilden ble publisert i 1969 av dr. William Harris. All bruk av denne arketypen i implementasjoner bør være i samsvar med vilkårene fastsatt av rettighetshaverne, dersom slike er tilgjengelige.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -46,9 +45,9 @@ skåren for Modified Harris hofteskår, registrert enten som:
 			use = <"Use to record:
 - the results for each component parameter and their total sum for the Harris Hip Score, which includes both patient-reported measures of pain and function and clinician-assessed findings of range of motion and deformity; and
 - the results for the subset of parameters that form the Modified Harris Hip Score, which includes only the patient-reported components from the original Harris Hip Score and omits all clinician-assessed examination findings. 
-- the score for the Modified Harris Hip Score, recorded as either: 
-  -- a 'raw' score, being the actual sum of the patient-reported components, with a maximum value of 91; and
-  -- a 'normalised' score, representing the raw score expressed on a 0–100 scale for comparability with the original Harris Hip Score.
+- the score for the Modified Harris Hip Score, recorded as: 
+  -- either a 'raw' score, being the actual sum of the patient-reported components, with a maximum value of 91;
+  -- or a 'normalised' score, representing the raw score expressed on a 0-100 scale for comparability with the original Harris Hip Score.
 
 While openEHR archetypes are all freely available under an open license, it is not clear if the specific content of this Harris Hip Score archetype is copyright protected. The original source was published in 1969 by Dr William Harris. Any use of this archetype within implementations should be in compliance with the terms established by the copyright owners, if available.">
 		>
@@ -64,14 +63,13 @@ Wamper KE, Sierevelt IN, Poolman RW, Bhandari M, Haverkamp D. The Harris hip sco
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a172516e88702f834861db588a66c550">
+		["MD5-CAM-1.0.1"] = <"dadd579ce08398a21b9bb11e9723742a">
 		["build_uid"] = <"0adca63c-dc5e-4021-8500-19c084247cbf">
-		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- harris_hip_ip
+	OBSERVATION[at0000] matches {    -- Harris Hip Score
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -89,7 +87,7 @@ definition
 											0|[local::at0010]
 										}
 									}
-									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Support devices
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Support
 										value matches {
 											11|[local::at0012],
 											7|[local::at0013],
@@ -153,8 +151,8 @@ definition
 									ELEMENT[at0052] occurrences matches {0..1} matches {    -- Total degrees of flexion
 										value matches {
 											0.0|[local::at0053],
-											0.04|[local::at0054],
-											0.08|[local::at0055],
+											0.4|[local::at0054],
+											0.8|[local::at0055],
 											1.2|[local::at0056],
 											1.6|[local::at0057],
 											2.0|[local::at0058],
@@ -194,7 +192,7 @@ definition
 											0.15|[local::at0175]
 										}
 									}
-									ELEMENT[at0085] occurrences matches {0..1} matches {    -- HHS total
+									ELEMENT[at0085] occurrences matches {0..1} matches {    -- Harris Hip Score total
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::380]>
@@ -208,7 +206,7 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0160] occurrences matches {0..1} matches {    -- mHHS raw total
+									ELEMENT[at0160] occurrences matches {0..1} matches {    -- Modified Harris Hip Score raw total
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::380]>
@@ -222,7 +220,7 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0162] occurrences matches {0..1} matches {    -- mHHS normalised total
+									ELEMENT[at0162] occurrences matches {0..1} matches {    -- Modified Harris Hip Score normalised total
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::380]>
@@ -273,7 +271,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"harris_hip_ip">
+					text = <"Harris Hip Score">
 					description = <"An assessment score used to evaluate the functional capacity of an individual following hip surgery.">
 				>
 				["at0001"] = <
@@ -317,7 +315,7 @@ ontology
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"Support devices">
+					text = <"Support">
 					description = <"">
 				>
 				["at0012"] = <
@@ -467,6 +465,7 @@ Limb length discrepancy less than 3.2 cm.">
 				["at0052"] = <
 					text = <"Total degrees of flexion">
 					description = <"">
+					comment = <"Ranges according to the online score https://www.orthopaedicscore.com/scorepages/harris_hip_score.html">
 				>
 				["at0053"] = <
 					text = <"None">
@@ -531,14 +530,17 @@ Limb length discrepancy less than 3.2 cm.">
 				["at0068"] = <
 					text = <"Total degrees of abduction">
 					description = <"">
+					comment = <"Ranges according to the online score https://www.orthopaedicscore.com/scorepages/harris_hip_score.html">
 				>
 				["at0074"] = <
 					text = <"Total degrees of external rotation">
 					description = <"">
+					comment = <"Ranges according to the online score https://www.orthopaedicscore.com/scorepages/harris_hip_score.html">
 				>
 				["at0079"] = <
 					text = <"Total degrees of adduction">
 					description = <"">
+					comment = <"Ranges according to the online score https://www.orthopaedicscore.com/scorepages/harris_hip_score.html">
 				>
 				["at0084"] = <
 					text = <"Extension">
@@ -546,12 +548,13 @@ Limb length discrepancy less than 3.2 cm.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
 				["at0085"] = <
-					text = <"HHS total">
+					text = <"Harris Hip Score total">
 					description = <"The total sum of each component parameter for the Harris hip score.">
 				>
 				["at0086"] = <
 					text = <"Grading">
 					description = <"Grading derived from Harris hip score.">
+					comment = <"Grading according to the online score https://www.orthopaedicscore.com/scorepages/harris_hip_score.html">
 				>
 				["at0087"] = <
 					text = <"Poor">
@@ -570,11 +573,11 @@ Limb length discrepancy less than 3.2 cm.">
 					description = <"90-100.">
 				>
 				["at0160"] = <
-					text = <"mHHS raw total">
+					text = <"Modified Harris Hip Score raw total">
 					description = <"The total sum of each component parameter for the modified Harris hip score.">
 				>
 				["at0162"] = <
-					text = <"mHHS normalised total">
+					text = <"Modified Harris Hip Score normalised total">
 					description = <"The adjusted score for the Modified Harris Hip Score, representing the raw score expressed on a 0–100 scale for comparability with the original Harris Hip Score.">
 				>
 				["at0163"] = <
@@ -642,7 +645,7 @@ Limb length discrepancy less than 3.2 cm.">
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"harris_hip_ip">
+					text = <"Harris Hip Score">
 					description = <"En vurderingsskår som brukes til å evaluere den funksjonelle kapasiteten hos en person etter en hofteoperasjon.">
 				>
 				["at0001"] = <
@@ -667,23 +670,23 @@ Limb length discrepancy less than 3.2 cm.">
 				>
 				["at0006"] = <
 					text = <"Lett verking/smerte uten innvirkning på funksjon">
-					description = <"Svak">
+					description = <"">
 				>
 				["at0007"] = <
 					text = <"Noe vondt etter mye aktivitet, behov for reseptfri smertestillende">
-					description = <"Lett">
+					description = <"">
 				>
 				["at0008"] = <
 					text = <"Tolerabel, men pasienten plages jevnlig. Kan hemme vanlig aktivitet, kan trenge sterkere smertestillende enn paracet">
-					description = <"Moderat">
+					description = <"">
 				>
 				["at0009"] = <
 					text = <"Sterke smerter, men oppegående, hemmer aktivitet betydelig, behov for smertestillende sterkere enn paracet, noe nattsmerter">
-					description = <"Sterk">
+					description = <"">
 				>
 				["at0010"] = <
 					text = <"Betydelig nattsmerte, klarer knapt gå pga av smerte">
-					description = <"Invalidiserende">
+					description = <"">
 				>
 				["at0011"] = <
 					text = <"Støtte">
@@ -758,19 +761,19 @@ Limb length discrepancy less than 3.2 cm.">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"Påkledning">
+					text = <"Sko og sokker">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"Inge problemer med sko/sokker">
+					text = <"Uten vansker">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"Problemer med sko/sokker">
+					text = <"Med vansker">
 					description = <"">
 				>
 				["at0032"] = <
-					text = <"Umulig å ta på sko/sokker">
+					text = <"Ikke i stand til">
 					description = <"">
 				>
 				["at0033"] = <
@@ -810,15 +813,15 @@ Limb length discrepancy less than 3.2 cm.">
 					description = <"">
 				>
 				["at0042"] = <
-					text = <"Komfortabel i lav stol >1 tim">
+					text = <"Sitter komfortabelt i en vanlig stol i 1 time">
 					description = <"">
 				>
 				["at0043"] = <
-					text = <"Komfortabel">
+					text = <"Sitter på en høy stol i 30 minutter">
 					description = <"">
 				>
 				["at0044"] = <
-					text = <"Ikke komfortabel i noen stol">
+					text = <"Ikke i stand til å sitte komfortabelt i noen stol">
 					description = <"">
 				>
 				["at0047"] = <
@@ -836,6 +839,7 @@ Beinlengdeforskjell mindre enn 3,2 cm">
 				["at0052"] = <
 					text = <"Totalt bevegelsesutslag i fleksjon">
 					description = <"">
+					comment = <"Intervaller basert på den nettbaserte skårberegningen https://www.orthopaedicscore.com/scorepages/harris_hip_score.html">
 				>
 				["at0053"] = <
 					text = <"None">
@@ -900,14 +904,19 @@ Beinlengdeforskjell mindre enn 3,2 cm">
 				["at0068"] = <
 					text = <"Totalt bevegelsesutslag i abduksjon">
 					description = <"">
+					comment = <"Intervaller basert på den nettbaserte skårberegningen https://www.orthopaedicscore.com/scorepages/harris_hip_score.html
+ ">
 				>
 				["at0074"] = <
 					text = <"Totalt bevegelsesutslag i utadrotasjon">
 					description = <"">
+					comment = <"Intervaller basert på den nettbaserte skårberegningen https://www.orthopaedicscore.com/scorepages/harris_hip_score.html
+ ">
 				>
 				["at0079"] = <
 					text = <"Totalt bevegelsesutslag i adduksjon">
 					description = <"">
+					comment = <"Intervaller basert på den nettbaserte skårberegningen https://www.orthopaedicscore.com/scorepages/harris_hip_score.html">
 				>
 				["at0084"] = <
 					text = <"Tilleggsinformasjon">
@@ -915,12 +924,13 @@ Beinlengdeforskjell mindre enn 3,2 cm">
 					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
 				>
 				["at0085"] = <
-					text = <"HHS total">
+					text = <"Harris Hip Score totalskår">
 					description = <"Den totale summen av hver komponentparameter for Harris hoftescore.">
 				>
 				["at0086"] = <
 					text = <"Gradering">
-					description = <"Gradinndeling basert på Harris hoftescore.">
+					description = <"">
+					comment = <"Gradering basert på den nettbaserte skårberegningen https://www.orthopaedicscore.com/scorepages/harris_hip_score.html">
 				>
 				["at0087"] = <
 					text = <"Dårlig">
@@ -939,11 +949,11 @@ Beinlengdeforskjell mindre enn 3,2 cm">
 					description = <"90-100.">
 				>
 				["at0160"] = <
-					text = <"mHHS rå total">
+					text = <"Modified Harris Hip Score rå totalskår">
 					description = <"Den totale summen av hver komponentparameter for den modifiserte Harris hoftescore.">
 				>
 				["at0162"] = <
-					text = <"mHHS normalisert total">
+					text = <"Modified Harris Hip Score normalisert totalskår">
 					description = <"Den justerte skåren for Modified Harris Hip Score, som representerer den rå skåren uttrykt på en 0–100-skala for sammenlignbarhet med den opprinnelige Harris Hip Score.">
 				>
 				["at0163"] = <

@@ -1,5 +1,5 @@
-archetype (adl_version=1.4; uid=cec84a9c-906c-4168-8024-4e849424fed0)
-	openEHR-EHR-OBSERVATION.eq_5d_5l_ip.v0
+archetype (adl_version=1.4; uid=95afdea5-cbb2-4f4a-9d7f-1478e3cebcdf)
+	openEHR-EHR-OBSERVATION.eq_5d_5l_ip.v1
 
 concept
 	[at0000]
@@ -33,7 +33,7 @@ description
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
-			purpose = <"*To record the results of the EQ-5D-5L questionnaire, including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring. (en)">
+			purpose = <"*Use to record the result of each component parameter and the overall result of the EQ-5D-5L questionnaire. including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring. (en)">
 			keywords = <"*eq5d, eq-5d-5l, quality of life, HRQoL, patient-reported outcome, PRO, EuroQol (en)", ...>
 			copyright = <"© openEHR Foundation">
 			use = <"*Use to record the results of a EQ-5D-5L questionnaire.
@@ -49,7 +49,7 @@ Distribution of the EQ-5D-5L instrument itself requires adherence to copyright a
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"For å registrere resultatene fra EQ-5D-5L-spørreskjemaet, inkludert svar på de fem helsedimensjonene og den selvrapporterte helsetilstanden målt med visuell analog skala, til bruk i klinisk praksis, forskning eller overvåking av helseresultater.">
+			purpose = <"Brukes til å registrere resultatet av hver enkelt komponentparameter og det samlede resultatet av EQ-5D-5L-spørreskjemaet, inkludert svar på de fem helsedimensjonene og den selvvurderte helsen målt med visuell analog skala, for bruk i klinisk praksis, forskning eller oppfølging av helseresultater.">
 			keywords = <"EQ-5D, EQ-5D-5L, livskvalitet, helserelatert livskvalitet (HRQoL), pasientrapportert utfallsmål (PRO), EuroQol", ...>
 			copyright = <"© openEHR Foundation">
 			use = <"Brukes til å registrere resultatene av et EQ-5D-5L-spørreskjema.
@@ -67,7 +67,7 @@ Distribusjon av selve EQ-5D-5L-instrumentet krever etterlevelse av opphavsretts-
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record the results of the EQ-5D-5L questionnaire, including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring.">
+			purpose = <"Use to record the result of each component parameter and the overall result of the EQ-5D-5L questionnaire. including responses to the five health dimensions and the self-rated health visual analogue scale, for use in clinical care, research, or health outcomes monitoring.">
 			keywords = <"eq5d, eq-5d-5l, quality of life, HRQoL, patient-reported outcome, PRO, EuroQol", ...>
 			copyright = <"© openEHR Foundation">
 			use = <"Use to record the results of a EQ-5D-5L questionnaire.
@@ -93,13 +93,13 @@ Herdman M et al. (2011). Development and preliminary testing of the new five-lev
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"030557a7c13009b4ee8b1d2157642bb1">
+		["MD5-CAM-1.0.1"] = <"f31b4c97709cba398a5ef4157b4a30e6">
 		["build_uid"] = <"86f191d7-6048-4808-b7a8-c34d44d693bb">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- eq_5d_5l_ip
+	OBSERVATION[at0000] matches {    -- EQ-5D-5L
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -125,7 +125,7 @@ definition
 											5|[local::at0020]
 										}
 									}
-									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Usual activities
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Usual activities (e.g. work, study, housework, family or leisure activities.)
 										value matches {
 											1|[local::at0021],
 											2|[local::at0022],
@@ -188,7 +188,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"eq_5d_5l_ip">
+					text = <"EQ-5D-5L">
 					description = <"A standardized health-related quality of life instrument consisting of a five-dimension descriptive system and a visual analogue scale (VAS).
 It provides a structured method for recording an individual’s self-reported health status on the day of assessment.">
 				>
@@ -198,7 +198,7 @@ It provides a structured method for recording an individual’s self-reported he
 				>
 				["at0002"] = <
 					text = <"Any event">
-					description = <"*">
+					description = <"">
 				>
 				["at0003"] = <
 					text = <"Tree">
@@ -217,7 +217,7 @@ It provides a structured method for recording an individual’s self-reported he
 					description = <"Issues with self-care.">
 				>
 				["at0007"] = <
-					text = <"Usual activities">
+					text = <"Usual activities (e.g. work, study, housework, family or leisure activities.)">
 					description = <"Issues with usual activities.">
 					comment = <"e.g. work, study, housework, family or leisure activities.">
 				>
@@ -354,7 +354,7 @@ code.">
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"eq_5d_5l_ip">
+					text = <"EQ 5D 5L">
 					description = <"*A standardized health-related quality of life instrument consisting of a five-dimension descriptive system and a visual analogue scale (VAS).
 It provides a structured method for recording an individual’s self-reported health status on the day of assessment. (en)">
 				>
@@ -364,7 +364,7 @@ It provides a structured method for recording an individual’s self-reported he
 				>
 				["at0002"] = <
 					text = <"beliebiges Ereignis">
-					description = <"**(en)">
+					description = <"">
 				>
 				["at0003"] = <
 					text = <"Tree">
@@ -383,7 +383,7 @@ It provides a structured method for recording an individual’s self-reported he
 					description = <"Probleme für sich selbst zu sorgen.">
 				>
 				["at0007"] = <
-					text = <"Alltägliche Tätigkeiten (z.B. Arbeit, Studium, Hausarbeit, Familie, Freizeit)">
+					text = <"*Usual activities (e.g. work, study, housework, family or leisure activities.) (en)">
 					description = <"Probleme mit alltäglichen Tätigkeiten.">
 					comment = <"z.B. Arbeit, Studium, Hausarbeit, Familie oder Freizeitaktivitäten.">
 				>
@@ -520,7 +520,7 @@ code. (en)">
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"eq_5d_5l_ip">
+					text = <"EQ-5D-5L">
 					description = <"Et standardisert instrument for måling av helserelatert livskvalitet som består av et beskrivende system med fem dimensjoner og en visuell analog skala (VAS).
 Det gir en strukturert metode for å registrere en persons selvrapporterte helsetilstand på vurderingsdagen.
 ">
@@ -550,7 +550,7 @@ Det gir en strukturert metode for å registrere en persons selvrapporterte helse
 					description = <"Problemer med egenomsorg.">
 				>
 				["at0007"] = <
-					text = <"Vanlige gjøremål (f.eks. arbeid, studier, husarbeid, familie- eller fritidsaktiviteter)">
+					text = <"VANLIGE GJØREMÅL (f.eks. arbeid, studier, husarbeid, familie- eller fritidsaktiviteter)">
 					description = <"Problemer med vanlige aktiviteter.">
 					comment = <"f.eks arbeid, studier, husarbeid, familie- eller fritidsaktiviteter.">
 				>
@@ -559,7 +559,7 @@ Det gir en strukturert metode for å registrere en persons selvrapporterte helse
 					description = <"Problemer med smerte eller ubehag.">
 				>
 				["at0009"] = <
-					text = <"Angest/depresjon">
+					text = <"Angst/depresjon">
 					description = <"Problem med angst eller depresjon.">
 				>
 				["at0010"] = <
@@ -678,9 +678,9 @@ en femsifret kode.">
 					description = <"@ internal @">
 				>
 				["at0037"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					text = <"Utvidelse">
+					description = <"Tilleggsinformasjon kreves for å utvide modellen med lokalt innhold eller for å tilpasse den til andre referansemodeller eller formalismer.">
+					comment = <"For eksempel: lokale informasjonskrav; eller ytterligere metadata for å samsvare med FHIR.">
 				>
 			>
 		>

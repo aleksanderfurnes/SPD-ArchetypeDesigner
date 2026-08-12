@@ -1,13 +1,10 @@
 {
   "@type" : "TEMPLATE",
-  "uid" : "f35079d9-8fe2-4b3f-9b46-c7f0e3050c09",
+  "uid" : "706d47a8-e2e1-490b-848b-a58d66fd90a8",
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "name" : "Jonas Lyshaug",
-      "organisation" : "HN IKT",
-      "email" : "Jonas.nils.erik.lyshaug@hnikt.no",
-      "date" : "2025-03-05"
+      "date" : "2026-05-29"
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
@@ -22,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.2",
-      "build_uid" : "053fc19f-5a94-49c5-a2ee-eb5c6b03c42c",
-      "MD5-CAM-1.0.1" : "c1c14f4760f45b9b426bb8b1c05461f0",
-      "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
+      "sem_ver" : "0.1.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "31ec00ef6b42584f2138e3c9bd9fdbc6",
+      "PARENT:MD5-CAM-1.0.1" : "D1C4FAAB741EAA41EDA9E0651266BCFD"
     },
     "details" : {
       "nn" : {
@@ -64,13 +61,13 @@
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
-      "nb" : {
+      "fi" : {
         "@type" : "RESOURCE_DESCRIPTION_ITEM",
         "language" : {
           "terminologyId" : {
             "value" : "ISO_639-1"
           },
-          "codeString" : "nb"
+          "codeString" : "fi"
         },
         "keywords" : [ ],
         "originalResourceUri" : { },
@@ -100,6 +97,18 @@
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
       "fr" : {
         "@type" : "RESOURCE_DESCRIPTION_ITEM",
         "language" : {
@@ -107,6 +116,66 @@
             "value" : "ISO_639-1"
           },
           "codeString" : "fr"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh-cn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh-cn"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "tr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "tr"
         },
         "keywords" : [ ],
         "originalResourceUri" : { },
@@ -150,7 +219,7 @@
         "nodeId" : "at0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-hip_disability_and_osteoarthritis_outcome_score_12-001.v0",
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-problem_screening-001.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -164,7 +233,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HOOS_12.v1",
+          "text" : "test_hip",
           "description" : "Generic container for information provided by an individual."
         }
       },
@@ -172,7 +241,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HOOS_12.v1",
+          "text" : "test_hip",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
@@ -180,7 +249,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HOOS_12.v1",
+          "text" : "test_hip",
           "description" : "*Generic container for information provided by an individual. (en)"
         }
       },
@@ -188,15 +257,15 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HOOS_12.v1",
-          "description" : "Generell behållare för information som tillhandahålls av en individ."
+          "text" : "test_hip",
+          "description" : "En generisk behållare för information tillhandahållen av en individ."
         }
       },
       "de" : {
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HOOS_12.v1",
+          "text" : "test_hip",
           "description" : "Generischer Container für Informationen, die von einer Person bereitgestellt werden."
         }
       },
@@ -204,7 +273,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HOOS_12.v1",
+          "text" : "test_hip",
           "description" : "Conteneur générique pour des informations fournies par un individu."
         }
       },
@@ -212,8 +281,56 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "HOOS_12.v1",
+          "text" : "test_hip",
           "description" : "Contentor genérico para informação fornecida por um indivíduo."
+        }
+      },
+      "fi" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test_hip",
+          "description" : "Geneerinen säiliö henkilön itse ilmoittamille tiedoille."
+        }
+      },
+      "zh-cn" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test_hip",
+          "description" : "针对个人所提供信息的容器。又可称为“自我报告的数据”"
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test_hip",
+          "description" : "Contenitore generico per informazioni fornite da un individuo."
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test_hip",
+          "description" : "Contenedor genérico para información proporcionada por una persona."
+        }
+      },
+      "es" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test_hip",
+          "description" : "Contenedor genérico para información aportada por una persona."
+        }
+      },
+      "tr" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test_hip",
+          "description" : "Bir birey tarafından bildiririlen bilgiler için genel kapsayıcı."
         }
       }
     },
@@ -226,11 +343,11 @@
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
-  "templateId" : "HOOS_12.v1",
+  "templateId" : "test_hip",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "a3361e82-465a-4eaf-b643-81258059fc90",
+    "uid" : "36ad2f51-3470-4490-a6e9-82785cb02c96",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -239,47 +356,15 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "367e46d3ad073e160c5fe0f7309b2686"
+        "PARENT:MD5-CAM-1.0.1" : "942CF0FB3C54F2949348CF29B1DD1E2D"
       },
-      "details" : {
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "keywords" : [ "*Hip, HOOS-12 (en)" ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ "Hip, HOOS-12" ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
+      "details" : { }
     },
-    "annotations" : {
-      "@type" : "RESOURCE_ANNOTATIONS",
-      "documentation" : {
-        "en" : { }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.hip_disability_and_osteoarthritis_outcome_score_12.v0",
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.problem_screening.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-hip_disability_and_osteoarthritis_outcome_score_12-001.v0"
+      "value" : "openEHR-EHR-OBSERVATION.ovl-problem_screening-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -312,24 +397,27 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0004",
+                      "nodeId" : "at0022",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0007.1",
-                          "attributes" : [ ],
+                          "nodeId" : "at0005.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0005.1",
-                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -349,14 +437,42 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Blodpropp",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          }
+        },
+        "de" : { },
+        "nl" : { },
+        "ca" : { },
+        "fr" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0023", "at0024", "at0027", "at0045" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0023", "at0024", "at0027", "at0045" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0023", "at0024", "at0027", "at0045" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "826cf29f-5019-3cdf-9ef1-47ec3939b524",
+    "buildUid" : "97762319-39bc-4d88-bb02-ebc13a4d9b55",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
@@ -373,10 +489,72 @@
         "terminologyId" : {
           "value" : "ISO_639-1"
         },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Darin Leonhardt",
+        "organisation" : "Medizinische Hochschule Hannover, PLRI für medizinische Informatik/ Medizinische Hochschule",
+        "email" : "Strauch.Natalia@mh-hannover.de, leonhardt.darin@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
         "codeString" : "nb"
       },
-      "author" : { },
+      "author" : {
+        "name" : "Marit Alice Venheim, Silje Ljosland Bakke, John Tore Valand",
+        "organisation" : "Helse Vest IKT, Helse Vest IKT AS, Helse Bergen",
+        "email" : "marit.alice.venheim@helse-vest-ikt.no, silje.ljosland.bakke@helse-vest-ikt.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no"
+      },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Luxembourg Institute of Health (LIH)",
+        "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Martijn van Eenennaam",
+        "organisation" : "Nedap Healthcare",
+        "email" : "martijn.vaneenennaam@nedap.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
     } ]
   } ],
   "originalLanguage" : {
@@ -421,6 +599,16 @@
       "terminologyId" : {
         "value" : "ISO_639-1"
       },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
       "codeString" : "nb"
     },
     "author" : { },
@@ -441,7 +629,57 @@
       "terminologyId" : {
         "value" : "ISO_639-1"
       },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
       "codeString" : "fr"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh-cn"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "tr"
     },
     "author" : { },
     "otherDetails" : { }
