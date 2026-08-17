@@ -43,7 +43,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"9c570ee5c5e628bb706ccfa48ed06da2">
+		["MD5-CAM-1.0.1"] = <"c31f3de864f8964d638efbcd15ecd465">
 		["build_uid"] = <"1f811f48-1849-4ff3-9943-b8ef1a9a1b4f">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -77,6 +77,7 @@ definition
 									}
 									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Interference with daily life
 										value matches {
+											0|[local::at0050],
 											1|[local::at0031],
 											2|[local::at0032],
 											3|[local::at0033],
@@ -398,6 +399,10 @@ How much urine do you usually leak (whether you wear protection or not)?">
 					text = <"Lekker hele tiden">
 					description = <"">
 				>
+				["at0050"] = <
+					text = <"*0 (nb)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -605,6 +610,10 @@ How much urine do you usually leak (whether you wear protection or not)?">
 				>
 				["at0049"] = <
 					text = <"Lekker hele tiden">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"0">
 					description = <"">
 				>
 			>
