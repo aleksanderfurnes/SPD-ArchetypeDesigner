@@ -23,13 +23,13 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0b03a7f6085ba798d510d6b4f592cb8f">
+		["MD5-CAM-1.0.1"] = <"1cff5629243fd0aa01f6e77f7acbbc08">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- uroflowmetry
+	OBSERVATION[at0000] matches {    -- uroflowmetry result
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -124,7 +124,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"uroflowmetry">
+					text = <"uroflowmetry result">
 					description = <"uroflowmetry">
 				>
 				["at0001"] = <
