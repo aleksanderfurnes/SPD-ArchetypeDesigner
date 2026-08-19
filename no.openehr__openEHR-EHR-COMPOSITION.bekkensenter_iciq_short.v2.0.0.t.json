@@ -25,7 +25,7 @@
       "sem_ver" : "3.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
-      "MD5-CAM-1.0.1" : "58d776c9bb3745ab4c9302a5dbcf08bc"
+      "MD5-CAM-1.0.1" : "832287843aa6761edf73f77641dd94c0"
     },
     "details" : {
       "nn" : {
@@ -170,10 +170,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.4",
+        "nodeId" : "at0.6",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-iciq_ui_short_hn-001.v2",
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-iciq_ui_short_hn-001.v3",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -327,7 +327,7 @@
     "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "5f89c366-65f6-4645-b012-65fa43c3632b",
+    "uid" : "d24fa999-054f-44fa-920c-f1700875f49f",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -336,90 +336,21 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3b4fbcb534dac84319486ea47ca36d2e"
+        "PARENT:MD5-CAM-1.0.1" : "c31f3de864f8964d638efbcd15ecd465"
       },
-      "details" : {
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "Intended to capture the result of the short form of the ICIQ (International Consultation on Incontinence Questionnaire), also referred to as ICIQ-UI Short Form. The form is used to obtain a brief yet comprehensive summary of the level, impact and perceived cause of symptoms of incontinence.",
-          "keywords" : [ "incontinence", "ICIQ", "score", "urine", "leakage", "leak", "questionnaire" ],
-          "use" : "Use to record ICIQ-UI Short form answers to questions and total score.",
-          "copyright" : "© Clinical Models UK",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
+      "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.iciq_ui_short_hn.v2",
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.iciq_ui_short_hn.v3",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-iciq_ui_short_hn-001.v2"
+      "value" : "openEHR-EHR-OBSERVATION.ovl-iciq_ui_short_hn-001.v3"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "OBSERVATION",
       "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "HISTORY",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "events",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "POINT_EVENT",
-              "nodeId" : "at0002",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "state",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ITEM_TREE",
-                  "nodeId" : "at0027",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at0028.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
+      "attributes" : [ ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
