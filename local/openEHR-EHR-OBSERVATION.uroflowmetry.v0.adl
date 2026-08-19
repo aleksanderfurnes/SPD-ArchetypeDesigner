@@ -1,5 +1,5 @@
 archetype (adl_version=1.4; uid=ffd02771-d251-4ca4-a4ef-39d08a7a87d0)
-	openEHR-EHR-OBSERVATION.uroflowmetry.v0
+	openEHR-EHR-OBSERVATION.uroflowmetry_result.v0
 
 concept
 	[at0000]
@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1cff5629243fd0aa01f6e77f7acbbc08">
+		["MD5-CAM-1.0.1"] = <"2d2e689584fc1a235f9646b4f8b0aa0d">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
