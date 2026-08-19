@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9b51de86c2e1145c4bedbfa8125a8124">
+		["MD5-CAM-1.0.1"] = <"5fcbbc9f551fa2e5d591bc54c10898a4">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -64,27 +64,62 @@ definition
 											}
 											ELEMENT[at0021] occurrences matches {0..1} matches {    -- Flow time
 												value matches {
-													DV_QUANTITY matches {*}
+													C_DV_QUANTITY <
+														property = <[openehr::128]>
+														list = <
+															["1"] = <
+																units = <"s">
+															>
+														>
+													>
 												}
 											}
 											ELEMENT[at0009] occurrences matches {0..1} matches {    -- Maximum flow rate
 												value matches {
-													DV_QUANTITY matches {*}
+													C_DV_QUANTITY <
+														property = <[openehr::126]>
+														list = <
+															["1"] = <
+																units = <"ml/s">
+															>
+														>
+													>
 												}
 											}
 											ELEMENT[at0019] occurrences matches {0..1} matches {    -- Average flow rate
 												value matches {
-													DV_QUANTITY matches {*}
+													C_DV_QUANTITY <
+														property = <[openehr::126]>
+														list = <
+															["1"] = <
+																units = <"ml/s">
+															>
+														>
+													>
 												}
 											}
 											ELEMENT[at0020] occurrences matches {0..1} matches {    -- Time to maximum flow
 												value matches {
-													DV_QUANTITY matches {*}
+													C_DV_QUANTITY <
+														property = <[openehr::128]>
+														list = <
+															["1"] = <
+																units = <"s">
+															>
+														>
+													>
 												}
 											}
 											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Voided volume
 												value matches {
-													DV_QUANTITY matches {*}
+													C_DV_QUANTITY <
+														property = <[openehr::129]>
+														list = <
+															["1"] = <
+																units = <"ml">
+															>
+														>
+													>
 												}
 											}
 											ELEMENT[at0026] occurrences matches {0..1} matches {    -- Flow curve
@@ -140,8 +175,14 @@ definition
 		protocol matches {
 			ITEM_TREE[at0010] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					CLUSTER[at0015] occurrences matches {0..1} matches {*}    -- Extension
-					CLUSTER[at0016] occurrences matches {0..*} matches {*}    -- Device
+					allow_archetype CLUSTER[at0028] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0029] occurrences matches {0..*} matches {    -- Device
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
@@ -204,15 +245,6 @@ ontology
 					text = <"Position">
 					description = <"The body position of the individual at the time of measurement.">
 				>
-				["at0015"] = <
-					text = <"Extension">
-					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
-					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
-				>
-				["at0016"] = <
-					text = <"Device">
-					description = <"Details of the device used to measure uroflowmetry.">
-				>
 				["at0018"] = <
 					text = <"Voided volume">
 					description = <"The total volume collected in the measuring device during the recorded voiding period.
@@ -247,6 +279,15 @@ The total amount of urine passed during the test.">
 				["at0027"] = <
 					text = <"Voiding time">
 					description = <"Time interval from the beginning to the end of voiding, including intervals between separate micturitions.">
+				>
+				["at0028"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0029"] = <
+					text = <"Device">
+					description = <"Details of the device used to measure uroflowmetry.">
 				>
 			>
 		>
@@ -305,15 +346,6 @@ The total amount of urine passed during the test.">
 					text = <"*Position (en)">
 					description = <"*The body position of the individual at the time of measurement. (en)">
 				>
-				["at0015"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
-				>
-				["at0016"] = <
-					text = <"*Device (en)">
-					description = <"*Details of the device used to measure uroflowmetry. (en)">
-				>
 				["at0018"] = <
 					text = <"*Voided volume (en)">
 					description = <"*The total volume collected in the measuring device during the recorded voiding period.
@@ -348,6 +380,15 @@ The total amount of urine passed during the test. (en)">
 				["at0027"] = <
 					text = <"*Voiding time (en)">
 					description = <"*Time interval from the beginning to the end of voiding, including intervals between separate micturitions. (en)">
+				>
+				["at0028"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0029"] = <
+					text = <"*Device (en)">
+					description = <"*Details of the device used to measure uroflowmetry. (en)">
 				>
 			>
 		>
