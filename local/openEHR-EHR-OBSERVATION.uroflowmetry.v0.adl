@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -13,6 +20,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fda7de05c43ba5db53ff545f34b07584">
+		["MD5-CAM-1.0.1"] = <"e52fa16a1ee286fc7ecd9fb31dc2bbdd">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -236,6 +247,107 @@ The total amount of urine passed during the test.">
 				["at0027"] = <
 					text = <"Voiding time">
 					description = <"Time interval from the beginning to the end of voiding, including intervals between separate micturitions.">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"*uroflowmetry result (en)">
+					description = <"*uroflowmetry (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Any event (en)">
+					description = <"*Default, unspecified point-in-time or interval event which may be explicitly defined in a template or at run-time. (en)">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"*Measurements parameters (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Clinical interpretation (en)">
+					description = <"*Overall clinical interpretation about all of the measurements and calculated ratios. (en)">
+				>
+				["at0007"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the <insert appropriate phrase here, for example ‘test results and interpretation’> not captured in other fields. (en)">
+				>
+				["at0008"] = <
+					text = <"*Multimedia representation (en)">
+					description = <"*Digital image, video or diagram representing the findings. (en)">
+					comment = <"*For  (en)">
+				>
+				["at0009"] = <
+					text = <"*Maximum flow rate (en)">
+					description = <"*The highest speed of urine flow during the test. (en)">
+				>
+				["at0010"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0012"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0013"] = <
+					text = <"*Confounding factors (en)">
+					description = <"*(Additional) Issues or factors that may impact on <the measurement of body temperature>, not captured in other fields. (en)">
+				>
+				["at0014"] = <
+					text = <"*Position (en)">
+					description = <"*The body position of the individual at the time of measurement. (en)">
+				>
+				["at0015"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0016"] = <
+					text = <"*Device (en)">
+					description = <"*Details of the device used to measure uroflowmetry. (en)">
+				>
+				["at0018"] = <
+					text = <"*Voided volume (en)">
+					description = <"*The total volume collected in the measuring device during the recorded voiding period.
+
+The total amount of urine passed during the test. (en)">
+				>
+				["at0019"] = <
+					text = <"*Average flow rate (en)">
+					description = <"*The total volume of urine divided by the total time it took to urinate. (en)">
+				>
+				["at0020"] = <
+					text = <"*Time to maximum flow (en)">
+					description = <"*How long it takes to reach peak flow speed from the start. (en)">
+				>
+				["at0021"] = <
+					text = <"*Flow time (en)">
+					description = <"*Time interval when voiding occurs, without intervals between separate micturitions. (en)">
+				>
+				["at0022"] = <
+					text = <"*Standing (en)">
+					description = <"*Standing at the time of measurement. (en)">
+				>
+				["at0023"] = <
+					text = <"*Sitting (en)">
+					description = <"*Sitting at the time of measurement. (en)">
+				>
+				["at0026"] = <
+					text = <"*Flow curve (en)">
+					description = <"*Description of the flow curve shape.  (en)">
+					comment = <"*For example normal or abnormal.... (en)">
+				>
+				["at0027"] = <
+					text = <"*Voiding time (en)">
+					description = <"*Time interval from the beginning to the end of voiding, including intervals between separate micturitions. (en)">
 				>
 			>
 		>
