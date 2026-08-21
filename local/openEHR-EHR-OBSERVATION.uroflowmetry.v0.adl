@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e047cf79bd859135c8c76061e7997c52">
+		["MD5-CAM-1.0.1"] = <"c0b4dca981fddab6cab59355e9e32dd2">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -189,6 +189,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -390,6 +391,14 @@ The total amount of urine passed during the test. (en)">
 					text = <"*Device (en)">
 					description = <"*Details of the device used to measure uroflowmetry. (en)">
 				>
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0022"] = <[SNOMED-CT::10904000]>
+				["at0023"] = <[SNOMED-CT::33586001]>
 			>
 		>
 	>
