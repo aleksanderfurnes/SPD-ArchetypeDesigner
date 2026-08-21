@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fefaa3ee0e539be12019b17f38809be3">
+		["MD5-CAM-1.0.1"] = <"cb1ba3a8e2ecfd12a03188bbd13be579">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -81,6 +81,7 @@ definition
 														list = <
 															["1"] = <
 																units = <"ml/s">
+																magnitude = <|0.0..50.0|>
 															>
 														>
 													>
@@ -242,6 +243,7 @@ ontology
 				["at0013"] = <
 					text = <"Confounding factors">
 					description = <"(Additional) Issues or factors that may impact on <the measurement of body temperature>, not captured in other fields.">
+					comment = <"For example.. (for lite urin i blæren, pasienten sparker borti apparatet...)">
 				>
 				["at0014"] = <
 					text = <"Position">
@@ -348,6 +350,7 @@ The description of the flow pattern. ">
 				["at0013"] = <
 					text = <"*Confounding factors (en)">
 					description = <"*(Additional) Issues or factors that may impact on <the measurement of body temperature>, not captured in other fields. (en)">
+					comment = <"*For example.. (for lite urin i blæren, pasienten sparker borti apparatet...) (en)">
 				>
 				["at0014"] = <
 					text = <"*Position (en)">
