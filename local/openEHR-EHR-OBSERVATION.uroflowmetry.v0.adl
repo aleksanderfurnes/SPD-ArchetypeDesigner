@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c0b4dca981fddab6cab59355e9e32dd2">
+		["MD5-CAM-1.0.1"] = <"df4f755bb81f0376241c5d1dbc950d3a">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -229,6 +229,7 @@ ontology
 				["at0009"] = <
 					text = <"Maximum flow rate">
 					description = <"The highest speed of urine flow during the test.">
+					comment = <"Qmax">
 				>
 				["at0010"] = <
 					text = <"Item tree">
@@ -255,10 +256,12 @@ The total amount of urine passed during the test.">
 				["at0019"] = <
 					text = <"Average flow rate">
 					description = <"The total volume of urine divided by the total time it took to urinate.">
+					comment = <"Qave">
 				>
 				["at0020"] = <
 					text = <"Time to maximum flow">
 					description = <"How long it takes to reach peak flow speed from the start.">
+					comment = <"Time to Qmax">
 				>
 				["at0021"] = <
 					text = <"Flow time">
@@ -275,7 +278,7 @@ The total amount of urine passed during the test.">
 				["at0026"] = <
 					text = <"Flow curve">
 					description = <"Description of the flow curve shape. ">
-					comment = <"For example normal or abnormal....">
+					comment = <"For example normal or abnormal shape....">
 				>
 				["at0027"] = <
 					text = <"Voiding time">
@@ -330,6 +333,7 @@ The total amount of urine passed during the test.">
 				["at0009"] = <
 					text = <"*Maximum flow rate (en)">
 					description = <"*The highest speed of urine flow during the test. (en)">
+					comment = <"*Qmax (en)">
 				>
 				["at0010"] = <
 					text = <"Item tree">
@@ -356,10 +360,12 @@ The total amount of urine passed during the test. (en)">
 				["at0019"] = <
 					text = <"*Average flow rate (en)">
 					description = <"*The total volume of urine divided by the total time it took to urinate. (en)">
+					comment = <"*Qave (en)">
 				>
 				["at0020"] = <
 					text = <"*Time to maximum flow (en)">
 					description = <"*How long it takes to reach peak flow speed from the start. (en)">
+					comment = <"*Time to Qmax (en)">
 				>
 				["at0021"] = <
 					text = <"*Flow time (en)">
@@ -376,7 +382,7 @@ The total amount of urine passed during the test. (en)">
 				["at0026"] = <
 					text = <"*Flow curve (en)">
 					description = <"*Description of the flow curve shape.  (en)">
-					comment = <"*For example normal or abnormal.... (en)">
+					comment = <"*For example normal or abnormal shape.... (en)">
 				>
 				["at0027"] = <
 					text = <"*Voiding time (en)">
