@@ -1,0 +1,43 @@
+archetype (adl_version=1.4; uid=8cb1e3b1-e1f9-4c9a-b298-3ea11be21efb)
+	openEHR-EHR-ADMIN_ENTRY.bildearketype_tverrfaglig_rehab.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2026-09-09">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"bf55ec578217dcebc02eda6941f6c564">
+		["build_uid"] = <"9f58498f-9c55-3b9d-b2bd-45b2033cedb6">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {*}    -- bildearketype_tverrfaglig_rehab
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"bildearketype_tverrfaglig_rehab">
+					description = <"bildearketype_tverrfaglig_rehab">
+				>
+			>
+		>
+	>
