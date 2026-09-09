@@ -23,12 +23,30 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bf55ec578217dcebc02eda6941f6c564">
+		["MD5-CAM-1.0.1"] = <"d14bcd29404bd944da47b3990be4b581">
 		["build_uid"] = <"9f58498f-9c55-3b9d-b2bd-45b2033cedb6">
 	>
 
 definition
-	ADMIN_ENTRY[at0000] matches {*}    -- bildearketype_tverrfaglig_rehab
+	ADMIN_ENTRY[at0000] matches {    -- bildearketype_tverrfaglig_rehab
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Er det teit at vi må gjøre det sånn her?
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003,    -- Ja
+									at0004]    -- Også ja
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
@@ -37,6 +55,22 @@ ontology
 				["at0000"] = <
 					text = <"bildearketype_tverrfaglig_rehab">
 					description = <"bildearketype_tverrfaglig_rehab">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Er det teit at vi må gjøre det sånn her?">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Også ja">
+					description = <"">
 				>
 			>
 		>
