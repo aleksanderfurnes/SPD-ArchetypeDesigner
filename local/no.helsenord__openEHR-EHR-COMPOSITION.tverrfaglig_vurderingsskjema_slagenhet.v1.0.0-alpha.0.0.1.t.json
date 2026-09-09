@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "9025a72ce9bb9ac2c8a15b9a3e808b3c",
+      "MD5-CAM-1.0.1" : "4fc2bb1550d8827d4b2d0edf377952ff",
       "PARENT:MD5-CAM-1.0.1" : "8C341BFFA1E20864451EDDD9770E3D0F"
     },
     "details" : {
@@ -164,6 +164,15 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-001.v2",
         "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ADMIN_ENTRY",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.10",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-bildearketype_tverrfaglig_rehab-001.v1",
+        "referenceType" : "archetypeOverlay"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -245,7 +254,66 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "9C13BFF63C68EFD92C3BB066C95FDB66"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Um die Ergebnisse des NIHSS als quantitatives Maß für schlaganfallbedingte neurologische Defizite zu erfassen.",
+          "keywords" : [ "Skala, neurologisch, Schlaganfall, Einschätzung, Untersuchung, NIHSS" ],
+          "use" : "Der Archetyp wird verwendet, um die Ergebnisse des NIHSS als quantitatives Maß für schlaganfallbedingte neurologische Defizite zu erfassen. Der Gesamtscore ergibt sich aus der Summe der 15 Kriterien (ausgenommen der Kriterien, die nicht getestet werden konnten).\r\n\r\nDer Wert '99' wird verwendet, um den nicht-numerischen Wert 'nicht testbar' auszudrücken. Derzeit ist eine Kombination aus numerischen und nicht-numerischen Werten innerhalb eines einzigen Wertesatzes nicht möglich.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere resultat av NIHSS som en kvantitativ måling av slag-relaterte nevrologiske avvik.",
+          "keywords" : [ "skala", "nevrologisk", "hjerneslag", "vurdering", "undersøkelse", "NIHSS", "pakkeforløp" ],
+          "use" : "Brukes for å registrere resultat av NIHSS skåring som en kvantitativ måling av slag-relaterte nevrologiske avvik. Total skåren er en aritmetisk sum av alle 15 svarene, med alle \"Ikke testbar\" verdier ekskludert.\r\n\r\nOrdinalverdien \"99\" er tatt med for å kunne representere den ikke-numeriske verdien \"Ikke testbar\". Per nå tillater ikke verken modelleringsverktøyer eller ferdige openEHR journalsystemer å bruke en kombinasjon av numeriske og ikke-numeriske verdier innen ett enkelt verdisett.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar uma medição sistemática quantitativa de déficit neurológico relacionados ao acidente vascular cerebral. A NIHSS foi originalmente concebida como uma ferramenta de pesquisa para medir os dados de referência sobre doentes em ensaios clínicos de AVC agudo. Atualmente, a escala é também amplamente utilizada como uma ferramenta de avaliação clínica para avaliar a acuidade dos pacientes com AVC, determinar o tratamento adequado e prever o resultado do paciente.",
+          "keywords" : [ "escala", "neurológico", "acidente vascular cerebral", "avaliação", "exame" ],
+          "use" : "*Use to record the results of the National Institutes of Health Stroke Score as a quantitative measurement of stroke-related neurologic deficit.\r\n\r\nThe total score is the arithmetic sum of all 15 responses, excluding any untestable responses. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the results of NIHSS as a quantitative measurement of stroke-related neurologic deficit.",
+          "keywords" : [ "scale, neurological, stroke, assessment, examination, NIHSS" ],
+          "use" : "Used to record the results of NIHSS scoring as a quantitative measurement of stroke-related neurological deficits. The total score is the arithmetic sum of all 15 responses, with all 'untestable' values excluded.\r\n\r\nThe ordinal value '99' is included to represent the non-numeric value 'untestable'. Currently, neither modeling tools nor existing openEHR journal systems allow for a combination of numeric and non-numeric values within a single value set.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.nihss.v0",
     "differential" : true,
@@ -1556,7 +1624,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "68834A4FB9C9AE8CC1A77F3B4339541F"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Å registrere en pasients grad av selvstendighet i grunnleggende aktiviteter i dagliglivet og støtte vurdering av funksjonsstatus og endring over tid. Totalskår varierer fra 0 (fullstendig avhengighet) til 100 (selvstendighet).",
+          "keywords" : [ "aktiviteter i dagliglivet, funksjonsstatus, rehabilitering, selvstendighet, funksjonsvurdering, hjerneslag, geriatri, nevrologi, utfallsmål" ],
+          "use" : "Brukes for å registrere en persons selvstendighet i basale aktiviteter i dagliglivet (ADL).",
+          "misuse" : "Brukes ikke som et helhetlig mål på en pasients evne til å leve selvstendig eller til diagnostiske formål. \r\n\r\nDenne arketypen er basert på den norske oversettelsen i Pakkeforløp hjerneslag v. 1.1. Geriatrisk forening har en egen versjon med skåring fra 0-20 og noe annerledes ordlyd. Denne arketypen brukes ikke for å registrere grad av selvstendighet på ADL-indeks fra 0 til 20. Bruk annen egnet arketype til dette formålet: openEHR-EHR-OBSERVATION.barthel_no.v1.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.barthel_0_100_no.v1",
     "differential" : true,
@@ -1742,7 +1826,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "61DC75068DD9104070A4F227730B498F"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes for å registrere graden av funksjonsnedsettelse eller behov for bistand i aktiviteter i dagliglivet hos et individ som har hatt hjerneslag eller en annen form for nevrologisk hendelse.",
+          "keywords" : [ "mrs, funksjonssvikt, funksjonsnedsettelse, hjelpebehov, hjerneblødning, ADL, kroppsfunksjon, nevrologisk skade, nevrologisk uførhet" ],
+          "use" : "For å registrere graden av funksjonsnedsettelse eller behov for bistand i aktiviteter i dagliglivet hos et individ som har hatt hjerneslag eller en annen form for nevrologisk hendelse.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the degree of disability and level of assistance required after a stroke or another neurological event.",
+          "keywords" : [ "Stroke, function, neurological, disability, nursing, ADL, mrs" ],
+          "use" : "Use to record the degree of disability and level of assistance required after a stroke or another neurological event.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.modified_rankin_scale.v1",
     "differential" : true,
@@ -1809,7 +1924,99 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F3A7D36EBD28087AD91119914C081F32"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung einer Empfehlung, einer Beratung oder eines Vorschlags für die klinische Versorgung zu einem bestimmten Zeitpunkt.",
+          "keywords" : [ "Beratung", "Empfehlung", "Vorschlag" ],
+          "use" : "Verwenden Sie diesen Archetyp, um eine Empfehlung, eine Beratung oder einen Vorschlag für die klinische Versorgung zu einem bestimmten Zeitpunkt darzustellen.\n\nDer vorgesehene Anwendungsfall ist, um einen Kliniker bei der Aufzeichnung einer oder mehreren Empfehlung/en zu einem bestimmten Zeitpunkt zu unterstützen.\nZum Beispiel als Bestandteil der Schlussfolgerungen, die im Rahmen einer klinischen Beratung getroffen werden.",
+          "misuse" : "Der Archetyp darf nicht verwendet werden, um strukturierte Datenelemente einzuschließen, die zusätzliche Anweisungen wie Timing, Häufigkeit, Dauer oder Dosierung enthalten. Verwenden Sie zu diesem Zweck geeignete INSTRUCTION-Archetypen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att föreslå eller ge råd om behandlingsåtgärd vid ett specifikt tillfälle.",
+          "keywords" : [ "råd", "förslag", "rekommendation" ],
+          "use" : "Att föreslå eller ge råd om behandlingsåtgärd vid ett specifikt tillfälle.\n\nÄr tänkt att ge stöd för att dokumentera en behandlingsrekommendation vid en specifik tidpunkt. Exempelvis som en del av slutsatsen vid en klinisk konsultation.",
+          "misuse" : "*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Anvendes for å registrere et forslag, et råd eller en anmodning om klinisk oppfølging på et spesifikt tidspunkt.",
+          "keywords" : [ "råd", "forslag", "anmodning", "tilråde", "tilrådning", "instruks" ],
+          "use" : "Anvendes for å registrere et forslag, et råd eller en anmodning om klinisk oppfølging på et spesifikt tidspunkt.\n\nArketypen er ment å understøtte klinikere som dokumenterer en eller flere anbefalinger på et spesifikt tidspunkt.\nAnbefalingen kan for eksempel benyttes som en del av dokumentasjonen av konklusjonene som trekkes i forbindelse med en klinisk konsultasjon.",
+          "misuse" : "Brukes ikke for å registrere strukturerte dataelementer for å beskrive ytterligere instruksjoner som for eksempel 'timing', frekvens, varighet eller dose. Bruk relevante INSTRUCTION-arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.",
+          "keywords" : [ "consejo", "propuesta", "sugerencia" ],
+          "use" : "Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.\n\nEl caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.",
+          "misuse" : "*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar uma sugestão, conselho ou proposta de manejo clínico num tempo específico.",
+          "keywords" : [ "conselho", "proposta", "sugestão" ],
+          "use" : "Utilizar para registrar uma sugestão, conselho ou proposta de manejo clínico num tempo específico.\n\nO caso de uso pretendido é apoiar o registro clínico de uma recomendação, ou recomendações, num ponto específico no tempo.\nPor exemplo, como um componente das conclusões tiradas como parte de uma consulta clínica.",
+          "misuse" : "*Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a suggestion, advice or proposal for clinical management at a specific time.",
+          "keywords" : [ "advice", "proposal", "suggestion" ],
+          "use" : "Use to record a suggestion, advice or proposal for clinical management at a specific time.\n\nThe intended use case is to support a clinician recording a recommendation, or recommendations, at a specific point-in-time. \nFor example, as a component of the conclusions drawn as part of a clinical consultation.",
+          "misuse" : "Not to be used to carry structured data elements detailing additional instructions, such as timing, frequency, duration or dosage - use appropriate INSTRUCTION archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.recommendation.v2",
     "differential" : true,
@@ -1837,103 +2044,6 @@
               "occurrences" : "0..0",
               "nodeId" : "at0006.1",
               "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0003.2",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "boer-kriterier"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "boer-kriterier" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "boer-kriterier",
-                        "code" : "1",
-                        "value" : "Utfall/funksjonssvikt med godt kunnskapsgrunnlag for effekt av rehabilitering"
-                      }, {
-                        "terminologyId" : "boer-kriterier",
-                        "code" : "2",
-                        "value" : "Tidligere funksjonsnivå tilsvarende mRS 0-2"
-                      }, {
-                        "terminologyId" : "boer-kriterier",
-                        "code" : "3",
-                        "value" : "Ingen uttalt komorbiditet som hindrer rehabilitering"
-                      }, {
-                        "terminologyId" : "boer-kriterier",
-                        "code" : "4",
-                        "value" : "Tåler moderat intensitet/mengde av trening"
-                      }, {
-                        "terminologyId" : "boer-kriterier",
-                        "code" : "5",
-                        "value" : "Tydelig bedring av utfall/funksjon fra innleggelse til vurdering"
-                      }, {
-                        "terminologyId" : "boer-kriterier",
-                        "code" : "6",
-                        "value" : "Det foreligger konkrete og realistiske mål for rehabiliteringen utarbeidet i samarbeid med pasient og eventuelt pårørende"
-                      }, {
-                        "terminologyId" : "boer-kriterier",
-                        "code" : "7",
-                        "value" : "Andre forhold som øker muligheten for å oppnå nytte av rehabiliteringen"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0003.3",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "forventes_nytte"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "forventes_nytte" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "forventes_nytte",
-                        "code" : "1",
-                        "value" : "Forventet nytte av rehabilitering fordi må-kriteriene er oppfylt"
-                      }, {
-                        "terminologyId" : "forventes_nytte",
-                        "code" : "2",
-                        "value" : "Ingen forventet nytte av rehabilitering fordi:"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2181,6 +2291,110 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0002.6",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0003.2",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "boer-kriterier"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "boer-kriterier" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "boer-kriterier",
+                        "code" : "1",
+                        "value" : "Utfall/funksjonssvikt med godt kunnskapsgrunnlag for effekt av rehabilitering"
+                      }, {
+                        "terminologyId" : "boer-kriterier",
+                        "code" : "2",
+                        "value" : "Tidligere funksjonsnivå tilsvarende mRS 0-2"
+                      }, {
+                        "terminologyId" : "boer-kriterier",
+                        "code" : "3",
+                        "value" : "Ingen uttalt komorbiditet som hindrer rehabilitering"
+                      }, {
+                        "terminologyId" : "boer-kriterier",
+                        "code" : "4",
+                        "value" : "Tåler moderat intensitet/mengde av trening"
+                      }, {
+                        "terminologyId" : "boer-kriterier",
+                        "code" : "5",
+                        "value" : "Tydelig bedring av utfall/funksjon fra innleggelse til vurdering"
+                      }, {
+                        "terminologyId" : "boer-kriterier",
+                        "code" : "6",
+                        "value" : "Det foreligger konkrete og realistiske mål for rehabiliteringen utarbeidet i samarbeid med pasient og eventuelt pårørende"
+                      }, {
+                        "terminologyId" : "boer-kriterier",
+                        "code" : "7",
+                        "value" : "Andre forhold som øker muligheten for å oppnå nytte av rehabiliteringen"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0003.3",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "forventes_nytte"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "forventes_nytte" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "forventes_nytte",
+                        "code" : "1",
+                        "value" : "Forventet nytte av rehabilitering fordi må-kriteriene er oppfylt"
+                      }, {
+                        "terminologyId" : "forventes_nytte",
+                        "code" : "2",
+                        "value" : "Ingen forventet nytte av rehabilitering fordi:"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..1",
               "nodeId" : "at0003.1",
               "attributes" : [ ],
@@ -2230,13 +2444,6 @@
                   "attributeTuples" : [ ]
                 } ]
               } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0002.6",
-              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -2756,6 +2963,57 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "dd0db27d-6c34-4bae-9c7e-b6dbd603f78d",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "d14bcd29404bd944da47b3990be4b581"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.bildearketype_tverrfaglig_rehab.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-bildearketype_tverrfaglig_rehab-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ADMIN_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "9f58498f-9c55-3b9d-b2bd-45b2033cedb6",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
