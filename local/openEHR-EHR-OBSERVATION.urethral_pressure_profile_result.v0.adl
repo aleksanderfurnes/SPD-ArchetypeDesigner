@@ -23,8 +23,8 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"59559bfaaa57ae5a56e5d1e0feb75950">
 		["build_uid"] = <"5a74b93e-76a6-37e6-afcd-15b51ba6de71">
+		["MD5-CAM-1.0.1"] = <"168d3079aec934011be4d5f97c13ef51">
 	>
 
 definition
@@ -36,16 +36,36 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Maximum urethral closure pressure
-										value matches {
-											C_DV_QUANTITY <
-												property = <[openehr::125]>
-												list = <
-													["1"] = <
-														units = <"cmH₂O">
+									CLUSTER[at0008] occurrences matches {0..1} matches {    -- Parameters
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0004] occurrences matches {0..1} matches {    -- Maximum urethral closure pressure
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::125]>
+														list = <
+															["1"] = <
+																units = <"cmH₂O">
+															>
+														>
 													>
-												>
-											>
+												}
+											}
+											ELEMENT[at0005] occurrences matches {0..1} matches {    -- Maximal urethral pressurse
+												value matches {
+													DV_QUANTITY matches {*}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0006] matches {    -- Item tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Confounding factors
+										value matches {
+											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -79,6 +99,22 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Maximum urethral closure pressure">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Maximal urethral pressurse">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0007"] = <
+					text = <"Confounding factors">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Parameters">
 					description = <"">
 				>
 			>
