@@ -24,7 +24,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"5a74b93e-76a6-37e6-afcd-15b51ba6de71">
-		["MD5-CAM-1.0.1"] = <"168d3079aec934011be4d5f97c13ef51">
+		["MD5-CAM-1.0.1"] = <"5d7981b2766fbb0c573b4b89c7ccd492">
 	>
 
 definition
@@ -57,6 +57,20 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Clinical interpretation
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {    -- Multimedia representation
+										include
+											archetype_id/value matches {/.*/}
+									}
 								}
 							}
 						}
@@ -68,9 +82,28 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Position?
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0012] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0013] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0014] occurrences matches {0..*} matches {    -- Device
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -115,6 +148,34 @@ ontology
 				>
 				["at0008"] = <
 					text = <"Parameters">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Clinical interpretation">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Multimedia representation">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0013"] = <
+					text = <"Extension">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Device">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Position?">
 					description = <"">
 				>
 			>
