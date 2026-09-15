@@ -34,13 +34,13 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5953d7dc82b565b29a3c7ae869f91a80">
+		["MD5-CAM-1.0.1"] = <"0f96df676f89c183ee818bfbd6291026">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- uroflowmetry result
+	OBSERVATION[at0000] matches {    -- Uroflowmetry result
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -200,7 +200,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"uroflowmetry result">
+					text = <"Uroflowmetry result">
 					description = <"uroflowmetry">
 				>
 				["at0001"] = <
@@ -308,7 +308,7 @@ The pattern of the flow curve. ">
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*uroflowmetry result (en)">
+					text = <"*Uroflowmetry result (en)">
 					description = <"*uroflowmetry (en)">
 				>
 				["at0001"] = <
