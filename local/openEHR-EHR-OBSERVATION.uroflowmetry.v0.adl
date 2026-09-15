@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"69aa4f43645b19b0516f60a44f86ea00">
+		["MD5-CAM-1.0.1"] = <"5953d7dc82b565b29a3c7ae869f91a80">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -160,7 +160,7 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0014] occurrences matches {0..*} matches {    -- Position
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Position
 										value matches {
 											DV_CODED_TEXT matches {
 												defining_code matches {
