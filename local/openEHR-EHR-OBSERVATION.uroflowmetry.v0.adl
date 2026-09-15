@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"03a463c21e9e18058bd9bd1b6d0217d1">
+		["MD5-CAM-1.0.1"] = <"a91a7d2d6181cfc1c8f9bb9d7104fea0">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -57,6 +57,7 @@ definition
 														list = <
 															["1"] = <
 																units = <"s">
+																magnitude = <|0.0..90.0|>
 															>
 														>
 													>
