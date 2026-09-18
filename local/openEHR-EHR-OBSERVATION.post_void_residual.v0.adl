@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2a4fbedf40288fc0c512b74fa4cb0074">
+		["MD5-CAM-1.0.1"] = <"be15b56ad8416746a48b1da338cd8d62">
 		["build_uid"] = <"313539ab-58fb-34aa-9544-f41395522e7b">
 	>
 
@@ -52,6 +52,17 @@ definition
 										}
 									}
 									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0008] matches {    -- Item tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Confounding factors
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -99,6 +110,14 @@ ontology
 				>
 				["at0007"] = <
 					text = <"Time after voiding">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0009"] = <
+					text = <"Confounding factors">
 					description = <"">
 				>
 			>
