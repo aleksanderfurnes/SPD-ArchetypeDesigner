@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"be15b56ad8416746a48b1da338cd8d62">
+		["MD5-CAM-1.0.1"] = <"947ea6ee486ddb73b8502c51883d58b0">
 		["build_uid"] = <"313539ab-58fb-34aa-9544-f41395522e7b">
 	>
 
@@ -74,6 +74,20 @@ definition
 				}
 			}
 		}
+		protocol matches {
+			ITEM_TREE[at0010] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0012] occurrences matches {0..*} matches {    -- Extention
+						include
+							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {    -- Device
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
 	}
 
 ontology
@@ -118,6 +132,18 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Confounding factors">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0011"] = <
+					text = <"Device">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Extention">
 					description = <"">
 				>
 			>
