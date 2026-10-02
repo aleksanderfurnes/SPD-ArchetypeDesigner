@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7cdadb663e20fbe30b03909aef0c718c">
+		["MD5-CAM-1.0.1"] = <"02c8b99af48fc18b4537993097b031f1">
 		["build_uid"] = <"5a74b93e-76a6-37e6-afcd-15b51ba6de71">
 	>
 
@@ -90,6 +90,11 @@ definition
 									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Position?
 										value matches {
 											DV_CODED_TEXT matches {*}
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Condition
+										value matches {
 											DV_TEXT matches {*}
 										}
 									}
@@ -187,7 +192,9 @@ ontology
 				>
 				["at0015"] = <
 					text = <"Position?">
-					description = <"The condition and the patient position during test performance">
+					description = <"The condition and the patient position during test performance
+
+UPP is most commonly performed in sitting position: however, it can virtually be performed in any position depending on individual clinical requirements.">
 					comment = <"For example the urethral pressure profile is performed at rest or during stress maneuvers. Also called ">
 				>
 				["at0016"] = <
@@ -199,6 +206,14 @@ ontology
 					text = <"Method">
 					description = <"Method used to perform the test.">
 					comment = <"For example: ">
+				>
+				["at0018"] = <
+					text = <"Condition">
+					description = <"Resting UPP or rest UPP
+">
+					comment = <"Resting UPP: The bladder and subject are at rest.
+Stress UPP: Defined applied stress (e.g., cough, strain,
+Valsalva).">
 				>
 			>
 		>
