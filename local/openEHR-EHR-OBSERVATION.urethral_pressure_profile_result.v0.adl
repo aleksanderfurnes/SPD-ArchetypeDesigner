@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"02c8b99af48fc18b4537993097b031f1">
+		["MD5-CAM-1.0.1"] = <"0d3a0de866fb9550e8b1a212bc8093f0">
 		["build_uid"] = <"5a74b93e-76a6-37e6-afcd-15b51ba6de71">
 	>
 
@@ -82,7 +82,7 @@ definition
 						state matches {
 							ITEM_TREE[at0006] matches {    -- Item tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Confounding factors
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Condition
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -93,7 +93,7 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Condition
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Confounding factors
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -195,7 +195,7 @@ ontology
 					description = <"The condition and the patient position during test performance
 
 UPP is most commonly performed in sitting position: however, it can virtually be performed in any position depending on individual clinical requirements.">
-					comment = <"For example the urethral pressure profile is performed at rest or during stress maneuvers. Also called ">
+					comment = <"For example the urethral pressure profile is performed at rest or during stress maneuvers. ">
 				>
 				["at0016"] = <
 					text = <"Fuctional urethral length">
