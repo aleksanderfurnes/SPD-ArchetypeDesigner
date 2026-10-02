@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0d3a0de866fb9550e8b1a212bc8093f0">
+		["MD5-CAM-1.0.1"] = <"870759c298589b66b1d731d9c92ecfaf">
 		["build_uid"] = <"5a74b93e-76a6-37e6-afcd-15b51ba6de71">
 	>
 
@@ -205,7 +205,7 @@ UPP is most commonly performed in sitting position: however, it can virtually be
 				["at0017"] = <
 					text = <"Method">
 					description = <"Method used to perform the test.">
-					comment = <"For example: ">
+					comment = <"For example: Finnes ulike metoder tror jeg...">
 				>
 				["at0018"] = <
 					text = <"Condition">
