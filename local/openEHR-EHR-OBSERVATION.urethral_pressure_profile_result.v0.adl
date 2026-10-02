@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"21b91b95116758ede47298413f59da28">
+		["MD5-CAM-1.0.1"] = <"581247199dac94ef2cc534ac3e2000aa">
 		["build_uid"] = <"5a74b93e-76a6-37e6-afcd-15b51ba6de71">
 	>
 
@@ -90,6 +90,7 @@ definition
 									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Position?
 										value matches {
 											DV_CODED_TEXT matches {*}
+											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -182,6 +183,7 @@ ontology
 				["at0015"] = <
 					text = <"Position?">
 					description = <"">
+					comment = <"For example the urethral pressure profile is performed at rest or during stress maneuvers.">
 				>
 				["at0016"] = <
 					text = <"Fuctional urethral length">
