@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9ff4d16ca4a43229ccad60cae4cb0ca3">
+		["MD5-CAM-1.0.1"] = <"0801453c2b49d2c8abe9e1a5dc68a8c8">
 		["build_uid"] = <"313539ab-58fb-34aa-9544-f41395522e7b">
 	>
 
@@ -46,18 +46,6 @@ definition
 													>
 												>
 											>
-										}
-									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Measurement method
-										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0013,    -- Bladder scanner
-													at0014,    -- Catheterization
-													at0015]    -- Other
-												}
-											}
 										}
 									}
 									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Time since voiding
@@ -84,6 +72,18 @@ definition
 						state matches {
 							ITEM_TREE[at0008] matches {    -- Item tree
 								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Measurement method
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0013,    -- Bladder scanner
+													at0014,    -- Catheterization
+													at0015]    -- Other
+												}
+											}
+										}
+									}
 									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Confounding factors
 										value matches {
 											DV_TEXT matches {*}
