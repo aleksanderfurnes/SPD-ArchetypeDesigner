@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"947ea6ee486ddb73b8502c51883d58b0">
+		["MD5-CAM-1.0.1"] = <"9ff4d16ca4a43229ccad60cae4cb0ca3">
 		["build_uid"] = <"313539ab-58fb-34aa-9544-f41395522e7b">
 	>
 
@@ -36,19 +36,41 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Volume
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Residual urine volume
 										value matches {
-											DV_QUANTITY matches {*}
+											C_DV_QUANTITY <
+												property = <[openehr::129]>
+												list = <
+													["1"] = <
+														units = <"ml">
+													>
+												>
+											>
 										}
 									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Methode
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Measurement method
 										value matches {
-											DV_CODED_TEXT matches {*}
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0013,    -- Bladder scanner
+													at0014,    -- Catheterization
+													at0015]    -- Other
+												}
+											}
 										}
 									}
-									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Time after voiding
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Time since voiding
 										value matches {
-											DV_QUANTITY matches {*}
+											C_DV_QUANTITY <
+												property = <[openehr::128]>
+												list = <
+													["1"] = <
+														units = <"min">
+														magnitude = <|<=1.0|>
+													>
+												>
+											>
 										}
 									}
 									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Comment
@@ -111,11 +133,11 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"Volume">
+					text = <"Residual urine volume">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"Methode">
+					text = <"Measurement method">
 					description = <"">
 				>
 				["at0006"] = <
@@ -123,7 +145,7 @@ ontology
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"Time after voiding">
+					text = <"Time since voiding">
 					description = <"">
 				>
 				["at0008"] = <
@@ -144,6 +166,18 @@ ontology
 				>
 				["at0012"] = <
 					text = <"Extention">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Bladder scanner">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Catheterization">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Other">
 					description = <"">
 				>
 			>
