@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "66.0.0",
+      "sem_ver" : "66.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f259cee813de92c1974dcd1d2a6e8e48",
+      "MD5-CAM-1.0.1" : "0c8dec4d3ce99cefa5cec8ba22bf531f",
       "PARENT:MD5-CAM-1.0.1" : "D1C4FAAB741EAA41EDA9E0651266BCFD"
     },
     "details" : {
@@ -5134,7 +5134,7 @@
           "at0022.6" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.6",
-            "text" : "A12. Beskriv problemet som gjør at du ønsker du å bli oppringt av en sykepleier, og oppgi telefonnummeret ditt. Sykepleier vil evt også kunne sette opp kontroll på poliklinikken, evt involvere lege, hvis det er behov for det.",
+            "text" : "A12. Beskriv problemet som gjør at du ønsker du å bli oppringt, og oppgi telefonnummeret ditt. Vi vil evt også kunne sette opp kontroll på poliklinikken, evt involvere lege, hvis det er behov for det.",
             "description" : "Sykepleier vil evt også kunne sette opp kontroll på poliklinikken, evt invilvere lege, hvis det er behov for det.\n"
           },
           "ac0.10" : {
