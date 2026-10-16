@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "65.0.0",
+      "sem_ver" : "66.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5095e52b7e9b7e882c9827bcf7ee4406",
+      "MD5-CAM-1.0.1" : "f259cee813de92c1974dcd1d2a6e8e48",
       "PARENT:MD5-CAM-1.0.1" : "D1C4FAAB741EAA41EDA9E0651266BCFD"
     },
     "details" : {
@@ -1300,7 +1300,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "1..1",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0022.2",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -2264,6 +2264,55 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.23",
             "description" : ""
+          },
+          "at0005.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.6",
+            "text" : "Innlagt sykehus i mellomtiden",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0005.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.8",
+            "text" : "Annet",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Infeksjon i den opererte hoften",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0005.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.2",
+            "text" : "Blodpropp i benet",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0005.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.3",
+            "text" : "Blodpropp i lungen",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0005.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.4",
+            "text" : "Hofteprotesen ut av ledd",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0005.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.5",
+            "text" : "Benlengdeforskjell",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           }
         },
         "de" : {
@@ -4773,11 +4822,17 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms",
                                     "code" : "ja_oppringt",
-                                    "value" : "Ja, har et problem og ønsker å bli oppringt av sykepleier"
+                                    "value" : "Ja, har et problem og ønsker å bli oppringt av sykepleier",
+                                    "translations" : {
+                                      "nb" : "Ja, har et problem og ønsker å bli oppringt"
+                                    }
                                   }, {
                                     "terminologyId" : "local_terms",
                                     "code" : "nei_sykepleier",
-                                    "value" : "Nei, trenger ikke å bli oppringt av sykepleier"
+                                    "value" : "Nei, trenger ikke å bli oppringt av sykepleier",
+                                    "translations" : {
+                                      "nb" : "Nei, trenger ikke å bli oppringt"
+                                    }
                                   } ]
                                 } ]
                               } ],
@@ -5066,7 +5121,7 @@
           "at0022.5" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.5",
-            "text" : "A11. Har du problemer med hoften som gjør at du ønsker du å bli oppringt av en sykepleier?",
+            "text" : "A11. Har du problemer med hoften som gjør at du ønsker du å bli oppringt?",
             "description" : "Sykepleier vil evt også kunne sette opp kontroll på poliklinikken, evt invilvere lege, hvis det er behov for det.\n"
           },
           "at0004.1" : {
@@ -5099,6 +5154,27 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.14",
             "description" : ""
+          },
+          "at0005.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.6",
+            "text" : "A12. Beskriv problemet som gjør at du ønsker du å bli oppringt, og oppgi telefonnummeret ditt. Vi vil evt også kunne sette opp kontroll på poliklinikken, evt involvere lege, hvis det er behov for det.",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "A8. Har du betydelige plager fra annet enn hoften din som hindrer den fysiske funksjonen din (f.eks gange)?",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0005.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.4",
+            "text" : "A11. Har du problemer med hoften som gjør at du ønsker du å bli oppringt?",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           }
         },
         "de" : {
