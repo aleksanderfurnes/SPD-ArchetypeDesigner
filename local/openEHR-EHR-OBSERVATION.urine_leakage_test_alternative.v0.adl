@@ -1,0 +1,574 @@
+archetype (adl_version=1.4; uid=9012dc58-8278-425b-9369-5c6202389ac6)
+	openEHR-EHR-OBSERVATION.urine_leakage_test_alternative.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"">
+				["organisation"] = <"">
+				["email"] = <"">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2026-10-22">
+		["name"] = <"Silje Ljosland Bakke">
+		["organisation"] = <"Helse Vest IKT">
+		["email"] = <"silje.ljosland.bakke@helse-vest-ikt.no">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere det kvantifiserte resultatet av en test der urinlekkasje måles over et definert tidsrom under et definert aktivitets- eller provokasjonsregime.">
+			keywords = <"pad-test","veiing av inkontinensprodukt","urinlekkasje","inkontinens","kvantifisering","kontinens","lekkasjemengde","ICS pad-test","provokasjonstest">
+			use = <"Brukes for å registrere resultatet av en standardisert urinlekkasjetest, oftest en pad-test der absorberende produkter veies før og etter en definert brukstid, og vektøkningen registreres som lekkasjemengden.
+
+Brukes for alle varigheter og settinger: den korte polikliniske testen som gjennomføres under et foreskrevet aktivitetsregime med et definert blærevolum, og 24- eller 48-timerstesten som pasienten gjennomfører hjemme under normal daglig aktivitet. Disse skiller seg bare i protokollverdier - foreskrevet varighet, provokasjonsregime og regime for blærefylling - og registreres med den samme arketypen.
+
+Registrer lekkasjemengden som masse, i gram. Referansegrensene en pad-test tolkes etter, er selv definert i gram. Omregning til volum ved registrering gjør det umulig å sammenligne resultatet med grenseverdien i testens egen protokoll.
+
+Der det gjennomføres en test med flere produkter, kan hvert produkt registreres i det repeterende clusteret 'Inkontinensprodukt', mens testens totalverdi registreres i 'Lekkasjemengde'.
+
+Bruk hendelsen 'Testperiode' for å registrere testen. Testens faktiske varighet bæres av RM-attributtet 'width' i denne hendelsen; den foreskrevne varigheten registreres i protokollen. Et avvik mellom de to er klinisk meningsfullt - det viser at testen ble avbrutt tidlig eller forlenget.
+
+Bruk hendelsen 'Uspesifisert hendelse' bare der testperioden ikke er kjent, for eksempel for et resultat som er rapportert uten start- og sluttidspunkt.">
+			misuse = <"Brukes ikke for å registrere veide absorberende materialer som bidrag til et væskebalanseskjema. Bruk OBSERVATION.fluid_output.v1 (Væsketap) til dette formålet, som krever at vekten regnes om til volum.
+
+Brukes ikke for å registrere enkeltstående inkontinensepisoder etter hvert som de inntreffer, for eksempel i en blæredagbok. En episode er en tidspunkthendelse; denne arketypen registrerer det samlede resultatet av en test over et tidsintervall.
+
+Brukes ikke for å registrere pasientrapportert lekkasjebyrde eller symptomalvorlighet. Bruk et validert instrument, som OBSERVATION.iciq_ui_short.v0 eller OBSERVATION.ipss.v1, til dette formålet.
+
+Brukes ikke for å registrere utlevering, forskrivning eller bruk av inkontinensprodukter. Bruk ACTION.medical_equipment_supply.v0 eller tilsvarende til dette formålet.
+
+Brukes ikke for å registrere resturin. Bruk OBSERVATION.bladder_volume.v0 til dette formålet.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the quantified result of a test in which urine leakage is measured over a defined period of time under a defined activity or provocation regimen.">
+			keywords = <"pad test","pad weighing","urine leakage","incontinence","quantification","continence","leakage volume","ICS pad test","provocation test">
+			use = <"Use to record the result of a standardised urine leakage test, most commonly a pad test in which absorbent products are weighed before and after a defined wear period, and the increase in mass is recorded as the leakage quantity.
+
+Use for all durations and settings: the short outpatient test carried out under a prescribed activity regimen with a defined bladder volume, and the 24-hour or 48-hour test carried out by the patient at home during normal daily activity. These differ only in protocol values - prescribed duration, provocation regimen and bladder filling regimen - and are recorded using the same archetype.
+
+Record the leakage quantity as mass, in grams. The reference thresholds by which a pad test is interpreted are themselves defined in grams; converting to a volume at the point of recording destroys the ability to compare the result against its own protocol's threshold.
+
+Where a multi-pad test is performed, each product may be recorded in the repeating 'Pad' cluster, with the test total recorded in 'Leakage quantity'.
+
+Use the 'Test period' event to record the test. The actual duration of the test is carried by its RM attribute 'width'; the duration that was prescribed is recorded in the protocol. A divergence between the two is clinically meaningful - it indicates a test that was terminated early or extended.
+
+Use the 'Any event' event only where the test period is not known, for example a result reported without start and end times.">
+			misuse = <"Not to be used to record weighed absorbent material as a contribution to a fluid balance chart. Use OBSERVATION.fluid_output.v1 for that purpose, which requires conversion of the weight to a volume.
+
+Not to be used to record individual incontinence episodes as they occur, for example in a bladder diary. An episode is a point event; this archetype records the aggregate result of a test over an interval.
+
+Not to be used to record patient-reported leakage burden or symptom severity. Use a validated instrument such as OBSERVATION.iciq_ui_short.v0 or OBSERVATION.ipss.v1 for that purpose.
+
+Not to be used to record the supply, prescription or use of continence products. Use ACTION.medical_equipment_supply.v0 or an equivalent for that purpose.
+
+Not to be used to record residual urine. Use OBSERVATION.bladder_volume.v0 for that purpose.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"">
+		["references"] = <"Fluid output, Published archetype [Internet]. openEHR Foundation, openEHR Clinical Knowledge Manager [cited: 2026-08-14]. Available from: https://ckm.openehr.org/ckm/archetypes/1013.1.1683
+
+International Continence Society. ICS glossary: pad testing.
+
+European Association of Urology. EAU guidelines on non-neurogenic female lower urinary tract symptoms. Section 3.7: Pad testing. Arnhem: EAU Guidelines Office; 2026.">
+		["MD5-CAM-1.0.1"] = <"265046ffc296dd48cd05140a9988ea0d">
+		["build_uid"] = <"577c3995-5a48-355b-a940-a3793f8af49d">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- urine_leakage_test_alternative
+		data matches {
+			HISTORY[at0001] matches {    -- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					INTERVAL_EVENT[at0002] occurrences matches {0..1} matches {    -- Test period
+						width matches {
+							DV_DURATION matches {*}
+						}
+						math_function matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[openehr::148]
+								}
+							}
+						}
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Leakage quantity
+										value matches {
+											C_DV_QUANTITY <
+												
+												list = <
+													["1"] = <
+														units = <"g">
+														magnitude = <|>=0.0|>
+													>
+													["2"] = <
+														units = <"ml">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Number of leakage episodes
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>=0|}
+											}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Number of products used
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>=0|}
+											}
+										}
+									}
+									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Mean
+										value matches {
+											C_DV_QUANTITY <
+												
+												list = <
+													["1"] = <
+														units = <"ml">
+														magnitude = <|>=0.0|>
+													>
+													["2"] = <
+														units = <"g">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Test completed according to protocol
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0017,    -- Yes
+													at0018,    -- No
+													at0019]    -- Partially
+												}
+											}
+										}
+									}
+									CLUSTER[at0008] occurrences matches {0..*} matches {    -- Pad
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0009] occurrences matches {0..1} matches {    -- Applied
+												value matches {
+													DV_DATE_TIME matches {*}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Removed
+												value matches {
+													DV_DATE_TIME matches {*}
+												}
+											}
+											ELEMENT[at0011] occurrences matches {0..1} matches {    -- Dry weight
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::124]>
+														list = <
+															["1"] = <
+																units = <"g">
+																magnitude = <|>=0.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Wet weight
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::124]>
+														list = <
+															["1"] = <
+																units = <"g">
+																magnitude = <|>=0.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0013] occurrences matches {0..1} matches {    -- Weight gain
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::124]>
+														list = <
+															["1"] = <
+																units = <"g">
+																magnitude = <|>=0.0|>
+															>
+														>
+													>
+												}
+											}
+											allow_archetype CLUSTER[at0028] occurrences matches {0..1} matches {    -- Device
+												include
+													archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
+											}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+					EVENT[at0027] occurrences matches {0..1} matches {    -- Any event
+						data matches {
+							use_node ITEM_TREE /data[at0001]/events[at0002]/data[at0003]
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0020] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Test protocol
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Prescribed duration
+						value matches {
+							DV_DURATION matches {*}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Bladder filling regimen
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Provocation regimen
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Conversion formula
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Standard pad weight
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::124]>
+								list = <
+									["1"] = <
+										units = <"g">
+									>
+								>
+							>
+						}
+					}
+					allow_archetype CLUSTER[at0025] occurrences matches {0..1} matches {    -- Weighing device
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
+						exclude
+							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0026] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"urine_leakage_test_alternative">
+					description = <"Quantification of urine leakage over a defined period of time under a defined activity or provocation load.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Test period">
+					description = <"The period of time over which urine leakage was measured.">
+					comment = <"Default event for recording a test; one test is recorded as one event. The actual duration of the test is recorded in the RM attribute 'width'. The RM attribute 'math_function' is fixed to 'total', because the leakage quantity is the cumulative sum over the period.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Leakage quantity">
+					description = <"The total mass of urine leaked during the test period.">
+					comment = <"For a multi-pad test this is the sum of the individual 'Weight gain' values. Recorded as mass rather than volume, because the reference thresholds by which the test is interpreted are defined in grams.">
+				>
+				["at0005"] = <
+					text = <"Number of leakage episodes">
+					description = <"The number of discrete leakage episodes the patient registered during the test period.">
+				>
+				["at0006"] = <
+					text = <"Number of products used">
+					description = <"The number of absorbent products used during the test period.">
+				>
+				["at0007"] = <
+					text = <"Test completed according to protocol">
+					description = <"Whether the test was carried out in accordance with the protocol.">
+					comment = <"Record details of any deviation in 'Comment'.">
+				>
+				["at0008"] = <
+					text = <"Pad">
+					description = <"Details of a single absorbent product used during the test.">
+					comment = <"Use where per-product detail is required, typically in 24-hour and 48-hour tests. Repeat for each product used.">
+				>
+				["at0009"] = <
+					text = <"Applied">
+					description = <"The point in time at which the product was applied to the patient.">
+				>
+				["at0010"] = <
+					text = <"Removed">
+					description = <"The point in time at which the product was removed from the patient.">
+				>
+				["at0011"] = <
+					text = <"Dry weight">
+					description = <"The mass of the product before the wear period.">
+				>
+				["at0012"] = <
+					text = <"Wet weight">
+					description = <"The mass of the product after the wear period.">
+				>
+				["at0013"] = <
+					text = <"Weight gain">
+					description = <"The increase in mass of the product over the wear period.">
+					comment = <"Normally calculated as 'Wet weight' minus 'Dry weight'.">
+				>
+				["at0016"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the test not captured in other fields.">
+					comment = <"For example: deviations from the prescribed protocol.">
+				>
+				["at0017"] = <
+					text = <"Yes">
+					description = <"The test was carried out in accordance with the prescribed protocol.">
+				>
+				["at0018"] = <
+					text = <"No">
+					description = <"The test was not carried out in accordance with the prescribed protocol.">
+				>
+				["at0019"] = <
+					text = <"Partially">
+					description = <"The test was carried out in accordance with only part of the prescribed protocol.">
+				>
+				["at0020"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"Test protocol">
+					description = <"Identification of the standardised test protocol followed.">
+					comment = <"For example: ICS 1-hour pad test; 24-hour pad test; 48-hour pad test. Coding with a terminology or a local value set is preferred, where possible.">
+				>
+				["at0022"] = <
+					text = <"Prescribed duration">
+					description = <"The test duration specified in the protocol.">
+					comment = <"The actual duration of the test is recorded in the RM attribute 'width' of the 'Test period' event. A divergence between the two indicates a test that was terminated early or extended.">
+				>
+				["at0023"] = <
+					text = <"Bladder filling regimen">
+					description = <"The bladder preparation prescribed before the test.">
+					comment = <"For example: 500 ml oral fluid intake 15 minutes before the test; or a defined bladder volume confirmed by ultrasound.">
+				>
+				["at0024"] = <
+					text = <"Provocation regimen">
+					description = <"The activity or provocation prescribed during the test.">
+					comment = <"For example: a defined sequence of standardised exercises; or normal everyday activity.">
+				>
+				["at0025"] = <
+					text = <"Weighing device">
+					description = <"Details of the device used to weigh the absorbent products.">
+					comment = <"For example: a calibrated scale.">
+				>
+				["at0026"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
+				>
+				["at0027"] = <
+					text = <"Any event">
+					description = <"Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.">
+					comment = <"Use only where the test period is not known, for example a result reported without start and end times.">
+				>
+				["at0028"] = <
+					text = <"Device">
+					description = <"Details about the device that was used to absorb the leaked urine.">
+				>
+				["at0029"] = <
+					text = <"Conversion formula">
+					description = <"If the leakage was converted from grams to millilitres, what formula was used for the conversion.">
+				>
+				["at0030"] = <
+					text = <"Standard pad weight">
+					description = <"If the pad is of a standardised weight, it may be entered once instead and apply for all measurements.">
+				>
+				["at0031"] = <
+					text = <"Mean">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"urine_leakage_test_alternative">
+					description = <"Kvantifisering av urinlekkasje over et definert tidsrom under en definert aktivitets- eller provokasjonsbelastning.">
+				>
+				["at0001"] = <
+					text = <"Hendelsesserie">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Testperiode">
+					description = <"Tidsrommet urinlekkasjen ble målt over.">
+					comment = <"Standardhendelse for registrering av en test; én test registreres som én hendelse. Testens faktiske varighet registreres i RM-attributtet 'width'. RM-attributtet 'math_function' er låst til 'total', fordi lekkasjemengden er den akkumulerte summen over tidsrommet.">
+				>
+				["at0003"] = <
+					text = <"Tre">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Lekkasjemengde">
+					description = <"Den totale massen av urin som har lekket i løpet av testperioden.">
+					comment = <"Ved en test med flere produkter er dette summen av de enkelte verdiene for 'Vektøkning'.">
+				>
+				["at0005"] = <
+					text = <"Antall lekkasjeepisoder">
+					description = <"Antall atskilte lekkasjeepisoder pasienten registrerte i løpet av testperioden.">
+				>
+				["at0006"] = <
+					text = <"Antall produkter brukt">
+					description = <"Antall absorberende produkter som ble brukt i løpet av testperioden.">
+				>
+				["at0007"] = <
+					text = <"Test gjennomført etter protokoll">
+					description = <"*Whether the test was carried out in accordance with the protocol. (en)">
+					comment = <"Registrer detaljer om eventuelle avvik i 'Kommentar'.">
+				>
+				["at0008"] = <
+					text = <"Inkontinensprodukt">
+					description = <"Detaljer om ett enkelt absorberende produkt som ble brukt under testen.">
+					comment = <"Brukes der det trengs detaljer per produkt, typisk ved 24- og 48-timerstester. Gjentas for hvert produkt som ble brukt.">
+				>
+				["at0009"] = <
+					text = <"Tatt på">
+					description = <"Tidspunktet da produktet ble tatt på pasienten.">
+				>
+				["at0010"] = <
+					text = <"Tatt av">
+					description = <"Tidspunktet da produktet ble tatt av pasienten.">
+				>
+				["at0011"] = <
+					text = <"Tørrvekt">
+					description = <"Massen av produktet før brukstiden.">
+				>
+				["at0012"] = <
+					text = <"Våtvekt">
+					description = <"Massen av produktet etter brukstiden.">
+				>
+				["at0013"] = <
+					text = <"Differanse">
+					description = <"Endringen i massen av produktet over brukstiden.">
+					comment = <"Beregnes normalt som 'Våtvekt' minus 'Tørrvekt'.">
+				>
+				["at0016"] = <
+					text = <"Kommentar">
+					description = <"Ytterligere fritekst om testen som ikke er registrert i andre felt.">
+					comment = <"For eksempel avvik fra den foreskrevne protokollen.">
+				>
+				["at0017"] = <
+					text = <"Ja">
+					description = <"Testen ble gjennomført i samsvar med den foreskrevne protokollen.">
+				>
+				["at0018"] = <
+					text = <"Nei">
+					description = <"Testen ble ikke gjennomført i samsvar med den foreskrevne protokollen.">
+				>
+				["at0019"] = <
+					text = <"Delvis">
+					description = <"Testen ble gjennomført i samsvar med bare deler av den foreskrevne protokollen.">
+				>
+				["at0020"] = <
+					text = <"Tre">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"Testprotokoll">
+					description = <"Identifisering av den standardiserte testprotokollen som ble fulgt.">
+					comment = <"For eksempel ICS 1-times pad-test, 24-timers pad-test eller 48-timers pad-test. Koding med en terminologi eller et lokalt verdisett er ønskelig, der det er mulig.">
+				>
+				["at0022"] = <
+					text = <"Foreskrevet varighet">
+					description = <"Testvarigheten som er angitt i protokollen.">
+					comment = <"Testens faktiske varighet registreres i RM-attributtet 'width' i hendelsen 'Testperiode'. Et avvik mellom de to viser at testen ble avbrutt tidlig eller forlenget.">
+				>
+				["at0023"] = <
+					text = <"Regime for blærefylling">
+					description = <"Blæreforberedelsen som er foreskrevet før testen.">
+					comment = <"For eksempel inntak av 500 ml drikke 15 minutter før testen, eller et definert blærevolum bekreftet med ultralyd.">
+				>
+				["at0024"] = <
+					text = <"Provokasjonsregime">
+					description = <"Aktiviteten eller provokasjonen som er foreskrevet under testen.">
+					comment = <"For eksempel en definert sekvens av standardiserte øvelser, eller normal daglig aktivitet.">
+				>
+				["at0025"] = <
+					text = <"Veieutstyr">
+					description = <"Detaljer om utstyret som ble brukt til å veie de absorberende produktene.">
+					comment = <"For eksempel en kalibrert vekt.">
+				>
+				["at0026"] = <
+					text = <"Tilleggsinformasjon">
+					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
+					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
+				>
+				["at0027"] = <
+					text = <"Uspesifisert hendelse">
+					description = <"Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en templat eller i en applikasjon.">
+					comment = <"Brukes bare der testperioden ikke er kjent, for eksempel for et resultat som er rapportert uten start- og sluttidspunkt.">
+				>
+				["at0028"] = <
+					text = <"Utstyr">
+					description = <"Detaljer om utstyret som ble ble brukt for å absorbere lekket urin.">
+				>
+				["at0029"] = <
+					text = <"Konverteringsformel">
+					description = <"Dersom lekkasjen konverteres fra gram til milliliter, hvilken formel som ble brukt.">
+				>
+				["at0030"] = <
+					text = <"Standard inkontinesproduktvekt">
+					description = <"Dersom inkontinesproduktet er av en standardisert vekt, så kan det legges inn en gang og gjelde for alle målingene.">
+				>
+				["at0031"] = <
+					text = <"Gjennomsnitt">
+					description = <"">
+				>
+			>
+		>
+	>
