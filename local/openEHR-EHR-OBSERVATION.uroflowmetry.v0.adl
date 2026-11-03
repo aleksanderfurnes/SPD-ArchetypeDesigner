@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a824e5f168114e40b83c442406f78c5d">
+		["MD5-CAM-1.0.1"] = <"43c4e37c2332d3ccdae15057c98b3cae">
 		["build_uid"] = <"a86e8e14-0301-372c-9a89-a25c37ba537a">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -181,6 +181,11 @@ definition
 		protocol matches {
 			ITEM_TREE[at0010] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Method?
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
 					allow_archetype CLUSTER[at0028] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
@@ -303,6 +308,10 @@ The pattern of the flow curve. ">
 					text = <"Device">
 					description = <"Details of the device used to measure uroflowmetry.">
 				>
+				["at0030"] = <
+					text = <"Method?">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -410,6 +419,10 @@ The pattern of the flow curve.  (en)">
 				["at0029"] = <
 					text = <"*Device (en)">
 					description = <"*Details of the device used to measure uroflowmetry. (en)">
+				>
+				["at0030"] = <
+					text = <"*Method? (en)">
+					description = <"">
 				>
 			>
 		>
