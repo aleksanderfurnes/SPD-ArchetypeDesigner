@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a064d558f2364374255ba7c5928e35d5">
+		["MD5-CAM-1.0.1"] = <"af6504a97dfd585fe78b2aee7ef622f3">
 		["build_uid"] = <"5a74b93e-76a6-37e6-afcd-15b51ba6de71">
 	>
 
@@ -36,7 +36,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0008] occurrences matches {0..1} matches {    -- Parameters
+									CLUSTER[at0008] occurrences matches {0..*} matches {    -- Parameters
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0005] occurrences matches {0..1} matches {    -- Maximal urethral pressurse
 												value matches {
@@ -72,7 +72,7 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {    -- Multimedia representation
+									allow_archetype CLUSTER[at0011] occurrences matches {0..1} matches {    -- Multimedia representation
 										include
 											archetype_id/value matches {/.*/}
 									}
