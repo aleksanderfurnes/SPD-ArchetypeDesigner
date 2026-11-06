@@ -1,0 +1,614 @@
+archetype (adl_version=1.4; uid=9175c60f-f7b1-4464-97ed-a4e965107de6)
+	openEHR-EHR-OBSERVATION.adhd_rs_hn.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2026-11-06">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"7493389bb86a77b3008689067813f8a5">
+		["build_uid"] = <"57462e9c-8f1b-3f81-b811-6251e5eeebdc">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- ADHD RS hn
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Klarer ikke være nøye med detaljer eller gjør slurvefeil i skolearbeidet
+										value matches {
+											0|[local::at0010],
+											1|[local::at0011],
+											2|[local::at0012],
+											3|[local::at0013]
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Trommer med fingrene / beina eller vrir seg på stolen
+										value matches {
+											0|[local::at0015],
+											1|[local::at0016],
+											2|[local::at0017],
+											3|[local::at0018]
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {    -- Har problemer med å og opprettholde oppmerksomhet mht. oppgaver eller aktiviteter
+										value matches {
+											0|[local::at0021],
+											1|[local::at0022],
+											2|[local::at0023],
+											3|[local::at0024]
+										}
+									}
+									ELEMENT[at0025] occurrences matches {0..1} matches {    -- Forlater plassen sin i klasserommet eller i andre situasjoner der det er forventet å sitte stille
+										value matches {
+											0|[local::at0026],
+											1|[local::at0027],
+											2|[local::at0028],
+											3|[local::at0029]
+										}
+									}
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Synes ikke å høre etter når han/ hun snakkes direkte til
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Løper rundt eller klatrer overdrevent mye i situasjoner der det er upassende
+										value matches {
+											0|[local::at0031],
+											1|[local::at0032],
+											2|[local::at0033],
+											3|[local::at0034]
+										}
+									}
+									ELEMENT[at0035] occurrences matches {0..1} matches {    -- Får ikke med seg hele beskjeder og får ikke fullført arbeid
+										value matches {
+											0|[local::at0036],
+											1|[local::at0037],
+											2|[local::at0038],
+											3|[local::at0039]
+										}
+									}
+									ELEMENT[at0040] occurrences matches {0..1} matches {    -- Har problemer med å leke eller delta i fritidsaktiviteter stille og rolig
+										value matches {
+											0|[local::at0041],
+											1|[local::at0042],
+											2|[local::at0043],
+											3|[local::at0044]
+										}
+									}
+									ELEMENT[at0045] occurrences matches {0..1} matches {    -- Har problemer med å organisere oppgaver og aktiviteter
+										value matches {
+											0|[local::at0046],
+											1|[local::at0047],
+											2|[local::at0048],
+											3|[local::at0049]
+										}
+									}
+									ELEMENT[at0050] occurrences matches {0..1} matches {    -- Er ”på farten” eller oppfører seg ”som drevet av en indre motor”
+										value matches {
+											0|[local::at0051],
+											1|[local::at0052],
+											2|[local::at0053],
+											3|[local::at0054]
+										}
+									}
+									ELEMENT[at0055] occurrences matches {0..1} matches {    -- Unngår oppgaver (for eksempel skolearbeid, lekser) som krever intellektuell innsats (”tenkearbeid”)
+										value matches {
+											0|[local::at0056],
+											1|[local::at0057],
+											2|[local::at0058],
+											3|[local::at0059]
+										}
+									}
+									ELEMENT[at0060] occurrences matches {0..1} matches {    -- Snakker svært mye
+										value matches {
+											0|[local::at0061],
+											1|[local::at0062],
+											2|[local::at0063],
+											3|[local::at0064]
+										}
+									}
+									ELEMENT[at0065] occurrences matches {0..1} matches {    -- Mister tin han / hun trenger til aktiviteter eller oppgaver
+										value matches {
+											0|[local::at0066],
+											1|[local::at0067],
+											2|[local::at0068],
+											3|[local::at0069]
+										}
+									}
+									ELEMENT[at0070] occurrences matches {0..1} matches {    -- Kommer med svar før spørsmålet er fullført
+										value matches {
+											0|[local::at0071],
+											1|[local::at0072],
+											2|[local::at0073],
+											3|[local::at0074]
+										}
+									}
+									ELEMENT[at0075] occurrences matches {0..1} matches {    -- Er lett å distrahere
+										value matches {
+											0|[local::at0076],
+											1|[local::at0077],
+											2|[local::at0078],
+											3|[local::at0079]
+										}
+									}
+									ELEMENT[at0080] occurrences matches {0..1} matches {    -- Har problemer med å vente på tur
+										value matches {
+											0|[local::at0081],
+											1|[local::at0082],
+											2|[local::at0083],
+											3|[local::at0084]
+										}
+									}
+									ELEMENT[at0085] occurrences matches {0..1} matches {    -- Er glemsom i dagliglivet
+										value matches {
+											0|[local::at0086],
+											1|[local::at0087],
+											2|[local::at0088],
+											3|[local::at0089]
+										}
+									}
+									ELEMENT[at0090] occurrences matches {0..1} matches {    -- Avbryter eller trenger seg på andre
+										value matches {
+											0|[local::at0091],
+											1|[local::at0092],
+											2|[local::at0093],
+											3|[local::at0094]
+										}
+									}
+									ELEMENT[at0096] occurrences matches {0..1} matches {    -- Oppmerksomhetssvikt
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..24|}
+											}
+										}
+									}
+									ELEMENT[at0097] occurrences matches {0..1} matches {    -- Impulsivitet
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..30|}
+											}
+										}
+									}
+									ELEMENT[at0098] occurrences matches {0..1} matches {    -- Totalskår
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..54|}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0019] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"ADHD RS hn">
+					description = <"ADHD RS hn">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Synes ikke å høre etter når han/ hun snakkes direkte til">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Klarer ikke være nøye med detaljer eller gjør slurvefeil i skolearbeidet">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Trommer med fingrene / beina eller vrir seg på stolen">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0020"] = <
+					text = <"Har problemer med å og opprettholde oppmerksomhet mht. oppgaver eller aktiviteter">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Forlater plassen sin i klasserommet eller i andre situasjoner der det er forventet å sitte stille">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Løper rundt eller klatrer overdrevent mye i situasjoner der det er upassende">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Får ikke med seg hele beskjeder og får ikke fullført arbeid">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Har problemer med å leke eller delta i fritidsaktiviteter stille og rolig">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Har problemer med å organisere oppgaver og aktiviteter">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Er ”på farten” eller oppfører seg ”som drevet av en indre motor”">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Unngår oppgaver (for eksempel skolearbeid, lekser) som krever intellektuell innsats (”tenkearbeid”)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Snakker svært mye">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"Mister tin han / hun trenger til aktiviteter eller oppgaver">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Kommer med svar før spørsmålet er fullført">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Er lett å distrahere">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Har problemer med å vente på tur">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"Er glemsom i dagliglivet">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Avbryter eller trenger seg på andre">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Aldri / sjelden">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Av og til">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"Svært ofte">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Oppmerksomhetssvikt">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Impulsivitet">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Totalskår">
+					description = <"">
+				>
+			>
+		>
+	>
