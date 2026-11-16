@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "bb31c26f8aa6c079216d49df127bd27c",
+      "MD5-CAM-1.0.1" : "5dece749b1ab3fd363f4d77b28f07b24",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF",
-      "sem_ver" : "1.0.1",
+      "sem_ver" : "2.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -3011,6 +3011,114 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0022.4",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Hypertensjon",
+                                "@type" : "DV_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_STRING",
+                                  "rmTypeName" : "STRING",
+                                  "constraint" : [ "Hypertensjon" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "1..1",
+                          "nodeId" : "at0005.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.227" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0040.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0025.4",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
                       "nodeId" : "at0022.3",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -4619,6 +4727,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.226",
             "description" : ""
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specific problem or diagnosis (4)",
+            "description" : "Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose."
           }
         },
         "nb" : {
@@ -4677,7 +4791,7 @@
           "at0005.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.2",
-            "text" : "Har du høyt blodtrykk (hypertensjon)?",
+            "text" : "Har du hatt eller har du høyt blodtrykk (Hypertensjon)?",
             "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
@@ -4729,7 +4843,7 @@
           "at0005.5" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.5",
-            "text" : "Har du søvnapné?",
+            "text" : "Har du pustestopp på natten (Søvnapnè)?",
             "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           },
@@ -5090,6 +5204,32 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.226",
             "description" : ""
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.4",
+            "text" : "Hvis over 55 år: oppgi blodtrykksmåling siste 6mnd",
+            "description" : "Detaljer om en spesifikt bekymring, plage, problem eller diagnose eller gruppe av bekymringer, plager, problemer eller diagnoser som er innenfor kartleggingsformålet."
+          },
+          "at0004.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.2",
+            "text" : "Hypertensjon",
+            "description" : "Navnet på en bekymring, plage, problem eller diagnose, eller grupper av bekymringer, plager, problemer eller diagnoser.",
+            "comment" : "Koding av problem/diagnosenavnet med en terminologi foretrekkes, der det er mulig."
+          },
+          "at0005.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.4",
+            "text" : "Har du fått målt blodtrykket ditt i løpet av de siste 6 månedene?",
+            "description" : "Har den spesifikke bekymring, plage, problem eller diagnose noen gang vært til stede?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0025.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Beskrivelse:",
+            "description" : "Ytterligere fritekst om det spesifikke problem- eller diagnosespørsmålet som ikke er omfattet av andre felt."
           }
         },
         "de" : {
@@ -5255,6 +5395,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.226",
             "description" : ""
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Bestimmter Zustand (4)",
+            "description" : "Details zu einer spezifischen Beschwerde, Diagnose oder zu einem bestimmten Problem oder einer Gruppe an Beschwerden, Problemen oder Diagnosen, die für das Screening relevant sind."
           }
         },
         "nl" : {
@@ -5420,6 +5566,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.226",
             "description" : ""
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "*Specifieke aandoening (4)",
+            "description" : "*Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose. (en)"
           }
         },
         "ca" : {
@@ -5585,6 +5737,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.226",
             "description" : ""
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Problema o diagnòstic específic (4)",
+            "description" : "Dades sobre una qüestió, problema o diagnòstic específic, o grup de problemes o diagnòstics rellevants per a un objectiu de detecció."
           }
         },
         "fr" : {
@@ -5750,6 +5908,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.226",
             "description" : ""
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Problème ou diagnostic spécifique (4)",
+            "description" : "Détails sur une question, un problème ou un diagnostic spécifique ou un groupe de problèmes ou de diagnostics pertinents pour l'objectif du dépistage."
           }
         }
       },
@@ -6885,6 +7049,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.226",
           "members" : [ "at0023", "at0024", "at0045" ]
+        },
+        "ac0.227" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.227",
+          "members" : [ "at0023", "at0024", "at0045" ]
         }
       }
     },
@@ -8014,121 +8183,6 @@
                         } ]
                       } ],
                       "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0026.3",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0021.3",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "defaultValue" : {
-                                "value" : "Reseptfrie medikamenter, kosttilskudd eller naturmedisin",
-                                "@type" : "DV_TEXT"
-                              },
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "value",
-                                "children" : [ {
-                                  "@type" : "C_STRING",
-                                  "rmTypeName" : "STRING",
-                                  "constraint" : [ "Reseptfrie medikamenter, kosttilskudd eller naturmedisin" ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0024.3",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_BOOLEAN",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0003.3",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DATE_TIME",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0002.3",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DATE_TIME",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0025.3",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -8157,13 +8211,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026.1",
             "text" : "Specific medication (2)",
-            "description" : "Details about a specified medication or grouping of medications relevant for the screening purpose.",
-            "comment" : "Use separate instances of this CLUSTER to differentiate between specific medications or groupings of medication."
-          },
-          "at0026.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.1",
-            "text" : "Specific medication (3)",
             "description" : "Details about a specified medication or grouping of medications relevant for the screening purpose.",
             "comment" : "Use separate instances of this CLUSTER to differentiate between specific medications or groupings of medication."
           }
@@ -8215,26 +8262,6 @@
             "text" : "Vennligst spesifiser hvilke andre reseptbelagte medisiner (inkl. prevensjon) du bruker, dosering og hvorfor du bruker disse",
             "description" : "F.eks Voltaren 50 mg, en gang daglig, mot ryggsmerter."
           },
-          "at0026.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.3",
-            "text" : "Reseptfrie medikamenter, kosttilskudd eller naturmedisin",
-            "description" : "Detaljer om et spesifikt legemiddel eller gruppe av legemidler er innenfor kartleggingsformålet.",
-            "comment" : "Bruk separate instanser av dette clusteret for å skille mellom spesifikke legemidler eller grupper av legemidler."
-          },
-          "at0024.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024.3",
-            "text" : "Jeg bruker reseptfrie medisiner, kosttilskudd eller naturmedisin",
-            "description" : "Er det spesifikke legemiddelet eller gruppen av legemidler noen gang brukt?",
-            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN.\r\n\r\nEksempel på et alternativt verdisett ved å benytte datatypen DV_TEXT kan være:\r\nNåværende bruk [Individet bruker for tiden det spesifikke legemiddelet enten fast eller ved behov.],\r\nAldri brukt [Individet har aldri brukt det spesifikke legemiddelet.],\r\nTidligere bruk [Individet har tidligere brukt det spesifikke legemiddelet, men bruker det for tiden ikke.],\r\nUsikker [Det er ikke kjent hvorvidt individet bruker eller har brukt det spesifikke legemiddelet.]."
-          },
-          "at0025.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025.3",
-            "text" : "Vennligst spesifiser hvilke reseptfrie medisiner, kosttilskudd eller naturmedisin du bruker, dosering, og hvorfor du bruker disse",
-            "description" : "F.eks Paracet 500 mg, tre ganger daglig, mot ryggsmerter."
-          },
           "at0026.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026.1",
@@ -8246,13 +8273,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0021.1",
             "text" : "Blodfortynnende medikamenter",
-            "description" : "Navnet på legemiddelet eller gruppen av legemidler.",
-            "comment" : "For eksempel: \"alendronsyre\", \"osteoporosemedisin\" og \"bisfosfonater\".\r\nKoding av legemiddelnavnet med en terminologi foretrekkes, der det er mulig."
-          },
-          "at0021.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021.3",
-            "text" : "Reseptfrie medikamenter, kosttilskudd eller naturmedisin",
             "description" : "Navnet på legemiddelet eller gruppen av legemidler.",
             "comment" : "For eksempel: \"alendronsyre\", \"osteoporosemedisin\" og \"bisfosfonater\".\r\nKoding av legemiddelnavnet med en terminologi foretrekkes, der det er mulig."
           },
@@ -8277,13 +8297,6 @@
             "text" : "Spezifisches Medikament (2)",
             "description" : "Details zu einem bestimmten Medikament oder einer Medikamentengruppe, die für das Screening relevant sind.",
             "comment" : "Verwenden Sie separate Instanzen dieses CLUSTERs, um zwischen bestimmten Medikamenten oder Medikamentengruppen zu unterscheiden."
-          },
-          "at0026.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.1",
-            "text" : "Spezifisches Medikament (3)",
-            "description" : "Details zu einem bestimmten Medikament oder einer Medikamentengruppe, die für das Screening relevant sind.",
-            "comment" : "Verwenden Sie separate Instanzen dieses CLUSTERs, um zwischen bestimmten Medikamenten oder Medikamentengruppen zu unterscheiden."
           }
         },
         "nl" : {
@@ -8297,13 +8310,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0026.1",
             "text" : "*Specific medication (en) (2)",
-            "description" : "*Details about a specified medication or grouping of medications relevant for the screening purpose. (en)",
-            "comment" : "*Use separate instances of this CLUSTER to differentiate between specific medications, groupings, or classes of medication. (en)"
-          },
-          "at0026.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.1",
-            "text" : "*Specific medication (en) (3)",
             "description" : "*Details about a specified medication or grouping of medications relevant for the screening purpose. (en)",
             "comment" : "*Use separate instances of this CLUSTER to differentiate between specific medications, groupings, or classes of medication. (en)"
           }
@@ -10039,7 +10045,6 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0025.4",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
@@ -10245,6 +10250,12 @@
             "text" : "Hvor ofte drikker du alkohol?",
             "description" : "Tidsangivelse for bruken av substansen eller gruppen av substanser.",
             "comment" : "Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for bruken av substansen eller gruppen av substanser i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: den faktiske datoen og/eller tidspunktet; individets alder på tidspunktet for bruken av substansen eller gruppen av substanser; eller hvor lenge siden det/de ble brukt. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME."
+          },
+          "at0025.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.4",
+            "text" : "Beskrivelse:",
+            "description" : "Ytterligere fritekst om den spesifikke substansen eller grupper av substanser som ikke er fanget opp av andre felt."
           }
         },
         "de" : {
