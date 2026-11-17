@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "2.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ebefd1d9ed041c01d756fca1fbc734be",
+      "MD5-CAM-1.0.1" : "762fdffa8e5f8cd6b91d752f8a89048e",
       "PARENT:MD5-CAM-1.0.1" : "B1C990759B32653BE06B8E37B9F51820"
     },
     "details" : {
@@ -273,7 +273,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Vannlating_bekkensenteret",
+          "text" : "no.openehr__openEHR-EHR-COMPOSITION.bekkensenter_vannlating_drikkemengde.v1.0.0",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
